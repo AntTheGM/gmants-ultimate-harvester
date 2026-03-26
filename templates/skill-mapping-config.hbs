@@ -1,0 +1,17 @@
+<form class="ultimate-harvester-form">
+  <p class="notes">{{localize "MHARVEST.Settings.SkillMappingMenuHint"}}</p>
+  <div class="ultimate-harvester-skill-grid">
+    {{#each types}}
+    <div class="form-group">
+      <label>{{this.label}}</label>
+      <select name="{{this.type}}">
+        {{#each ../skills}}
+        <option value="{{this.key}}" {{#if (eq this.key ../currentSkill)}}selected{{/if}}>
+          {{this.label}}{{#if (eq this.key ../defaultSkill)}} (default){{/if}}
+        </option>
+        {{/each}}
+      </select>
+    </div>
+    {{/each}}
+  </div>
+</form>

@@ -1,0 +1,24 @@
+<div class="ultimate-harvester-form">
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span>{{creatureName}}</span>
+      <span>Rolled {{rollTotal}} ({{skillLabel}})</span>
+    </div>
+  </div>
+
+  {{#if timeElapsed}}
+  <p class="ultimate-harvester-time-banner"><i class="fas fa-clock ultimate-harvester-icon--time"></i> <strong>{{localize "MHARVEST.Chat.TimeSpent"}}: {{timeElapsed}} minutes</strong></p>
+  {{/if}}
+
+  <div class="ultimate-harvester-section">
+    {{#each items}}
+    <label class="ultimate-harvester-checkbox">
+      <input type="checkbox" data-idx="{{this.idx}}" checked />
+      <i class="{{this.categoryIcon}} ultimate-harvester-icon--{{this.category}}"></i>
+      <span><strong>{{this.name}}</strong> &times;{{this.quantity}}</span>
+      <span class="ultimate-harvester-badge ultimate-harvester-badge--{{this.category}}">{{this.categoryLabel}}</span>
+      <span class="ultimate-harvester-dc-label">DC {{this.dc}}</span>
+    </label>
+    {{/each}}
+  </div>
+</div>

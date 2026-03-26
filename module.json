@@ -1,0 +1,95 @@
+{
+  "id": "ultimate-harvester",
+  "title": "Ultimate Harvester",
+  "description": "A monster harvesting and foraging system for D&D 5e. Harvest parts, materials, and food from defeated creatures based on skill checks. Includes 14 creature types, 10 foraging environments, and configurable rules.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "GM Ant",
+      "url": "https://roleplayr.com/gmant"
+    }
+  ],
+  "esmodules": ["scripts/module.js"],
+  "styles": ["styles/ultimate-harvester.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "harvest-items",
+      "label": "Harvestable Items",
+      "path": "packs/harvest-items",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "harvest-tables",
+      "label": "Creature Harvest Tables (Specific)",
+      "path": "packs/harvest-tables",
+      "type": "RollTable",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "generic-tables",
+      "label": "Harvest Tables (Generic by Type/CR)",
+      "path": "packs/generic-tables",
+      "type": "RollTable",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "foraging-tables",
+      "label": "Foraging Tables",
+      "path": "packs/foraging-tables",
+      "type": "RollTable",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ultimate-harvester-macros",
+      "label": "Ultimate Harvester Macros",
+      "path": "packs/ultimate-harvester-macros",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Ultimate Harvester",
+      "color": "#2e7d32",
+      "sorting": "a",
+      "packs": ["harvest-items", "harvest-tables", "generic-tables", "foraging-tables", "ultimate-harvester-macros"]
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": { "minimum": "4.0.0", "verified": "5.0.0" }
+      }
+    ],
+    "optional": [
+      {
+        "id": "socketlib",
+        "type": "module",
+        "compatibility": { "verified": "1.1.1" }
+      }
+    ]
+  },
+  "socket": false,
+  "flags": {
+    "hotReload": true
+  }
+}

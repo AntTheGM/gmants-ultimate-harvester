@@ -1,0 +1,345 @@
+/* ============================================
+   Ultimate Harvester — VTTools Style
+   ============================================ */
+
+/* --- Color Palette (scoped to module windows) --- */
+/* Earthy/dark theme — forest greens, warm browns, dark amber */
+.ultimate-harvester {
+  /* Semantic colors */
+  --mharvest-brand: #8b3a3a;          /* dark blood red — danger, crit fail */
+  --mharvest-gold: #a67c00;           /* dark amber — trophies, nat 20 */
+  --mharvest-gold-light: #c99700;     /* warm amber — highlights */
+  --mharvest-success: #3a6e3a;        /* deep forest green — success, food */
+  --mharvest-accent: #5c7a3a;         /* olive green — feature highlights, links */
+  --mharvest-accent-bg: rgba(92, 122, 58, 0.1);
+  --mharvest-accent-border: rgba(92, 122, 58, 0.2);
+  --mharvest-warning: #b8860b;        /* goldenrod — warnings, fumbles */
+  --mharvest-component: #6b5b8a;      /* muted purple — alchemical components */
+  --mharvest-component-bg: rgba(107, 91, 138, 0.1);
+  --mharvest-component-border: rgba(107, 91, 138, 0.18);
+
+  /* Borders */
+  --mharvest-border: rgba(80, 60, 40, 0.25);
+  --mharvest-border-light: rgba(80, 60, 40, 0.18);
+  --mharvest-border-hover: rgba(80, 60, 40, 0.12);
+
+  /* Backgrounds — slightly warmer/darker than Showtime */
+  --mharvest-bg-inset: rgba(30, 20, 10, 0.08);
+  --mharvest-bg-subtle: rgba(30, 20, 10, 0.05);
+  --mharvest-bg-faint: rgba(30, 20, 10, 0.03);
+  --mharvest-bg-hover: rgba(30, 20, 10, 0.1);
+  --mharvest-bg-selected: rgba(30, 20, 10, 0.06);
+  --mharvest-bg-border: rgba(30, 20, 10, 0.12);
+  --mharvest-bg-shadow: rgba(0, 0, 0, 0.2);
+  --mharvest-bg-shadow-dark: rgba(0, 0, 0, 0.3);
+}
+
+/* --- Base Typography --- */
+.ultimate-harvester-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  font-size: 0.85rem;
+}
+
+/* --- Section Layout --- */
+.ultimate-harvester-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ultimate-harvester-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+}
+
+/* --- VTTools Branding Header --- */
+a.ultimate-harvester-branding {
+  margin-left: auto;
+  font-style: italic;
+  color: var(--mharvest-brand);
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+a.ultimate-harvester-branding:hover {
+  text-decoration: underline;
+  color: var(--mharvest-gold-light);
+}
+
+/* --- Skill Mapping Config Grid --- */
+.ultimate-harvester-skill-grid .form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.15rem 0;
+}
+
+.ultimate-harvester-skill-grid .form-group label {
+  flex: 0 0 45%;
+  font-weight: 500;
+}
+
+.ultimate-harvester-skill-grid .form-group select {
+  flex: 1;
+}
+
+/* --- Checkbox Row --- */
+.ultimate-harvester-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.ultimate-harvester-checkbox input[type="checkbox"] {
+  margin: 0;
+}
+
+/* --- Empty State --- */
+.ultimate-harvester-empty {
+  text-align: center;
+  opacity: 0.5;
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+/* --- Category Badges --- */
+.ultimate-harvester-badge {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.ultimate-harvester-badge--material {
+  background: var(--mharvest-bg-inset);
+  border: 1px solid var(--mharvest-border-light);
+}
+
+.ultimate-harvester-badge--food {
+  background: rgba(74, 170, 68, 0.1);
+  border: 1px solid rgba(74, 170, 68, 0.2);
+  color: var(--mharvest-success);
+}
+
+.ultimate-harvester-badge--component {
+  background: var(--mharvest-component-bg);
+  border: 1px solid var(--mharvest-component-border);
+  color: var(--mharvest-component);
+}
+
+.ultimate-harvester-badge--trophy {
+  background: rgba(184, 134, 11, 0.1);
+  border: 1px solid rgba(184, 134, 11, 0.2);
+  color: var(--mharvest-gold);
+}
+
+/* --- Item Icon --- */
+.ultimate-harvester-item-icon {
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--mharvest-bg-shadow);
+  border-radius: 3px;
+}
+
+/* --- Select Row (Icon + Dropdown) --- */
+.ultimate-harvester-select-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ultimate-harvester-select-row select {
+  flex: 1;
+}
+
+/* --- Details/Collapsible Info --- */
+.ultimate-harvester-details-toggle {
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-style: italic;
+  opacity: 0.7;
+  list-style: none;
+}
+
+.ultimate-harvester-details-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.ultimate-harvester-details-toggle::before {
+  content: "\25B6\00a0";
+  font-size: 0.65rem;
+  display: inline-block;
+  transition: transform 0.15s;
+}
+
+details[open] > .ultimate-harvester-details-toggle::before {
+  transform: rotate(90deg);
+}
+
+.ultimate-harvester-details-list {
+  margin: 0.25rem 0 0 0;
+  padding-left: 1.2rem;
+  font-size: 0.78rem;
+  opacity: 0.8;
+}
+
+.ultimate-harvester-details-list li {
+  margin-bottom: 0.15rem;
+}
+
+/* --- Inline Notes --- */
+.ultimate-harvester-note {
+  font-size: 0.78rem;
+  font-style: italic;
+  opacity: 0.8;
+  margin: 0.15rem 0;
+}
+
+/* --- Icon Colors (category + functional) --- */
+.ultimate-harvester-icon--material { color: #6b5340; }
+.ultimate-harvester-icon--food { color: var(--mharvest-success); }
+.ultimate-harvester-icon--component { color: var(--mharvest-component); }
+.ultimate-harvester-icon--trophy { color: var(--mharvest-gold); }
+.ultimate-harvester-icon--danger { color: var(--mharvest-brand); }
+.ultimate-harvester-icon--warning { color: var(--mharvest-warning); }
+.ultimate-harvester-icon--success { color: var(--mharvest-success); }
+.ultimate-harvester-icon--gold { color: var(--mharvest-gold-light); }
+.ultimate-harvester-icon--time { color: var(--mharvest-accent); }
+.ultimate-harvester-icon--purple { color: var(--mharvest-component); }
+.ultimate-harvester-icon--unknown { color: rgba(80, 60, 40, 0.3); }
+
+/* --- Time Banner --- */
+.ultimate-harvester-time-banner {
+  background: var(--mharvest-bg-inset);
+  border: 1px solid var(--mharvest-border-light);
+  border-radius: 3px;
+  padding: 0.3rem 0.5rem;
+  margin: 0.25rem 0;
+  font-size: 0.85rem;
+}
+
+/* --- Chat View Link --- */
+.ultimate-harvester-view-link {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--mharvest-accent);
+  border: 1px solid var(--mharvest-accent-border);
+  border-radius: 3px;
+  background: var(--mharvest-accent-bg);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ultimate-harvester-view-link:hover {
+  background: rgba(92, 122, 58, 0.2);
+  color: var(--mharvest-accent);
+  text-decoration: none;
+}
+
+/* --- Chat Card --- */
+.ultimate-harvester-card h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.ultimate-harvester-item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0;
+}
+
+.ultimate-harvester-item-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0;
+}
+
+.ultimate-harvester-crit-fail {
+  color: var(--mharvest-brand);
+  font-weight: bold;
+}
+
+.ultimate-harvester-fumble {
+  color: var(--mharvest-warning);
+  font-weight: bold;
+}
+
+.ultimate-harvester-nat20 {
+  color: var(--mharvest-gold);
+  font-weight: bold;
+}
+
+.ultimate-harvester-appraisal-success {
+  color: var(--mharvest-success);
+  font-weight: bold;
+}
+
+/* --- Difficulty Labels --- */
+.ultimate-harvester-difficulty-label {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-left: auto;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+}
+
+.ultimate-harvester-difficulty-label--easy {
+  color: var(--mharvest-success);
+}
+
+.ultimate-harvester-difficulty-label--moderate {
+  color: var(--mharvest-gold);
+}
+
+.ultimate-harvester-difficulty-label--difficult {
+  color: var(--mharvest-warning);
+}
+
+.ultimate-harvester-difficulty-label--near-impossible {
+  color: var(--mharvest-brand);
+  font-style: italic;
+}
+
+/* --- DC Labels --- */
+.ultimate-harvester-dc-label {
+  font-size: 0.7rem;
+  font-weight: bold;
+  opacity: 0.6;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.ultimate-harvester-difficulty-near-impossible {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.ultimate-harvester-difficulty-label--impossible {
+  color: var(--mharvest-brand);
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.ultimate-harvester-difficulty-impossible {
+  opacity: 0.4;
+  font-style: italic;
+}

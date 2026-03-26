@@ -1,0 +1,41 @@
+<div class="ultimate-harvester-card">
+  <h3>{{localize "MHARVEST.Chat.HarvestResults"}}</h3>
+
+  {{#if timeElapsed}}
+  <p class="ultimate-harvester-time-banner"><i class="fas fa-clock ultimate-harvester-icon--time"></i> <strong>{{localize "MHARVEST.Chat.TimeSpent"}}: {{timeElapsed}} minutes</strong></p>
+  {{/if}}
+
+  <p><strong>{{harvesterName}}</strong> harvested <strong>{{creatureName}}</strong> (rolled {{rollTotal}}, {{skillLabel}})</p>
+
+  {{#if critFail}}
+  <p class="ultimate-harvester-crit-fail"><i class="fas fa-skull-crossbones ultimate-harvester-icon--danger"></i> {{localize "MHARVEST.Chat.CritFail"}}</p>
+  {{#if critFailEffect}}<p><em>{{critFailEffect}}</em></p>{{/if}}
+  {{else if fumble}}
+  <p class="ultimate-harvester-fumble"><i class="fas fa-exclamation-triangle ultimate-harvester-icon--warning"></i> {{localize "MHARVEST.Chat.Fumble"}}</p>
+  {{#if fumbleEffect}}<p><em>{{fumbleEffect}}</em></p>{{/if}}
+  {{else if nothingFound}}
+  <p><em>{{localize "MHARVEST.Chat.NothingFound"}}</em></p>
+  {{#if ruined}}
+  <p class="ultimate-harvester-crit-fail"><i class="fas fa-times-circle ultimate-harvester-icon--danger"></i> The harvest is ruined &mdash; no further attempts possible.</p>
+  {{else if canRetry}}
+  <p class="ultimate-harvester-note"><i class="fas fa-redo ultimate-harvester-icon--warning"></i> The attempt failed, but another try may still succeed. Some higher-quality materials may have been damaged.</p>
+  {{/if}}
+  {{else}}
+    {{#if isNat20}}
+    <p class="ultimate-harvester-nat20"><i class="fas fa-star ultimate-harvester-icon--gold"></i> {{localize "MHARVEST.Chat.BonusItem"}}</p>
+    {{/if}}
+    <ul class="ultimate-harvester-item-list">
+      {{#each items}}
+      <li>
+        <i class="{{this.categoryIcon}} ultimate-harvester-icon--{{this.category}}"></i>
+        <strong>{{this.name}}</strong> &times;{{this.quantity}}
+        {{#if this.isBonus}}<span class="ultimate-harvester-badge ultimate-harvester-badge--trophy">Nat 20</span>{{/if}}
+      </li>
+      {{/each}}
+    </ul>
+  {{/if}}
+
+  {{#if remainingCount}}
+  <p class="ultimate-harvester-note"><i class="fas fa-box-open ultimate-harvester-icon--purple"></i> {{remainingCount}} item(s) left on the corpse for others to claim.</p>
+  {{/if}}
+</div>

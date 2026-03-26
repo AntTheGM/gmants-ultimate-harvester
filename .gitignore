@@ -1,0 +1,11 @@
+# PDFs (copyrighted reference material)
+*.pdf
+
+# Obsidian vault config
+.obsidian/
+
+# Temp files
+x_temp.md
+
+# Reference data exports
+reference/

@@ -1,0 +1,67 @@
+<div class="ultimate-harvester-form">
+  <div class="ultimate-harvester-section">
+    {{#if harvesterName}}<p><strong>{{harvesterName}}</strong> examines <strong>{{creatureName}}</strong></p>{{/if}}
+    <p>{{creatureType}}, CR {{cr}} &mdash; Skill: <strong>{{skillLabel}}</strong></p>
+  </div>
+
+  {{#if appraisalDone}}
+  <div class="ultimate-harvester-section">
+    {{#if appraisalTimeSpent}}
+    <p class="ultimate-harvester-time-banner"><i class="fas fa-hourglass-half ultimate-harvester-icon--time"></i> <strong>Appraisal took {{appraisalTimeSpent}} minutes</strong></p>
+    {{/if}}
+    {{#if appraisalCritSuccess}}
+    <p class="ultimate-harvester-appraisal-success"><i class="fas fa-star ultimate-harvester-icon--gold"></i> Critical appraisal! Rolling with <strong>advantage</strong> and <strong>+2 bonus</strong></p>
+    {{else if appraisalSuccess}}
+    <p class="ultimate-harvester-appraisal-success"><i class="fas fa-check-circle ultimate-harvester-icon--success"></i> Appraisal succeeded &mdash; rolling with <strong>advantage</strong></p>
+    {{else if appraisalCritFail}}
+    <p class="ultimate-harvester-crit-fail"><i class="fas fa-skull-crossbones ultimate-harvester-icon--danger"></i> Fumbled appraisal &mdash; rolling with <strong>disadvantage</strong></p>
+    {{else}}
+    <p class="ultimate-harvester-note"><i class="fas fa-times-circle"></i> Appraisal failed &mdash; harvesting without advantage</p>
+    {{/if}}
+  </div>
+  {{/if}}
+
+  {{#if appraisalEnabled}}
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-search"></i> Appraise</span>
+      <span>~{{appraisalTime}} min</span>
+    </div>
+    <p>Examine the creature to identify harvestable materials. Grants <strong>advantage</strong> on the harvest roll if successful.</p>
+    {{#if appraisalPenalty}}
+    <p class="ultimate-harvester-crit-fail"><i class="fas fa-arrow-down ultimate-harvester-icon--danger"></i> <strong>{{appraisalPenalty}} penalty</strong> from prior appraisal attempt(s)</p>
+    {{/if}}
+    <details>
+      <summary class="ultimate-harvester-details-toggle">How does appraisal work?</summary>
+      <ul class="ultimate-harvester-details-list">
+        <li>Uses the same skill as harvesting, at a lower DC</li>
+        <li>Reveals what materials are available (plus a hint of what you&apos;d miss)</li>
+        <li>Success grants advantage on the following harvest check</li>
+        <li>Can be retried at a cumulative &minus;5 penalty</li>
+        <li>Takes {{appraisalTime}} minutes per attempt (5 min + 1 min per CR)</li>
+      </ul>
+    </details>
+  </div>
+  {{/if}}
+
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-drumstick-bite"></i> Harvest</span>
+      <span>~{{harvestTimeMin}}&ndash;{{harvestTimeMax}} min</span>
+    </div>
+    <p>Attempt to extract materials from the corpse. Roll {{skillLabel}} &mdash; the higher you roll, the more you recover.</p>
+    {{#if sizeModifier}}
+    <p class="ultimate-harvester-note"><i class="fas fa-expand-arrows-alt"></i> Large creature: +{{sizeModifier}} min due to size</p>
+    {{/if}}
+    <details>
+      <summary class="ultimate-harvester-details-toggle">How does harvesting work?</summary>
+      <ul class="ultimate-harvester-details-list">
+        <li>One roll determines all results &mdash; each item has a DC threshold</li>
+        <li>Items with DC at or below your roll are recovered (cumulative)</li>
+        <li>Natural 1: critical failure with creature-specific consequences</li>
+        <li>Natural 20: bonus item only obtainable on a crit</li>
+        <li>Takes 15 minutes per tier of items harvested{{#if sizeModifier}}, plus {{sizeModifier}} min for creature size{{/if}}</li>
+      </ul>
+    </details>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+<div class="ultimate-harvester-form">
+  <div class="ultimate-harvester-section">
+    <p><strong>{{harvesterName}}</strong> examines <strong>{{creatureName}}</strong></p>
+    <p>{{creatureType}}, CR {{cr}} &mdash; Skill: <strong>{{skillLabel}}</strong></p>
+  </div>
+
+  {{#if appraisalTimeSpent}}
+  <p class="ultimate-harvester-time-banner"><i class="fas fa-hourglass-half ultimate-harvester-icon--time"></i> <strong>Appraisal took {{appraisalTimeSpent}} minutes</strong></p>
+  {{/if}}
+
+  {{#if appraisalCritSuccess}}
+  <p class="ultimate-harvester-nat20"><i class="fas fa-star ultimate-harvester-icon--gold"></i> Critical appraisal! Rolling with <strong>advantage</strong> and <strong>+2 bonus</strong></p>
+  {{else if appraisalSuccess}}
+  <p class="ultimate-harvester-appraisal-success"><i class="fas fa-check-circle ultimate-harvester-icon--success"></i> Appraisal succeeded &mdash; rolling with <strong>advantage</strong></p>
+  {{else if appraisalCritFail}}
+  <p class="ultimate-harvester-crit-fail"><i class="fas fa-skull-crossbones ultimate-harvester-icon--danger"></i> Fumbled appraisal &mdash; rolling with <strong>disadvantage</strong></p>
+  {{else}}
+  <p class="ultimate-harvester-note"><i class="fas fa-times-circle"></i> Appraisal failed &mdash; harvesting without advantage</p>
+  {{/if}}
+
+  {{#if appraisalSuccess}}
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span>Identified Materials</span>
+    </div>
+    <ul class="ultimate-harvester-item-list">
+      {{#each visibleItems}}
+      <li class="ultimate-harvester-difficulty-{{this.difficultyClass}}">
+        {{#if this.isHidden}}
+        <i class="fas fa-question-circle ultimate-harvester-icon--unknown"></i>
+        <em>Unknown Material</em>
+        {{else}}
+        <i class="{{this.categoryIcon}} ultimate-harvester-icon--{{this.category}}"></i>
+        <strong>{{this.text}}</strong>
+        <span class="ultimate-harvester-badge ultimate-harvester-badge--{{this.category}}">{{this.categoryLabel}}</span>
+        {{/if}}
+        <span class="ultimate-harvester-difficulty-label ultimate-harvester-difficulty-label--{{this.difficultyClass}}">{{this.difficulty}}</span>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+
+  {{#if critFailEffect}}
+  <p class="ultimate-harvester-note"><i class="fas fa-skull-crossbones ultimate-harvester-icon--danger"></i> <strong>Nat 1:</strong> <em>{{critFailEffect}}</em></p>
+  {{/if}}
+  {{#if fumbleEffect}}
+  <p class="ultimate-harvester-note"><i class="fas fa-exclamation-triangle ultimate-harvester-icon--warning"></i> <strong>Roll &lt; 5:</strong> <em>{{fumbleEffect}}</em></p>
+  {{/if}}
+  {{/if}}
+
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-drumstick-bite"></i> Harvest</span>
+      <span>~{{harvestTimeMin}}&ndash;{{harvestTimeMax}} min</span>
+    </div>
+    {{#if sizeModifier}}
+    <p class="ultimate-harvester-note"><i class="fas fa-expand-arrows-alt"></i> Large creature: +{{sizeModifier}} min due to size</p>
+    {{/if}}
+  </div>
+</div>

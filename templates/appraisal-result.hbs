@@ -1,0 +1,17 @@
+<div class="ultimate-harvester-card">
+  <p class="ultimate-harvester-time-banner"><i class="fas fa-hourglass-half ultimate-harvester-icon--time"></i> <strong>{{localize "MHARVEST.Chat.TimeSpent"}}: {{timeElapsed}} minutes</strong></p>
+
+  <p><strong>{{harvesterName}}</strong> appraised <strong>{{creatureName}}</strong> (rolled {{rollTotal}}, {{skillLabel}})</p>
+
+  {{#if isNat20}}
+  <p class="ultimate-harvester-nat20"><i class="fas fa-star ultimate-harvester-icon--gold"></i> Critical appraisal!</p>
+  {{else if isNat1}}
+  <p class="ultimate-harvester-crit-fail"><i class="fas fa-skull-crossbones ultimate-harvester-icon--danger"></i> Fumbled appraisal!</p>
+  {{else if success}}
+  <p class="ultimate-harvester-appraisal-success"><i class="fas fa-check-circle ultimate-harvester-icon--success"></i> Appraisal succeeded</p>
+  {{else}}
+  <p><em>The examination revealed nothing useful.</em></p>
+  {{/if}}
+
+  <a class="ultimate-harvester-view-link" data-action="viewAppraisal" data-creature-uuid="{{creatureUuid}}"><i class="fas fa-search"></i> View Appraisal Details</a>
+</div>
