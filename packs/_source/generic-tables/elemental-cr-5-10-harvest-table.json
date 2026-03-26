@@ -1,0 +1,112 @@
+{
+  "_id": "a429988c9390a031",
+  "name": "Elemental CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for elementals of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "5c54b6087597d077",
+      "text": "Elemental Core",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.01dc5f5a32bc5a08",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "0dd3a8d2e28d3464",
+      "text": "Condensed Element",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8235e76763ada770",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "89f862365dc775d1",
+      "text": "Pure Elemental Essence",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0afd8b1767851779",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "89f862365dc775d1",
+      "text": "Pure Elemental Essence",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0afd8b1767851779",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "89f862365dc775d1",
+      "text": "Pure Elemental Essence",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0afd8b1767851779",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The elemental detonates as its planar tether breaks; all creatures within 15 feet take 3d8 damage of the element's type (DC 14 saving throw for half).",
+      "fumbleEffect": "The elemental essence lingers on you; you leave a trail (footprints of fire/ice/earth/water) for 1 hour.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

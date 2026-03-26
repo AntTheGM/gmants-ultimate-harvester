@@ -1,0 +1,26 @@
+{
+  "_id": "9b914de7d708a38f",
+  "name": "Dragon Scales",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Iridescent scales harvested from a dragon's hide; nearly impervious to flame.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  }
+}

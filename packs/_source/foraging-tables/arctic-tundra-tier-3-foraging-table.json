@@ -1,0 +1,129 @@
+{
+  "_id": "3da227a4787e24b2",
+  "name": "Arctic / Tundra - Tier 3 Foraging Table",
+  "description": "<p>Excellent arctic finds; a skilled wilderness survivor locates prime sources amid the ice and snow.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "3b7db7278f530d90",
+      "text": "Snow Hare",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ba0d36d084c53e74",
+          "quantity": "2",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "f7720b1a294a1f92",
+      "text": "Foraged Ration",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.7dd13533f1c24fda",
+          "quantity": "3",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "923939639e472f2c",
+      "text": "Ice Moss",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.5747cc961efd707c",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "d458f49c31e1b3ac",
+      "text": "Medicinal Root",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fd8afd047369d807",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "b7ee5b82ce4de5d7",
+      "text": "Frozen Berries",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1f41b832835fbdce",
+          "quantity": "3",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "eeacae0085fd78f1",
+      "text": "Firewood Bundle",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.76f9adacf4822f80",
+          "quantity": "3",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

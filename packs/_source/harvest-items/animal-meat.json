@@ -1,0 +1,26 @@
+{
+  "_id": "51f39152b6c48036",
+  "name": "Animal Meat",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Rough cuts of meat taken from a slain beast; edible but unrefined.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food"
+    }
+  }
+}

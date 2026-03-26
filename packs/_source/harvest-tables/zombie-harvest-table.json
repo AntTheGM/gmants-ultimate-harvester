@@ -1,0 +1,56 @@
+{
+  "_id": "6f99cfacf8f4accc",
+  "name": "Zombie Harvest Table",
+  "description": "<p>Harvest table for a zombie (Undead CR 1/4).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "5f12cd92aa4348fc",
+      "text": "Rotting Flesh",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.80c4ffb7480c5b18",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "4091b4265a263c87",
+      "text": "Zombie Flesh",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8e04fb71108d5b1e",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Necrotic energy discharges from the putrefying corpse; take 1d4 necrotic damage.",
+      "fumbleEffect": "The foul stench overwhelms you; you are sickened and have disadvantage on Wisdom checks for 10 minutes.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.8e04fb71108d5b1e",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

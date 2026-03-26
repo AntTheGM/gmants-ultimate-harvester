@@ -1,0 +1,26 @@
+{
+  "_id": "1235b1ec7bf80080",
+  "name": "Cactus Water",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Water painstakingly extracted from a cactus core; enough to sustain one person.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food"
+    }
+  }
+}

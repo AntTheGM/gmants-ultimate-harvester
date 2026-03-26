@@ -1,0 +1,56 @@
+{
+  "_id": "57d5a90ac978a674",
+  "name": "Yuan-ti Abomination Harvest Table",
+  "description": "<p>Harvest table for a yuan-ti abomination (Monstrosity CR 7).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "f52c1c558e67abf8",
+      "text": "Yuan-ti Scale",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.397426fa127e793b",
+          "quantity": "1d6",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "d1f7a2ed54b3556f",
+      "text": "Serpent Venom Gland",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.aabf7bb3c6935b01",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The abomination's innate magic lashes out; take 3d6 psychic damage and make a DC 15 Wisdom save or be frightened for 1 minute.",
+      "fumbleEffect": "The serpentine scales are razor-edged; take 1d6 slashing damage when removing them.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.aabf7bb3c6935b01",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

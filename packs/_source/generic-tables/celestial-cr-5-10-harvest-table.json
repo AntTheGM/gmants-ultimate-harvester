@@ -1,0 +1,112 @@
+{
+  "_id": "6d75ac300eee849e",
+  "name": "Celestial CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for celestials of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "64310d8e9da08935",
+      "text": "Celestial Feather",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.065f43bbe9bc1c28",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "bddbaf2b4950dda2",
+      "text": "Divine Essence",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fa8b770acea7412f",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "37d8316f1de29ac0",
+      "text": "Sacred Blood",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.de4988b6d74be3b2",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "c0dd196dba487fdb",
+      "text": "Angelic Plume",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.9a678da4b0585ab9",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "fe6a3cce804bd11d",
+      "text": "Blessed Organ",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c383acadebda03f8",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The celestial's soul departs in a blinding flash; all creatures within 15 feet take 3d8 radiant damage and must make a DC 15 Constitution save or be blinded for 1 minute.",
+      "fumbleEffect": "The sheer holiness of the remains burns an impure soul; if you have committed an evil act in the past 24 hours you are frightened for 1 minute.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "_id": "09f0dbfe31e54624",
+  "name": "Giant Spider Harvest Table",
+  "description": "<p>Harvest table for a giant spider (Beast CR 1).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "64c5ac53b596c5bb",
+      "text": "Giant Spider Silk",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8fb845d861f4ba75",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "a0515af1f866a089",
+      "text": "Giant Spider Fang",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.650e81fb9961bf2e",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "1f89233951efaa26",
+      "text": "Giant Spider Venom",
+      "type": 0,
+      "range": [
+        16,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 16,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2f9bde50012de663",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A venom sac ruptures; all creatures within 5 feet must make a DC 12 Constitution save or take 2d4 poison damage and be poisoned for 1 minute.",
+      "fumbleEffect": "Venom drips onto your hands; you have disadvantage on Dexterity checks for 10 minutes until you wash it off.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.2f9bde50012de663",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

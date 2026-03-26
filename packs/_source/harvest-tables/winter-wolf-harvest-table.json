@@ -1,0 +1,94 @@
+{
+  "_id": "7b203af391a21f7e",
+  "name": "Winter Wolf Harvest Table",
+  "description": "<p>Harvest table for a winter wolf (Monstrosity CR 3).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "42ad4b4a15e8deba",
+      "text": "Winter Wolf Meat",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fb0c86a82500ea90",
+          "quantity": "1d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "039646c524a1b810",
+      "text": "Winter Wolf Pelt",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.644d7d6691b341a3",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "e82741c7d6890003",
+      "text": "Winter Wolf Fangs",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.bc230ccf8d53ab27",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "ef0258c88bdc47e5",
+      "text": "Frost Breath Gland",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.cf24122152f43c80",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Ice crystals explode from the wolf's body; take 2d6 cold damage.",
+      "fumbleEffect": "The frost-bitten hide snaps stiffly; you lose your grip and must restart — lose 5 minutes of harvesting time.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.cf24122152f43c80",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

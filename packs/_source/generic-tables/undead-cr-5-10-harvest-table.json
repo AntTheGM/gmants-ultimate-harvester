@@ -1,0 +1,112 @@
+{
+  "_id": "f94d440b49ab0eb4",
+  "name": "Undead CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for undead of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "070f1414bc949956",
+      "text": "Concentrated Ichor",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3b2b19ec4a267607",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "aa6c13d680ac2111",
+      "text": "Shadow Essence",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b046e3122397fa7a",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "4e7332aacd74e4ea",
+      "text": "Ectoplasmic Residue",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.af058ca78118b32b",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "b5b1708ab18fcc7a",
+      "text": "Death Shroud",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.09958e6b072c6a44",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "50e676c613fa26a3",
+      "text": "Soul Fragment",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b9fa4af2fa318ba3",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A burst of deathly energy erupts; take 2d8 necrotic damage and make a DC 14 Constitution save or gain one level of exhaustion.",
+      "fumbleEffect": "Necrotic residue clings to your tools; they must be cleaned before being used for any other harvesting.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

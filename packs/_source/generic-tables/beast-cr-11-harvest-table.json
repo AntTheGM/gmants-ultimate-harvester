@@ -1,0 +1,131 @@
+{
+  "_id": "4033f01120a759a6",
+  "name": "Beast CR 11+ Harvest Table",
+  "description": "<p>Generic harvest table for beasts of CR 11 or higher.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "de107eb4b871b0ff",
+      "text": "Apex Meat",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.215903275591fc05",
+          "quantity": "1d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "2e67738c15c87bfb",
+      "text": "Apex Hide",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c2b039f477632efe",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "a59b9872532d02a8",
+      "text": "Primordial Bone",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.83055b03dae4d522",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "d6775c792852714c",
+      "text": "Razor Teeth/Claws",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2f1d312bdd3a4cac",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "8cddc0692b50d1f7",
+      "text": "Potent Venom Sac",
+      "type": 0,
+      "range": [
+        32,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 32,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.32b6ea2307b414f2",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "2ce59274011aba50",
+      "text": "Intact Organ",
+      "type": 0,
+      "range": [
+        35,
+        37
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 35,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.44074e253910afce",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The creature's apex physiology lashes back even in death; take 3d6 slashing damage.",
+      "fumbleEffect": "You damage the primary hide section; one material item you would have recovered is destroyed.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

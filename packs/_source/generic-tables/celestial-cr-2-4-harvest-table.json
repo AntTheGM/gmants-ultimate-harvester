@@ -1,0 +1,112 @@
+{
+  "_id": "f6b33f9c66c05ede",
+  "name": "Celestial CR 2-4 Harvest Table",
+  "description": "<p>Generic harvest table for celestials of CR 2-4.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "41c9eee539d16783",
+      "text": "Radiant Dust",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c03e0af7fd777451",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "9ffc93af1cdc4706",
+      "text": "Celestial Feather",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.065f43bbe9bc1c28",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "c9068ddf129a8254",
+      "text": "Divine Essence",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fa8b770acea7412f",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "1ad0f1508f58ad6e",
+      "text": "Sacred Blood",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.de4988b6d74be3b2",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "3d46f8cc4179e9aa",
+      "text": "Angelic Plume",
+      "type": 0,
+      "range": [
+        23,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 23,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.9a678da4b0585ab9",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A burst of radiant energy burns your hands; take 2d8 radiant damage.",
+      "fumbleEffect": "The sanctified aura overwhelms you; you are blinded until the end of your next turn.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "_id": "387e0e53a95ce78a",
+  "name": "Giant CR 2-4 Harvest Table",
+  "description": "<p>Generic harvest table for giants of CR 2-4.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "253ee34c707359b5",
+      "text": "Giant Fingernail",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c6a427fcb6e3ac80",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "24ae5cecd613a5df",
+      "text": "Giant Hair",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8ac09fa84051e6a1",
+          "quantity": "1d6",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "a24de1318273305e",
+      "text": "Giant Blood",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.772bd6abecef14df",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "ff889f5ccb3f1049",
+      "text": "Giant Heart",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2dbe44e15714eddf",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "e77f6ae687977ade",
+      "text": "Titan Bone",
+      "type": 0,
+      "range": [
+        23,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 23,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c1adf8ef3b92fd8a",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The giant's mass collapses; take 2d6 bludgeoning damage and make a DC 13 Strength save or be knocked prone.",
+      "fumbleEffect": "You misjudge the scale of the anatomy; you harvest blood from the wrong vessel and the sample is contaminated.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

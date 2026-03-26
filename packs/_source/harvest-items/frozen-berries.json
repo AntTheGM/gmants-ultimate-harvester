@@ -1,0 +1,26 @@
+{
+  "_id": "1f41b832835fbdce",
+  "name": "Frozen Berries",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Small berries preserved in ice; slightly tart and dense with nutrients.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food"
+    }
+  }
+}

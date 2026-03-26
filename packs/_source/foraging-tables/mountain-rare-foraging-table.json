@@ -1,0 +1,129 @@
+{
+  "_id": "d1cc835d9f69f23a",
+  "name": "Mountain - Rare Foraging Table",
+  "description": "<p>A rare mountain discovery; something precious found at the summit or in a cliff-face crevice.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "011d6cf51a381a1e",
+      "text": "Mountain Flower",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2f259c20aaf0bde0",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "a32ee700a4174019",
+      "text": "Mineral Deposit",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.341a87c52604ad81",
+          "quantity": "3",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "9588c393ad47bb44",
+      "text": "Rare Flower",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2dd9aeb5852f1618",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f1cbd9fd7da1d39a",
+      "text": "Alchemist's Weed",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e1cd84030603cce3",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "4a610fce1c13c4e6",
+      "text": "Mountain Goat Meat",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.df59e0fc7cf3d995",
+          "quantity": "2",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "bae368f56e86f1bd",
+      "text": "Eagle Feather",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.902cc50eecd2b5aa",
+          "quantity": "4",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

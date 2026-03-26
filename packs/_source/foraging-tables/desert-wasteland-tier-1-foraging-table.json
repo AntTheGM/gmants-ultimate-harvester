@@ -1,0 +1,129 @@
+{
+  "_id": "d43409dd5846dc93",
+  "name": "Desert / Wasteland - Tier 1 Foraging Table",
+  "description": "<p>Minimal desert finds; survival in the wasteland demands hard-won knowledge to locate even scraps.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "9667ed418b1efabd",
+      "text": "Cactus Water",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1235b1ec7bf80080",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "5a90df355b213e32",
+      "text": "Cactus Fruit",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ebfb5252e7534007",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "214b8283f175329b",
+      "text": "Desert Sage",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.03695e81d49528e8",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "ab4dd170cb1efd1e",
+      "text": "Sandstone Chunk",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4b18fbfdf0f8f525",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "5d5f72b9d2963275",
+      "text": "Bone Shard",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.d9a62ccd42f9aa76",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "579cb03aa024a80b",
+      "text": "Seeds and Grains",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.65275564e455791b",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

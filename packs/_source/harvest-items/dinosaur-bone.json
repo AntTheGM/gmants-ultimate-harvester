@@ -1,0 +1,27 @@
+{
+  "_id": "9d223c4c43e88f6f",
+  "name": "Dinosaur Bone",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A dense</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "4"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "uncommon",
+      "harvestBonus": null
+    }
+  }
+}

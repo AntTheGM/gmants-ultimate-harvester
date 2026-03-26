@@ -1,0 +1,27 @@
+{
+  "_id": "1a4b22cf7f975c22",
+  "name": "Froghemoth Tentacle",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A massive</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "10"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "rare",
+      "harvestBonus": null
+    }
+  }
+}

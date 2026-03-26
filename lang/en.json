@@ -59,7 +59,9 @@
   "MHARVEST.Dialog.HowManyHours": "How many hours will you spend foraging?",
 
   "MHARVEST.Macro.HarvestName": "Harvest",
-  "MHARVEST.Macro.HarvestImg": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "MHARVEST.Macro.ForageName": "Forage",
+
+  "MHARVEST.Panel.ForagingTitle": "Foraging Panel",
 
   "MHARVEST.Chat.HarvestResults": "Harvest Results",
   "MHARVEST.Chat.AppraisalResults": "Appraisal Results",

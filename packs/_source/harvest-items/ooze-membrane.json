@@ -1,0 +1,27 @@
+{
+  "_id": "f6d9de3574b044fa",
+  "name": "Ooze Membrane",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A thin</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "6"
+    },
+    "rarity": "sp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "common",
+      "harvestBonus": null
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "_id": "b32953d475daaf5c",
+  "name": "Beast CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for beasts of CR 0-1.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "5bff71285215c3be",
+      "text": "Animal Meat",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.51f39152b6c48036",
+          "quantity": "1d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "f0cf1512492b1f28",
+      "text": "Animal Hide",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.89f8cd3c712bb160",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "02057dabd5928c48",
+      "text": "Bone Fragment",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.909906e545608782",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "f8ed564db01e48f9",
+      "text": "Teeth/Claws",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a6cd5d4987708044",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "16098ed8f417953f",
+      "text": "Venom Sac",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1fc14b832c3b2b65",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The carcass ruptures; take 1d4 slashing damage from snapping bones and teeth.",
+      "fumbleEffect": "You slip and ruin the best cut; the meat yield is halved.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

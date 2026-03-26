@@ -1,0 +1,26 @@
+{
+  "_id": "9b4b402eefdb6885",
+  "name": "Dragon Hide",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A large section of premium dragon skin suitable for master-crafted armor.</p>"
+    },
+    "weight": {
+      "value": 6,
+      "units": "lb"
+    },
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  }
+}

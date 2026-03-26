@@ -1,0 +1,112 @@
+{
+  "_id": "815b056a5625dc59",
+  "name": "Monstrosity CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for monstrosities of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "d9e6b7f92c792c9a",
+      "text": "Monster Sinew",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.32e45e2f0a6883b7",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "702050147bb3d2de",
+      "text": "Aberrant Organ",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.774edc2447487188",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "d29e83adf7115225",
+      "text": "Predator Musk",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fcdf5bd6e1448899",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "e65f8a1be9ddf791",
+      "text": "Alpha Trophy",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2c4c45f9d284beb0",
+          "quantity": "1",
+          "category": "trophy"
+        }
+      }
+    },
+    {
+      "_id": "405907dc296297f4",
+      "text": "Chimeric Essence",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.57906273f0691129",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A defensive spine or toxic spray activates posthumously; take 2d6 poison damage and make a DC 13 Constitution save or be poisoned for 1 minute.",
+      "fumbleEffect": "The creature's mass shifts as you work; you are knocked prone.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "_id": "e15276e73f78f5af",
+  "name": "Owlbear Harvest Table",
+  "description": "<p>Harvest table for an owlbear (Monstrosity CR 3).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "191b5c5c91fdc960",
+      "text": "Animal Meat",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.51f39152b6c48036",
+          "quantity": "1d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "1f703ab2dd776f6a",
+      "text": "Owlbear Feather",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ee17b8f29baca6cb",
+          "quantity": "2d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "c2b7153b59ea1ff6",
+      "text": "Owlbear Beak",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3056e04b3936c0de",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "7092a3a7ad34d2cb",
+      "text": "Owlbear Pelt",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.d1259e2c1962b5af",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The owlbear's beak snaps shut reflexively; make a DC 14 Dexterity save or take 2d8 piercing damage.",
+      "fumbleEffect": "The talons are harder to remove than expected; a claw snaps off and cuts you for 1d4 slashing damage.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.d1259e2c1962b5af",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

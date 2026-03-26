@@ -1,0 +1,112 @@
+{
+  "_id": "74268e86d469a6ae",
+  "name": "Plant CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for plants of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "f46a315dd367f2d2",
+      "text": "Living Bark",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dda82925c345e849",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "92ab0ae9db14c42c",
+      "text": "Blossom Essence",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.376f35741921f3b5",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "a3e93003610d4ff8",
+      "text": "Fungal Spore Sac",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ff160a8d924ebbec",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "e3dcd75644456fe9",
+      "text": "Treant Heartwood",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4d11184ae00d4ce0",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "e3dcd75644456fe9",
+      "text": "Treant Heartwood",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4d11184ae00d4ce0",
+          "quantity": "2",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Explosive seed pods discharge; take 3d6 piercing damage and make a DC 14 Dexterity save or be restrained by vines for 1 minute.",
+      "fumbleEffect": "The plant matter grows aggressively across your tools; you must spend 1 minute cutting it free.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

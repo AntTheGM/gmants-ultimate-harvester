@@ -1,0 +1,75 @@
+{
+  "_id": "5eb947f4057e1214",
+  "name": "Vampire Spawn Harvest Table",
+  "description": "<p>Harvest table for a vampire spawn (Undead CR 5).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "52f56bf10117d72c",
+      "text": "Undead Ichor",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8e90b043cce783df",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "68e045a63d694a68",
+      "text": "Vampire Blood",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0a1937a85a30d9b9",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "c5919ba1d25b3a6a",
+      "text": "Vampire Fang",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.13fc7f7b9d3222b2",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The vampire spawn's death curse activates; take 2d8 necrotic damage and make a DC 14 Constitution save or have your hit point maximum reduced by the damage dealt until you finish a long rest.",
+      "fumbleEffect": "The body begins to decay rapidly in the light; you must work quickly � if you fail two consecutive harvest checks the body crumbles to dust.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.13fc7f7b9d3222b2",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "_id": "4a43509e47ea8a4b",
+  "name": "Urban / Ruins - Tier 1 Foraging Table",
+  "description": "<p>Minimal urban finds; picking through rubble and alley margins yields only the most basic scraps.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "6516eb82893fa65c",
+      "text": "Salvaged Foodstuffs",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e949da453ed4d27e",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "89fb5a116dd24015",
+      "text": "Useful Scraps",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c219f6b6a37021e8",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "8cfb0f2f3d3f92ee",
+      "text": "Old Coins",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0c32a310f02318f1",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "638dc1529895a781",
+      "text": "Bone Shard",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.d9a62ccd42f9aa76",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "ca95debcf524766c",
+      "text": "Bitter Greens",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ee7c25ca5ed5c182",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "1533c274c6dd5230",
+      "text": "Alchemist Discards",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.469c7b60adf6b8d6",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

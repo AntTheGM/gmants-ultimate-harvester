@@ -1,0 +1,129 @@
+{
+  "_id": "9406896ef6e29a99",
+  "name": "Desert / Wasteland - Rare Foraging Table",
+  "description": "<p>A rare desert discovery; something dangerous or precious found in the deep wasteland.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "58e76182b725bf93",
+      "text": "Scorpion Venom",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.60c10a0565093e81",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "51298ae2062dd94d",
+      "text": "Desert Sage",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.03695e81d49528e8",
+          "quantity": "4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "2fa10e1fe0edbd5c",
+      "text": "Mineral Deposit",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.341a87c52604ad81",
+          "quantity": "2",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "169343f06d43473c",
+      "text": "Alchemist's Weed",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e1cd84030603cce3",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "d9ede0e40154f808",
+      "text": "Cactus Water",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1235b1ec7bf80080",
+          "quantity": "4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "ebd6af8f3d92df7f",
+      "text": "Rare Flower",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2dd9aeb5852f1618",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

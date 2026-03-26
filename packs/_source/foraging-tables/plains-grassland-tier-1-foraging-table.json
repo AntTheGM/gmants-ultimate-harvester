@@ -1,0 +1,129 @@
+{
+  "_id": "c2f5c2d6dc78a40b",
+  "name": "Plains / Grassland - Tier 1 Foraging Table",
+  "description": "<p>Minimal finds from open grassland; the plains offer little cover but patient searching yields basics.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "a12ea67b016ae873",
+      "text": "Wild Roots",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a9deb103abc3c59a",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "c38323bd6a915129",
+      "text": "Seeds and Grains",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.65275564e455791b",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "60a94bb4c44f51a2",
+      "text": "Edible Tuber",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e0a31e2f27e438a7",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "9ffd6d319d6473c5",
+      "text": "Fresh Water",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0eba28d9119f6a0d",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "0a4a03a4888ba218",
+      "text": "Grass Fiber",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.190c9f3fd4ff4b59",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "95d4cb44b624eb8a",
+      "text": "Bitter Greens",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ee7c25ca5ed5c182",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

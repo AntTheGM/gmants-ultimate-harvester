@@ -1,0 +1,112 @@
+{
+  "_id": "6e2813843c0d3f99",
+  "name": "Dragon CR 2-4 Harvest Table",
+  "description": "<p>Generic harvest table for dragons of CR 2-4.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "19d854a718f7910c",
+      "text": "Dragon Scales",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.9b914de7d708a38f",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "f49e010fe9b49ada",
+      "text": "Dragon Blood",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a0bf3833cda802b2",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "b71810722a56725d",
+      "text": "Dragon Teeth",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fde737d319c5c668",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "1c4b52de720b576d",
+      "text": "Dragon Hide",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.9b4b402eefdb6885",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "07876b44df1c98c1",
+      "text": "Breath Gland",
+      "type": 0,
+      "range": [
+        23,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 23,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.61d83c235271929c",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Residual breath energy fires erratically; take 2d6 elemental damage (type matches the dragon).",
+      "fumbleEffect": "A jagged scale slices your palm; take 1d6 slashing damage.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

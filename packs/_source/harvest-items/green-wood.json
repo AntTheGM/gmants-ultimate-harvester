@@ -1,0 +1,26 @@
+{
+  "_id": "6045fe1d2596f239",
+  "name": "Green Wood",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Freshly cut limbs from living trees; heavier than dry wood and not yet suitable for burning.</p>"
+    },
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  }
+}

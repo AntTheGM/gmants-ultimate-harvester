@@ -1,0 +1,112 @@
+{
+  "_id": "188c993467b42a10",
+  "name": "Aberration CR 2-4 Harvest Table",
+  "description": "<p>Generic harvest table for aberrations of CR 2-4.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "4d288d7af7906e90",
+      "text": "Aberrant Flesh",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dd9f9ceb0a7dfa2f",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "ea9f5b779932ace3",
+      "text": "Psionic Crystal",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.77befdd65f8ba4d7",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "aa34d6da676034dc",
+      "text": "Mind Residue",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.be367e3314b25157",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "fe9e3738d61cb34b",
+      "text": "Eldritch Ichor",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e800ece6a64f9336",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "da8279bd3815d158",
+      "text": "Far Realm Essence",
+      "type": 0,
+      "range": [
+        23,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 23,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.856f098876168730",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Psionic feedback from the corpse; take 2d6 psychic damage and make a DC 13 Intelligence save or be incapacitated until the end of your next turn.",
+      "fumbleEffect": "The alien biology bleeds an irritant; you have disadvantage on Wisdom saving throws for 1 hour.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "f6a6c1ac8a363bc1",
+  "name": "Basilisk Hide",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Stony</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "8"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "uncommon",
+      "harvestBonus": null
+    }
+  }
+}

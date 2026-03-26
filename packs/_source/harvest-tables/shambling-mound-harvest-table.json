@@ -1,0 +1,94 @@
+{
+  "_id": "262017c44c446823",
+  "name": "Shambling Mound Harvest Table",
+  "description": "<p>Harvest table for a shambling mound (Plant CR 5).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "80d08456bb6f4166",
+      "text": "Shambling Mound Compost",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8dff902d32efb916",
+          "quantity": "2d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "3ccf7b350f616241",
+      "text": "Living Bark",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dda82925c345e849",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "7ad8fe4b1285e06e",
+      "text": "Lightning-Charged Vine",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.cdb57c3fae2acb91",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "634eaf60ca10c14e",
+      "text": "Treant Heartwood",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4d11184ae00d4ce0",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Lightning still crackles through the vines; take 2d6 lightning damage.",
+      "fumbleEffect": "The dense compost is difficult to work through; you lose 10 minutes digging out the useful components.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.cdb57c3fae2acb91",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

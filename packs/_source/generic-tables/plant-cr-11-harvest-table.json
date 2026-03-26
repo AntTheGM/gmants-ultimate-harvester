@@ -1,0 +1,112 @@
+{
+  "_id": "5c98ce665b23f01d",
+  "name": "Plant CR 11+ Harvest Table",
+  "description": "<p>Generic harvest table for plants of CR 11 or higher.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "15b62dced62e45dd",
+      "text": "Fungal Spore Sac",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ff160a8d924ebbec",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "1a11ee21f51051e5",
+      "text": "Blossom Essence",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.376f35741921f3b5",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "d9c72a8a36b8931f",
+      "text": "Treant Heartwood",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4d11184ae00d4ce0",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "d9c72a8a36b8931f",
+      "text": "Treant Heartwood",
+      "type": 0,
+      "range": [
+        32,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 32,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4d11184ae00d4ce0",
+          "quantity": "2",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "d9c72a8a36b8931f",
+      "text": "Treant Heartwood",
+      "type": 0,
+      "range": [
+        35,
+        37
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 35,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4d11184ae00d4ce0",
+          "quantity": "3",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The ancient plant spirit releases in a death-storm; all creatures within 20 feet take 4d8 piercing and poison damage (DC 17 Constitution save for half) and are restrained by erupting roots (DC 17 Strength to break free).",
+      "fumbleEffect": "The plant's death triggers a cascade of growth; vines immediately cover a 20-foot radius and the area becomes difficult terrain for 1 hour.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

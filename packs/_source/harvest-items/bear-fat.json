@@ -1,0 +1,26 @@
+{
+  "_id": "ca38b2cacb2a6632",
+  "name": "Bear Fat",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A rendered jar of bear fat; excellent for preserving leather and waterproofing.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  }
+}

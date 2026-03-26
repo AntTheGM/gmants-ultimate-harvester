@@ -1,0 +1,27 @@
+{
+  "_id": "de4988b6d74be3b2",
+  "name": "Sacred Blood",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Shimmering</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "20"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "rare",
+      "harvestBonus": null
+    }
+  }
+}

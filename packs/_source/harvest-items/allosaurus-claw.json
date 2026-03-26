@@ -1,0 +1,27 @@
+{
+  "_id": "ecb8d25f8920ee3c",
+  "name": "Allosaurus Claw",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A curved</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "10"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "uncommon",
+      "harvestBonus": null
+    }
+  }
+}

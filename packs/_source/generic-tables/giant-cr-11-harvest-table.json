@@ -1,0 +1,112 @@
+{
+  "_id": "f75d362b3c2d8929",
+  "name": "Giant CR 11+ Harvest Table",
+  "description": "<p>Generic harvest table for giants of CR 11 or higher.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "c3e39b4697022693",
+      "text": "Titan Bone",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c1adf8ef3b92fd8a",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "73661d033aea8098",
+      "text": "Giant Heart",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2dbe44e15714eddf",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f980374a150fb913",
+      "text": "Colossus Tooth",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a74bed2a1edcace7",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "f980374a150fb913",
+      "text": "Colossus Tooth",
+      "type": 0,
+      "range": [
+        32,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 32,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a74bed2a1edcace7",
+          "quantity": "2",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "f980374a150fb913",
+      "text": "Colossus Tooth",
+      "type": 0,
+      "range": [
+        35,
+        37
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 35,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a74bed2a1edcace7",
+          "quantity": "3",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The titan-class giant's death rattles the earth; make a DC 17 Dexterity save or take 4d6 bludgeoning damage from shifting debris and be knocked prone.",
+      "fumbleEffect": "The titanic scale of the work strains you; gain one level of exhaustion.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "e0a31e2f27e438a7",
+  "name": "Edible Tuber",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A starchy underground tuber that provides solid sustenance when roasted.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food"
+    }
+  }
+}

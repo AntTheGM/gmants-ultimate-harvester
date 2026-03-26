@@ -1,0 +1,94 @@
+{
+  "_id": "3fc27ea10a86bf1a",
+  "name": "Troll Harvest Table",
+  "description": "<p>Harvest table for a troll (Giant CR 5).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "4f5f78bcc276da84",
+      "text": "Troll Claws",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a9a58e24ba61cfac",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "5a8d8e6b39994dbb",
+      "text": "Troll Eye",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.09a9cc937a49a86c",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "3ae75f9962675ea3",
+      "text": "Troll Lymphatic Fluid",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.aa562cde67e93052",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "0b1fe1065db58cc0",
+      "text": "Troll Gland",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.7924eb40fc6b39ab",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The troll's regeneration briefly animates the corpse; it grabs for you and you take 2d6 slashing damage before it dies again.",
+      "fumbleEffect": "The regenerating flesh keeps closing your incision points; the harvesting takes twice as long and you must succeed on a DC 12 Wisdom save or be grossed out and stop early (losing the highest-DC items).",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.7924eb40fc6b39ab",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

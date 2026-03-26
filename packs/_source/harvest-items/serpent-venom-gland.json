@@ -1,0 +1,26 @@
+{
+  "_id": "aabf7bb3c6935b01",
+  "name": "Serpent Venom Gland",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A delicate venom gland carefully removed from a yuan-ti corpse.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 12,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  }
+}

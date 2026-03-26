@@ -1,0 +1,112 @@
+{
+  "_id": "564e01e46478e547",
+  "name": "Giant CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for giants of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "0c843ab8d5328eac",
+      "text": "Giant Blood",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.772bd6abecef14df",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "49ba1eef1273158d",
+      "text": "Giant Heart",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2dbe44e15714eddf",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "334409fa06fbaa2b",
+      "text": "Titan Bone",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c1adf8ef3b92fd8a",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "b6e8c99293d70896",
+      "text": "Colossus Tooth",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a74bed2a1edcace7",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "b6e8c99293d70896",
+      "text": "Colossus Tooth",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a74bed2a1edcace7",
+          "quantity": "2",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The giant's bulk shifts and crushes you; take 3d6 bludgeoning damage and make a DC 15 Strength save or be restrained until you use an action to escape (DC 15 Athletics).",
+      "fumbleEffect": "A bone shard the size of a dagger flies free; take 1d8 piercing damage.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

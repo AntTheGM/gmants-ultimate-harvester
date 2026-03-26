@@ -1,0 +1,112 @@
+{
+  "_id": "f29a185375e56ab6",
+  "name": "Ooze CR 2-4 Harvest Table",
+  "description": "<p>Generic harvest table for oozes of CR 2-4.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "8e7b452769aeeb00",
+      "text": "Acidic Residue",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.208f08bb4f6d01e1",
+          "quantity": "2d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f56bd37014053372",
+      "text": "Ooze Membrane",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.f6d9de3574b044fa",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "833e7b5da1644965",
+      "text": "Gelatinous Extract",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.99c76c3f77efed92",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "83c113888b773f89",
+      "text": "Corrosive Core",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.53ee426fcc79c2e2",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "1f9cbf08533d2b0c",
+      "text": "Prismatic Slime",
+      "type": 0,
+      "range": [
+        23,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 23,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The ooze's acid discharges in a wave; all creatures within 5 feet take 2d6 acid damage.",
+      "fumbleEffect": "Your tools are partially dissolved; they have a -1 penalty to harvest checks until repaired.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

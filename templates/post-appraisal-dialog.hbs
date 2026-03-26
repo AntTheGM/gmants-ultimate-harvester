@@ -5,7 +5,7 @@
   </div>
 
   {{#if appraisalTimeSpent}}
-  <p class="ultimate-harvester-time-banner"><i class="fas fa-hourglass-half ultimate-harvester-icon--time"></i> <strong>Appraisal took {{appraisalTimeSpent}} minutes</strong></p>
+  <p class="ultimate-harvester-time-banner"><i class="fas fa-hourglass-half ultimate-harvester-icon--time"></i> <strong>Appraisal took {{formatTime appraisalTimeSpent}}</strong></p>
   {{/if}}
 
   {{#if appraisalCritSuccess}}

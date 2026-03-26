@@ -1,0 +1,75 @@
+{
+  "_id": "98922d47605817e4",
+  "name": "Ankylosaurus Harvest Table",
+  "description": "<p>Harvest table for an ankylosaurus (Beast CR 3).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "cee00312396a42ff",
+      "text": "Dinosaur Meat",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c8866e1f17929e55",
+          "quantity": "2d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "b7b7d913777bdd6a",
+      "text": "Dinosaur Hide",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.433d812e75092116",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "bf43e8fea05ed43f",
+      "text": "Ankylosaurus Shell Fragment",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.28f96d28fd38d3ff",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The tail club swings on reflexive muscle contraction; make a DC 14 Dexterity save or take 2d8 bludgeoning damage and be knocked prone.",
+      "fumbleEffect": "The armor plating is densely fused; your blade dulls and you have disadvantage on your next harvest check.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.28f96d28fd38d3ff",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

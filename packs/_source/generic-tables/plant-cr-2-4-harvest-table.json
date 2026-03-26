@@ -1,0 +1,112 @@
+{
+  "_id": "8b765ae711ce166b",
+  "name": "Plant CR 2-4 Harvest Table",
+  "description": "<p>Generic harvest table for plants of CR 2-4.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "fbf1c1df3c2d16f3",
+      "text": "Herb Bundle",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.654aa4c94e5b5b32",
+          "quantity": "2d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "7305ff7bc1f0e4d3",
+      "text": "Living Bark",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dda82925c345e849",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "108da095cb358691",
+      "text": "Root Tendril",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.6a2f573d105ac185",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "ff65a49bda5cedea",
+      "text": "Blossom Essence",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.376f35741921f3b5",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "942f1369aef6cd80",
+      "text": "Fungal Spore Sac",
+      "type": 0,
+      "range": [
+        23,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 23,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ff160a8d924ebbec",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Toxic sap erupts; take 2d4 poison damage and make a DC 12 Constitution save or be poisoned for 1 minute.",
+      "fumbleEffect": "Spores cloud your vision; you have disadvantage on all checks requiring sight for 10 minutes.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

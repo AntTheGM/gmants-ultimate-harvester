@@ -1,0 +1,26 @@
+{
+  "_id": "7783b0b110611144",
+  "name": "Coastal Fish",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A larger fish speared or trapped near the coast; firm white flesh.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food"
+    }
+  }
+}

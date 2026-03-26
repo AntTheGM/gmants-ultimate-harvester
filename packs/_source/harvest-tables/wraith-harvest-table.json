@@ -1,0 +1,75 @@
+{
+  "_id": "8e349911daa146d0",
+  "name": "Wraith Harvest Table",
+  "description": "<p>Harvest table for a wraith (Undead CR 5).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "e90c40cfc464efdb",
+      "text": "Shadow Essence",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b046e3122397fa7a",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "8e59444c9217469b",
+      "text": "Necrotic Residue",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2d44f01b61ccadd2",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "294df61832592417",
+      "text": "Wraith Essence",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.6aba6f848eb8a379",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A burst of deathly cold erupts from the dissolving remains; take 3d6 necrotic damage and make a DC 15 Constitution save or gain one level of exhaustion.",
+      "fumbleEffect": "The necrotic vapors cling to you; you have disadvantage on Constitution saving throws for 10 minutes.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.6aba6f848eb8a379",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

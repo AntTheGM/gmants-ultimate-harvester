@@ -1,0 +1,241 @@
+TableName,TableDescription,TableType,CritFailEffect,FumbleEffect,CritSuccessItem,CritSuccessQuantity,ItemName,DC,Quantity,ItemCategory
+Light Forest - Tier 1 Foraging Table,Minimal finds from a light woodland; basic survival fare for those who search carefully.,,,,,,Foraged Ration,1,1,food
+Light Forest - Tier 1 Foraging Table,,,,,,,Wild Berries,2,1,food
+Light Forest - Tier 1 Foraging Table,,,,,,,Edible Tuber,3,1,food
+Light Forest - Tier 1 Foraging Table,,,,,,,Fresh Water,4,1,food
+Light Forest - Tier 1 Foraging Table,,,,,,,Acorns,5,1,food
+Light Forest - Tier 1 Foraging Table,,,,,,,Common Herb,6,1,component
+Light Forest - Tier 2 Foraging Table,Decent finds from a light woodland; a seasoned forager can feed themselves and gather useful plants.,,,,,,Foraged Ration,1,2,food
+Light Forest - Tier 2 Foraging Table,,,,,,,Wild Berries,2,2,food
+Light Forest - Tier 2 Foraging Table,,,,,,,Small Game,3,1,food
+Light Forest - Tier 2 Foraging Table,,,,,,,Common Herb,4,2,component
+Light Forest - Tier 2 Foraging Table,,,,,,,Willow Bark,5,1,component
+Light Forest - Tier 2 Foraging Table,,,,,,,Firewood Bundle,6,1,material
+Light Forest - Tier 3 Foraging Table,Excellent finds from a light woodland; a skilled eye uncovers prime game and quality ingredients.,,,,,,Small Game,1,2,food
+Light Forest - Tier 3 Foraging Table,,,,,,,Foraged Ration,2,3,food
+Light Forest - Tier 3 Foraging Table,,,,,,,Wild Mushroom,3,3,food
+Light Forest - Tier 3 Foraging Table,,,,,,,Medicinal Root,4,1,component
+Light Forest - Tier 3 Foraging Table,,,,,,,Alchemist's Weed,5,1,component
+Light Forest - Tier 3 Foraging Table,,,,,,,Hardwood Branch,6,1,material
+Light Forest - Rare Foraging Table,Exceptional discovery in a light woodland; something unusual rewards the most perceptive forager.,,,,,,Rare Flower,1,1,component
+Light Forest - Rare Foraging Table,,,,,,,Alchemist's Weed,2,2,component
+Light Forest - Rare Foraging Table,,,,,,,Medicinal Root,3,2,component
+Light Forest - Rare Foraging Table,,,,,,,Tree Resin,4,2,material
+Light Forest - Rare Foraging Table,,,,,,,Wild Mushroom,5,4,food
+Light Forest - Rare Foraging Table,,,,,,,Small Game,6,3,food
+Dense Forest / Jungle - Tier 1 Foraging Table,Minimal finds from dense jungle undergrowth; the abundance is there but hard to reach.,,,,,,Tropical Fruit,1,1,food
+Dense Forest / Jungle - Tier 1 Foraging Table,,,,,,,Coconut,2,1,food
+Dense Forest / Jungle - Tier 1 Foraging Table,,,,,,,Bitter Greens,3,1,food
+Dense Forest / Jungle - Tier 1 Foraging Table,,,,,,,Fresh Water,4,1,food
+Dense Forest / Jungle - Tier 1 Foraging Table,,,,,,,Vine Cord,5,1,material
+Dense Forest / Jungle - Tier 1 Foraging Table,,,,,,,Common Herb,6,1,component
+Dense Forest / Jungle - Tier 2 Foraging Table,Decent finds in the dense jungle; edible fruits are plentiful and useful plants abound.,,,,,,Tropical Fruit,1,2,food
+Dense Forest / Jungle - Tier 2 Foraging Table,,,,,,,Foraged Ration,2,2,food
+Dense Forest / Jungle - Tier 2 Foraging Table,,,,,,,Menga Leaves,3,1,component
+Dense Forest / Jungle - Tier 2 Foraging Table,,,,,,,Vine Cord,4,2,material
+Dense Forest / Jungle - Tier 2 Foraging Table,,,,,,,Willow Bark,5,1,component
+Dense Forest / Jungle - Tier 2 Foraging Table,,,,,,,Wild Mushroom,6,2,food
+Dense Forest / Jungle - Tier 3 Foraging Table,Excellent jungle finds; a skilled forager locates prime specimens hidden in the undergrowth.,,,,,,Tropical Fruit,1,3,food
+Dense Forest / Jungle - Tier 3 Foraging Table,,,,,,,Foraged Ration,2,3,food
+Dense Forest / Jungle - Tier 3 Foraging Table,,,,,,,Menga Leaves,3,2,component
+Dense Forest / Jungle - Tier 3 Foraging Table,,,,,,,Alchemist's Weed,4,2,component
+Dense Forest / Jungle - Tier 3 Foraging Table,,,,,,,Rope Fiber,5,2,material
+Dense Forest / Jungle - Tier 3 Foraging Table,,,,,,,Healing Moss,6,2,component
+Dense Forest / Jungle - Rare Foraging Table,A rare jungle discovery; exotic specimens that fetch high prices from alchemists and collectors.,,,,,,Jungle Orchid,1,1,component
+Dense Forest / Jungle - Rare Foraging Table,,,,,,,Menga Leaves,2,3,component
+Dense Forest / Jungle - Rare Foraging Table,,,,,,,Rare Flower,3,2,component
+Dense Forest / Jungle - Rare Foraging Table,,,,,,,Alchemist's Weed,4,3,component
+Dense Forest / Jungle - Rare Foraging Table,,,,,,,Tropical Fruit,5,4,food
+Dense Forest / Jungle - Rare Foraging Table,,,,,,,Vine Cord,6,3,material
+Plains / Grassland - Tier 1 Foraging Table,Minimal finds from open grassland; the plains offer little cover but patient searching yields basics.,,,,,,Wild Roots,1,1,food
+Plains / Grassland - Tier 1 Foraging Table,,,,,,,Seeds and Grains,2,1,food
+Plains / Grassland - Tier 1 Foraging Table,,,,,,,Edible Tuber,3,1,food
+Plains / Grassland - Tier 1 Foraging Table,,,,,,,Fresh Water,4,1,food
+Plains / Grassland - Tier 1 Foraging Table,,,,,,,Grass Fiber,5,1,material
+Plains / Grassland - Tier 1 Foraging Table,,,,,,,Bitter Greens,6,1,food
+Plains / Grassland - Tier 2 Foraging Table,Decent plains foraging; tubers and small game are reliable if you know what to look for.,,,,,,Wild Roots,1,2,food
+Plains / Grassland - Tier 2 Foraging Table,,,,,,,Small Game,2,1,food
+Plains / Grassland - Tier 2 Foraging Table,,,,,,,Seeds and Grains,3,2,food
+Plains / Grassland - Tier 2 Foraging Table,,,,,,,Common Herb,4,1,component
+Plains / Grassland - Tier 2 Foraging Table,,,,,,,Grass Fiber,5,2,material
+Plains / Grassland - Tier 2 Foraging Table,,,,,,,Foraged Ration,6,2,food
+Plains / Grassland - Tier 3 Foraging Table,Excellent grassland finds; a skilled hunter-gatherer returns with a meaningful haul.,,,,,,Small Game,1,2,food
+Plains / Grassland - Tier 3 Foraging Table,,,,,,,Foraged Ration,2,3,food
+Plains / Grassland - Tier 3 Foraging Table,,,,,,,Wild Roots,3,3,food
+Plains / Grassland - Tier 3 Foraging Table,,,,,,,Medicinal Root,4,1,component
+Plains / Grassland - Tier 3 Foraging Table,,,,,,,Rope Fiber,5,2,material
+Plains / Grassland - Tier 3 Foraging Table,,,,,,,Seeds and Grains,6,3,food
+Plains / Grassland - Rare Foraging Table,A rare plains find; an unusual specimen that stands out from the monotony of the open grassland.,,,,,,Rare Flower,1,1,component
+Plains / Grassland - Rare Foraging Table,,,,,,,Medicinal Root,2,2,component
+Plains / Grassland - Rare Foraging Table,,,,,,,Alchemist's Weed,3,1,component
+Plains / Grassland - Rare Foraging Table,,,,,,,Small Game,4,3,food
+Plains / Grassland - Rare Foraging Table,,,,,,,Grass Fiber,5,4,material
+Plains / Grassland - Rare Foraging Table,,,,,,,Wild Roots,6,4,food
+Swamp / Marsh - Tier 1 Foraging Table,Minimal finds in the murky swamp; the wetlands are hazardous but yield odd and useful things.,,,,,,Swamp Moss,1,1,component
+Swamp / Marsh - Tier 1 Foraging Table,,,,,,,Healing Moss,2,1,component
+Swamp / Marsh - Tier 1 Foraging Table,,,,,,,Edible Tuber,3,1,food
+Swamp / Marsh - Tier 1 Foraging Table,,,,,,,Fresh Water,4,1,food
+Swamp / Marsh - Tier 1 Foraging Table,,,,,,,Leech,5,1,component
+Swamp / Marsh - Tier 1 Foraging Table,,,,,,,Bitter Greens,6,1,food
+Swamp / Marsh - Tier 2 Foraging Table,Decent swamp foraging; the marsh provides niche components valued by herbalists and alchemists.,,,,,,Swamp Moss,1,2,component
+Swamp / Marsh - Tier 2 Foraging Table,,,,,,,Wild Mushroom,2,2,food
+Swamp / Marsh - Tier 2 Foraging Table,,,,,,,Leech,3,2,component
+Swamp / Marsh - Tier 2 Foraging Table,,,,,,,Medicinal Root,4,1,component
+Swamp / Marsh - Tier 2 Foraging Table,,,,,,,Foraged Ration,5,2,food
+Swamp / Marsh - Tier 2 Foraging Table,,,,,,,Healing Moss,6,2,component
+Swamp / Marsh - Tier 3 Foraging Table,Excellent swamp finds; deep in the mire lie rare specimens that reward the persistent searcher.,,,,,,Wild Mushroom,1,3,food
+Swamp / Marsh - Tier 3 Foraging Table,,,,,,,Swamp Moss,2,3,component
+Swamp / Marsh - Tier 3 Foraging Table,,,,,,,Alchemical Lichen,3,1,component
+Swamp / Marsh - Tier 3 Foraging Table,,,,,,,Alchemist's Weed,4,2,component
+Swamp / Marsh - Tier 3 Foraging Table,,,,,,,Medicinal Root,5,2,component
+Swamp / Marsh - Tier 3 Foraging Table,,,,,,,Foraged Ration,6,3,food
+Swamp / Marsh - Rare Foraging Table,A rare swamp discovery; a volatile or potent specimen lurking in the darkest part of the bog.,,,,,,Swamp Gas Flask,1,1,component
+Swamp / Marsh - Rare Foraging Table,,,,,,,Alchemist's Weed,2,3,component
+Swamp / Marsh - Rare Foraging Table,,,,,,,Alchemical Lichen,3,2,component
+Swamp / Marsh - Rare Foraging Table,,,,,,,Rare Flower,4,1,component
+Swamp / Marsh - Rare Foraging Table,,,,,,,Wild Mushroom,5,4,food
+Swamp / Marsh - Rare Foraging Table,,,,,,,Leech,6,4,component
+Coastal - Tier 1 Foraging Table,Minimal coastal finds; the shoreline provides basic sustenance for those who search the tideline.,,,,,,Seaweed,1,1,food
+Coastal - Tier 1 Foraging Table,,,,,,,Shellfish,2,1,food
+Coastal - Tier 1 Foraging Table,,,,,,,Fresh Water,3,1,food
+Coastal - Tier 1 Foraging Table,,,,,,,Driftwood,4,1,material
+Coastal - Tier 1 Foraging Table,,,,,,,Salt Crystal,5,1,component
+Coastal - Tier 1 Foraging Table,,,,,,,Bitter Greens,6,1,food
+Coastal - Tier 2 Foraging Table,Decent coastal foraging; the sea provides reliable food and useful materials to a savvy scavenger.,,,,,,Shellfish,1,2,food
+Coastal - Tier 2 Foraging Table,,,,,,,Coastal Fish,2,1,food
+Coastal - Tier 2 Foraging Table,,,,,,,Seaweed,3,2,food
+Coastal - Tier 2 Foraging Table,,,,,,,Salt Crystal,4,2,component
+Coastal - Tier 2 Foraging Table,,,,,,,Driftwood,5,2,material
+Coastal - Tier 2 Foraging Table,,,,,,,Common Herb,6,1,component
+Coastal - Tier 3 Foraging Table,Excellent coastal finds; a skilled fisher-forager lands a significant catch and useful reagents.,,,,,,Coastal Fish,1,2,food
+Coastal - Tier 3 Foraging Table,,,,,,,Shellfish,2,3,food
+Coastal - Tier 3 Foraging Table,,,,,,,Foraged Ration,3,3,food
+Coastal - Tier 3 Foraging Table,,,,,,,Salt Crystal,4,3,component
+Coastal - Tier 3 Foraging Table,,,,,,,Healing Moss,5,2,component
+Coastal - Tier 3 Foraging Table,,,,,,,Driftwood,6,3,material
+Coastal - Rare Foraging Table,A rare coastal discovery; an unusual specimen washed ashore or tucked in a hidden tide pool.,,,,,,Alchemical Lichen,1,2,component
+Coastal - Rare Foraging Table,,,,,,,Rare Flower,2,1,component
+Coastal - Rare Foraging Table,,,,,,,Salt Crystal,3,4,component
+Coastal - Rare Foraging Table,,,,,,,Coastal Fish,4,3,food
+Coastal - Rare Foraging Table,,,,,,,Shellfish,5,4,food
+Coastal - Rare Foraging Table,,,,,,,Alchemist's Weed,6,2,component
+Desert / Wasteland - Tier 1 Foraging Table,Minimal desert finds; survival in the wasteland demands hard-won knowledge to locate even scraps.,,,,,,Cactus Water,1,1,food
+Desert / Wasteland - Tier 1 Foraging Table,,,,,,,Cactus Fruit,2,1,food
+Desert / Wasteland - Tier 1 Foraging Table,,,,,,,Desert Sage,3,1,component
+Desert / Wasteland - Tier 1 Foraging Table,,,,,,,Sandstone Chunk,4,1,material
+Desert / Wasteland - Tier 1 Foraging Table,,,,,,,Bone Shard,5,1,material
+Desert / Wasteland - Tier 1 Foraging Table,,,,,,,Seeds and Grains,6,1,food
+Desert / Wasteland - Tier 2 Foraging Table,Decent desert foraging; a trained eye finds water sources and useful herbs among the dust.,,,,,,Cactus Water,1,2,food
+Desert / Wasteland - Tier 2 Foraging Table,,,,,,,Cactus Fruit,2,2,food
+Desert / Wasteland - Tier 2 Foraging Table,,,,,,,Desert Sage,3,2,component
+Desert / Wasteland - Tier 2 Foraging Table,,,,,,,Common Herb,4,1,component
+Desert / Wasteland - Tier 2 Foraging Table,,,,,,,Sandstone Chunk,5,2,material
+Desert / Wasteland - Tier 2 Foraging Table,,,,,,,Small Game,6,1,food
+Desert / Wasteland - Tier 3 Foraging Table,Excellent desert finds; the wasteland yields hidden wealth for those who know where to dig.,,,,,,Cactus Water,1,3,food
+Desert / Wasteland - Tier 3 Foraging Table,,,,,,,Small Game,2,2,food
+Desert / Wasteland - Tier 3 Foraging Table,,,,,,,Desert Sage,3,3,component
+Desert / Wasteland - Tier 3 Foraging Table,,,,,,,Mineral Deposit,4,1,material
+Desert / Wasteland - Tier 3 Foraging Table,,,,,,,Medicinal Root,5,1,component
+Desert / Wasteland - Tier 3 Foraging Table,,,,,,,Cactus Fruit,6,3,food
+Desert / Wasteland - Rare Foraging Table,A rare desert discovery; something dangerous or precious found in the deep wasteland.,,,,,,Scorpion Venom,1,1,component
+Desert / Wasteland - Rare Foraging Table,,,,,,,Desert Sage,2,4,component
+Desert / Wasteland - Rare Foraging Table,,,,,,,Mineral Deposit,3,2,material
+Desert / Wasteland - Rare Foraging Table,,,,,,,Alchemist's Weed,4,2,component
+Desert / Wasteland - Rare Foraging Table,,,,,,,Cactus Water,5,4,food
+Desert / Wasteland - Rare Foraging Table,,,,,,,Rare Flower,6,1,component
+Arctic / Tundra - Tier 1 Foraging Table,Minimal arctic finds; the frozen wastes offer little but experienced hunters know where to look.,,,,,,Frozen Berries,1,1,food
+Arctic / Tundra - Tier 1 Foraging Table,,,,,,,Pine Nuts,2,1,food
+Arctic / Tundra - Tier 1 Foraging Table,,,,,,,Ice Moss,3,1,component
+Arctic / Tundra - Tier 1 Foraging Table,,,,,,,Fresh Water,4,1,food
+Arctic / Tundra - Tier 1 Foraging Table,,,,,,,Firewood Bundle,5,1,material
+Arctic / Tundra - Tier 1 Foraging Table,,,,,,,Bone Shard,6,1,material
+Arctic / Tundra - Tier 2 Foraging Table,Decent arctic foraging; the cold preserves things well and seasoned survivors find reliable sources.,,,,,,Frozen Berries,1,2,food
+Arctic / Tundra - Tier 2 Foraging Table,,,,,,,Snow Hare,2,1,food
+Arctic / Tundra - Tier 2 Foraging Table,,,,,,,Ice Moss,3,2,component
+Arctic / Tundra - Tier 2 Foraging Table,,,,,,,Pine Nuts,4,2,food
+Arctic / Tundra - Tier 2 Foraging Table,,,,,,,Firewood Bundle,5,2,material
+Arctic / Tundra - Tier 2 Foraging Table,,,,,,,Common Herb,6,1,component
+Arctic / Tundra - Tier 3 Foraging Table,Excellent arctic finds; a skilled wilderness survivor locates prime sources amid the ice and snow.,,,,,,Snow Hare,1,2,food
+Arctic / Tundra - Tier 3 Foraging Table,,,,,,,Foraged Ration,2,3,food
+Arctic / Tundra - Tier 3 Foraging Table,,,,,,,Ice Moss,3,3,component
+Arctic / Tundra - Tier 3 Foraging Table,,,,,,,Medicinal Root,4,1,component
+Arctic / Tundra - Tier 3 Foraging Table,,,,,,,Frozen Berries,5,3,food
+Arctic / Tundra - Tier 3 Foraging Table,,,,,,,Firewood Bundle,6,3,material
+Arctic / Tundra - Rare Foraging Table,A rare arctic discovery; something ancient or powerful preserved beneath the frost.,,,,,,Alchemical Lichen,1,2,component
+Arctic / Tundra - Rare Foraging Table,,,,,,,Ice Moss,2,4,component
+Arctic / Tundra - Rare Foraging Table,,,,,,,Rare Flower,3,1,component
+Arctic / Tundra - Rare Foraging Table,,,,,,,Snow Hare,4,3,food
+Arctic / Tundra - Rare Foraging Table,,,,,,,Mineral Deposit,5,1,material
+Arctic / Tundra - Rare Foraging Table,,,,,,,Mountain Flower,6,1,component
+Underground / Cave - Tier 1 Foraging Table,Minimal cave finds; without sunlight the options are slim but a careful eye spots what others miss.,,,,,,Cave Mushroom,1,1,food
+Underground / Cave - Tier 1 Foraging Table,,,,,,,Phosphorescent Moss,2,1,component
+Underground / Cave - Tier 1 Foraging Table,,,,,,,Fresh Water,3,1,food
+Underground / Cave - Tier 1 Foraging Table,,,,,,,Bone Shard,4,1,material
+Underground / Cave - Tier 1 Foraging Table,,,,,,,Alchemical Lichen,5,1,component
+Underground / Cave - Tier 1 Foraging Table,,,,,,,Blind Fish,6,1,food
+Underground / Cave - Tier 2 Foraging Table,Decent cave foraging; underground fungi and unique specimens reward those who explore deeper.,,,,,,Cave Mushroom,1,2,food
+Underground / Cave - Tier 2 Foraging Table,,,,,,,Blind Fish,2,1,food
+Underground / Cave - Tier 2 Foraging Table,,,,,,,Phosphorescent Moss,3,2,component
+Underground / Cave - Tier 2 Foraging Table,,,,,,,Crystal Fragment,4,1,component
+Underground / Cave - Tier 2 Foraging Table,,,,,,,Alchemical Lichen,5,2,component
+Underground / Cave - Tier 2 Foraging Table,,,,,,,Foraged Ration,6,2,food
+Underground / Cave - Tier 3 Foraging Table,Excellent cave finds; the deep places hold minerals and fungi of surprising value and potency.,,,,,,Cave Mushroom,1,3,food
+Underground / Cave - Tier 3 Foraging Table,,,,,,,Blind Fish,2,2,food
+Underground / Cave - Tier 3 Foraging Table,,,,,,,Crystal Fragment,3,2,component
+Underground / Cave - Tier 3 Foraging Table,,,,,,,Alchemical Lichen,4,3,component
+Underground / Cave - Tier 3 Foraging Table,,,,,,,Phosphorescent Moss,5,3,component
+Underground / Cave - Tier 3 Foraging Table,,,,,,,Mineral Deposit,6,1,material
+Underground / Cave - Rare Foraging Table,A rare underground discovery; an exceptional specimen gleaming in the dark where none expected to find it.,,,,,,Crystal Fragment,1,3,component
+Underground / Cave - Rare Foraging Table,,,,,,,Alchemical Lichen,2,4,component
+Underground / Cave - Rare Foraging Table,,,,,,,Phosphorescent Moss,3,4,component
+Underground / Cave - Rare Foraging Table,,,,,,,Rare Flower,4,1,component
+Underground / Cave - Rare Foraging Table,,,,,,,Mineral Deposit,5,2,material
+Underground / Cave - Rare Foraging Table,,,,,,,Alchemist's Weed,6,2,component
+Mountain - Tier 1 Foraging Table,Minimal mountain finds; the high slopes are harsh but those who search find hardy provisions.,,,,,,Pine Nuts,1,1,food
+Mountain - Tier 1 Foraging Table,,,,,,,Wild Berries,2,1,food
+Mountain - Tier 1 Foraging Table,,,,,,,Fresh Water,3,1,food
+Mountain - Tier 1 Foraging Table,,,,,,,Bone Shard,4,1,material
+Mountain - Tier 1 Foraging Table,,,,,,,Mountain Flower,5,1,component
+Mountain - Tier 1 Foraging Table,,,,,,,Eagle Feather,6,1,material
+Mountain - Tier 2 Foraging Table,Decent mountain foraging; the thin air hides pockets of game and valuable alpine plants.,,,,,,Pine Nuts,1,2,food
+Mountain - Tier 2 Foraging Table,,,,,,,Small Game,2,1,food
+Mountain - Tier 2 Foraging Table,,,,,,,Mountain Flower,3,2,component
+Mountain - Tier 2 Foraging Table,,,,,,,Eagle Feather,4,2,material
+Mountain - Tier 2 Foraging Table,,,,,,,Mineral Deposit,5,1,material
+Mountain - Tier 2 Foraging Table,,,,,,,Common Herb,6,1,component
+Mountain - Tier 3 Foraging Table,Excellent mountain finds; a trained alpine forager locates prime game and rare herbs above the treeline.,,,,,,Mountain Goat Meat,1,1,food
+Mountain - Tier 3 Foraging Table,,,,,,,Foraged Ration,2,3,food
+Mountain - Tier 3 Foraging Table,,,,,,,Mountain Flower,3,3,component
+Mountain - Tier 3 Foraging Table,,,,,,,Mineral Deposit,4,2,material
+Mountain - Tier 3 Foraging Table,,,,,,,Medicinal Root,5,2,component
+Mountain - Tier 3 Foraging Table,,,,,,,Eagle Feather,6,3,material
+Mountain - Rare Foraging Table,A rare mountain discovery; something precious found at the summit or in a cliff-face crevice.,,,,,,Mountain Flower,1,2,component
+Mountain - Rare Foraging Table,,,,,,,Mineral Deposit,2,3,material
+Mountain - Rare Foraging Table,,,,,,,Rare Flower,3,1,component
+Mountain - Rare Foraging Table,,,,,,,Alchemist's Weed,4,2,component
+Mountain - Rare Foraging Table,,,,,,,Mountain Goat Meat,5,2,food
+Mountain - Rare Foraging Table,,,,,,,Eagle Feather,6,4,material
+Urban / Ruins - Tier 1 Foraging Table,Minimal urban finds; picking through rubble and alley margins yields only the most basic scraps.,,,,,,Salvaged Foodstuffs,1,1,food
+Urban / Ruins - Tier 1 Foraging Table,,,,,,,Useful Scraps,2,1,material
+Urban / Ruins - Tier 1 Foraging Table,,,,,,,Old Coins,3,1,material
+Urban / Ruins - Tier 1 Foraging Table,,,,,,,Bone Shard,4,1,material
+Urban / Ruins - Tier 1 Foraging Table,,,,,,,Bitter Greens,5,1,food
+Urban / Ruins - Tier 1 Foraging Table,,,,,,,Alchemist Discards,6,1,component
+Urban / Ruins - Tier 2 Foraging Table,Decent urban foraging; systematic searching of ruins turns up useful items and viable supplies.,,,,,,Salvaged Foodstuffs,1,2,food
+Urban / Ruins - Tier 2 Foraging Table,,,,,,,Useful Scraps,2,2,material
+Urban / Ruins - Tier 2 Foraging Table,,,,,,,Old Coins,3,2,material
+Urban / Ruins - Tier 2 Foraging Table,,,,,,,Alchemist Discards,4,2,component
+Urban / Ruins - Tier 2 Foraging Table,,,,,,,Common Herb,5,1,component
+Urban / Ruins - Tier 2 Foraging Table,,,,,,,Firewood Bundle,6,1,material
+Urban / Ruins - Tier 3 Foraging Table,Excellent urban finds; a thorough search of the ruins uncovers significant caches of supplies and materials.,,,,,,Salvaged Foodstuffs,1,3,food
+Urban / Ruins - Tier 3 Foraging Table,,,,,,,Useful Scraps,2,3,material
+Urban / Ruins - Tier 3 Foraging Table,,,,,,,Old Coins,3,3,material
+Urban / Ruins - Tier 3 Foraging Table,,,,,,,Alchemist Discards,4,3,component
+Urban / Ruins - Tier 3 Foraging Table,,,,,,,Alchemist's Weed,5,1,component
+Urban / Ruins - Tier 3 Foraging Table,,,,,,,Firewood Bundle,6,2,material
+Urban / Ruins - Rare Foraging Table,A rare urban discovery; something valuable deliberately stashed or overlooked in the ruins.,,,,,,Alchemist Discards,1,4,component
+Urban / Ruins - Rare Foraging Table,,,,,,,Old Coins,2,4,material
+Urban / Ruins - Rare Foraging Table,,,,,,,Alchemist's Weed,3,3,component
+Urban / Ruins - Rare Foraging Table,,,,,,,Crystal Fragment,4,1,component
+Urban / Ruins - Rare Foraging Table,,,,,,,Useful Scraps,5,4,material
+Urban / Ruins - Rare Foraging Table,,,,,,,Rare Flower,6,1,component

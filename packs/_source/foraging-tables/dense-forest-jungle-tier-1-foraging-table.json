@@ -1,0 +1,129 @@
+{
+  "_id": "a739b1c38fe85c88",
+  "name": "Dense Forest / Jungle - Tier 1 Foraging Table",
+  "description": "<p>Minimal finds from dense jungle undergrowth; the abundance is there but hard to reach.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "d20aa1795dafba7a",
+      "text": "Tropical Fruit",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2bee8d09feb5845c",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "4cacbc245383c382",
+      "text": "Coconut",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ab337d5fd83d2e60",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "890ff299cb49afd5",
+      "text": "Bitter Greens",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ee7c25ca5ed5c182",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "92f9c9a9b718ddf3",
+      "text": "Fresh Water",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0eba28d9119f6a0d",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "8f406d31f578bb32",
+      "text": "Vine Cord",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3438605e4fbc7a3a",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "042c6957dbee2f20",
+      "text": "Common Herb",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c68cb514a10e7978",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

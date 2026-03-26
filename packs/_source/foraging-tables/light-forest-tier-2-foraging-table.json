@@ -1,0 +1,129 @@
+{
+  "_id": "5ce589f34f5c4132",
+  "name": "Light Forest - Tier 2 Foraging Table",
+  "description": "<p>Decent finds from a light woodland; a seasoned forager can feed themselves and gather useful plants.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "f0dd1b6d78b5754d",
+      "text": "Foraged Ration",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.7dd13533f1c24fda",
+          "quantity": "2",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "09b58f57d7d01560",
+      "text": "Wild Berries",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8725bc0852c1e6c0",
+          "quantity": "2",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "65683d1790cbcb69",
+      "text": "Small Game",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2fecf39d91e896ac",
+          "quantity": "1",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "f67d6a28d119cf6d",
+      "text": "Common Herb",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c68cb514a10e7978",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "aa691fd8d52d5159",
+      "text": "Willow Bark",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4cd12fc82baa7f76",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "0251c4a8b409aa35",
+      "text": "Firewood Bundle",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.76f9adacf4822f80",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

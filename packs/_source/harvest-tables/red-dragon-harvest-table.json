@@ -1,0 +1,132 @@
+{
+  "_id": "11ea37759a1ddcdf",
+  "name": "Red Dragon Harvest Table",
+  "description": "<p>Harvest table for a red dragon (any age). Strips age prefix � Young/Adult/Ancient Red Dragon all use this table.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "87bb57f4daa09d6c",
+      "text": "Red Dragon Scale",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.6cead0bbed655d2d",
+          "quantity": "1d6",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "7e7123b1e13af88b",
+      "text": "Dragon Fang",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.5e1f4966ca93ef8b",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "158ce596311a7a80",
+      "text": "Dragon Wing Membrane",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.129d80dae98ebbbd",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "b21f621aeccdfdb1",
+      "text": "Dragon Blood",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a0bf3833cda802b2",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "265f611051cce3c5",
+      "text": "Red Dragon Fire Gland",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.24cd6a4a2cb6d2a0",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "34cd076a17c6f4a6",
+      "text": "Dragon Heart",
+      "type": 0,
+      "range": [
+        30,
+        32
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 30,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4e7c6d7704227aac",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The fire gland detonates in a burst of superheated flame; all creatures within 15 feet take 4d8 fire damage (DC 16 Dexterity save for half).",
+      "fumbleEffect": "Residual flame scorches your hands; take 1d6 fire damage and your tools are too hot to use until the start of your next turn.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.24cd6a4a2cb6d2a0",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

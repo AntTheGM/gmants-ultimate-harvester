@@ -1,0 +1,93 @@
+{
+  "_id": "f704d31a8665a84a",
+  "name": "Construct CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for constructs of CR 0-1.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "5448e1a9b13eb9f8",
+      "text": "Arcane Gear",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.609248a3b5a32b0a",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "5570618051ed0a56",
+      "text": "Animated Metal",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1b0e6821d5b7145f",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "88ec325f65e72782",
+      "text": "Golem Core Fragment",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ce38ed26b44b2878",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "6d989c113aba98ad",
+      "text": "Enchanted Plating",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.734a0306e01551ee",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A released spring or mechanism strikes you; take 1d6 piercing damage.",
+      "fumbleEffect": "A gear locks around your finger; you have disadvantage on fine manipulation until you pry it free (1 action).",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

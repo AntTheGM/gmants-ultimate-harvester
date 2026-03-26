@@ -158,6 +158,78 @@ export const CREATURE_TYPES = [
 ];
 
 /**
+ * Foraging environment definitions.
+ * Each has base DCs for 3 tiers, a default primary/secondary skill.
+ */
+export const FORAGING_ENVIRONMENTS = {
+  "light-forest": {
+    label: "Light Forest", tiers: [14, 18, 22], primary: "sur", secondary: "nat",
+  },
+  "dense-forest": {
+    label: "Dense Forest / Jungle", tiers: [12, 16, 20], primary: "sur", secondary: "nat",
+  },
+  "plains": {
+    label: "Plains / Grassland", tiers: [14, 18, 22], primary: "sur", secondary: "nat",
+  },
+  "swamp": {
+    label: "Swamp / Marsh", tiers: [14, 18, 22], primary: "nat", secondary: "sur",
+  },
+  "coastal": {
+    label: "Coastal", tiers: [13, 17, 21], primary: "sur", secondary: "nat",
+  },
+  "desert": {
+    label: "Desert / Wasteland", tiers: [19, 23, 27], primary: "sur", secondary: "nat",
+  },
+  "arctic": {
+    label: "Arctic / Tundra", tiers: [17, 21, 25], primary: "sur", secondary: "nat",
+  },
+  "underground": {
+    label: "Underground / Cave", tiers: [17, 21, 25], primary: "nat", secondary: "sur",
+  },
+  "mountain": {
+    label: "Mountain", tiers: [16, 20, 24], primary: "sur", secondary: "nat",
+  },
+  "urban": {
+    label: "Urban / Ruins", tiers: [18, 22, 26], primary: "inv", secondary: "sur",
+  },
+};
+
+/**
+ * Weather DC modifiers for foraging.
+ */
+export const WEATHER_MODIFIERS = {
+  "clear": { label: "Clear / Overcast", modifier: 0 },
+  "rain": { label: "Rain", modifier: -1 },
+  "storm": { label: "Heavy Rain / Storm", modifier: 2 },
+  "snow": { label: "Snow", modifier: 2 },
+  "extreme-heat": { label: "Extreme Heat", modifier: 3 },
+  "fog": { label: "Fog", modifier: 1 },
+};
+
+/**
+ * Season DC modifiers for foraging.
+ */
+export const SEASON_MODIFIERS = {
+  "spring": { label: "Spring", modifier: -1 },
+  "summer": { label: "Summer", modifier: 0 },
+  "autumn": { label: "Autumn", modifier: -1 },
+  "winter": { label: "Winter", modifier: 3 },
+};
+
+/**
+ * Format minutes as "X hours, Y minutes" or just "Y minutes" if under 60.
+ * @param {number} minutes
+ * @returns {string}
+ */
+export function formatTime(minutes) {
+  if (minutes < 60) return `${minutes} minutes`;
+  const hrs = Math.floor(minutes / 60);
+  const mins = minutes % 60;
+  if (mins === 0) return `${hrs} hour${hrs !== 1 ? "s" : ""}`;
+  return `${hrs} hour${hrs !== 1 ? "s" : ""}, ${mins} minute${mins !== 1 ? "s" : ""}`;
+}
+
+/**
  * Get the harvest skill for a creature type, checking setting overrides first.
  * @param {string} creatureType - The dnd5e creature type value
  * @returns {string} Skill abbreviation

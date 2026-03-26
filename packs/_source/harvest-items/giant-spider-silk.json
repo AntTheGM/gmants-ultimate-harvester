@@ -1,0 +1,26 @@
+{
+  "_id": "8fb845d861f4ba75",
+  "name": "Giant Spider Silk",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A harvested skein of extraordinarily strong silk from a giant spider; lightweight and nearly transparent.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  }
+}

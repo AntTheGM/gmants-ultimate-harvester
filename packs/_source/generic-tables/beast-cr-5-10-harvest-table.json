@@ -1,0 +1,131 @@
+{
+  "_id": "b8e593fbd9ef703e",
+  "name": "Beast CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for beasts of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "b84e37eba5628594",
+      "text": "Prime Meat",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.f5ff932159181ab0",
+          "quantity": "1d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "df5d80c0a109ae52",
+      "text": "Superior Hide",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3612f6ab5c63eaa5",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "163b0cf053558a1c",
+      "text": "Dense Bones",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ae3fc3c4996ed31b",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "434e4f698a86bbf8",
+      "text": "Razor Teeth/Claws",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2f1d312bdd3a4cac",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "d898d62293e949c3",
+      "text": "Potent Venom Sac",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.32b6ea2307b414f2",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "053e2360254f0817",
+      "text": "Intact Organ",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.44074e253910afce",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The carcass convulses with dying muscle spasms; take 2d6 bludgeoning damage.",
+      "fumbleEffect": "You sever a pressurized vessel; the spray blinds you until the end of your next turn.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

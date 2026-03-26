@@ -1,0 +1,56 @@
+{
+  "_id": "2b22b8fc3eac6430",
+  "name": "Grung Harvest Table",
+  "description": "<p>Harvest table for a grung (Humanoid CR 1).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "e2377d8850bc2e63",
+      "text": "Grung Skin",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c945ceade5db64f5",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "cda928fe4e5af147",
+      "text": "Grung Poison Gland",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1fb862db90c2150b",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The skin's toxin absorbs through a cut; make a DC 12 Constitution save or be poisoned for 1 minute and take 2d4 poison damage.",
+      "fumbleEffect": "The poison dye stains your hands; you have disadvantage on Charisma checks with non-adventurers until you bathe.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.1fb862db90c2150b",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

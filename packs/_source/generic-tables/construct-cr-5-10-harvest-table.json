@@ -1,0 +1,112 @@
+{
+  "_id": "9459813a62caef6f",
+  "name": "Construct CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for constructs of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "e9d5d143eb1cd808",
+      "text": "Enchanted Plating",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.734a0306e01551ee",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "f71feadc5d71fcda",
+      "text": "Golem Core Fragment",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ce38ed26b44b2878",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "d01c488016cfcc75",
+      "text": "Power Crystal",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2b64fb42573eff23",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "917afedc6bd56a88",
+      "text": "Construct Heart",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dcf641b4b1434a13",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "917afedc6bd56a88",
+      "text": "Construct Heart",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dcf641b4b1434a13",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The central power source detonates; all creatures within 10 feet take 3d6 lightning damage (DC 14 Dexterity save for half).",
+      "fumbleEffect": "The arcane feedback fries your nervous system briefly; you cannot take reactions until the end of your next turn.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

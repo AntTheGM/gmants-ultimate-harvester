@@ -1,0 +1,94 @@
+{
+  "_id": "818bf05351fd86a4",
+  "name": "Mind Flayer Harvest Table",
+  "description": "<p>Harvest table for a mind flayer (Aberration CR 7).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "636efe10c144b5b8",
+      "text": "Illithid Mucus",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.d38d37e05b3adcb1",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "10b94afdcfee86d1",
+      "text": "Mind Flayer Tentacle",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c0ce61c386125642",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "deb42d6b21b52ccc",
+      "text": "Psionic Crystal",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.77befdd65f8ba4d7",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "4a8579b65a42199a",
+      "text": "Mind Flayer Brain",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b643406413f03e3b",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A psionic death-scream erupts from the collapsing neural tissue; all creatures within 10 feet take 3d8 psychic damage and must make a DC 15 Intelligence save or be stunned until the end of their next turn.",
+      "fumbleEffect": "Residual thought-fragments flood your mind; you are confused and must use a bonus action to identify friend from foe until the end of your next turn.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.b643406413f03e3b",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

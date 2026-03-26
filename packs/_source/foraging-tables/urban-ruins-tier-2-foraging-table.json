@@ -1,0 +1,129 @@
+{
+  "_id": "272c8cb3d6df4d08",
+  "name": "Urban / Ruins - Tier 2 Foraging Table",
+  "description": "<p>Decent urban foraging; systematic searching of ruins turns up useful items and viable supplies.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "aa8e75953aa1691d",
+      "text": "Salvaged Foodstuffs",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e949da453ed4d27e",
+          "quantity": "2",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "08564744d3493f14",
+      "text": "Useful Scraps",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c219f6b6a37021e8",
+          "quantity": "2",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "85733e962306b1fc",
+      "text": "Old Coins",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0c32a310f02318f1",
+          "quantity": "2",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "bf3003f4e7db2634",
+      "text": "Alchemist Discards",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.469c7b60adf6b8d6",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "5ec54cda770363ec",
+      "text": "Common Herb",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c68cb514a10e7978",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "75793729ff3e1207",
+      "text": "Firewood Bundle",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.76f9adacf4822f80",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

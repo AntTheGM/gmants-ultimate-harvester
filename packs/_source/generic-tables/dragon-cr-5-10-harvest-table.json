@@ -1,0 +1,112 @@
+{
+  "_id": "26d96a6badba82db",
+  "name": "Dragon CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for dragons of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "b9836dc0daa3b921",
+      "text": "Dragon Scales",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.9b914de7d708a38f",
+          "quantity": "1d6",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "71dcf29a32507983",
+      "text": "Dragon Blood",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a0bf3833cda802b2",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "6a82f491d3abbc6c",
+      "text": "Dragon Hide",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.9b4b402eefdb6885",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "a957b4e42afdad20",
+      "text": "Breath Gland",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.61d83c235271929c",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "0d7ad4a6731b719c",
+      "text": "Dragon Heart",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4e7c6d7704227aac",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The breath gland ruptures explosively; all creatures within 10 feet take 3d6 elemental damage (DC 15 Dexterity save for half).",
+      "fumbleEffect": "The scales shift and lock around your hand briefly; you are restrained until you use a bonus action to pull free.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

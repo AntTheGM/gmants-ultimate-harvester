@@ -1,0 +1,129 @@
+{
+  "_id": "50387cd73570f36b",
+  "name": "Swamp / Marsh - Tier 3 Foraging Table",
+  "description": "<p>Excellent swamp finds; deep in the mire lie rare specimens that reward the persistent searcher.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "9f699813431632f2",
+      "text": "Wild Mushroom",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.d8a8b3b854ed121c",
+          "quantity": "3",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "270531aee552ea8f",
+      "text": "Swamp Moss",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.05ca1a027bb9ebcc",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "fbd77fb89ba0a4a8",
+      "text": "Alchemical Lichen",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dc4f8ae1e2845308",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "6d8137b0300f637c",
+      "text": "Alchemist's Weed",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e1cd84030603cce3",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "79b2b83c2045658b",
+      "text": "Medicinal Root",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fd8afd047369d807",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "9aa3051eb4c34daa",
+      "text": "Foraged Ration",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.7dd13533f1c24fda",
+          "quantity": "3",
+          "category": "food"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

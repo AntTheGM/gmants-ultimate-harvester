@@ -1,0 +1,129 @@
+{
+  "_id": "9694b6543f9850ab",
+  "name": "Urban / Ruins - Rare Foraging Table",
+  "description": "<p>A rare urban discovery; something valuable deliberately stashed or overlooked in the ruins.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "940758c62b8dc96a",
+      "text": "Alchemist Discards",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.469c7b60adf6b8d6",
+          "quantity": "4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f6a38d0147d0f891",
+      "text": "Old Coins",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0c32a310f02318f1",
+          "quantity": "4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "081e223d2806beb8",
+      "text": "Alchemist's Weed",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e1cd84030603cce3",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f3d39ee533d4f869",
+      "text": "Crystal Fragment",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.7c517b455668fd29",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "ae465c23c297477b",
+      "text": "Useful Scraps",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c219f6b6a37021e8",
+          "quantity": "4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "13bd8f3f9d283685",
+      "text": "Rare Flower",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2dd9aeb5852f1618",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

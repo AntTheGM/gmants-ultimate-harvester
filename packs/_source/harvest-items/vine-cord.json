@@ -1,0 +1,30 @@
+{
+  "_id": "3438605e4fbc7a3a",
+  "name": "Vine Cord",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A length of tough jungle vine; flexible</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "1"
+    },
+    "rarity": "3",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "sp",
+      "harvestBonus": null,
+      "applicableTypes": [
+        "material"
+      ]
+    }
+  }
+}

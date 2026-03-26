@@ -1,0 +1,27 @@
+{
+  "_id": "644d7d6691b341a3",
+  "name": "Winter Wolf Pelt",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A thick</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "8"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "uncommon",
+      "harvestBonus": null
+    }
+  }
+}

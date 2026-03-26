@@ -1,0 +1,112 @@
+{
+  "_id": "d5cfcde2eb11cb4f",
+  "name": "Construct CR 11+ Harvest Table",
+  "description": "<p>Generic harvest table for constructs of CR 11 or higher.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "1ec69e4b9e1df017",
+      "text": "Power Crystal",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2b64fb42573eff23",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "eaaf4f56c68def4c",
+      "text": "Enchanted Plating",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.734a0306e01551ee",
+          "quantity": "2",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "2685b568f19bca49",
+      "text": "Construct Heart",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dcf641b4b1434a13",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "2685b568f19bca49",
+      "text": "Construct Heart",
+      "type": 0,
+      "range": [
+        32,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 32,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dcf641b4b1434a13",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "2685b568f19bca49",
+      "text": "Construct Heart",
+      "type": 0,
+      "range": [
+        35,
+        37
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 35,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dcf641b4b1434a13",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The master construct's core overloads catastrophically; all creatures within 20 feet take 4d10 force damage (DC 18 Dexterity save for half) and are knocked prone.",
+      "fumbleEffect": "The arcane resonance disrupts your magic; you lose your highest available spell slot or recharge ability.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

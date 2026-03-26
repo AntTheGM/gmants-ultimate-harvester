@@ -1,0 +1,396 @@
+TableName,TableDescription,TableType,CritFailEffect,FumbleEffect,CritSuccessItem,CritSuccessQuantity,ItemName,DC,Quantity,ItemCategory
+Beast CR 0-1 Harvest Table,Generic harvest table for beasts of CR 0-1.,generic,The carcass ruptures; take 1d4 slashing damage from snapping bones and teeth.,You slip and ruin the best cut; the meat yield is halved.,,,"Animal Meat",13,1d4,food
+Beast CR 0-1 Harvest Table,,,,,,,Animal Hide,13,1,material
+Beast CR 0-1 Harvest Table,,,,,,,Bone Fragment,15,1d4,material
+Beast CR 0-1 Harvest Table,,,,,,,Teeth/Claws,15,1,material
+Beast CR 0-1 Harvest Table,,,,,,,Venom Sac,18,1,component
+Beast CR 2-4 Harvest Table,Generic harvest table for beasts of CR 2-4.,generic,The carcass snaps shut reflexively; take 1d6 piercing damage.,You nick a bile duct; the nearby cuts are contaminated and one item is lost.,,,"Quality Meat",15,1d4,food
+Beast CR 2-4 Harvest Table,,,,,,,Thick Hide,15,1,material
+Beast CR 2-4 Harvest Table,,,,,,,Sturdy Bones,17,1,material
+Beast CR 2-4 Harvest Table,,,,,,,Large Teeth/Claws,17,1,material
+Beast CR 2-4 Harvest Table,,,,,,,Venom Sac,20,1,component
+Beast CR 2-4 Harvest Table,,,,,,,Intact Organ,23,1,component
+Beast CR 5-10 Harvest Table,Generic harvest table for beasts of CR 5-10.,generic,The carcass convulses with dying muscle spasms; take 2d6 bludgeoning damage.,You sever a pressurized vessel; the spray blinds you until the end of your next turn.,,,"Prime Meat",19,1d4,food
+Beast CR 5-10 Harvest Table,,,,,,,Superior Hide,19,1,material
+Beast CR 5-10 Harvest Table,,,,,,,Dense Bones,21,1,material
+Beast CR 5-10 Harvest Table,,,,,,,Razor Teeth/Claws,21,1,material
+Beast CR 5-10 Harvest Table,,,,,,,Potent Venom Sac,24,1,component
+Beast CR 5-10 Harvest Table,,,,,,,Intact Organ,27,1,component
+Beast CR 11+ Harvest Table,Generic harvest table for beasts of CR 11 or higher.,generic,The creature's apex physiology lashes back even in death; take 3d6 slashing damage.,You damage the primary hide section; one material item you would have recovered is destroyed.,,,"Apex Meat",27,1d4,food
+Beast CR 11+ Harvest Table,,,,,,,Apex Hide,27,1,material
+Beast CR 11+ Harvest Table,,,,,,,Primordial Bone,29,1,material
+Beast CR 11+ Harvest Table,,,,,,,Razor Teeth/Claws,29,1d4,material
+Beast CR 11+ Harvest Table,,,,,,,Potent Venom Sac,32,1,component
+Beast CR 11+ Harvest Table,,,,,,,Intact Organ,35,1,component
+Undead CR 0-1 Harvest Table,Generic harvest table for undead of CR 0-1.,generic,Necrotic energy discharges from the corpse; take 1d4 necrotic damage.,The foul ichor splashes your hands; you have disadvantage on Dexterity checks until you wash them.,,,"Rotting Flesh",13,1d4,component
+Undead CR 0-1 Harvest Table,,,,,,,Undead Ichor,13,1d4,component
+Undead CR 0-1 Harvest Table,,,,,,,Ghoul Claws,15,1,material
+Undead CR 0-1 Harvest Table,,,,,,,Necrotic Residue,18,1d4,component
+Undead CR 2-4 Harvest Table,Generic harvest table for undead of CR 2-4.,generic,Necrotic energy erupts from the remains; take 1d8 necrotic damage.,The necrotic vapors sting your eyes; disadvantage on Wisdom (Perception) checks for 1 minute.,,,"Undead Ichor",15,1d4,component
+Undead CR 2-4 Harvest Table,,,,,,,Necrotic Residue,15,1,component
+Undead CR 2-4 Harvest Table,,,,,,,Concentrated Ichor,17,1,component
+Undead CR 2-4 Harvest Table,,,,,,,Shadow Essence,20,1,component
+Undead CR 2-4 Harvest Table,,,,,,,Ectoplasmic Residue,23,1,component
+Undead CR 5-10 Harvest Table,Generic harvest table for undead of CR 5-10.,generic,A burst of deathly energy erupts; take 2d8 necrotic damage and make a DC 14 Constitution save or gain one level of exhaustion.,Necrotic residue clings to your tools; they must be cleaned before being used for any other harvesting.,,,"Concentrated Ichor",19,1d4,component
+Undead CR 5-10 Harvest Table,,,,,,,Shadow Essence,19,1,component
+Undead CR 5-10 Harvest Table,,,,,,,Ectoplasmic Residue,21,1,component
+Undead CR 5-10 Harvest Table,,,,,,,Death Shroud,24,1,component
+Undead CR 5-10 Harvest Table,,,,,,,Soul Fragment,27,1,component
+Undead CR 11+ Harvest Table,Generic harvest table for undead of CR 11 or higher.,generic,The soul animating the remains spitefully releases in a wave; take 3d8 necrotic damage and make a DC 17 Wisdom save or be frightened for 1 minute.,The overwhelming aura of death leaves you shaken; you cannot willingly approach another undead corpse for 10 minutes.,,,"Shadow Essence",27,1,component
+Undead CR 11+ Harvest Table,,,,,,,Ectoplasmic Residue,27,1d4,component
+Undead CR 11+ Harvest Table,,,,,,,Death Shroud,29,1,component
+Undead CR 11+ Harvest Table,,,,,,,Soul Fragment,32,1,component
+Dragon CR 0-1 Harvest Table,Generic harvest table for dragons of CR 0-1 (typically wyrmlings).,generic,The wyrmling's residual breath energy discharges; take 1d6 elemental damage (type matches the dragon).,A scale pops free and cuts you; take 1d4 piercing damage.,,,"Wyrmling Scale",13,1d6,material
+Dragon CR 0-1 Harvest Table,,,,,,,Dragon Blood,15,1,component
+Dragon CR 0-1 Harvest Table,,,,,,,Dragon Teeth,18,1,material
+Dragon CR 2-4 Harvest Table,Generic harvest table for dragons of CR 2-4.,generic,Residual breath energy fires erratically; take 2d6 elemental damage (type matches the dragon).,A jagged scale slices your palm; take 1d6 slashing damage.,,,"Dragon Scales",15,1d4,material
+Dragon CR 2-4 Harvest Table,,,,,,,Dragon Blood,15,1,component
+Dragon CR 2-4 Harvest Table,,,,,,,Dragon Teeth,17,1,material
+Dragon CR 2-4 Harvest Table,,,,,,,Dragon Hide,20,1,material
+Dragon CR 2-4 Harvest Table,,,,,,,Breath Gland,23,1,component
+Dragon CR 5-10 Harvest Table,Generic harvest table for dragons of CR 5-10.,generic,The breath gland ruptures explosively; all creatures within 10 feet take 3d6 elemental damage (DC 15 Dexterity save for half).,The scales shift and lock around your hand briefly; you are restrained until you use a bonus action to pull free.,,,"Dragon Scales",19,1d6,material
+Dragon CR 5-10 Harvest Table,,,,,,,Dragon Blood,19,1d4,component
+Dragon CR 5-10 Harvest Table,,,,,,,Dragon Hide,21,1,material
+Dragon CR 5-10 Harvest Table,,,,,,,Breath Gland,24,1,component
+Dragon CR 5-10 Harvest Table,,,,,,,Dragon Heart,27,1,component
+Dragon CR 11+ Harvest Table,Generic harvest table for dragons of CR 11 or higher.,generic,The death-throes release a final breath; all creatures within 20 feet take 4d10 elemental damage (DC 18 Dexterity save for half).,The sheer magical density of the corpse overwhelms you; you lose one spell slot of your highest available level.,,,"Dragon Hide",27,2,material
+Dragon CR 11+ Harvest Table,,,,,,,Dragon Blood,27,2d4,component
+Dragon CR 11+ Harvest Table,,,,,,,Dragon Teeth,29,1d4,material
+Dragon CR 11+ Harvest Table,,,,,,,Breath Gland,32,1,component
+Dragon CR 11+ Harvest Table,,,,,,,Dragon Heart,35,1,component
+Monstrosity CR 0-1 Harvest Table,Generic harvest table for monstrosities of CR 0-1.,generic,The carcass collapses unexpectedly; take 1d4 bludgeoning damage.,You tear the hide unevenly; one material item is of poor quality and worth half price.,,,"Monster Hide",13,1,material
+Monstrosity CR 0-1 Harvest Table,,,,,,,Monster Fangs,13,1,material
+Monstrosity CR 0-1 Harvest Table,,,,,,,Monster Sinew,15,1d4,material
+Monstrosity CR 0-1 Harvest Table,,,,,,,Predator Musk,18,1,component
+Monstrosity CR 2-4 Harvest Table,Generic harvest table for monstrosities of CR 2-4.,generic,The creature's barbed hide snags your tools; take 1d6 piercing damage and your harvesting tools are damaged.,You pull too hard on a sinew; you strain a muscle and have disadvantage on Strength checks for 1 hour.,,,"Monster Hide",15,1,material
+Monstrosity CR 2-4 Harvest Table,,,,,,,Monster Fangs,15,1,material
+Monstrosity CR 2-4 Harvest Table,,,,,,,Monster Sinew,17,1d4,material
+Monstrosity CR 2-4 Harvest Table,,,,,,,Aberrant Organ,20,1,component
+Monstrosity CR 2-4 Harvest Table,,,,,,,Alpha Trophy,23,1,trophy
+Monstrosity CR 5-10 Harvest Table,Generic harvest table for monstrosities of CR 5-10.,generic,A defensive spine or toxic spray activates posthumously; take 2d6 poison damage and make a DC 13 Constitution save or be poisoned for 1 minute.,The creature's mass shifts as you work; you are knocked prone.,,,"Monster Sinew",19,1d4,material
+Monstrosity CR 5-10 Harvest Table,,,,,,,Aberrant Organ,19,1,component
+Monstrosity CR 5-10 Harvest Table,,,,,,,Predator Musk,21,1,component
+Monstrosity CR 5-10 Harvest Table,,,,,,,Alpha Trophy,24,1,trophy
+Monstrosity CR 5-10 Harvest Table,,,,,,,Chimeric Essence,27,1,component
+Monstrosity CR 11+ Harvest Table,Generic harvest table for monstrosities of CR 11 or higher.,generic,The creature's apex defenses trigger in death; take 3d8 damage of the creature's primary damage type and make a DC 16 saving throw or suffer the associated condition for 1 minute.,The harvesting draws unwanted attention; a predator within 1 mile detects the kill and begins moving toward you.,,,"Aberrant Organ",27,1,component
+Monstrosity CR 11+ Harvest Table,,,,,,,Alpha Trophy,27,1,trophy
+Monstrosity CR 11+ Harvest Table,,,,,,,Predator Musk,29,1,component
+Monstrosity CR 11+ Harvest Table,,,,,,,Chimeric Essence,32,1,component
+Monstrosity CR 11+ Harvest Table,,,,,,,Chimeric Essence,35,2,component
+Fiend CR 0-1 Harvest Table,Generic harvest table for fiends of CR 0-1.,generic,A burst of infernal energy scorches your hands; take 1d6 fire damage.,The infernal ash irritates your lungs; you cough for 1 minute and have disadvantage on Stealth checks.,,,"Infernal Ash",13,1d4,component
+Fiend CR 0-1 Harvest Table,,,,,,,Demon Ichor,13,1,component
+Fiend CR 0-1 Harvest Table,,,,,,,Devil Horn,15,1,material
+Fiend CR 0-1 Harvest Table,,,,,,,Fiendish Hide,18,1,material
+Fiend CR 2-4 Harvest Table,Generic harvest table for fiends of CR 2-4.,generic,The fiend's essence violently resists extraction; take 2d6 fire damage and make a DC 12 Wisdom save or be frightened for 1 minute.,Infernal ichor eats through one of your harvesting tools; a blade or probe is destroyed.,,,"Demon Ichor",15,1d4,component
+Fiend CR 2-4 Harvest Table,,,,,,,Devil Horn,15,1,material
+Fiend CR 2-4 Harvest Table,,,,,,,Fiendish Hide,17,1,material
+Fiend CR 2-4 Harvest Table,,,,,,,Abyssal Essence,20,1,component
+Fiend CR 2-4 Harvest Table,,,,,,,Hellfire Gland,23,1,component
+Fiend CR 5-10 Harvest Table,Generic harvest table for fiends of CR 5-10.,generic,The fiend screams with its last breath; all creatures within 15 feet make a DC 14 Wisdom save or be frightened for 1 minute. You also take 2d8 fire damage.,The infernal aura lingers on you; you have disadvantage on Charisma checks with celestials and good-aligned creatures for 24 hours.,,,"Fiendish Hide",19,1,material
+Fiend CR 5-10 Harvest Table,,,,,,,Abyssal Essence,19,1,component
+Fiend CR 5-10 Harvest Table,,,,,,,Hellfire Gland,21,1,component
+Fiend CR 5-10 Harvest Table,,,,,,,Damned Soul Residue,24,1,component
+Fiend CR 5-10 Harvest Table,,,,,,,Damned Soul Residue,27,2,component
+Fiend CR 11+ Harvest Table,Generic harvest table for fiends of CR 11 or higher.,generic,The fiend's death curse activates; you take 4d8 fire damage and are cursed â€” you have disadvantage on death saving throws until the curse is removed.,The fiend's true name brands itself on your mind; you suffer from nightmares and lose the benefit of a long rest.,,,"Abyssal Essence",27,1d4,component
+Fiend CR 11+ Harvest Table,,,,,,,Hellfire Gland,27,1,component
+Fiend CR 11+ Harvest Table,,,,,,,Damned Soul Residue,29,1,component
+Fiend CR 11+ Harvest Table,,,,,,,Damned Soul Residue,32,2,component
+Fiend CR 11+ Harvest Table,,,,,,,Damned Soul Residue,35,3,component
+Aberration CR 0-1 Harvest Table,Generic harvest table for aberrations of CR 0-1.,generic,Alien thought-fragments discharge from the corpse; make a DC 11 Intelligence save or take 1d6 psychic damage.,The non-Euclidean anatomy confounds you; you lose 1 minute of harvesting time orienting yourself.,,,"Aberrant Flesh",13,1,component
+Aberration CR 0-1 Harvest Table,,,,,,,Psionic Crystal,13,1,component
+Aberration CR 0-1 Harvest Table,,,,,,,Mind Residue,15,1,component
+Aberration CR 0-1 Harvest Table,,,,,,,Eldritch Ichor,18,1,component
+Aberration CR 2-4 Harvest Table,Generic harvest table for aberrations of CR 2-4.,generic,Psionic feedback from the corpse; take 2d6 psychic damage and make a DC 13 Intelligence save or be incapacitated until the end of your next turn.,The alien biology bleeds an irritant; you have disadvantage on Wisdom saving throws for 1 hour.,,,"Aberrant Flesh",15,1,component
+Aberration CR 2-4 Harvest Table,,,,,,,Psionic Crystal,15,1,component
+Aberration CR 2-4 Harvest Table,,,,,,,Mind Residue,17,1,component
+Aberration CR 2-4 Harvest Table,,,,,,,Eldritch Ichor,20,1,component
+Aberration CR 2-4 Harvest Table,,,,,,,Far Realm Essence,23,1,component
+Aberration CR 5-10 Harvest Table,Generic harvest table for aberrations of CR 5-10.,generic,A psychic death-scream erupts; all creatures within 10 feet take 3d6 psychic damage and must make a DC 15 Wisdom save or be stunned until the end of their next turn.,Your mind briefly touches the Far Realm through the corpse; you are confused and make all attacks at disadvantage until the end of your next turn.,,,"Psionic Crystal",19,1,component
+Aberration CR 5-10 Harvest Table,,,,,,,Eldritch Ichor,19,1,component
+Aberration CR 5-10 Harvest Table,,,,,,,Mind Residue,21,1,component
+Aberration CR 5-10 Harvest Table,,,,,,,Far Realm Essence,24,1,component
+Aberration CR 5-10 Harvest Table,,,,,,,Void Fragment,27,1,component
+Aberration CR 11+ Harvest Table,Generic harvest table for aberrations of CR 11 or higher.,generic,The aberration's death opens a momentary rift; make a DC 18 Intelligence save or be transported 1d4 x 10 feet in a random direction.,The incomprehensible anatomy permanently marks you; you gain one level of madness (per the DMG rules on indefinite madness).,,,"Eldritch Ichor",27,1d4,component
+Aberration CR 11+ Harvest Table,,,,,,,Mind Residue,27,1,component
+Aberration CR 11+ Harvest Table,,,,,,,Far Realm Essence,29,1,component
+Aberration CR 11+ Harvest Table,,,,,,,Void Fragment,32,1,component
+Aberration CR 11+ Harvest Table,,,,,,,Void Fragment,35,2,component
+Celestial CR 0-1 Harvest Table,Generic harvest table for celestials of CR 0-1.,generic,Divine reprisal for desecrating the remains; take 1d8 radiant damage.,The divine light fades rapidly; you work in sudden dimness and accidentally damage one sample.,,,"Radiant Dust",13,1d4,component
+Celestial CR 0-1 Harvest Table,,,,,,,Celestial Feather,13,1,component
+Celestial CR 0-1 Harvest Table,,,,,,,Divine Essence,15,1,component
+Celestial CR 0-1 Harvest Table,,,,,,,Sacred Blood,18,1,component
+Celestial CR 2-4 Harvest Table,Generic harvest table for celestials of CR 2-4.,generic,A burst of radiant energy burns your hands; take 2d8 radiant damage.,The sanctified aura overwhelms you; you are blinded until the end of your next turn.,,,"Radiant Dust",15,1d4,component
+Celestial CR 2-4 Harvest Table,,,,,,,Celestial Feather,15,1,component
+Celestial CR 2-4 Harvest Table,,,,,,,Divine Essence,17,1,component
+Celestial CR 2-4 Harvest Table,,,,,,,Sacred Blood,20,1,component
+Celestial CR 2-4 Harvest Table,,,,,,,Angelic Plume,23,1,component
+Celestial CR 5-10 Harvest Table,Generic harvest table for celestials of CR 5-10.,generic,The celestial's soul departs in a blinding flash; all creatures within 15 feet take 3d8 radiant damage and must make a DC 15 Constitution save or be blinded for 1 minute.,The sheer holiness of the remains burns an impure soul; if you have committed an evil act in the past 24 hours you are frightened for 1 minute.,,,"Celestial Feather",19,1d4,component
+Celestial CR 5-10 Harvest Table,,,,,,,Divine Essence,19,1,component
+Celestial CR 5-10 Harvest Table,,,,,,,Sacred Blood,21,1,component
+Celestial CR 5-10 Harvest Table,,,,,,,Angelic Plume,24,1,component
+Celestial CR 5-10 Harvest Table,,,,,,,Blessed Organ,27,1,component
+Celestial CR 11+ Harvest Table,Generic harvest table for celestials of CR 11 or higher.,generic,Divine judgment descends; take 4d10 radiant damage and make a DC 18 Wisdom save or be stunned for 1 minute.,The act of harvesting a celestial of this power taints you; you have disadvantage on Charisma (Persuasion) checks with good-aligned creatures for 7 days.,,,"Divine Essence",27,1d4,component
+Celestial CR 11+ Harvest Table,,,,,,,Sacred Blood,27,1,component
+Celestial CR 11+ Harvest Table,,,,,,,Angelic Plume,29,1,component
+Celestial CR 11+ Harvest Table,,,,,,,Blessed Organ,32,1,component
+Celestial CR 11+ Harvest Table,,,,,,,Blessed Organ,35,2,component
+Construct CR 0-1 Harvest Table,Generic harvest table for constructs of CR 0-1.,generic,A released spring or mechanism strikes you; take 1d6 piercing damage.,A gear locks around your finger; you have disadvantage on fine manipulation until you pry it free (1 action).,,,"Arcane Gear",13,1d4,material
+Construct CR 0-1 Harvest Table,,,,,,,Animated Metal,13,1,material
+Construct CR 0-1 Harvest Table,,,,,,,Golem Core Fragment,15,1,component
+Construct CR 0-1 Harvest Table,,,,,,,Enchanted Plating,18,1,material
+Construct CR 2-4 Harvest Table,Generic harvest table for constructs of CR 2-4.,generic,The construct's animating force discharges; take 2d6 lightning damage.,A pressurized component vents; you are pushed 5 feet backward and are deafened until the end of your next turn.,,,"Animated Metal",15,1d4,material
+Construct CR 2-4 Harvest Table,,,,,,,Golem Core Fragment,15,1,component
+Construct CR 2-4 Harvest Table,,,,,,,Enchanted Plating,17,1,material
+Construct CR 2-4 Harvest Table,,,,,,,Power Crystal,20,1,component
+Construct CR 2-4 Harvest Table,,,,,,,Construct Heart,23,1,component
+Construct CR 5-10 Harvest Table,Generic harvest table for constructs of CR 5-10.,generic,The central power source detonates; all creatures within 10 feet take 3d6 lightning damage (DC 14 Dexterity save for half).,The arcane feedback fries your nervous system briefly; you cannot take reactions until the end of your next turn.,,,"Enchanted Plating",19,1d4,material
+Construct CR 5-10 Harvest Table,,,,,,,Golem Core Fragment,19,1,component
+Construct CR 5-10 Harvest Table,,,,,,,Power Crystal,21,1,component
+Construct CR 5-10 Harvest Table,,,,,,,Construct Heart,24,1,component
+Construct CR 5-10 Harvest Table,,,,,,,Construct Heart,27,2,component
+Construct CR 11+ Harvest Table,Generic harvest table for constructs of CR 11 or higher.,generic,The master construct's core overloads catastrophically; all creatures within 20 feet take 4d10 force damage (DC 18 Dexterity save for half) and are knocked prone.,The arcane resonance disrupts your magic; you lose your highest available spell slot or recharge ability.,,,"Power Crystal",27,1d4,component
+Construct CR 11+ Harvest Table,,,,,,,Enchanted Plating,27,2,material
+Construct CR 11+ Harvest Table,,,,,,,Construct Heart,29,1,component
+Construct CR 11+ Harvest Table,,,,,,,Construct Heart,32,2,component
+Construct CR 11+ Harvest Table,,,,,,,Construct Heart,35,3,component
+Elemental CR 0-1 Harvest Table,Generic harvest table for elementals of CR 0-1.,generic,The dying elemental lashes out; take 1d6 damage of the element's type.,The elemental material partially absorbs into your skin; you have vulnerability to the element's damage type for 1 minute.,,,"Elemental Mote",13,1d4,component
+Elemental CR 0-1 Harvest Table,,,,,,,Primal Ash,13,1d4,component
+Elemental CR 0-1 Harvest Table,,,,,,,Elemental Core,15,1,component
+Elemental CR 0-1 Harvest Table,,,,,,,Condensed Element,18,1,material
+Elemental CR 2-4 Harvest Table,Generic harvest table for elementals of CR 2-4.,generic,A surge of elemental energy erupts; take 2d6 damage of the element's type.,The residual elemental force buffets you; you are pushed 10 feet in a direction determined by the element type.,,,"Elemental Mote",15,2d4,component
+Elemental CR 2-4 Harvest Table,,,,,,,Primal Ash,15,1d4,component
+Elemental CR 2-4 Harvest Table,,,,,,,Elemental Core,17,1,component
+Elemental CR 2-4 Harvest Table,,,,,,,Condensed Element,20,1,material
+Elemental CR 2-4 Harvest Table,,,,,,,Pure Elemental Essence,23,1,component
+Elemental CR 5-10 Harvest Table,Generic harvest table for elementals of CR 5-10.,generic,The elemental detonates as its planar tether breaks; all creatures within 15 feet take 3d8 damage of the element's type (DC 14 saving throw for half).,The elemental essence lingers on you; you leave a trail (footprints of fire/ice/earth/water) for 1 hour.,,,"Elemental Core",19,1,component
+Elemental CR 5-10 Harvest Table,,,,,,,Condensed Element,19,1,material
+Elemental CR 5-10 Harvest Table,,,,,,,Pure Elemental Essence,21,1,component
+Elemental CR 5-10 Harvest Table,,,,,,,Pure Elemental Essence,24,2,component
+Elemental CR 5-10 Harvest Table,,,,,,,Pure Elemental Essence,27,3,component
+Elemental CR 11+ Harvest Table,Generic harvest table for elementals of CR 11 or higher.,generic,The elder elemental's death sends a planar shockwave; all creatures within 20 feet take 4d10 damage of the element's type and are restrained until the end of their next turn (DC 18 save negates the restrained condition).,The raw primal power is too much to contain; half the Condensed Element or Pure Elemental Essence you harvest disintegrates on contact with air.,,,"Primal Ash",27,2d4,component
+Elemental CR 11+ Harvest Table,,,,,,,Elemental Core,27,1d4,component
+Elemental CR 11+ Harvest Table,,,,,,,Condensed Element,29,2,material
+Elemental CR 11+ Harvest Table,,,,,,,Pure Elemental Essence,32,2,component
+Elemental CR 11+ Harvest Table,,,,,,,Pure Elemental Essence,35,4,component
+Fey CR 0-1 Harvest Table,Generic harvest table for fey of CR 0-1.,generic,The fey's death curse triggers; take 1d4 psychic damage and flowers bloom painfully from your ears for 1 minute (no mechanical effect but deeply embarrassing).,The glamour unravels in a dazzling burst; you are blinded until the start of your next turn.,,,"Fey Dust",13,1d4,component
+Fey CR 0-1 Harvest Table,,,,,,,Pixie Wing,13,1,component
+Fey CR 0-1 Harvest Table,,,,,,,Enchanted Bark,15,1,material
+Fey CR 0-1 Harvest Table,,,,,,,Fey Blossom,18,1,component
+Fey CR 2-4 Harvest Table,Generic harvest table for fey of CR 2-4.,generic,The fey's dying glamour twists reality briefly; you are polymorphed into a rabbit for 1 round (no save).,The fey's charm leaks out; you are charmed by the next creature you see for 1 minute.,,,"Fey Dust",15,2d4,component
+Fey CR 2-4 Harvest Table,,,,,,,Enchanted Bark,15,1,material
+Fey CR 2-4 Harvest Table,,,,,,,Fey Blossom,17,1,component
+Fey CR 2-4 Harvest Table,,,,,,,Glamour Essence,20,1,component
+Fey CR 2-4 Harvest Table,,,,,,,Archfey Tear,23,1,component
+Fey CR 5-10 Harvest Table,Generic harvest table for fey of CR 5-10.,generic,The fey's final curse takes hold; make a DC 15 Charisma save or be cursed to speak only in rhyme for 24 hours (disadvantage on Charisma checks that require normal speech).,The glamour resonance destabilizes your appearance; you have disadvantage on Charisma (Persuasion) and Charisma (Deception) checks for 1 hour.,,,"Fey Blossom",19,1d4,component
+Fey CR 5-10 Harvest Table,,,,,,,Glamour Essence,19,1,component
+Fey CR 5-10 Harvest Table,,,,,,,Archfey Tear,21,1,component
+Fey CR 5-10 Harvest Table,,,,,,,Archfey Tear,24,2,component
+Fey CR 5-10 Harvest Table,,,,,,,Archfey Tear,27,3,component
+Fey CR 11+ Harvest Table,Generic harvest table for fey of CR 11 or higher.,generic,The archfey-touched creature's death warps the local Weave; all creatures within 20 feet must make a DC 18 Charisma save or be transported to a random point within 100 feet.,The power of the Feywild asserts itself; the harvested materials slowly transform into flowers over the next hour unless you succeed on a DC 18 Arcana check to stabilize them.,,,"Glamour Essence",27,2d4,component
+Fey CR 11+ Harvest Table,,,,,,,Archfey Tear,27,1,component
+Fey CR 11+ Harvest Table,,,,,,,Archfey Tear,29,2,component
+Fey CR 11+ Harvest Table,,,,,,,Archfey Tear,32,3,component
+Fey CR 11+ Harvest Table,,,,,,,Archfey Tear,35,4,component
+Giant CR 0-1 Harvest Table,Generic harvest table for giants of CR 0-1.,generic,The corpse shifts as you harvest; take 1d6 bludgeoning damage as a limb falls on you.,Your tools bend under the giant's dense materials; harvesting takes twice as long.,,,"Giant Fingernail",13,1d4,material
+Giant CR 0-1 Harvest Table,,,,,,,Giant Hair,13,1d4,material
+Giant CR 0-1 Harvest Table,,,,,,,Giant Blood,15,1,component
+Giant CR 0-1 Harvest Table,,,,,,,Giant Heart,18,1,component
+Giant CR 2-4 Harvest Table,Generic harvest table for giants of CR 2-4.,generic,The giant's mass collapses; take 2d6 bludgeoning damage and make a DC 13 Strength save or be knocked prone.,You misjudge the scale of the anatomy; you harvest blood from the wrong vessel and the sample is contaminated.,,,"Giant Fingernail",15,1d4,material
+Giant CR 2-4 Harvest Table,,,,,,,Giant Hair,15,1d6,material
+Giant CR 2-4 Harvest Table,,,,,,,Giant Blood,17,1,component
+Giant CR 2-4 Harvest Table,,,,,,,Giant Heart,20,1,component
+Giant CR 2-4 Harvest Table,,,,,,,Titan Bone,23,1,material
+Giant CR 5-10 Harvest Table,Generic harvest table for giants of CR 5-10.,generic,The giant's bulk shifts and crushes you; take 3d6 bludgeoning damage and make a DC 15 Strength save or be restrained until you use an action to escape (DC 15 Athletics).,A bone shard the size of a dagger flies free; take 1d8 piercing damage.,,,"Giant Blood",19,1d4,component
+Giant CR 5-10 Harvest Table,,,,,,,Giant Heart,19,1,component
+Giant CR 5-10 Harvest Table,,,,,,,Titan Bone,21,1,material
+Giant CR 5-10 Harvest Table,,,,,,,Colossus Tooth,24,1,material
+Giant CR 5-10 Harvest Table,,,,,,,Colossus Tooth,27,2,material
+Giant CR 11+ Harvest Table,Generic harvest table for giants of CR 11 or higher.,generic,The titan-class giant's death rattles the earth; make a DC 17 Dexterity save or take 4d6 bludgeoning damage from shifting debris and be knocked prone.,The titanic scale of the work strains you; gain one level of exhaustion.,,,"Titan Bone",27,1d4,material
+Giant CR 11+ Harvest Table,,,,,,,Giant Heart,27,1,component
+Giant CR 11+ Harvest Table,,,,,,,Colossus Tooth,29,1,material
+Giant CR 11+ Harvest Table,,,,,,,Colossus Tooth,32,2,material
+Giant CR 11+ Harvest Table,,,,,,,Colossus Tooth,35,3,material
+Humanoid CR 0-1 Harvest Table,Generic harvest table for humanoids of CR 0-1.,generic,The remains collapse and lacerate your hands; take 1d4 slashing damage.,The grim work unsettles your stomach; you have disadvantage on Wisdom saving throws for 10 minutes.,,,"Humanoid Teeth",13,1d4,trophy
+Humanoid CR 0-1 Harvest Table,,,,,,,Blood Vial,13,1,component
+Humanoid CR 0-1 Harvest Table,,,,,,,Tanned Skin,15,1,material
+Humanoid CR 0-1 Harvest Table,,,,,,,Skull Trophy,18,1,trophy
+Humanoid CR 2-4 Harvest Table,Generic harvest table for humanoids of CR 2-4.,generic,The corpse's weapon or trap snags you; take 1d6 damage of an appropriate type.,You are disturbed by your own actions; you must succeed on a DC 12 Wisdom saving throw or have the shaken condition for 1 hour (disadvantage on attack rolls).,,,"Blood Vial",15,1d4,component
+Humanoid CR 2-4 Harvest Table,,,,,,,Tanned Skin,15,1,material
+Humanoid CR 2-4 Harvest Table,,,,,,,Skull Trophy,17,1,trophy
+Humanoid CR 2-4 Harvest Table,,,,,,,Warrior Heart,20,1,component
+Humanoid CR 2-4 Harvest Table,,,,,,,Warrior Heart,23,2,component
+Humanoid CR 5-10 Harvest Table,Generic harvest table for humanoids of CR 5-10.,generic,The hardened warrior's remains resist your efforts violently; take 2d8 slashing damage from the armor and weapons.,Something about this kill haunts you; you have disadvantage on Charisma (Persuasion) checks for 24 hours as guilt shadows your expression.,,,"Tanned Skin",19,1,material
+Humanoid CR 5-10 Harvest Table,,,,,,,Skull Trophy,19,1,trophy
+Humanoid CR 5-10 Harvest Table,,,,,,,Warrior Heart,21,1,component
+Humanoid CR 5-10 Harvest Table,,,,,,,Warrior Heart,24,2,component
+Humanoid CR 5-10 Harvest Table,,,,,,,Warrior Heart,27,3,component
+Humanoid CR 11+ Harvest Table,Generic harvest table for humanoids of CR 11 or higher.,generic,A contingency or death ward on the corpse triggers; take 4d8 damage of an appropriate type and make a DC 17 saving throw or suffer an additional effect (DM's discretion based on the enemy's abilities).,The legend of this individual's deeds makes the harvesting deeply uncomfortable; make a DC 16 Wisdom save or gain a short-term madness (per DMG).,,,"Skull Trophy",27,1,trophy
+Humanoid CR 11+ Harvest Table,,,,,,,Blood Vial,27,1d4,component
+Humanoid CR 11+ Harvest Table,,,,,,,Warrior Heart,29,1,component
+Humanoid CR 11+ Harvest Table,,,,,,,Warrior Heart,32,2,component
+Humanoid CR 11+ Harvest Table,,,,,,,Warrior Heart,35,3,component
+Ooze CR 0-1 Harvest Table,Generic harvest table for oozes of CR 0-1.,generic,The ooze's acid is still active; take 1d6 acid damage.,The acidic residue eats through one non-metal item in your pack (DM picks the least expensive item).,,,"Acidic Residue",13,1d4,component
+Ooze CR 0-1 Harvest Table,,,,,,,Ooze Membrane,13,1,material
+Ooze CR 0-1 Harvest Table,,,,,,,Gelatinous Extract,15,1,component
+Ooze CR 0-1 Harvest Table,,,,,,,Corrosive Core,18,1,component
+Ooze CR 2-4 Harvest Table,Generic harvest table for oozes of CR 2-4.,generic,The ooze's acid discharges in a wave; all creatures within 5 feet take 2d6 acid damage.,Your tools are partially dissolved; they have a -1 penalty to harvest checks until repaired.,,,"Acidic Residue",15,2d4,component
+Ooze CR 2-4 Harvest Table,,,,,,,Ooze Membrane,15,1,material
+Ooze CR 2-4 Harvest Table,,,,,,,Gelatinous Extract,17,1,component
+Ooze CR 2-4 Harvest Table,,,,,,,Corrosive Core,20,1,component
+Ooze CR 2-4 Harvest Table,,,,,,,Prismatic Slime,23,1,component
+Ooze CR 5-10 Harvest Table,Generic harvest table for oozes of CR 5-10.,generic,The ooze dissolves rapidly and takes your tools with it; take 2d8 acid damage and lose your harvesting kit unless you succeed on a DC 14 Dexterity save.,The acidic vapors sting your eyes and lungs; you have disadvantage on Perception checks and Constitution saves for 10 minutes.,,,"Gelatinous Extract",19,1d4,component
+Ooze CR 5-10 Harvest Table,,,,,,,Corrosive Core,19,1,component
+Ooze CR 5-10 Harvest Table,,,,,,,Prismatic Slime,21,1,component
+Ooze CR 5-10 Harvest Table,,,,,,,Prismatic Slime,24,2,component
+Ooze CR 5-10 Harvest Table,,,,,,,Prismatic Slime,27,3,component
+Ooze CR 11+ Harvest Table,Generic harvest table for oozes of CR 11 or higher.,generic,The ooze's corrosive mass engulfs your arm; take 4d10 acid damage and make a DC 18 Constitution save or suffer one level of exhaustion from the chemical burns.,Your entire harvesting kit is dissolved; you cannot perform any more harvesting until you obtain a new kit.,,,"Corrosive Core",27,1d4,component
+Ooze CR 11+ Harvest Table,,,,,,,Prismatic Slime,27,1,component
+Ooze CR 11+ Harvest Table,,,,,,,Prismatic Slime,29,2,component
+Ooze CR 11+ Harvest Table,,,,,,,Prismatic Slime,32,3,component
+Ooze CR 11+ Harvest Table,,,,,,,Prismatic Slime,35,4,component
+Plant CR 0-1 Harvest Table,Generic harvest table for plants of CR 0-1.,generic,The plant creature's barbs or sap sprays into your eyes; take 1d4 poison damage and be blinded until the end of your next turn.,The plants wilt faster than expected; one herb or material item you would have harvested rots before you can collect it.,,,"Herb Bundle",13,2d4,food
+Plant CR 0-1 Harvest Table,,,,,,,Living Bark,13,1d4,material
+Plant CR 0-1 Harvest Table,,,,,,,Root Tendril,15,1d4,material
+Plant CR 0-1 Harvest Table,,,,,,,Blossom Essence,18,1,component
+Plant CR 2-4 Harvest Table,Generic harvest table for plants of CR 2-4.,generic,Toxic sap erupts; take 2d4 poison damage and make a DC 12 Constitution save or be poisoned for 1 minute.,Spores cloud your vision; you have disadvantage on all checks requiring sight for 10 minutes.,,,"Herb Bundle",15,2d4,food
+Plant CR 2-4 Harvest Table,,,,,,,Living Bark,15,1d4,material
+Plant CR 2-4 Harvest Table,,,,,,,Root Tendril,17,1d4,material
+Plant CR 2-4 Harvest Table,,,,,,,Blossom Essence,20,1,component
+Plant CR 2-4 Harvest Table,,,,,,,Fungal Spore Sac,23,1,component
+Plant CR 5-10 Harvest Table,Generic harvest table for plants of CR 5-10.,generic,Explosive seed pods discharge; take 3d6 piercing damage and make a DC 14 Dexterity save or be restrained by vines for 1 minute.,The plant matter grows aggressively across your tools; you must spend 1 minute cutting it free.,,,"Living Bark",19,1d4,material
+Plant CR 5-10 Harvest Table,,,,,,,Blossom Essence,19,1d4,component
+Plant CR 5-10 Harvest Table,,,,,,,Fungal Spore Sac,21,1,component
+Plant CR 5-10 Harvest Table,,,,,,,Treant Heartwood,24,1,material
+Plant CR 5-10 Harvest Table,,,,,,,Treant Heartwood,27,2,material
+Plant CR 11+ Harvest Table,Generic harvest table for plants of CR 11 or higher.,generic,The ancient plant spirit releases in a death-storm; all creatures within 20 feet take 4d8 piercing and poison damage (DC 17 Constitution save for half) and are restrained by erupting roots (DC 17 Strength to break free).,The plant's death triggers a cascade of growth; vines immediately cover a 20-foot radius and the area becomes difficult terrain for 1 hour.,,,"Fungal Spore Sac",27,1d4,component
+Plant CR 11+ Harvest Table,,,,,,,Blossom Essence,27,2,component
+Plant CR 11+ Harvest Table,,,,,,,Treant Heartwood,29,1,material
+Plant CR 11+ Harvest Table,,,,,,,Treant Heartwood,32,2,material
+Plant CR 11+ Harvest Table,,,,,,,Treant Heartwood,35,3,material
+Wolf Harvest Table,Harvest table for a common wolf (Beast CR 1/4).,specific,The wolf's jaws snap shut reflexively; take 1d4 piercing damage from its bite.,You fumble the pelt skinning and nick an artery; lose 5 minutes cleaning up the mess and one meat portion is contaminated.,Wolf Heart,1,"Wolf Meat",13,1d4,food
+Wolf Harvest Table,,,,,,,Wolf Pelt,13,1,material
+Wolf Harvest Table,,,,,,,Wolf Fangs,15,1d4,material
+Wolf Harvest Table,,,,,,,Wolf Heart,18,1,component
+Winter Wolf Harvest Table,Harvest table for a winter wolf (Monstrosity CR 3).,specific,Ice crystals explode from the wolf's body; take 2d6 cold damage.,The frost-bitten hide snaps stiffly; you lose your grip and must restart â€” lose 5 minutes of harvesting time.,Frost Breath Gland,1,"Winter Wolf Meat",15,1d4,food
+Winter Wolf Harvest Table,,,,,,,Winter Wolf Pelt,15,1,material
+Winter Wolf Harvest Table,,,,,,,Winter Wolf Fangs,17,1d4,material
+Winter Wolf Harvest Table,,,,,,,Frost Breath Gland,20,1,component
+Tyrannosaurus Rex Harvest Table,Harvest table for a tyrannosaurus rex (Beast CR 8).,specific,The dying rex's final reflex contracts its jaw; make a DC 16 Dexterity save or take 4d6 piercing damage.,You misjudge the scale of the anatomy and cut yourself on a rib shard; take 1d8 piercing damage.,T-Rex Hide,1,"Dinosaur Meat",20,2d4,food
+Tyrannosaurus Rex Harvest Table,,,,,,,Dinosaur Bone,20,1d4,material
+Tyrannosaurus Rex Harvest Table,,,,,,,T-Rex Fang,22,1d4,material
+Tyrannosaurus Rex Harvest Table,,,,,,,T-Rex Hide,25,1,material
+Triceratops Harvest Table,Harvest table for a triceratops (Beast CR 5).,specific,The massive head shifts and a horn sweeps toward you; make a DC 14 Dexterity save or take 2d8 piercing damage.,The horns are more firmly anchored than expected; you strain your back and have disadvantage on Strength checks for 1 hour.,Triceratops Horn,1,"Dinosaur Meat",17,2d4,food
+Triceratops Harvest Table,,,,,,,Dinosaur Hide,17,1,material
+Triceratops Harvest Table,,,,,,,Triceratops Frill,19,1,trophy
+Triceratops Harvest Table,,,,,,,Triceratops Horn,22,1d4,material
+Allosaurus Harvest Table,Harvest table for an allosaurus (Beast CR 2).,specific,The carcass rolls; make a DC 13 Dexterity save or take 2d6 bludgeoning damage and be knocked prone.,A hidden tooth cuts your hand through your glove; take 1d4 slashing damage.,Allosaurus Claw,1,"Dinosaur Meat",14,1d4,food
+Allosaurus Harvest Table,,,,,,,Dinosaur Hide,14,1,material
+Allosaurus Harvest Table,,,,,,,Dinosaur Bone,16,1,material
+Allosaurus Harvest Table,,,,,,,Allosaurus Claw,19,1d4,material
+Stegosaurus Harvest Table,Harvest table for a stegosaurus (Beast CR 4).,specific,The tail whips as you work; make a DC 13 Dexterity save or take 2d8 piercing damage from the thagomizer.,A dorsal plate shifts and traps your hand; you are restrained for 1 round.,Stegosaurus Plate,1,"Dinosaur Meat",16,2d4,food
+Stegosaurus Harvest Table,,,,,,,Dinosaur Hide,16,1,material
+Stegosaurus Harvest Table,,,,,,,Stegosaurus Plate,18,1d4,material
+Velociraptor Harvest Table,Harvest table for a velociraptor (Beast CR 1/4).,specific,The killing claws are still sharp; take 1d6 slashing damage when the leg twitches.,You underestimate the grip of the sickle claw; it tears through your glove.,Velociraptor Claw,1,"Dinosaur Meat",13,1d4,food
+Velociraptor Harvest Table,,,,,,,Velociraptor Claw,15,1d4,material
+Pteranodon Harvest Table,Harvest table for a pteranodon (Beast CR 1/4).,specific,The beak snaps shut on your wrist; take 1d4 piercing damage.,The wing membrane tears more easily than expected; one wing membrane portion is destroyed.,Pteranodon Wing Membrane,1,"Dinosaur Meat",13,1d4,food
+Pteranodon Harvest Table,,,,,,,Dinosaur Bone,13,1,material
+Pteranodon Harvest Table,,,,,,,Pteranodon Wing Membrane,15,1,material
+Ankylosaurus Harvest Table,Harvest table for an ankylosaurus (Beast CR 3).,specific,The tail club swings on reflexive muscle contraction; make a DC 14 Dexterity save or take 2d8 bludgeoning damage and be knocked prone.,The armor plating is densely fused; your blade dulls and you have disadvantage on your next harvest check.,Ankylosaurus Shell Fragment,1,"Dinosaur Meat",15,2d4,food
+Ankylosaurus Harvest Table,,,,,,,Dinosaur Hide,15,1,material
+Ankylosaurus Harvest Table,,,,,,,Ankylosaurus Shell Fragment,17,1d4,material
+Troll Harvest Table,Harvest table for a troll (Giant CR 5).,specific,The troll's regeneration briefly animates the corpse; it grabs for you and you take 2d6 slashing damage before it dies again.,The regenerating flesh keeps closing your incision points; the harvesting takes twice as long and you must succeed on a DC 12 Wisdom save or be grossed out and stop early (losing the highest-DC items).,Troll Gland,1,"Troll Claws",17,1d4,material
+Troll Harvest Table,,,,,,,Troll Eye,17,1d4,component
+Troll Harvest Table,,,,,,,Troll Lymphatic Fluid,19,1,component
+Troll Harvest Table,,,,,,,Troll Gland,22,1,component
+Basilisk Harvest Table,Harvest table for a basilisk (Monstrosity CR 3).,specific,You accidentally meet the basilisk's gaze even in death; make a DC 12 Constitution save or be restrained as your muscles stiffen. Repeat next turn or be petrified for 1 minute.,You flinch when removing the eyes and crack one; only one eye is recoverable.,Basilisk Eye,1,"Basilisk Hide",15,1,material
+Basilisk Harvest Table,,,,,,,Basilisk Eye,17,1d4,component
+Beholder Harvest Table,Harvest table for a beholder (Aberration CR 13).,specific,"The beholder's eye rays fire erratically in a death spasm; roll 1d8 for which ray strikes you (1:charm, 2:fear, 3:slow, 4:exhaustion, 5:disintegrate 4d8, 6:paralysis, 7:sleep, 8:death ray â€” DC 16 save for each).",One eye stalk fires a weakened sleep ray at you; make a DC 14 Wisdom save or fall asleep for 1 round.,Central Eye Lens,1,"Beholder Chitin",25,1d4,material
+Beholder Harvest Table,,,,,,,Beholder Eye Stalk,25,1d4,component
+Beholder Harvest Table,,,,,,,Central Eye Lens,30,1,component
+Hydra Harvest Table,Harvest table for a hydra (Monstrosity CR 8).,specific,A severed head on a neck stump bites you; take 2d6 piercing damage and you must succeed on a DC 14 Constitution save or take 2d8 acid damage from its bite.,The blood is more caustic than expected; your tools take minor damage and you have disadvantage on your next skill check.,Regenerating Flesh,1,"Hydra Head",20,1d4,trophy
+Hydra Harvest Table,,,,,,,Hydra Blood,20,1d4,component
+Hydra Harvest Table,,,,,,,Regenerating Flesh,25,1,component
+Froghemoth Harvest Table,Harvest table for a froghemoth (Monstrosity CR 10).,specific,The tongue lashes out on a death spasm; make a DC 15 Strength save or be grappled (Escape DC 15) and pulled into the maw for 2d8 bludgeoning damage.,Slime covers your tools and hands; you have disadvantage on all Dexterity checks for 10 minutes until you wipe off the mucus.,Froghemoth Eye,1,"Froghemoth Tentacle",22,1d4,material
+Froghemoth Harvest Table,,,,,,,Froghemoth Tongue,22,1,component
+Froghemoth Harvest Table,,,,,,,Froghemoth Eye,25,1d4,component
+Yuan-ti Abomination Harvest Table,Harvest table for a yuan-ti abomination (Monstrosity CR 7).,specific,The abomination's innate magic lashes out; take 3d6 psychic damage and make a DC 15 Wisdom save or be frightened for 1 minute.,The serpentine scales are razor-edged; take 1d6 slashing damage when removing them.,Serpent Venom Gland,1,"Yuan-ti Scale",19,1d6,material
+Yuan-ti Abomination Harvest Table,,,,,,,Serpent Venom Gland,22,1,component
+Shambling Mound Harvest Table,Harvest table for a shambling mound (Plant CR 5).,specific,Lightning still crackles through the vines; take 2d6 lightning damage.,The dense compost is difficult to work through; you lose 10 minutes digging out the useful components.,Lightning-Charged Vine,1,"Shambling Mound Compost",17,2d4,component
+Shambling Mound Harvest Table,,,,,,,Living Bark,17,1d4,material
+Shambling Mound Harvest Table,,,,,,,Lightning-Charged Vine,19,1d4,component
+Shambling Mound Harvest Table,,,,,,,Treant Heartwood,22,1,material
+Girallon Harvest Table,Harvest table for a girallon (Monstrosity CR 4).,specific,The girallon's powerful arms still have reflexive grip; one arm seizes your wrist for 2d6 bludgeoning damage before you pry it free.,The dense white fur clogs your tools; you have disadvantage on your next harvest check.,"Girallon Arm",1,"Girallon Fur",16,1,material
+Girallon Harvest Table,,,,,,,Monster Sinew,16,1d4,material
+Girallon Harvest Table,,,,,,,Girallon Arm,18,1,trophy
+Girallon Harvest Table,,,,,,,Predator Musk,21,1,component
+Grung Harvest Table,Harvest table for a grung (Humanoid CR 1).,specific,The skin's toxin absorbs through a cut; make a DC 12 Constitution save or be poisoned for 1 minute and take 2d4 poison damage.,The poison dye stains your hands; you have disadvantage on Charisma checks with non-adventurers until you bathe.,Grung Poison Gland,1,"Grung Skin",13,1,material
+Grung Harvest Table,,,,,,,Grung Poison Gland,15,1,component
+Vegepygmy Harvest Table,Harvest table for a vegepygmy (Plant CR 1/4).,specific,Russet mold spores puff into your face; make a DC 13 Constitution save or take 1d6 poison damage and be poisoned until you complete a short rest.,The bark is brittle and crumbles; one bark sample is worthless dust.,Russet Mold Spore,1,"Vegepygmy Bark",13,1d4,material
+Vegepygmy Harvest Table,,,,,,,Russet Mold Spore,15,1,component
+Black Dragon Harvest Table,"Harvest table for a black dragon (any age). Strips age prefix — Young/Adult/Ancient Black Dragon all use this table.",specific,"Acid sprays from a ruptured gland; all creatures within 10 feet take 3d8 acid damage (DC 15 Dexterity save for half).","A trickle of acid eats through your glove; take 1d4 acid damage and your tools have a -1 penalty to your next harvest check.",Black Dragon Acid Gland,1,"Black Dragon Scale",22,1d6,material
+Black Dragon Harvest Table,,,,,,,Dragon Fang,22,1,material
+Black Dragon Harvest Table,,,,,,,Dragon Wing Membrane,24,1,material
+Black Dragon Harvest Table,,,,,,,Dragon Blood,24,1d4,component
+Black Dragon Harvest Table,,,,,,,Black Dragon Acid Gland,27,1,component
+Black Dragon Harvest Table,,,,,,,Dragon Heart,30,1,component
+Blue Dragon Harvest Table,"Harvest table for a blue dragon (any age). Strips age prefix — Young/Adult/Ancient Blue Dragon all use this table.",specific,"A lightning discharge arcs from the corpse; all creatures within 10 feet take 3d8 lightning damage (DC 15 Dexterity save for half).","A spark jumps to your tools; you are shocked and have disadvantage on your next harvest check.",Blue Dragon Lightning Gland,1,"Blue Dragon Scale",22,1d6,material
+Blue Dragon Harvest Table,,,,,,,Dragon Fang,22,1,material
+Blue Dragon Harvest Table,,,,,,,Dragon Wing Membrane,24,1,material
+Blue Dragon Harvest Table,,,,,,,Dragon Blood,24,1d4,component
+Blue Dragon Harvest Table,,,,,,,Blue Dragon Lightning Gland,27,1,component
+Blue Dragon Harvest Table,,,,,,,Dragon Heart,30,1,component
+Green Dragon Harvest Table,"Harvest table for a green dragon (any age). Strips age prefix — Young/Adult/Ancient Green Dragon all use this table.",specific,"Chlorine gas vents from the ruptured poison sac; all creatures within 10 feet must make a DC 15 Constitution save or take 3d8 poison damage and be poisoned for 1 minute.","Foul-smelling gas stings your eyes; you have disadvantage on Perception checks for 10 minutes.",Green Dragon Poison Gland,1,"Green Dragon Scale",22,1d6,material
+Green Dragon Harvest Table,,,,,,,Dragon Fang,22,1,material
+Green Dragon Harvest Table,,,,,,,Dragon Wing Membrane,24,1,material
+Green Dragon Harvest Table,,,,,,,Dragon Blood,24,1d4,component
+Green Dragon Harvest Table,,,,,,,Green Dragon Poison Gland,27,1,component
+Green Dragon Harvest Table,,,,,,,Dragon Heart,30,1,component
+Red Dragon Harvest Table,"Harvest table for a red dragon (any age). Strips age prefix — Young/Adult/Ancient Red Dragon all use this table.",specific,"The fire gland detonates in a burst of superheated flame; all creatures within 15 feet take 4d8 fire damage (DC 16 Dexterity save for half).","Residual flame scorches your hands; take 1d6 fire damage and your tools are too hot to use until the start of your next turn.",Red Dragon Fire Gland,1,"Red Dragon Scale",22,1d6,material
+Red Dragon Harvest Table,,,,,,,Dragon Fang,22,1,material
+Red Dragon Harvest Table,,,,,,,Dragon Wing Membrane,24,1,material
+Red Dragon Harvest Table,,,,,,,Dragon Blood,24,1d4,component
+Red Dragon Harvest Table,,,,,,,Red Dragon Fire Gland,27,1,component
+Red Dragon Harvest Table,,,,,,,Dragon Heart,30,1,component
+White Dragon Harvest Table,"Harvest table for a white dragon (any age). Strips age prefix — Young/Adult/Ancient White Dragon all use this table.",specific,"Ice crystals explode from the frost gland; all creatures within 10 feet take 3d8 cold damage (DC 15 Constitution save or be restrained in ice until the end of their next turn).","A blast of cold air numbs your fingers; you have disadvantage on Dexterity checks for 5 minutes.",White Dragon Frost Gland,1,"White Dragon Scale",22,1d6,material
+White Dragon Harvest Table,,,,,,,Dragon Fang,22,1,material
+White Dragon Harvest Table,,,,,,,Dragon Wing Membrane,24,1,material
+White Dragon Harvest Table,,,,,,,Dragon Blood,24,1d4,component
+White Dragon Harvest Table,,,,,,,White Dragon Frost Gland,27,1,component
+White Dragon Harvest Table,,,,,,,Dragon Heart,30,1,component
+Boar Harvest Table,Harvest table for a boar (Beast CR 1/4).,specific,"The boar's legs kick violently in a death spasm; make a DC 12 Dexterity save or take 1d6 bludgeoning damage and be knocked prone.","You slip on the muddy bristle-hide and nick yourself; take 1d4 slashing damage.",Boar Hide,1,"Animal Meat",13,1d4,food
+Boar Harvest Table,,,,,,,Boar Tusk,13,1d4,material
+Boar Harvest Table,,,,,,,Boar Hide,16,1,material
+Brown Bear Harvest Table,Harvest table for a brown bear (Beast CR 1).,specific,"The bear's massive paw swings reflexively; make a DC 13 Strength save or take 2d6 slashing damage and be knocked prone.","The bear's dense fat is difficult to separate cleanly; you ruin one portion of fat and must discard it.",Bear Pelt,1,"Animal Meat",13,1d4,food
+Brown Bear Harvest Table,,,,,,,Bear Claws,13,1d4,material
+Brown Bear Harvest Table,,,,,,,Bear Pelt,15,1,material
+Brown Bear Harvest Table,,,,,,,Bear Fat,17,1,component
+Giant Spider Harvest Table,Harvest table for a giant spider (Beast CR 1).,specific,"A venom sac ruptures; all creatures within 5 feet must make a DC 12 Constitution save or take 2d4 poison damage and be poisoned for 1 minute.","Venom drips onto your hands; you have disadvantage on Dexterity checks for 10 minutes until you wash it off.",Giant Spider Venom,1,"Giant Spider Silk",13,1d4,material
+Giant Spider Harvest Table,,,,,,,Giant Spider Fang,13,1d4,material
+Giant Spider Harvest Table,,,,,,,Giant Spider Venom,16,1,component
+Skeleton Harvest Table,Harvest table for a skeleton (Undead CR 1/4).,specific,"Necrotic energy discharges from the bones as they clatter apart; take 1d4 necrotic damage.","The brittle bones crumble more than expected; one bone sample shatters into useless splinters.",Skeleton Bone,1,"Bone Fragment",13,1d4,material
+Skeleton Harvest Table,,,,,,,Skeleton Bone,15,1d4,material
+Zombie Harvest Table,Harvest table for a zombie (Undead CR 1/4).,specific,"Necrotic energy discharges from the putrefying corpse; take 1d4 necrotic damage.","The foul stench overwhelms you; you are sickened and have disadvantage on Wisdom checks for 10 minutes.",Zombie Flesh,1,"Rotting Flesh",13,1d4,component
+Zombie Harvest Table,,,,,,,Zombie Flesh,15,1d4,component
+Ghoul Harvest Table,Harvest table for a ghoul (Undead CR 1).,specific,"Residual paralytic energy discharges on contact; make a DC 12 Constitution save or be paralyzed until the end of your next turn.","Foul ichor splashes your face; you are sickened and have disadvantage on Wisdom (Perception) checks for 1 minute.",Ghoul Tongue,1,"Ghoul Claw",13,1d4,material
+Ghoul Harvest Table,,,,,,,Undead Ichor,13,1d4,component
+Ghoul Harvest Table,,,,,,,Ghoul Tongue,16,1,component
+Wraith Harvest Table,Harvest table for a wraith (Undead CR 5).,specific,"A burst of deathly cold erupts from the dissolving remains; take 3d6 necrotic damage and make a DC 15 Constitution save or gain one level of exhaustion.","The necrotic vapors cling to you; you have disadvantage on Constitution saving throws for 10 minutes.",Wraith Essence,1,"Shadow Essence",17,1,component
+Wraith Harvest Table,,,,,,,Necrotic Residue,17,1d4,component
+Wraith Harvest Table,,,,,,,Wraith Essence,20,1,component
+Vampire Spawn Harvest Table,Harvest table for a vampire spawn (Undead CR 5).,specific,"The vampire spawn's death curse activates; take 2d8 necrotic damage and make a DC 14 Constitution save or have your hit point maximum reduced by the damage dealt until you finish a long rest.","The body begins to decay rapidly in the light; you must work quickly — if you fail two consecutive harvest checks the body crumbles to dust.",Vampire Fang,1,"Undead Ichor",17,1d4,component
+Vampire Spawn Harvest Table,,,,,,,Vampire Blood,17,1,component
+Vampire Spawn Harvest Table,,,,,,,Vampire Fang,20,1,material
+Owlbear Harvest Table,Harvest table for an owlbear (Monstrosity CR 3).,specific,"The owlbear's beak snaps shut reflexively; make a DC 14 Dexterity save or take 2d8 piercing damage.","The talons are harder to remove than expected; a claw snaps off and cuts you for 1d4 slashing damage.",Owlbear Pelt,1,"Animal Meat",15,1d4,food
+Owlbear Harvest Table,,,,,,,Owlbear Feather,15,2d4,material
+Owlbear Harvest Table,,,,,,,Owlbear Beak,17,1,material
+Owlbear Harvest Table,,,,,,,Owlbear Pelt,20,1,material
+Manticore Harvest Table,Harvest table for a manticore (Monstrosity CR 3).,specific,"Tail spikes fire erratically in a death spasm; roll 1d4 — each spike hit deals 1d8 piercing damage (DC 14 Dexterity save to avoid each).","A loose spike stabs through your boot; take 1d4 piercing damage and your movement speed is reduced by 5 feet for 10 minutes.",Manticore Tail,1,"Manticore Spike",15,2d4,material
+Manticore Harvest Table,,,,,,,Manticore Mane,15,1,material
+Manticore Harvest Table,,,,,,,Manticore Tail,18,1,material
+Mind Flayer Harvest Table,Harvest table for a mind flayer (Aberration CR 7).,specific,"A psionic death-scream erupts from the collapsing neural tissue; all creatures within 10 feet take 3d8 psychic damage and must make a DC 15 Intelligence save or be stunned until the end of their next turn.","Residual thought-fragments flood your mind; you are confused and must use a bonus action to identify friend from foe until the end of your next turn.",Mind Flayer Brain,1,"Illithid Mucus",19,1d4,component
+Mind Flayer Harvest Table,,,,,,,Mind Flayer Tentacle,19,1d4,component
+Mind Flayer Harvest Table,,,,,,,Psionic Crystal,21,1,component
+Mind Flayer Harvest Table,,,,,,,Mind Flayer Brain,24,1,component
+Gelatinous Cube Harvest Table,Harvest table for a gelatinous cube (Ooze CR 2).,specific,"The cube's acid suddenly releases in a wave; all creatures within 5 feet take 2d8 acid damage (DC 13 Dexterity save for half) and any non-magical items must make a DC 13 save or be dissolved.","Acidic residue coats your arms up to the elbow; you have disadvantage on Dexterity (Sleight of Hand) checks for 10 minutes until you rinse off.",Gelatinous Cube Absorbed Item,1,"Gelatinous Cube Residue",14,2d4,component
+Gelatinous Cube Harvest Table,,,,,,,Acidic Residue,14,1d4,component
+Gelatinous Cube Harvest Table,,,,,,,Gelatinous Cube Absorbed Item,17,1,trophy

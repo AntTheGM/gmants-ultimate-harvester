@@ -1,0 +1,27 @@
+{
+  "_id": "32e45e2f0a6883b7",
+  "name": "Monster Sinew",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Fibrous</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "6"
+    },
+    "rarity": "sp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "common",
+      "harvestBonus": null
+    }
+  }
+}

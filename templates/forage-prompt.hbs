@@ -1,0 +1,38 @@
+<div class="ultimate-harvester-form">
+  <div class="ultimate-harvester-section">
+    <p><strong>{{foragerName}}</strong> prepares to forage in the <strong>{{environment}}</strong></p>
+    <p>Skill: <strong>{{primarySkill}}</strong> (or {{secondarySkill}} at &minus;5)</p>
+  </div>
+
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span>{{localize "MHARVEST.Dialog.HowManyHours"}}</span>
+    </div>
+    <input type="number" name="hours" value="1" min="1" max="8" step="1" />
+    <p class="ultimate-harvester-note"><i class="fas fa-clock ultimate-harvester-icon--time"></i> Each hour after the first reduces the DC by 1</p>
+  </div>
+
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span>Difficulty Tiers</span>
+    </div>
+    <p class="ultimate-harvester-note">
+      Basic: DC {{tier1DC}} &nbsp;|&nbsp;
+      Successful: DC {{tier2DC}} &nbsp;|&nbsp;
+      Bountiful: DC {{tier3DC}} &nbsp;|&nbsp;
+      Nat 20: Rare find
+    </p>
+  </div>
+
+  <details>
+    <summary class="ultimate-harvester-details-toggle">How does foraging work?</summary>
+    <ul class="ultimate-harvester-details-list">
+      <li>Roll your skill check &mdash; the highest tier you meet determines your find</li>
+      <li>Unlike harvesting, you get one result (the best tier), not all tiers</li>
+      <li>Higher skill checks also grant a bonus to the table roll (+1 per 5 above DC)</li>
+      <li>Each extra hour reduces the DC by 1 (more time = easier to find something)</li>
+      <li>One foraging session per long rest</li>
+      <li>Foraging characters cannot contribute to passive Perception</li>
+    </ul>
+  </details>
+</div>

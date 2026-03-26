@@ -1,0 +1,129 @@
+{
+  "_id": "715e8653eb0c94f7",
+  "name": "Underground / Cave - Tier 3 Foraging Table",
+  "description": "<p>Excellent cave finds; the deep places hold minerals and fungi of surprising value and potency.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "dff7f4c633c79130",
+      "text": "Cave Mushroom",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c9328bfda958d567",
+          "quantity": "3",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "800e7fa23828ee99",
+      "text": "Blind Fish",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c26dda909c46386f",
+          "quantity": "2",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "30866a40204d60b8",
+      "text": "Crystal Fragment",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.7c517b455668fd29",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "7da66ca60576095e",
+      "text": "Alchemical Lichen",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dc4f8ae1e2845308",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "db409f4c8cbe8ac3",
+      "text": "Phosphorescent Moss",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.bf3c79d42a668da8",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "047a14dcf49f53ff",
+      "text": "Mineral Deposit",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.341a87c52604ad81",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

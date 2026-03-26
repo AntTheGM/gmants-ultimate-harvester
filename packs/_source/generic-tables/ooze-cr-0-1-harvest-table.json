@@ -1,0 +1,93 @@
+{
+  "_id": "676cd4d76cb15c5e",
+  "name": "Ooze CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for oozes of CR 0-1.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "1c7879627e5beaae",
+      "text": "Acidic Residue",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.208f08bb4f6d01e1",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "a9ffdc1be2866462",
+      "text": "Ooze Membrane",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.f6d9de3574b044fa",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "4429714c4caf3a3a",
+      "text": "Gelatinous Extract",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.99c76c3f77efed92",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "1b56a8b44b421363",
+      "text": "Corrosive Core",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.53ee426fcc79c2e2",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The ooze's acid is still active; take 1d6 acid damage.",
+      "fumbleEffect": "The acidic residue eats through one non-metal item in your pack (DM picks the least expensive item).",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

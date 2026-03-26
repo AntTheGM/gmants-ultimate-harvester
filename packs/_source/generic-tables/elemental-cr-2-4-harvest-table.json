@@ -1,0 +1,112 @@
+{
+  "_id": "8d909c345ddeda5d",
+  "name": "Elemental CR 2-4 Harvest Table",
+  "description": "<p>Generic harvest table for elementals of CR 2-4.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "7a86fb916d33904f",
+      "text": "Elemental Mote",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1e0dd91134ef82e8",
+          "quantity": "2d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "665720f7eb8a3eb2",
+      "text": "Primal Ash",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b2db2714aff0d62d",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "71d1f90f36b82722",
+      "text": "Elemental Core",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.01dc5f5a32bc5a08",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "cabc435c788b5c16",
+      "text": "Condensed Element",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8235e76763ada770",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "7862fbe3efac1731",
+      "text": "Pure Elemental Essence",
+      "type": 0,
+      "range": [
+        23,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 23,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0afd8b1767851779",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A surge of elemental energy erupts; take 2d6 damage of the element's type.",
+      "fumbleEffect": "The residual elemental force buffets you; you are pushed 10 feet in a direction determined by the element type.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

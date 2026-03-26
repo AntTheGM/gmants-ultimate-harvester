@@ -239,6 +239,7 @@ export async function initiateHarvest() {
         quantity: quantityRoll.total,
         category: flags.category ?? "material",
         dc: flags.dc,
+        description: await _getItemDescription(flags.itemUuid),
       };
     })
   );
@@ -738,6 +739,24 @@ async function _rollHarvestCheck(harvester, skillId, totalBonus, advantageMode) 
 /* ============================================
    Private: Tool Check
    ============================================ */
+
+/**
+ * Get the plain-text description from a compendium item UUID.
+ */
+async function _getItemDescription(uuid) {
+  if (!uuid) return "";
+  try {
+    const item = await fromUuid(uuid);
+    if (!item) return "";
+    const html = item.system.description?.value ?? "";
+    // Strip HTML tags for plain text
+    const div = document.createElement("div");
+    div.innerHTML = html;
+    return div.textContent?.trim() ?? "";
+  } catch {
+    return "";
+  }
+}
 
 function _getToolBonus(harvester, creatureType) {
   let bonus = 0;

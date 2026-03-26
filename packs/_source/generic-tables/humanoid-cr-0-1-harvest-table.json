@@ -1,0 +1,93 @@
+{
+  "_id": "25f2a86648031e1a",
+  "name": "Humanoid CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for humanoids of CR 0-1.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "c48c0249ea35492d",
+      "text": "Humanoid Teeth",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fe255798016acb61",
+          "quantity": "1d4",
+          "category": "trophy"
+        }
+      }
+    },
+    {
+      "_id": "b0b328c856b9077c",
+      "text": "Blood Vial",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.bd9e0ea7fa6bcfbf",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "aa82d29f5b2b5d91",
+      "text": "Tanned Skin",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.f3771757bdf064eb",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "1ac360f1f6cf7c7f",
+      "text": "Skull Trophy",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c4b14427873490a7",
+          "quantity": "1",
+          "category": "trophy"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The remains collapse and lacerate your hands; take 1d4 slashing damage.",
+      "fumbleEffect": "The grim work unsettles your stomach; you have disadvantage on Wisdom saving throws for 10 minutes.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

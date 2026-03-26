@@ -1,0 +1,93 @@
+{
+  "_id": "773ab10cc74c0c7f",
+  "name": "Plant CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for plants of CR 0-1.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "437c5af375bd53e6",
+      "text": "Herb Bundle",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.654aa4c94e5b5b32",
+          "quantity": "2d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "ba73745ad875779a",
+      "text": "Living Bark",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dda82925c345e849",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "9b07036fd6647c88",
+      "text": "Root Tendril",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.6a2f573d105ac185",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "7e44d30099cb8d74",
+      "text": "Blossom Essence",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.376f35741921f3b5",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The plant creature's barbs or sap sprays into your eyes; take 1d4 poison damage and be blinded until the end of your next turn.",
+      "fumbleEffect": "The plants wilt faster than expected; one herb or material item you would have harvested rots before you can collect it.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

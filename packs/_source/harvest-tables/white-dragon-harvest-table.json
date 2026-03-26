@@ -1,0 +1,132 @@
+{
+  "_id": "2766b2eb64fb6a03",
+  "name": "White Dragon Harvest Table",
+  "description": "<p>Harvest table for a white dragon (any age). Strips age prefix � Young/Adult/Ancient White Dragon all use this table.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "07699380f3a3e4c6",
+      "text": "White Dragon Scale",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.11b307a38e1c78c7",
+          "quantity": "1d6",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "5e45112e325edc60",
+      "text": "Dragon Fang",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.5e1f4966ca93ef8b",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "e6c65bb7cc58eb84",
+      "text": "Dragon Wing Membrane",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.129d80dae98ebbbd",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "1c8e8844db79634b",
+      "text": "Dragon Blood",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a0bf3833cda802b2",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "ccb0fa03a5679e0a",
+      "text": "White Dragon Frost Gland",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b214c945c749b692",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "69e9d313978ca578",
+      "text": "Dragon Heart",
+      "type": 0,
+      "range": [
+        30,
+        32
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 30,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4e7c6d7704227aac",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Ice crystals explode from the frost gland; all creatures within 10 feet take 3d8 cold damage (DC 15 Constitution save or be restrained in ice until the end of their next turn).",
+      "fumbleEffect": "A blast of cold air numbs your fingers; you have disadvantage on Dexterity checks for 5 minutes.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.b214c945c749b692",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

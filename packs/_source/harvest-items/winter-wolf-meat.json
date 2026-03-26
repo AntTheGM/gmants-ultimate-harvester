@@ -1,0 +1,27 @@
+{
+  "_id": "fb0c86a82500ea90",
+  "name": "Winter Wolf Meat",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Dense</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "1"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "uncommon",
+      "harvestBonus": null
+    }
+  }
+}

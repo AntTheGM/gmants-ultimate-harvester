@@ -1,0 +1,93 @@
+{
+  "_id": "edc9086ecdd546eb",
+  "name": "Fiend CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for fiends of CR 0-1.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "2e2cd9fb4716e016",
+      "text": "Infernal Ash",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.d1607b57a65b4fe6",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "2417a601e9040200",
+      "text": "Demon Ichor",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.13304f7dbf262f5a",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "120cb145f5521f15",
+      "text": "Devil Horn",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.f892e958e343af49",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "4ed1b8b7901ad25d",
+      "text": "Fiendish Hide",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.78ce2cc2921a204b",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A burst of infernal energy scorches your hands; take 1d6 fire damage.",
+      "fumbleEffect": "The infernal ash irritates your lungs; you cough for 1 minute and have disadvantage on Stealth checks.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

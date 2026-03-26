@@ -1,0 +1,129 @@
+{
+  "_id": "16047d5877b2139a",
+  "name": "Underground / Cave - Rare Foraging Table",
+  "description": "<p>A rare underground discovery; an exceptional specimen gleaming in the dark where none expected to find it.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "33614ccd10dbb923",
+      "text": "Crystal Fragment",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.7c517b455668fd29",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "6698b2b170d09cf3",
+      "text": "Alchemical Lichen",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dc4f8ae1e2845308",
+          "quantity": "4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "9b6ec03a02a07ef2",
+      "text": "Phosphorescent Moss",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.bf3c79d42a668da8",
+          "quantity": "4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "b686920b8ea6ecb1",
+      "text": "Rare Flower",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2dd9aeb5852f1618",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "8ad2e01e9cd2bbee",
+      "text": "Mineral Deposit",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.341a87c52604ad81",
+          "quantity": "2",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "f57827d644e1bafe",
+      "text": "Alchemist's Weed",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e1cd84030603cce3",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

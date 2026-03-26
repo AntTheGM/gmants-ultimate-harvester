@@ -1,0 +1,93 @@
+{
+  "_id": "76254e003d802982",
+  "name": "Elemental CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for elementals of CR 0-1.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "801bc9a51a53282b",
+      "text": "Elemental Mote",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1e0dd91134ef82e8",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "67114cb817133bfb",
+      "text": "Primal Ash",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b2db2714aff0d62d",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "6a92f727f0d68378",
+      "text": "Elemental Core",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.01dc5f5a32bc5a08",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "c0be209874b90ff9",
+      "text": "Condensed Element",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8235e76763ada770",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The dying elemental lashes out; take 1d6 damage of the element's type.",
+      "fumbleEffect": "The elemental material partially absorbs into your skin; you have vulnerability to the element's damage type for 1 minute.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

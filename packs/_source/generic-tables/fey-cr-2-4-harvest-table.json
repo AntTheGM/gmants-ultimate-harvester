@@ -1,0 +1,112 @@
+{
+  "_id": "e2c1cb5d6dfcac8d",
+  "name": "Fey CR 2-4 Harvest Table",
+  "description": "<p>Generic harvest table for fey of CR 2-4.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "de0ed2861c9c4077",
+      "text": "Fey Dust",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4946d0663443fea1",
+          "quantity": "2d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "17fb59f4ecf3c565",
+      "text": "Enchanted Bark",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.af6ee835295e7a53",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "d81e5f04d0b4cf70",
+      "text": "Fey Blossom",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b4c5cc243ade7b2e",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "54af6849a3a717d7",
+      "text": "Glamour Essence",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b824c17f7d238b39",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "ddc72466d203ff36",
+      "text": "Archfey Tear",
+      "type": 0,
+      "range": [
+        23,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 23,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1b905486d89de8ff",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The fey's dying glamour twists reality briefly; you are polymorphed into a rabbit for 1 round (no save).",
+      "fumbleEffect": "The fey's charm leaks out; you are charmed by the next creature you see for 1 minute.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

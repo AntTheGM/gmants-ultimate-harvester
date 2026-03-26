@@ -1,0 +1,129 @@
+{
+  "_id": "5630ff156e42a023",
+  "name": "Coastal - Rare Foraging Table",
+  "description": "<p>A rare coastal discovery; an unusual specimen washed ashore or tucked in a hidden tide pool.</p>",
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "e29fbefddc6c0a0c",
+      "text": "Alchemical Lichen",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 1,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dc4f8ae1e2845308",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "591ce5d2799d4cd8",
+      "text": "Rare Flower",
+      "type": 0,
+      "range": [
+        2,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 2,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2dd9aeb5852f1618",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "9734dec204f53046",
+      "text": "Salt Crystal",
+      "type": 0,
+      "range": [
+        3,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 3,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.625ea977f56e7877",
+          "quantity": "4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "300b9cadf4cc8abc",
+      "text": "Coastal Fish",
+      "type": 0,
+      "range": [
+        4,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 4,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.7783b0b110611144",
+          "quantity": "3",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "a508c69fe8438cc9",
+      "text": "Shellfish",
+      "type": 0,
+      "range": [
+        5,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 5,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.582decb647301ac5",
+          "quantity": "4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "9a046091719971ef",
+      "text": "Alchemist's Weed",
+      "type": 0,
+      "range": [
+        6,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 6,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e1cd84030603cce3",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critSuccessQuantity": "1"
+    }
+  }
+}

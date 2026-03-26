@@ -1,0 +1,94 @@
+{
+  "_id": "cf25b17381d50ed5",
+  "name": "Tyrannosaurus Rex Harvest Table",
+  "description": "<p>Harvest table for a tyrannosaurus rex (Beast CR 8).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "ea22f15eb057f496",
+      "text": "Dinosaur Meat",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c8866e1f17929e55",
+          "quantity": "2d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "5fa5eeca54c48e9d",
+      "text": "Dinosaur Bone",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.9d223c4c43e88f6f",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "03baaa2a1c4edd86",
+      "text": "T-Rex Fang",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fbc46e0c6c44eb72",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "a2d16c16da73a991",
+      "text": "T-Rex Hide",
+      "type": 0,
+      "range": [
+        25,
+        27
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 25,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.5c87de57f24b709f",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The dying rex's final reflex contracts its jaw; make a DC 16 Dexterity save or take 4d6 piercing damage.",
+      "fumbleEffect": "You misjudge the scale of the anatomy and cut yourself on a rib shard; take 1d8 piercing damage.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.5c87de57f24b709f",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "_id": "7a7dadf8ce530d31",
+  "name": "Undead CR 11+ Harvest Table",
+  "description": "<p>Generic harvest table for undead of CR 11 or higher.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "88708af8779cd0a3",
+      "text": "Shadow Essence",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b046e3122397fa7a",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "332924f55503bd6f",
+      "text": "Ectoplasmic Residue",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.af058ca78118b32b",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "e8ebb79e89d51e78",
+      "text": "Death Shroud",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.09958e6b072c6a44",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "a878a76ec40ee691",
+      "text": "Soul Fragment",
+      "type": 0,
+      "range": [
+        32,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 32,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b9fa4af2fa318ba3",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The soul animating the remains spitefully releases in a wave; take 3d8 necrotic damage and make a DC 17 Wisdom save or be frightened for 1 minute.",
+      "fumbleEffect": "The overwhelming aura of death leaves you shaken; you cannot willingly approach another undead corpse for 10 minutes.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

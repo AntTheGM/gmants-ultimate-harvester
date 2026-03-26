@@ -1,0 +1,112 @@
+{
+  "_id": "c80386d38f3a793e",
+  "name": "Dragon CR 11+ Harvest Table",
+  "description": "<p>Generic harvest table for dragons of CR 11 or higher.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "37e231af5cc41b32",
+      "text": "Dragon Hide",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.9b4b402eefdb6885",
+          "quantity": "2",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "2dcab6c6fe3b9b8f",
+      "text": "Dragon Blood",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a0bf3833cda802b2",
+          "quantity": "2d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "e91a60ba4bf2edc2",
+      "text": "Dragon Teeth",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fde737d319c5c668",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "e3c3d367d20837cf",
+      "text": "Breath Gland",
+      "type": 0,
+      "range": [
+        32,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 32,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.61d83c235271929c",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "be3db0ae09d16d59",
+      "text": "Dragon Heart",
+      "type": 0,
+      "range": [
+        35,
+        37
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 35,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4e7c6d7704227aac",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The death-throes release a final breath; all creatures within 20 feet take 4d10 elemental damage (DC 18 Dexterity save for half).",
+      "fumbleEffect": "The sheer magical density of the corpse overwhelms you; you lose one spell slot of your highest available level.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

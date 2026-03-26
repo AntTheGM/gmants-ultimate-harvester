@@ -1,0 +1,112 @@
+{
+  "_id": "5d930fde0e8c1d92",
+  "name": "Fey CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for fey of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "efda8735e2c4120d",
+      "text": "Fey Blossom",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b4c5cc243ade7b2e",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "9f33740af06725f6",
+      "text": "Glamour Essence",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b824c17f7d238b39",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "0460020b052f3c89",
+      "text": "Archfey Tear",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1b905486d89de8ff",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "0460020b052f3c89",
+      "text": "Archfey Tear",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1b905486d89de8ff",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "0460020b052f3c89",
+      "text": "Archfey Tear",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1b905486d89de8ff",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The fey's final curse takes hold; make a DC 15 Charisma save or be cursed to speak only in rhyme for 24 hours (disadvantage on Charisma checks that require normal speech).",
+      "fumbleEffect": "The glamour resonance destabilizes your appearance; you have disadvantage on Charisma (Persuasion) and Charisma (Deception) checks for 1 hour.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

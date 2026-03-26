@@ -1,0 +1,27 @@
+{
+  "_id": "f7b7c9291e854400",
+  "name": "Froghemoth Tongue",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A prehensile</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "15"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "rare",
+      "harvestBonus": null
+    }
+  }
+}

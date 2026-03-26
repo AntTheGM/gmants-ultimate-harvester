@@ -1,0 +1,26 @@
+{
+  "_id": "ee7c25ca5ed5c182",
+  "name": "Bitter Greens",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Leafy greens pulled from the ground's edge; nutritious despite the sharp flavor.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food"
+    }
+  }
+}

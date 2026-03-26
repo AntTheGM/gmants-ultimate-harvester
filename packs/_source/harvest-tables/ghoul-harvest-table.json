@@ -1,0 +1,75 @@
+{
+  "_id": "b86e39587c74a146",
+  "name": "Ghoul Harvest Table",
+  "description": "<p>Harvest table for a ghoul (Undead CR 1).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "43c6efd7e3628d17",
+      "text": "Ghoul Claw",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ee6024296a14e3eb",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "32848c9ea5b47a64",
+      "text": "Undead Ichor",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8e90b043cce783df",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "df0dee4b117ce497",
+      "text": "Ghoul Tongue",
+      "type": 0,
+      "range": [
+        16,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 16,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2a02c138af2dbb74",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Residual paralytic energy discharges on contact; make a DC 12 Constitution save or be paralyzed until the end of your next turn.",
+      "fumbleEffect": "Foul ichor splashes your face; you are sickened and have disadvantage on Wisdom (Perception) checks for 1 minute.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.2a02c138af2dbb74",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

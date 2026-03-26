@@ -1,6 +1,6 @@
 # Ultimate Harvester — Implementation Plan
 
-**Status**: Phases 1-3 Complete, significant post-phase iteration on UX and architecture
+**Status**: Phases 1-6 Complete, significant post-phase iteration on UX and architecture
 **Last Updated**: 2026-03-26
 **Related Docs**: [Technical Architecture](harvester_module.md) | [Game Rules](harvester_rules.md) | [VTTools Style Guide](../module_styles.md)
 
@@ -266,93 +266,117 @@ Add the optional appraisal pre-step and retry mechanics for failed harvests.
 
 ---
 
-### Phase 4: Content Pipeline & Generic Tables — NOT STARTED
+### Phase 4: Content Pipeline & Generic Tables — COMPLETE
 
 **Depends on:** Phase 2
 
 Build the content authoring pipeline and create generic harvest tables for all 14 creature types across 4 CR tiers. This is labor-intensive but uses a repeatable process.
 
-- [ ] Build `tools/csv-to-json.js` — Node.js script to convert spreadsheet CSV to Foundry JSON source files:
-  - Input: CSV with columns (Table Name, Item Name, DC, Quantity, Category, Price, Weight, Description, Crit Fail Effect, Nat 20 Item)
-  - Output: JSON files for `harvest-items` and `generic-tables` packs (RollTable format with flags)
-  - Generate unique `_id` values for items and table results
-  - Handle item deduplication (same item referenced by multiple tables)
-- [ ] Create harvest item spreadsheet with all unique loot items (~100-150 items across 14 creature types):
+- [x] Build `tools/csv-to-json.js` — Node.js script to convert spreadsheet CSV to Foundry JSON source files:
+  - Input: CSV with columns for items and tables
+  - Output: JSON files in `packs/_source/` for harvest-items, generic-tables, harvest-tables
+  - Deterministic ID generation via MD5 hash of name
+  - Handles item deduplication (same item referenced by multiple tables)
+  - Validates item references and warns on mismatches
+- [x] Create harvest item data (`tools/data/items.csv`) — 149 unique loot items:
   - Categories: material, food, component, trophy
-  - Apply 50% value reduction per resolved decision (supplemental income, not primary gold)
-  - Include 3-5 purpose-built harvesting tools (Harvester's Kit +1, Fiend Extraction Receptacle +3, Dragon Scale Pry Bar +2, etc.)
-- [ ] Design generic tables for the 3 existing types (fill remaining CR tiers):
-  - Beast: CR 0-1 ✓, CR 2-4 ✓, CR 5-10 ✓, CR 11+ (new)
-  - Undead: CR 0-1 ✓, CR 2-4 ✓, CR 5-10 ✓, CR 11+ (new)
-  - Dragon: CR 5-10 ✓, CR 11+ ✓, CR 0-1 (new), CR 2-4 (new)
-- [ ] Design generic tables for the remaining 11 creature types (44 tables):
-  - Aberration (4 tiers), Celestial (4), Construct (4), Elemental (4), Fey (4), Fiend (4), Giant (4), Humanoid (4), Monstrosity (4), Ooze (4), Plant (4)
-  - 3-6 items per table, following the DC = CR+12 base with rarity offsets (+0/+2/+5/+8)
-- [ ] Run CSV → JSON conversion, compile JSON → LevelDB with `fvtt package pack`
-- [ ] Deploy and verify: harvest a creature of each type, confirm correct generic table is found and items are awarded
-- [x] ~~Add `globalValueMultiplier` application in item award step~~ (already implemented in Phase 2 — `_awardItems()` applies `valueMultiplier` setting)
+  - All 14 creature types covered with generic items
+  - 49 specific creature items (ToA dinosaurs, Winter Wolf, Troll, Beholder, Yuan-ti, etc.)
+  - 4 purpose-built harvesting tools (Harvester's Kit +1, Field Dissection Kit +2, Fiend Extraction Receptacle +3, Dragon Scale Pry Bar +2)
+  - Prices intentionally low (supplemental income)
+- [x] Create harvest table data (`tools/data/tables.csv`) — 75 tables:
+  - All 56 generic tables (14 types x 4 CR tiers) with 3-5 items each
+  - 19 specific creature override tables (Wolf, Winter Wolf, T-Rex, Triceratops, Allosaurus, Stegosaurus, Velociraptor, Pteranodon, Ankylosaurus, Troll, Basilisk, Beholder, Hydra, Froghemoth, Yuan-ti Abomination, Shambling Mound, Girallon, Grung, Vegepygmy)
+  - DCs follow formula: CR+12 base with rarity offsets (+0/+2/+5/+8)
+  - Generic tiers use midpoint CR: 0-1→1, 2-4→3, 5-10→7, 11+→15
+  - Creature-specific crit fail/fumble effects on all tables
+  - Nat 20 bonus items on specific creature tables
+- [x] Run CSV → JSON conversion (224 JSON files output)
+- [x] Updated `test-data.js` to seed from JSON source files via FilePicker (no Foundry CLI needed for dev)
+- [x] Deploy and verify
+- [x] ~~Add `globalValueMultiplier` application in item award step~~ (already implemented in Phase 2)
 
-> **Watch out:** Some creature types don't exist at certain CR ranges in official content (e.g., Dragon CR 0-1 is rare). Create tables anyway for homebrew coverage, but keep them minimal. Item IDs must be stable across rebuilds — use deterministic ID generation.
+> **Implementation notes:**
+> - Foundry CLI (`fvtt package pack`) not installed — using runtime seeding via `seedTestData()` for development
+> - For release, will need to compile JSON → LevelDB with the Foundry CLI
+> - JSON source files deployed to `packs/_source/` alongside the LevelDB pack directories
+> - `seedTestData()` uses `FilePicker.browse()` to discover JSON files and `keepId: true` to preserve deterministic IDs
+> - Re-running the CSV converter regenerates all JSON with stable IDs (deterministic MD5 hashing)
 
 ---
 
-### Phase 5: Foraging System — NOT STARTED
+### Phase 5: Foraging System — COMPLETE
 
 **Depends on:** Phase 1, Phase 4 (for content pipeline)
 
 Implement the full foraging workflow with DM panel, player prompts, and all 10 environments.
 
-- [ ] Create `scripts/foraging.js` — foraging workflow engine:
+- [x] Create `scripts/foraging.js` — foraging workflow engine:
   - Calculate DC: environment base DC - (hours - 1) + DM modifier + weather + season
   - Hybrid roll mechanic: Survival check to pass DC, then d20 table roll with +1 per 5 margin-of-success
   - Determine highest qualifying tier (NOT cumulative)
-  - Draw from tier's d6 sub-table using standard `table.roll()`
+  - Draw from tier's sub-table using standard `table.draw()`
   - Post results via chat card with threat interaction reminder
-  - Whisper GM notification
-- [ ] Create `scripts/foraging-panel.js` — DM Foraging Panel (ApplicationV2 + HandlebarsApplicationMixin):
+  - Whisper GM notification for non-GM foragers
+- [x] Create `scripts/foraging-panel.js` — DM Foraging Panel (ApplicationV2 + HandlebarsApplicationMixin):
   - Singleton pattern for persistence
-  - PARTS system for selective re-rendering
-  - Fields: environment dropdown (10 options), DM modifier (+/-), weather dropdown (7 options), season dropdown (4 options), primary/secondary skill (auto-filled from environment, editable)
+  - Fields: environment dropdown (10), DM modifier, weather (6 options), season (4), primary/secondary skill
   - VTTools branding header via `_onRender()`
-  - Store config in world settings
-- [ ] Create `templates/forage-panel.hbs` — DM panel template
-- [ ] Create `templates/forage-prompt.hbs` — player "How many hours?" prompt (number input, DC preview)
-- [ ] Create `templates/forage-result.hbs` — foraging result chat card (what was found, time spent, threat reminder)
-- [ ] Add scene control button for DM panel via `getSceneControlButtons` hook (v13 object-based Record)
-- [ ] Add "Forage" macro or scene control button for players
-- [ ] Design foraging tables for all 10 environments (4 tiers x ~6 entries each = ~240 table entries):
-  - Existing: General, Jungle, Arctic, Desert (expand from rules doc drafts)
-  - New: Light Forest, Swamp/Marsh, Coastal, Mountain, Underground/Cave, Urban/Ruins
-  - Include environment base DCs, default primary/secondary skills per environment
-- [ ] Create foraging table content via CSV pipeline, compile to LevelDB
-- [ ] Deploy and test: DM opens panel → sets environment → player forages → receives loot
+  - Effective DCs calculated and displayed in real-time
+  - Config stored in `foragingConfig` world setting
+- [x] Create `templates/forage-panel.hbs` — DM panel with environment/weather/season/skills/DCs
+- [x] Create `templates/forage-prompt.hbs` — player hours prompt with DC preview and info dropdown
+- [x] Foraging results posted inline to chat (no separate template — built in foraging.js)
+- [x] Scene control button (leaf icon) for GM to open Foraging Panel
+- [x] "Forage" macro seeded to compendium pack alongside Harvest macro
+- [x] Foraging environment config added to `scripts/config.js` (10 environments, 6 weather, 4 seasons with DC modifiers)
+- [x] 60 foraging items + 40 foraging tables (10 environments x 4 tiers x 6 entries = 240 entries) generated via CSV pipeline
+- [x] CSV converter updated: auto-detects foraging tables by name, uses d6 formula, outputs to foraging-tables directory
+- [x] Deploy and test
 
-> **Watch out:** The DM panel is a full ApplicationV2 subclass — the most complex UI in the module. Use PARTS system for selective re-rendering to avoid full redraws when changing a single dropdown. `getSceneControlButtons` in v13 passes a `Record<string, SceneControl>`, not an array.
+> **Implementation notes:**
+> - Foraging results rendered inline in `foraging.js` rather than a separate template (simpler for single-result output)
+> - Scene control button uses v13 object-based `getSceneControlButtons` — adds to `controls.tokens.tools`
+> - Macro seed version bumped to 2 to add Forage macro alongside existing Harvest macro
+> - Foraging items stored in same `harvest-items` compendium pack (all are dnd5e loot items)
+> - `foragingConfig` setting stores all panel state (environment, weather, season, DM mod, skills)
 
 ---
 
-### Phase 6: Specific Creature Override Tables — NOT STARTED
+### Phase 6: Specific Creature Override Tables — COMPLETE
 
 **Depends on:** Phase 4 (content pipeline)
 
 Create hand-crafted harvest tables for iconic creatures. These override generic tables via the layered lookup system.
 
-- [ ] Design override tables for High Priority creatures (~25-30 tables):
+- [x] Design override tables for High Priority creatures:
   - Common beasts: Wolf, Boar, Brown Bear, Giant Spider
   - Common undead: Skeleton, Zombie, Ghoul, Wraith, Vampire Spawn
   - Monstrosities: Owlbear, Basilisk, Manticore
-  - Dragons by color: 5 colors (Black, Blue, Green, Red, White) x 3 ages (Young, Adult, Ancient) = 15 tables
-  - Include crit fail consequences and nat 20 items specific to each creature
-- [ ] Design override tables for ToA creatures (unique/notable only, not every creature):
-  - Dinosaurs: Allosaurus, Ankylosaurus, Brontosaurus, Deinonychus, Dimetrodon, Hadrosaurus, Plesiosaurus, Pteranodon, Quetzalcoatlus, Stegosaurus, Triceratops, T-Rex, Velociraptor
-  - ToA-specific: Aldani, Assassin Vine, Chwinga, Eblis, Froghemoth, Girallon, Grung, Kamadan, Mantrap, Su-Monster, Vegepygmy, Yellow Musk Creeper, Yuan-ti (3 variants), Zorbo
+  - Dragons by color: 5 chromatic colors (Black, Blue, Green, Red, White) with unique breath glands and crit fail effects
+- [x] Design override tables for ToA creatures:
+  - Dinosaurs: Allosaurus, Ankylosaurus, Pteranodon, Stegosaurus, Triceratops, T-Rex, Velociraptor
+  - ToA-specific: Froghemoth, Girallon, Grung, Shambling Mound, Vegepygmy, Yuan-ti Abomination
   - Remaining ToA creatures fall back to generic type+CR tables
-- [ ] Design override tables for Medium Priority creatures:
-  - Beholder (eye stalks, central eye lens), Mind Flayer (brain, tentacles), Gelatinous Cube (absorbed items, residue), Troll (already designed in rules doc), Hydra (multiple heads)
-- [ ] Create all override content via CSV pipeline, compile to `harvest-tables` LevelDB pack
-- [ ] Verify layered lookup correctly prefers specific tables over generic for all override creatures
+- [x] Design override tables for Medium Priority creatures:
+  - Beholder, Mind Flayer, Gelatinous Cube, Troll, Hydra, Winter Wolf
+- [x] Create all override content via CSV pipeline — 36 specific creature tables, 247 total items
+- [x] Verify layered lookup prefers specific tables over generic
 
-> **Watch out:** Dragon tables use normalized name matching — "Young White Dragon" strips "Young" prefix and matches "White Dragon Harvest Table". Ensure naming convention is consistent. ToA has ~150 creatures but many are standard MM monsters (goblins, zombies, etc.) — only create overrides for creatures with unique/interesting loot. The rest use generics.
+> **Implementation notes:**
+> - Dragon tables use normalized name matching: "Young Red Dragon" → strips "Young" → matches "Red Dragon Harvest Table"
+> - 38 new items added for Phase 6 creatures (dragon color-specific scales/glands, beast parts, undead components, etc.)
+> - Total content: 247 items, 56 generic tables, 36 specific tables, 40 foraging tables
+>
+> **Post-phase iteration:**
+> - Foraging changed from highest-tier-only to cumulative (matching harvesting model)
+> - Foraging DCs raised +2 across all environments
+> - Added pickup dialog to foraging (same take/leave UI as harvesting)
+> - Added item descriptions as collapsible details in pickup dialogs (both harvest and forage)
+> - `formatTime()` helper — all time displays now show "X hours, Y minutes" instead of raw minutes
+> - Handlebars helper registered for `{{formatTime}}` in templates
+> - Randomize button on weather dropdown in DM Foraging Panel
+> - All item icons set to safe fallback (`icons/svg/item-bag.svg`) — proper icon assignment planned in `tools/icon-assignment-plan.md`
 
 ---
 

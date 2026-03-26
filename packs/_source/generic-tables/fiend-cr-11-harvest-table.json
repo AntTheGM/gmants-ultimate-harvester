@@ -1,0 +1,112 @@
+{
+  "_id": "9823fc48f7ad294b",
+  "name": "Fiend CR 11+ Harvest Table",
+  "description": "<p>Generic harvest table for fiends of CR 11 or higher.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "5cd570bc7008d705",
+      "text": "Abyssal Essence",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fc90c4a02229139e",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "34540dfed7bbe8b6",
+      "text": "Hellfire Gland",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8bf0b14c0c2ffb90",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f8ae0253c5e08c4f",
+      "text": "Damned Soul Residue",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3ea85806a3294b92",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f8ae0253c5e08c4f",
+      "text": "Damned Soul Residue",
+      "type": 0,
+      "range": [
+        32,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 32,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3ea85806a3294b92",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f8ae0253c5e08c4f",
+      "text": "Damned Soul Residue",
+      "type": 0,
+      "range": [
+        35,
+        37
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 35,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3ea85806a3294b92",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The fiend's death curse activates; you take 4d8 fire damage and are cursed — you have disadvantage on death saving throws until the curse is removed.",
+      "fumbleEffect": "The fiend's true name brands itself on your mind; you suffer from nightmares and lose the benefit of a long rest.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_id": "4d11184ae00d4ce0",
+  "name": "Treant Heartwood",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>An ancient burl of magically suffused wood from the core of a treant.</p>"
+    },
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  }
+}

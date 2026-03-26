@@ -1,0 +1,93 @@
+{
+  "_id": "b01dcdae2c947c64",
+  "name": "Celestial CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for celestials of CR 0-1.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "fc772ba5b2df8ef6",
+      "text": "Radiant Dust",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c03e0af7fd777451",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "68022a007317dff9",
+      "text": "Celestial Feather",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.065f43bbe9bc1c28",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "5414e7d66207a4af",
+      "text": "Divine Essence",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fa8b770acea7412f",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "e82b46a4c181909f",
+      "text": "Sacred Blood",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.de4988b6d74be3b2",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Divine reprisal for desecrating the remains; take 1d8 radiant damage.",
+      "fumbleEffect": "The divine light fades rapidly; you work in sudden dimness and accidentally damage one sample.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

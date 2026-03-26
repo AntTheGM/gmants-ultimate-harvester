@@ -1,0 +1,75 @@
+{
+  "_id": "e6af15bba682fbec",
+  "name": "Pteranodon Harvest Table",
+  "description": "<p>Harvest table for a pteranodon (Beast CR 1/4).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "f3188d6db12cb24e",
+      "text": "Dinosaur Meat",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c8866e1f17929e55",
+          "quantity": "1d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "07faf58b88915a1d",
+      "text": "Dinosaur Bone",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.9d223c4c43e88f6f",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "5ad16ff606b6b22b",
+      "text": "Pteranodon Wing Membrane",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b1217e3d4a71ba79",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The beak snaps shut on your wrist; take 1d4 piercing damage.",
+      "fumbleEffect": "The wing membrane tears more easily than expected; one wing membrane portion is destroyed.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.b1217e3d4a71ba79",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

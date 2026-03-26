@@ -1,0 +1,27 @@
+{
+  "_id": "8ac09fa84051e6a1",
+  "name": "Giant Hair",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A bundle of coarse</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "2"
+    },
+    "rarity": "sp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "common",
+      "harvestBonus": null
+    }
+  }
+}

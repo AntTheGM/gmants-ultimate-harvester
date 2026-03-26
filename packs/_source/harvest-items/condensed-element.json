@@ -1,0 +1,27 @@
+{
+  "_id": "8235e76763ada770",
+  "name": "Condensed Element",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A solid block of almost pure elemental material</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "15"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "rare",
+      "harvestBonus": null
+    }
+  }
+}

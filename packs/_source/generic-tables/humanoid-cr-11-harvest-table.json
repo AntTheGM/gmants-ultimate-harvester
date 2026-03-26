@@ -1,0 +1,112 @@
+{
+  "_id": "fa5d9e153ae13044",
+  "name": "Humanoid CR 11+ Harvest Table",
+  "description": "<p>Generic harvest table for humanoids of CR 11 or higher.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "41f0474ff3ce93f4",
+      "text": "Skull Trophy",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c4b14427873490a7",
+          "quantity": "1",
+          "category": "trophy"
+        }
+      }
+    },
+    {
+      "_id": "036d0f7f0707a0a4",
+      "text": "Blood Vial",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.bd9e0ea7fa6bcfbf",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "5e6bb8d70eefbfcc",
+      "text": "Warrior Heart",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3b340e9bfe69c862",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "5e6bb8d70eefbfcc",
+      "text": "Warrior Heart",
+      "type": 0,
+      "range": [
+        32,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 32,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3b340e9bfe69c862",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "5e6bb8d70eefbfcc",
+      "text": "Warrior Heart",
+      "type": 0,
+      "range": [
+        35,
+        37
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 35,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3b340e9bfe69c862",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A contingency or death ward on the corpse triggers; take 4d8 damage of an appropriate type and make a DC 17 saving throw or suffer an additional effect (DM's discretion based on the enemy's abilities).",
+      "fumbleEffect": "The legend of this individual's deeds makes the harvesting deeply uncomfortable; make a DC 16 Wisdom save or gain a short-term madness (per DMG).",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

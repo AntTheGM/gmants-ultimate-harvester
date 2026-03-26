@@ -1,0 +1,93 @@
+{
+  "_id": "d45c8f96caf4a625",
+  "name": "Undead CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for undead of CR 0-1.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "6817979d4fec3028",
+      "text": "Rotting Flesh",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.80c4ffb7480c5b18",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "973cf6af3439b44d",
+      "text": "Undead Ichor",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8e90b043cce783df",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "fbe17a7520413074",
+      "text": "Ghoul Claws",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0090f87460f55a68",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "21d60997aa347ae8",
+      "text": "Necrotic Residue",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2d44f01b61ccadd2",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Necrotic energy discharges from the corpse; take 1d4 necrotic damage.",
+      "fumbleEffect": "The foul ichor splashes your hands; you have disadvantage on Dexterity checks until you wash them.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "_id": "10365a32499713fe",
+  "name": "Triceratops Harvest Table",
+  "description": "<p>Harvest table for a triceratops (Beast CR 5).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "824da1ea2cf1adde",
+      "text": "Dinosaur Meat",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c8866e1f17929e55",
+          "quantity": "2d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "d3c1d90e7ab77335",
+      "text": "Dinosaur Hide",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.433d812e75092116",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "2dbf39bab53ceb82",
+      "text": "Triceratops Frill",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.abdc7f683e8c1fcb",
+          "quantity": "1",
+          "category": "trophy"
+        }
+      }
+    },
+    {
+      "_id": "a757eb5a868539fc",
+      "text": "Triceratops Horn",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b715dbd5faaa97a7",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The massive head shifts and a horn sweeps toward you; make a DC 14 Dexterity save or take 2d8 piercing damage.",
+      "fumbleEffect": "The horns are more firmly anchored than expected; you strain your back and have disadvantage on Strength checks for 1 hour.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.b715dbd5faaa97a7",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

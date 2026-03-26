@@ -7,18 +7,26 @@
   </div>
 
   {{#if timeElapsed}}
-  <p class="ultimate-harvester-time-banner"><i class="fas fa-clock ultimate-harvester-icon--time"></i> <strong>{{localize "MHARVEST.Chat.TimeSpent"}}: {{timeElapsed}} minutes</strong></p>
+  <p class="ultimate-harvester-time-banner"><i class="fas fa-clock ultimate-harvester-icon--time"></i> <strong>{{localize "MHARVEST.Chat.TimeSpent"}}: {{formatTime timeElapsed}}</strong></p>
   {{/if}}
 
   <div class="ultimate-harvester-section">
     {{#each items}}
-    <label class="ultimate-harvester-checkbox">
-      <input type="checkbox" data-idx="{{this.idx}}" checked />
-      <i class="{{this.categoryIcon}} ultimate-harvester-icon--{{this.category}}"></i>
-      <span><strong>{{this.name}}</strong> &times;{{this.quantity}}</span>
-      <span class="ultimate-harvester-badge ultimate-harvester-badge--{{this.category}}">{{this.categoryLabel}}</span>
-      <span class="ultimate-harvester-dc-label">DC {{this.dc}}</span>
-    </label>
+    <div class="ultimate-harvester-pickup-item">
+      <label class="ultimate-harvester-checkbox">
+        <input type="checkbox" data-idx="{{this.idx}}" checked />
+        <i class="{{this.categoryIcon}} ultimate-harvester-icon--{{this.category}}"></i>
+        <span><strong>{{this.name}}</strong> &times;{{this.quantity}}</span>
+        <span class="ultimate-harvester-badge ultimate-harvester-badge--{{this.category}}">{{this.categoryLabel}}</span>
+        {{#if this.dc}}<span class="ultimate-harvester-dc-label">DC {{this.dc}}</span>{{/if}}
+      </label>
+      {{#if this.description}}
+      <details class="ultimate-harvester-item-details">
+        <summary class="ultimate-harvester-details-toggle"><i class="fas fa-info-circle"></i> Details</summary>
+        <p class="ultimate-harvester-item-description">{{this.description}}</p>
+      </details>
+      {{/if}}
+    </div>
     {{/each}}
   </div>
 </div>

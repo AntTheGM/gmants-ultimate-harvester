@@ -1,0 +1,93 @@
+{
+  "_id": "1c2665885ed0ce32",
+  "name": "Aberration CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for aberrations of CR 0-1.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "c738a5d3bc0161ae",
+      "text": "Aberrant Flesh",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.dd9f9ceb0a7dfa2f",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "d00f6de9de909aad",
+      "text": "Psionic Crystal",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.77befdd65f8ba4d7",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "2a6f843cd5242958",
+      "text": "Mind Residue",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.be367e3314b25157",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "7b04bf60f778905c",
+      "text": "Eldritch Ichor",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e800ece6a64f9336",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Alien thought-fragments discharge from the corpse; make a DC 11 Intelligence save or take 1d6 psychic damage.",
+      "fumbleEffect": "The non-Euclidean anatomy confounds you; you lose 1 minute of harvesting time orienting yourself.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

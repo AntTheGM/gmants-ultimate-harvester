@@ -1,0 +1,94 @@
+{
+  "_id": "e21e1f4671de4699",
+  "name": "Brown Bear Harvest Table",
+  "description": "<p>Harvest table for a brown bear (Beast CR 1).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "8d1103e3a3b0a2f5",
+      "text": "Animal Meat",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.51f39152b6c48036",
+          "quantity": "1d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "4b46b0c9d8675883",
+      "text": "Bear Claws",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.7b1d80f600488690",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "31d4c0c34e05b9ab",
+      "text": "Bear Pelt",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.7efb8d13ac7883cd",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "4677da2fe22b4d3c",
+      "text": "Bear Fat",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ca38b2cacb2a6632",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The bear's massive paw swings reflexively; make a DC 13 Strength save or take 2d6 slashing damage and be knocked prone.",
+      "fumbleEffect": "The bear's dense fat is difficult to separate cleanly; you ruin one portion of fat and must discard it.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.7efb8d13ac7883cd",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

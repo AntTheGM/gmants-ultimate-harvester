@@ -165,6 +165,20 @@ a.ultimate-harvester-branding:hover {
   flex: 1;
 }
 
+/* --- Randomize Button --- */
+.ultimate-harvester-randomize-btn {
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 0.9rem;
+  padding: 0.1rem 0.25rem;
+  flex-shrink: 0;
+}
+
+.ultimate-harvester-randomize-btn:hover {
+  opacity: 1;
+  color: var(--mharvest-gold);
+}
+
 /* --- Details/Collapsible Info --- */
 .ultimate-harvester-details-toggle {
   cursor: pointer;
@@ -317,6 +331,33 @@ details[open] > .ultimate-harvester-details-toggle::before {
 .ultimate-harvester-difficulty-label--near-impossible {
   color: var(--mharvest-brand);
   font-style: italic;
+}
+
+/* --- Pickup Item Container --- */
+.ultimate-harvester-pickup-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0.1rem 0;
+  border-bottom: 1px solid var(--mharvest-border-light, rgba(80, 60, 40, 0.1));
+}
+
+.ultimate-harvester-pickup-item:last-child {
+  border-bottom: none;
+}
+
+.ultimate-harvester-item-details {
+  margin-left: 1.6rem;
+  margin-bottom: 0.15rem;
+}
+
+.ultimate-harvester-item-description {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  font-style: italic;
+  margin: 0.15rem 0 0 0;
+  padding-left: 0.5rem;
+  border-left: 2px solid var(--mharvest-border-light, rgba(80, 60, 40, 0.15));
 }
 
 /* --- DC Labels --- */

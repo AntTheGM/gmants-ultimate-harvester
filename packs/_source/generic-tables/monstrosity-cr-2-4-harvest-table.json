@@ -1,0 +1,112 @@
+{
+  "_id": "fe1e32b2675d24d0",
+  "name": "Monstrosity CR 2-4 Harvest Table",
+  "description": "<p>Generic harvest table for monstrosities of CR 2-4.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "8a0a733082e2502a",
+      "text": "Monster Hide",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.d6a18087ee5ef24b",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "ce5727d4e5a213a1",
+      "text": "Monster Fangs",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.7d4ee80afdf06585",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "6b6718d11c440a28",
+      "text": "Monster Sinew",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.32e45e2f0a6883b7",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "b90da3734ff98d5e",
+      "text": "Aberrant Organ",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.774edc2447487188",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f9f405473a62d0ff",
+      "text": "Alpha Trophy",
+      "type": 0,
+      "range": [
+        23,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 23,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2c4c45f9d284beb0",
+          "quantity": "1",
+          "category": "trophy"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The creature's barbed hide snags your tools; take 1d6 piercing damage and your harvesting tools are damaged.",
+      "fumbleEffect": "You pull too hard on a sinew; you strain a muscle and have disadvantage on Strength checks for 1 hour.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

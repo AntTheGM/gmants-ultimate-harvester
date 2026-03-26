@@ -1,0 +1,132 @@
+{
+  "_id": "1421a7f899433ba1",
+  "name": "Black Dragon Harvest Table",
+  "description": "<p>Harvest table for a black dragon (any age). Strips age prefix � Young/Adult/Ancient Black Dragon all use this table.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "78df41a8bdeea005",
+      "text": "Black Dragon Scale",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.5918cb658bda1f2d",
+          "quantity": "1d6",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "559591f3d69bc987",
+      "text": "Dragon Fang",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.5e1f4966ca93ef8b",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "06c08ed94e2185af",
+      "text": "Dragon Wing Membrane",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.129d80dae98ebbbd",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "5552b594d38d3544",
+      "text": "Dragon Blood",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a0bf3833cda802b2",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "8715c41c03d38e38",
+      "text": "Black Dragon Acid Gland",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.f52612813c174830",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "793fec602af1bb8a",
+      "text": "Dragon Heart",
+      "type": 0,
+      "range": [
+        30,
+        32
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 30,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4e7c6d7704227aac",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Acid sprays from a ruptured gland; all creatures within 10 feet take 3d8 acid damage (DC 15 Dexterity save for half).",
+      "fumbleEffect": "A trickle of acid eats through your glove; take 1d4 acid damage and your tools have a -1 penalty to your next harvest check.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.f52612813c174830",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

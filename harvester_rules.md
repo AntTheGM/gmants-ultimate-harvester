@@ -487,7 +487,7 @@ Default for most environments: Primary = Survival, Secondary = Nature.
 
 ### Foraging Tiers (Highest Tier Only)
 
-Foraging uses 3 DC tiers + Nat 20. Unlike harvesting, the player gets results from the **single highest tier they qualify for**, not all tiers cumulatively. No critical fail on foraging.
+Foraging uses 3 DC tiers + Nat 20. Like harvesting, foraging is **cumulative** — the player gets one random result from each tier they qualify for. No critical fail on foraging.
 
 | Tier | Description |
 |---|---|
@@ -585,16 +585,16 @@ Each environment has its own baked-in base DCs for the three tiers. These alread
 
 | Environment | Tier 1 (Basic) | Tier 2 (Successful) | Tier 3 (Bountiful) | Default Skill |
 |---|---|---|---|---|
-| Light Forest | 12 | 16 | 20 | Survival |
-| Dense Forest / Jungle | 10 | 14 | 18 | Survival |
-| Plains / Grassland | 12 | 16 | 20 | Survival |
-| Swamp / Marsh | 12 | 16 | 20 | Nature |
-| Coastal | 11 | 15 | 19 | Survival |
-| Desert / Wasteland | 17 | 21 | 25 | Survival |
-| Arctic / Tundra | 15 | 19 | 23 | Survival |
-| Underground / Cave | 15 | 19 | 23 | Nature |
-| Mountain | 14 | 18 | 22 | Survival |
-| Urban / Ruins | 16 | 20 | 24 | Investigation |
+| Light Forest | 14 | 18 | 22 | Survival |
+| Dense Forest / Jungle | 12 | 16 | 20 | Survival |
+| Plains / Grassland | 14 | 18 | 22 | Survival |
+| Swamp / Marsh | 14 | 18 | 22 | Nature |
+| Coastal | 13 | 17 | 21 | Survival |
+| Desert / Wasteland | 19 | 23 | 27 | Survival |
+| Arctic / Tundra | 17 | 21 | 25 | Survival |
+| Underground / Cave | 17 | 21 | 25 | Nature |
+| Mountain | 16 | 20 | 24 | Survival |
+| Urban / Ruins | 18 | 22 | 26 | Investigation |
 
 ### Weather Modifiers
 

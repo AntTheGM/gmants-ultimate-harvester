@@ -1,0 +1,56 @@
+{
+  "_id": "d316266b86d4a725",
+  "name": "Vegepygmy Harvest Table",
+  "description": "<p>Harvest table for a vegepygmy (Plant CR 1/4).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "3558deaca5cf4f82",
+      "text": "Vegepygmy Bark",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fbf4836d4dd21f83",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "e8407b7d07fd755a",
+      "text": "Russet Mold Spore",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a1465a7b132f8c9f",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Russet mold spores puff into your face; make a DC 13 Constitution save or take 1d6 poison damage and be poisoned until you complete a short rest.",
+      "fumbleEffect": "The bark is brittle and crumbles; one bark sample is worthless dust.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.a1465a7b132f8c9f",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

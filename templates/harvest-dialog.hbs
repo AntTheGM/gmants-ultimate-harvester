@@ -7,7 +7,7 @@
   {{#if appraisalDone}}
   <div class="ultimate-harvester-section">
     {{#if appraisalTimeSpent}}
-    <p class="ultimate-harvester-time-banner"><i class="fas fa-hourglass-half ultimate-harvester-icon--time"></i> <strong>Appraisal took {{appraisalTimeSpent}} minutes</strong></p>
+    <p class="ultimate-harvester-time-banner"><i class="fas fa-hourglass-half ultimate-harvester-icon--time"></i> <strong>Appraisal took {{formatTime appraisalTimeSpent}}</strong></p>
     {{/if}}
     {{#if appraisalCritSuccess}}
     <p class="ultimate-harvester-appraisal-success"><i class="fas fa-star ultimate-harvester-icon--gold"></i> Critical appraisal! Rolling with <strong>advantage</strong> and <strong>+2 bonus</strong></p>

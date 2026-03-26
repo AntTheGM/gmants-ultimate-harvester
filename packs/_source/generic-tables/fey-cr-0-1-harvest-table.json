@@ -1,0 +1,93 @@
+{
+  "_id": "a74c661b0c2d0aa3",
+  "name": "Fey CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for fey of CR 0-1.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "11d433b7d3d49a9c",
+      "text": "Fey Dust",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4946d0663443fea1",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "08c9b8dbb742ca1e",
+      "text": "Pixie Wing",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.eacc2e1816011c7e",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "9c3dad3aa410fb40",
+      "text": "Enchanted Bark",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.af6ee835295e7a53",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "47c2bca0cc95a7c4",
+      "text": "Fey Blossom",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b4c5cc243ade7b2e",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The fey's death curse triggers; take 1d4 psychic damage and flowers bloom painfully from your ears for 1 minute (no mechanical effect but deeply embarrassing).",
+      "fumbleEffect": "The glamour unravels in a dazzling burst; you are blinded until the start of your next turn.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

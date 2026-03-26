@@ -1,0 +1,78 @@
+<form class="ultimate-harvester-form">
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-map"></i> Environment</span>
+    </div>
+    <select name="environment">
+      <option value="">-- Select Environment --</option>
+      {{#each environments}}
+      <option value="{{this.key}}" {{#if this.selected}}selected{{/if}}>{{this.label}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-cloud-sun"></i> Conditions</span>
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Weather</label>
+      <select name="weather">
+        {{#each weatherOptions}}
+        <option value="{{this.key}}" {{#if this.selected}}selected{{/if}}>{{this.label}}</option>
+        {{/each}}
+      </select>
+      <a class="ultimate-harvester-randomize-btn" data-target="weather" title="Randomize"><i class="fas fa-dice"></i></a>
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Season</label>
+      <select name="season">
+        {{#each seasonOptions}}
+        <option value="{{this.key}}" {{#if this.selected}}selected{{/if}}>{{this.label}}</option>
+        {{/each}}
+      </select>
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>DM Modifier</label>
+      <input type="number" name="dmModifier" value="{{dmModifier}}" min="-10" max="10" step="1" />
+    </div>
+  </div>
+
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-dice-d20"></i> Skills</span>
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Primary</label>
+      <select name="primarySkill">
+        {{#each skills}}
+        <option value="{{this.key}}" {{#if (eq this.key ../primarySkill)}}selected{{/if}}>{{this.label}}</option>
+        {{/each}}
+      </select>
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Secondary (-5)</label>
+      <select name="secondarySkill">
+        {{#each skills}}
+        <option value="{{this.key}}" {{#if (eq this.key ../secondarySkill)}}selected{{/if}}>{{this.label}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-bullseye"></i> Effective DCs</span>
+      {{#if totalMod}}
+      <span>(base {{#if (gt totalMod 0)}}+{{/if}}{{totalMod}})</span>
+      {{/if}}
+    </div>
+    <p class="ultimate-harvester-note">
+      Tier 1 (Basic): DC {{effectiveDCs.[0]}} &nbsp;|&nbsp;
+      Tier 2 (Successful): DC {{effectiveDCs.[1]}} &nbsp;|&nbsp;
+      Tier 3 (Bountiful): DC {{effectiveDCs.[2]}}
+    </p>
+  </div>
+
+  <button type="button" data-action="save"><i class="fas fa-save"></i> Save Configuration</button>
+</form>

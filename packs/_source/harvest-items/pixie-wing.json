@@ -1,0 +1,27 @@
+{
+  "_id": "eacc2e1816011c7e",
+  "name": "Pixie Wing",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A translucent</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "4"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "common",
+      "harvestBonus": null
+    }
+  }
+}

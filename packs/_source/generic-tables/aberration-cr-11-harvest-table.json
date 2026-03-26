@@ -1,0 +1,112 @@
+{
+  "_id": "70212e93f9bf5a6a",
+  "name": "Aberration CR 11+ Harvest Table",
+  "description": "<p>Generic harvest table for aberrations of CR 11 or higher.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "4b6f684524c49bcc",
+      "text": "Eldritch Ichor",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e800ece6a64f9336",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "3080af0e3bd4ea5e",
+      "text": "Mind Residue",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.be367e3314b25157",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "c447f7e7258559fd",
+      "text": "Far Realm Essence",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.856f098876168730",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "7f4e8f821837eabb",
+      "text": "Void Fragment",
+      "type": 0,
+      "range": [
+        32,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 32,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.678c2b98a788f6c0",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "7f4e8f821837eabb",
+      "text": "Void Fragment",
+      "type": 0,
+      "range": [
+        35,
+        37
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 35,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.678c2b98a788f6c0",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The aberration's death opens a momentary rift; make a DC 18 Intelligence save or be transported 1d4 x 10 feet in a random direction.",
+      "fumbleEffect": "The incomprehensible anatomy permanently marks you; you gain one level of madness (per the DMG rules on indefinite madness).",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

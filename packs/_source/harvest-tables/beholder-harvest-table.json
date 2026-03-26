@@ -1,0 +1,75 @@
+{
+  "_id": "34a693d89e9902ed",
+  "name": "Beholder Harvest Table",
+  "description": "<p>Harvest table for a beholder (Aberration CR 13).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "f5537db62f064c09",
+      "text": "Beholder Chitin",
+      "type": 0,
+      "range": [
+        25,
+        27
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 25,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a401aedb06c0f303",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "a7e782d14b0dee71",
+      "text": "Beholder Eye Stalk",
+      "type": 0,
+      "range": [
+        25,
+        27
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 25,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e4dcfde5bf971205",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "26ee27ecee505466",
+      "text": "Central Eye Lens",
+      "type": 0,
+      "range": [
+        30,
+        32
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 30,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.2b1a6705c7d6d61f",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The beholder's eye rays fire erratically in a death spasm; roll 1d8 for which ray strikes you (1:charm, 2:fear, 3:slow, 4:exhaustion, 5:disintegrate 4d8, 6:paralysis, 7:sleep, 8:death ray — DC 16 save for each).",
+      "fumbleEffect": "One eye stalk fires a weakened sleep ray at you; make a DC 14 Wisdom save or fall asleep for 1 round.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.2b1a6705c7d6d61f",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

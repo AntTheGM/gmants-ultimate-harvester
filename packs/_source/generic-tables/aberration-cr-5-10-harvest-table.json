@@ -1,0 +1,112 @@
+{
+  "_id": "706dc4bde330ea57",
+  "name": "Aberration CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for aberrations of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "3789acbbecc2f4e3",
+      "text": "Psionic Crystal",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.77befdd65f8ba4d7",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "3862044be19901d6",
+      "text": "Eldritch Ichor",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.e800ece6a64f9336",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f2e875267e610969",
+      "text": "Mind Residue",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.be367e3314b25157",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "0ecdf83a20cdd7e6",
+      "text": "Far Realm Essence",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.856f098876168730",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "db6febe793f9e06e",
+      "text": "Void Fragment",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.678c2b98a788f6c0",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A psychic death-scream erupts; all creatures within 10 feet take 3d6 psychic damage and must make a DC 15 Wisdom save or be stunned until the end of their next turn.",
+      "fumbleEffect": "Your mind briefly touches the Far Realm through the corpse; you are confused and make all attacks at disadvantage until the end of your next turn.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

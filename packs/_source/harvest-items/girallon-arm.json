@@ -1,0 +1,26 @@
+{
+  "_id": "ec4b0e5d9ce45f8c",
+  "name": "Girallon Arm",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>One of the powerful arms of a girallon; still possessed of fearsome grip strength.</p>"
+    },
+    "weight": {
+      "value": 6,
+      "units": "lb"
+    },
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "trophy"
+    }
+  }
+}

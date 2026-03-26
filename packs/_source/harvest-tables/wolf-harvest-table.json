@@ -1,0 +1,94 @@
+{
+  "_id": "8bb70d1cae487d49",
+  "name": "Wolf Harvest Table",
+  "description": "<p>Harvest table for a common wolf (Beast CR 1/4).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "be029ae52b746229",
+      "text": "Wolf Meat",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.d29ed447eb6ec71b",
+          "quantity": "1d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "db2d17980cb617fb",
+      "text": "Wolf Pelt",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.f571a0e0560a9731",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "618714e88cad8fc2",
+      "text": "Wolf Fangs",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a6184a0b9fa83e2f",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "a0fdcbf8c9f145e1",
+      "text": "Wolf Heart",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0656b69fcaec926c",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The wolf's jaws snap shut reflexively; take 1d4 piercing damage from its bite.",
+      "fumbleEffect": "You fumble the pelt skinning and nick an artery; lose 5 minutes cleaning up the mess and one meat portion is contaminated.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.0656b69fcaec926c",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

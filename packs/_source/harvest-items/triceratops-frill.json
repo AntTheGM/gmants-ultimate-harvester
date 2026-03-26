@@ -1,0 +1,26 @@
+{
+  "_id": "abdc7f683e8c1fcb",
+  "name": "Triceratops Frill",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>The decorative neck frill from a triceratops; vividly patterned.</p>"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "trophy"
+    }
+  }
+}

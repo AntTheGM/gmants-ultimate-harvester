@@ -1,0 +1,132 @@
+{
+  "_id": "d33e2d6c78fe30ff",
+  "name": "Green Dragon Harvest Table",
+  "description": "<p>Harvest table for a green dragon (any age). Strips age prefix � Young/Adult/Ancient Green Dragon all use this table.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "6de9ece3f49ce3f1",
+      "text": "Green Dragon Scale",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.406fe7041d5b1079",
+          "quantity": "1d6",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "55914ca1dcfbf33d",
+      "text": "Dragon Fang",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.5e1f4966ca93ef8b",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "5ddbe4701b545e0b",
+      "text": "Dragon Wing Membrane",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.129d80dae98ebbbd",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "5bcbb122c5470112",
+      "text": "Dragon Blood",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a0bf3833cda802b2",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f08ad3166f8d0558",
+      "text": "Green Dragon Poison Gland",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.95a7fece4b33ae4a",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "64bde87d1a1b7e18",
+      "text": "Dragon Heart",
+      "type": 0,
+      "range": [
+        30,
+        32
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 30,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4e7c6d7704227aac",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "Chlorine gas vents from the ruptured poison sac; all creatures within 10 feet must make a DC 15 Constitution save or take 3d8 poison damage and be poisoned for 1 minute.",
+      "fumbleEffect": "Foul-smelling gas stings your eyes; you have disadvantage on Perception checks for 10 minutes.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.95a7fece4b33ae4a",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "83055b03dae4d522",
+  "name": "Primordial Bone",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Ancient</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "18"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "veryRare",
+      "harvestBonus": null
+    }
+  }
+}

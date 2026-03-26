@@ -1,0 +1,75 @@
+{
+  "_id": "91204f8c3be320a0",
+  "name": "Boar Harvest Table",
+  "description": "<p>Harvest table for a boar (Beast CR 1/4).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "e36c9296ff7d9af1",
+      "text": "Animal Meat",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.51f39152b6c48036",
+          "quantity": "1d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "9ab3c80294497a08",
+      "text": "Boar Tusk",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8a815b4ef702df75",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "813f534f4e2ebb66",
+      "text": "Boar Hide",
+      "type": 0,
+      "range": [
+        16,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 16,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0225aef7b0bc4b18",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The boar's legs kick violently in a death spasm; make a DC 12 Dexterity save or take 1d6 bludgeoning damage and be knocked prone.",
+      "fumbleEffect": "You slip on the muddy bristle-hide and nick yourself; take 1d4 slashing damage.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.0225aef7b0bc4b18",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

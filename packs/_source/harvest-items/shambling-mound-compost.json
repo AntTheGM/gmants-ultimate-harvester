@@ -1,0 +1,27 @@
+{
+  "_id": "8dff902d32efb916",
+  "name": "Shambling Mound Compost",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>Rich</p>"
+    },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "2"
+    },
+    "rarity": "gp",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "common",
+      "harvestBonus": null
+    }
+  }
+}

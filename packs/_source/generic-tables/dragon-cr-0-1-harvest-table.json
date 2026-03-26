@@ -1,0 +1,74 @@
+{
+  "_id": "e1432f4be8ecfc7b",
+  "name": "Dragon CR 0-1 Harvest Table",
+  "description": "<p>Generic harvest table for dragons of CR 0-1 (typically wyrmlings).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "4d17d3fedd652988",
+      "text": "Wyrmling Scale",
+      "type": 0,
+      "range": [
+        13,
+        15
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 13,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.716d4ee46fb9d309",
+          "quantity": "1d6",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "5016f2bec1ee49e0",
+      "text": "Dragon Blood",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a0bf3833cda802b2",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "b37d0fb554f8b443",
+      "text": "Dragon Teeth",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fde737d319c5c668",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The wyrmling's residual breath energy discharges; take 1d6 elemental damage (type matches the dragon).",
+      "fumbleEffect": "A scale pops free and cuts you; take 1d4 piercing damage.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

@@ -2,7 +2,7 @@
   <h3>{{localize "MHARVEST.Chat.HarvestResults"}}</h3>
 
   {{#if timeElapsed}}
-  <p class="ultimate-harvester-time-banner"><i class="fas fa-clock ultimate-harvester-icon--time"></i> <strong>{{localize "MHARVEST.Chat.TimeSpent"}}: {{timeElapsed}} minutes</strong></p>
+  <p class="ultimate-harvester-time-banner"><i class="fas fa-clock ultimate-harvester-icon--time"></i> <strong>{{localize "MHARVEST.Chat.TimeSpent"}}: {{formatTime timeElapsed}}</strong></p>
   {{/if}}
 
   <p><strong>{{harvesterName}}</strong> harvested <strong>{{creatureName}}</strong> (rolled {{rollTotal}}, {{skillLabel}})</p>

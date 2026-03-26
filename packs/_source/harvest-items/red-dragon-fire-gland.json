@@ -1,0 +1,26 @@
+{
+  "_id": "24cd6a4a2cb6d2a0",
+  "name": "Red Dragon Fire Gland",
+  "type": "loot",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": {
+      "value": "<p>A searing gland from a red dragon still radiating intense heat; requires insulated tongs to handle.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 28,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  }
+}

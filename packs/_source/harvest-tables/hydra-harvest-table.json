@@ -1,0 +1,75 @@
+{
+  "_id": "25d48b7c7300b8af",
+  "name": "Hydra Harvest Table",
+  "description": "<p>Harvest table for a hydra (Monstrosity CR 8).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "a71e39900549a478",
+      "text": "Hydra Head",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.54339c5f9d99c81d",
+          "quantity": "1d4",
+          "category": "trophy"
+        }
+      }
+    },
+    {
+      "_id": "20c935f4e436a494",
+      "text": "Hydra Blood",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.6cc3a8928601bc55",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "7d625f1cea11dfac",
+      "text": "Regenerating Flesh",
+      "type": 0,
+      "range": [
+        25,
+        27
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 25,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.d495d9138056276c",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A severed head on a neck stump bites you; take 2d6 piercing damage and you must succeed on a DC 14 Constitution save or take 2d8 acid damage from its bite.",
+      "fumbleEffect": "The blood is more caustic than expected; your tools take minor damage and you have disadvantage on your next skill check.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.d495d9138056276c",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

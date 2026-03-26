@@ -1,0 +1,112 @@
+{
+  "_id": "5590769edb93f6e8",
+  "name": "Ooze CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for oozes of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "5094171e88bd6627",
+      "text": "Gelatinous Extract",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.99c76c3f77efed92",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "f988b73f0b57b9f0",
+      "text": "Corrosive Core",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.53ee426fcc79c2e2",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "a043853fa5f96448",
+      "text": "Prismatic Slime",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "a043853fa5f96448",
+      "text": "Prismatic Slime",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "a043853fa5f96448",
+      "text": "Prismatic Slime",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The ooze dissolves rapidly and takes your tools with it; take 2d8 acid damage and lose your harvesting kit unless you succeed on a DC 14 Dexterity save.",
+      "fumbleEffect": "The acidic vapors sting your eyes and lungs; you have disadvantage on Perception checks and Constitution saves for 10 minutes.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

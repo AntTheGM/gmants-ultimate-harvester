@@ -1,0 +1,112 @@
+{
+  "_id": "4fd3efa379fb3c68",
+  "name": "Humanoid CR 2-4 Harvest Table",
+  "description": "<p>Generic harvest table for humanoids of CR 2-4.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "f97ec86647d15aa3",
+      "text": "Blood Vial",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.bd9e0ea7fa6bcfbf",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "ffd2f5657c9b087f",
+      "text": "Tanned Skin",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.f3771757bdf064eb",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "3dcfbc5e487f8306",
+      "text": "Skull Trophy",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c4b14427873490a7",
+          "quantity": "1",
+          "category": "trophy"
+        }
+      }
+    },
+    {
+      "_id": "c55f1af825189daa",
+      "text": "Warrior Heart",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3b340e9bfe69c862",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "c55f1af825189daa",
+      "text": "Warrior Heart",
+      "type": 0,
+      "range": [
+        23,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 23,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3b340e9bfe69c862",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The corpse's weapon or trap snags you; take 1d6 damage of an appropriate type.",
+      "fumbleEffect": "You are disturbed by your own actions; you must succeed on a DC 12 Wisdom saving throw or have the shaken condition for 1 hour (disadvantage on attack rolls).",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

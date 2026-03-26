@@ -1,0 +1,112 @@
+{
+  "_id": "961b0903ba0043f6",
+  "name": "Fiend CR 2-4 Harvest Table",
+  "description": "<p>Generic harvest table for fiends of CR 2-4.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "3a9524822d2b050d",
+      "text": "Demon Ichor",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.13304f7dbf262f5a",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "323ffe0304bbad9a",
+      "text": "Devil Horn",
+      "type": 0,
+      "range": [
+        15,
+        17
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 15,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.f892e958e343af49",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "7da4704628b818f9",
+      "text": "Fiendish Hide",
+      "type": 0,
+      "range": [
+        17,
+        19
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 17,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.78ce2cc2921a204b",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "cfb377a20a11f595",
+      "text": "Abyssal Essence",
+      "type": 0,
+      "range": [
+        20,
+        22
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 20,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fc90c4a02229139e",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "71bc851830467e62",
+      "text": "Hellfire Gland",
+      "type": 0,
+      "range": [
+        23,
+        25
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 23,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8bf0b14c0c2ffb90",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The fiend's essence violently resists extraction; take 2d6 fire damage and make a DC 12 Wisdom save or be frightened for 1 minute.",
+      "fumbleEffect": "Infernal ichor eats through one of your harvesting tools; a blade or probe is destroyed.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

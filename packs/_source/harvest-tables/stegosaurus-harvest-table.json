@@ -1,0 +1,75 @@
+{
+  "_id": "71f6de6f33b9e6dd",
+  "name": "Stegosaurus Harvest Table",
+  "description": "<p>Harvest table for a stegosaurus (Beast CR 4).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "5e0a9f3f8aa12f96",
+      "text": "Dinosaur Meat",
+      "type": 0,
+      "range": [
+        16,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 16,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c8866e1f17929e55",
+          "quantity": "2d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "2641a8ed50712e59",
+      "text": "Dinosaur Hide",
+      "type": 0,
+      "range": [
+        16,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 16,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.433d812e75092116",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "7b20638b9f184886",
+      "text": "Stegosaurus Plate",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.47f032923e816b5a",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The tail whips as you work; make a DC 13 Dexterity save or take 2d8 piercing damage from the thagomizer.",
+      "fumbleEffect": "A dorsal plate shifts and traps your hand; you are restrained for 1 round.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.47f032923e816b5a",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

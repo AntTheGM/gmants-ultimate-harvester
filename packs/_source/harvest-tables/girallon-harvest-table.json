@@ -1,0 +1,94 @@
+{
+  "_id": "18ac9e810ad2a83d",
+  "name": "Girallon Harvest Table",
+  "description": "<p>Harvest table for a girallon (Monstrosity CR 4).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "9289583349fd57c9",
+      "text": "Girallon Fur",
+      "type": 0,
+      "range": [
+        16,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 16,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ee14d218169b4c04",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "80559e6dffc982c9",
+      "text": "Monster Sinew",
+      "type": 0,
+      "range": [
+        16,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 16,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.32e45e2f0a6883b7",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "b1c1752919f5820d",
+      "text": "Girallon Arm",
+      "type": 0,
+      "range": [
+        18,
+        20
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 18,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ec4b0e5d9ce45f8c",
+          "quantity": "1",
+          "category": "trophy"
+        }
+      }
+    },
+    {
+      "_id": "02e9d0d81464a30c",
+      "text": "Predator Musk",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fcdf5bd6e1448899",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The girallon's powerful arms still have reflexive grip; one arm seizes your wrist for 2d6 bludgeoning damage before you pry it free.",
+      "fumbleEffect": "The dense white fur clogs your tools; you have disadvantage on your next harvest check.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.ec4b0e5d9ce45f8c",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

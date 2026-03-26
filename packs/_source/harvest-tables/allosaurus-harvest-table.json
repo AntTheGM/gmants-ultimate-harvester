@@ -1,0 +1,94 @@
+{
+  "_id": "8d9936147546a5fe",
+  "name": "Allosaurus Harvest Table",
+  "description": "<p>Harvest table for an allosaurus (Beast CR 2).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "fd8251abe2b6ee7d",
+      "text": "Dinosaur Meat",
+      "type": 0,
+      "range": [
+        14,
+        16
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 14,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.c8866e1f17929e55",
+          "quantity": "1d4",
+          "category": "food"
+        }
+      }
+    },
+    {
+      "_id": "8e755830d3677e72",
+      "text": "Dinosaur Hide",
+      "type": 0,
+      "range": [
+        14,
+        16
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 14,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.433d812e75092116",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "94957406a0778813",
+      "text": "Dinosaur Bone",
+      "type": 0,
+      "range": [
+        16,
+        18
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 16,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.9d223c4c43e88f6f",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "6999f52870c30dda",
+      "text": "Allosaurus Claw",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.ecb8d25f8920ee3c",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The carcass rolls; make a DC 13 Dexterity save or take 2d6 bludgeoning damage and be knocked prone.",
+      "fumbleEffect": "A hidden tooth cuts your hand through your glove; take 1d4 slashing damage.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.ecb8d25f8920ee3c",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

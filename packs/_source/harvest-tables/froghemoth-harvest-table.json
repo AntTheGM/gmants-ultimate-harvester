@@ -1,0 +1,75 @@
+{
+  "_id": "c8447213c607e5f5",
+  "name": "Froghemoth Harvest Table",
+  "description": "<p>Harvest table for a froghemoth (Monstrosity CR 10).</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "7d8648e540801e70",
+      "text": "Froghemoth Tentacle",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.1a4b22cf7f975c22",
+          "quantity": "1d4",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "5fbb3583353c1dc8",
+      "text": "Froghemoth Tongue",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.f7b7c9291e854400",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "953628000984d5c8",
+      "text": "Froghemoth Eye",
+      "type": 0,
+      "range": [
+        25,
+        27
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 25,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.be2ecf9bda546942",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The tongue lashes out on a death spasm; make a DC 15 Strength save or be grappled (Escape DC 15) and pulled into the maw for 2d8 bludgeoning damage.",
+      "fumbleEffect": "Slime covers your tools and hands; you have disadvantage on all Dexterity checks for 10 minutes until you wipe off the mucus.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.be2ecf9bda546942",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

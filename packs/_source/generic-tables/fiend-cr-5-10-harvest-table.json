@@ -1,0 +1,112 @@
+{
+  "_id": "18d3d8c365904a74",
+  "name": "Fiend CR 5-10 Harvest Table",
+  "description": "<p>Generic harvest table for fiends of CR 5-10.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "d334bb49ce0bf056",
+      "text": "Fiendish Hide",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.78ce2cc2921a204b",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "d2c964198c212e75",
+      "text": "Abyssal Essence",
+      "type": 0,
+      "range": [
+        19,
+        21
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 19,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.fc90c4a02229139e",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "840e4cb0fef63ce6",
+      "text": "Hellfire Gland",
+      "type": 0,
+      "range": [
+        21,
+        23
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 21,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8bf0b14c0c2ffb90",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "d41ec28124c67e74",
+      "text": "Damned Soul Residue",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3ea85806a3294b92",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "d41ec28124c67e74",
+      "text": "Damned Soul Residue",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.3ea85806a3294b92",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The fiend screams with its last breath; all creatures within 15 feet make a DC 14 Wisdom save or be frightened for 1 minute. You also take 2d8 fire damage.",
+      "fumbleEffect": "The infernal aura lingers on you; you have disadvantage on Charisma checks with celestials and good-aligned creatures for 24 hours.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

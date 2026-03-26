@@ -1,0 +1,112 @@
+{
+  "_id": "6a044ce796807815",
+  "name": "Elemental CR 11+ Harvest Table",
+  "description": "<p>Generic harvest table for elementals of CR 11 or higher.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "c51298b7dfc2a731",
+      "text": "Primal Ash",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.b2db2714aff0d62d",
+          "quantity": "2d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "c3610810b237e0a0",
+      "text": "Elemental Core",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.01dc5f5a32bc5a08",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "ce1d92487ccd9c15",
+      "text": "Condensed Element",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.8235e76763ada770",
+          "quantity": "2",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "cd02f622cd7248d3",
+      "text": "Pure Elemental Essence",
+      "type": 0,
+      "range": [
+        32,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 32,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0afd8b1767851779",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "cd02f622cd7248d3",
+      "text": "Pure Elemental Essence",
+      "type": 0,
+      "range": [
+        35,
+        37
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 35,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.0afd8b1767851779",
+          "quantity": "4",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The elder elemental's death sends a planar shockwave; all creatures within 20 feet take 4d10 damage of the element's type and are restrained until the end of their next turn (DC 18 save negates the restrained condition).",
+      "fumbleEffect": "The raw primal power is too much to contain; half the Condensed Element or Pure Elemental Essence you harvest disintegrates on contact with air.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

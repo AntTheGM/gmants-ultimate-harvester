@@ -47,7 +47,7 @@
   </div>
 
   {{#if harvestTimeEstimate}}
-  <p class="ultimate-harvester-note"><i class="fas fa-clock ultimate-harvester-icon--time"></i> Estimated harvest time: ~{{harvestTimeEstimate}} minutes</p>
+  <p class="ultimate-harvester-note"><i class="fas fa-clock ultimate-harvester-icon--time"></i> Estimated harvest time: ~{{formatTime harvestTimeEstimate}}</p>
   {{/if}}
 
   {{else}}
@@ -57,5 +57,5 @@
   {{/if}}
   {{/if}}
 
-  <p class="ultimate-harvester-time-banner"><i class="fas fa-hourglass-half ultimate-harvester-icon--time"></i> <strong>Appraisal took {{timeElapsed}} minutes</strong></p>
+  <p class="ultimate-harvester-time-banner"><i class="fas fa-hourglass-half ultimate-harvester-icon--time"></i> <strong>Appraisal took {{formatTime timeElapsed}}</strong></p>
 </div>

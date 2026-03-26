@@ -9,9 +9,12 @@ import {
   SKILL_LABELS,
   DEFAULT_SKILL_MAPPING,
   SECONDARY_SKILLS,
+  formatTime,
 } from "./config.js";
 import { initSocket } from "./socket.js";
 import { initiateHarvest, viewAppraisal } from "./harvesting.js";
+import { initiateForage } from "./foraging.js";
+import { ForagingPanel } from "./foraging-panel.js";
 import { seedTestData } from "./test-data.js";
 
 /* ---------------------------------------- */
@@ -124,6 +127,20 @@ function registerSettings() {
     default: {},
   });
 
+  game.settings.register(MODULE_ID, "foragingConfig", {
+    scope: "world",
+    config: false,
+    type: Object,
+    default: {
+      environment: "",
+      weather: "clear",
+      season: "summer",
+      dmModifier: 0,
+      primarySkill: "",
+      secondarySkill: "",
+    },
+  });
+
   // --- Skill Mapping Submenu ---
 
   game.settings.registerMenu(MODULE_ID, "skillMappingMenu", {
@@ -208,9 +225,14 @@ Hooks.once("init", () => {
   // Expose public API for macro use
   game.ultimateHarvester = {
     harvest: initiateHarvest,
+    forage: initiateForage,
+    openForagingPanel: () => ForagingPanel.open(),
     viewAppraisal,
     seedTestData,
   };
+
+  // Register Handlebars helper for time formatting
+  Handlebars.registerHelper("formatTime", (minutes) => formatTime(minutes));
 
   registerSettings();
   initSocket();
@@ -222,6 +244,23 @@ Hooks.once("ready", async () => {
 });
 
 Hooks.on("renderSettingsConfig", injectSettingsPromo);
+
+// Scene control button for DM Foraging Panel (GM only)
+Hooks.on("getSceneControlButtons", (controls) => {
+  if (!game.user.isGM) return;
+  const tokenControls = controls.tokens ?? controls.token;
+  if (!tokenControls) return;
+  const tools = tokenControls.tools ?? {};
+  tools.ultimateHarvesterForaging = {
+    name: "ultimateHarvesterForaging",
+    title: "Foraging Panel",
+    icon: "fas fa-leaf",
+    button: true,
+    onClick: () => ForagingPanel.open(),
+    visible: true,
+  };
+  if (!tokenControls.tools) tokenControls.tools = tools;
+});
 
 // Chat link handler — "View Appraisal" links in chat cards
 Hooks.on("renderChatMessage", (_message, html) => {
@@ -240,7 +279,20 @@ Hooks.on("renderChatMessage", (_message, html) => {
 /*  Macro Seeding                            */
 /* ---------------------------------------- */
 
-const MACRO_SEED_VERSION = 1;
+const MACRO_SEED_VERSION = 2;
+
+const MACROS_TO_SEED = [
+  {
+    name: "Harvest",
+    img: "icons/tools/cooking/knife-chef-steel-brown.webp",
+    command: "game.ultimateHarvester.harvest();",
+  },
+  {
+    name: "Forage",
+    img: "icons/consumables/food/berries-holly-702419.webp",
+    command: "game.ultimateHarvester.forage();",
+  },
+];
 
 async function _seedMacro() {
   if (!game.user.isGM) return;
@@ -249,38 +301,34 @@ async function _seedMacro() {
   const pack = game.packs.get(packId);
   if (!pack) return;
 
-  const index = await pack.getIndex();
-  const existing = index.find((e) => e.name === "Harvest");
-
-  if (existing) {
-    // Check version for re-seeding
-    const doc = await pack.getDocument(existing._id);
-    const currentVersion = doc.getFlag(MODULE_ID, "seedVersion") ?? 0;
-    if (currentVersion >= MACRO_SEED_VERSION) return;
-
-    const wasLocked = pack.locked;
-    if (wasLocked) await pack.configure({ locked: false });
-    await doc.delete();
-    console.log(`${MODULE_ID} | Re-seeding Harvest macro (v${currentVersion} → v${MACRO_SEED_VERSION})`);
-    if (wasLocked) await pack.configure({ locked: true });
-  } else if (index.size > 0) {
-    return; // Pack has content but no "Harvest" — don't duplicate
-  }
-
   const wasLocked = pack.locked;
   if (wasLocked) await pack.configure({ locked: false });
 
-  await Macro.create(
-    {
-      name: "Harvest",
-      type: "script",
-      img: "icons/tools/cooking/knife-chef-steel-brown.webp",
-      command: "game.ultimateHarvester.harvest();",
-      flags: { [MODULE_ID]: { core: true, seedVersion: MACRO_SEED_VERSION } },
-    },
-    { pack: packId }
-  );
+  const index = await pack.getIndex();
+
+  for (const macroDef of MACROS_TO_SEED) {
+    const existing = index.find((e) => e.name === macroDef.name);
+
+    if (existing) {
+      const doc = await pack.getDocument(existing._id);
+      const currentVersion = doc.getFlag(MODULE_ID, "seedVersion") ?? 0;
+      if (currentVersion >= MACRO_SEED_VERSION) continue;
+      await doc.delete();
+      console.log(`${MODULE_ID} | Re-seeding ${macroDef.name} macro (v${currentVersion} → v${MACRO_SEED_VERSION})`);
+    }
+
+    await Macro.create(
+      {
+        name: macroDef.name,
+        type: "script",
+        img: macroDef.img,
+        command: macroDef.command,
+        flags: { [MODULE_ID]: { core: true, seedVersion: MACRO_SEED_VERSION } },
+      },
+      { pack: packId }
+    );
+    console.log(`${MODULE_ID} | Seeded ${macroDef.name} macro into compendium`);
+  }
 
   if (wasLocked) await pack.configure({ locked: true });
-  console.log(`${MODULE_ID} | Seeded Harvest macro into compendium`);
 }

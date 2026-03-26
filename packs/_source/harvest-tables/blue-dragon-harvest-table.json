@@ -1,0 +1,132 @@
+{
+  "_id": "92cb4bc07d3389e1",
+  "name": "Blue Dragon Harvest Table",
+  "description": "<p>Harvest table for a blue dragon (any age). Strips age prefix � Young/Adult/Ancient Blue Dragon all use this table.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "b7670e1935e8b275",
+      "text": "Blue Dragon Scale",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.660387e43fc4eec8",
+          "quantity": "1d6",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "3f025351f1b8b655",
+      "text": "Dragon Fang",
+      "type": 0,
+      "range": [
+        22,
+        24
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 22,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.5e1f4966ca93ef8b",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "ff96cd4db3f804f8",
+      "text": "Dragon Wing Membrane",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.129d80dae98ebbbd",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "2561ac28964e3674",
+      "text": "Dragon Blood",
+      "type": 0,
+      "range": [
+        24,
+        26
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 24,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a0bf3833cda802b2",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "341b0e179233a325",
+      "text": "Blue Dragon Lightning Gland",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a3c0a86ae78c3d4c",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "a6d92d925d590289",
+      "text": "Dragon Heart",
+      "type": 0,
+      "range": [
+        30,
+        32
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 30,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.4e7c6d7704227aac",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "A lightning discharge arcs from the corpse; all creatures within 10 feet take 3d8 lightning damage (DC 15 Dexterity save for half).",
+      "fumbleEffect": "A spark jumps to your tools; you are shocked and have disadvantage on your next harvest check.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.a3c0a86ae78c3d4c",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

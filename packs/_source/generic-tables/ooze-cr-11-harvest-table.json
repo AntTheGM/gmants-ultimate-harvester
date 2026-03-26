@@ -1,0 +1,112 @@
+{
+  "_id": "5ec22b6116d16ac1",
+  "name": "Ooze CR 11+ Harvest Table",
+  "description": "<p>Generic harvest table for oozes of CR 11 or higher.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "7f1bd7f31f8899b3",
+      "text": "Corrosive Core",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.53ee426fcc79c2e2",
+          "quantity": "1d4",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "26f28f54bd476546",
+      "text": "Prismatic Slime",
+      "type": 0,
+      "range": [
+        27,
+        29
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 27,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "26f28f54bd476546",
+      "text": "Prismatic Slime",
+      "type": 0,
+      "range": [
+        29,
+        31
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 29,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
+          "quantity": "2",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "26f28f54bd476546",
+      "text": "Prismatic Slime",
+      "type": 0,
+      "range": [
+        32,
+        34
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 32,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
+          "quantity": "3",
+          "category": "component"
+        }
+      }
+    },
+    {
+      "_id": "26f28f54bd476546",
+      "text": "Prismatic Slime",
+      "type": 0,
+      "range": [
+        35,
+        37
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "dc": 35,
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
+          "quantity": "4",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The ooze's corrosive mass engulfs your arm; take 4d10 acid damage and make a DC 18 Constitution save or suffer one level of exhaustion from the chemical burns.",
+      "fumbleEffect": "Your entire harvesting kit is dissolved; you cannot perform any more harvesting until you obtain a new kit.",
+      "critSuccessQuantity": "1"
+    }
+  }
+}
