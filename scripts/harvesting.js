@@ -7,6 +7,7 @@
 import { MODULE_ID, getHarvestSkill, SKILL_LABELS, ITEM_CATEGORIES, TOOL_MAPPINGS, SIZE_TIME_MODIFIERS, DC_DEFAULTS, calculateBaseDC } from "./config.js";
 import { findHarvestTable } from "./table-lookup.js";
 import { gmSetFlag, gmCreateEmbeddedDocuments } from "./socket.js";
+import { showDialog, showModal } from "./dialog-helper.js";
 
 /**
  * Main entry point — called from the harvest macro.
@@ -506,21 +507,11 @@ async function _showAppraisalModal(data) {
 
   const content = await renderTemplate(`modules/${MODULE_ID}/templates/appraisal-modal.hbs`, data);
 
-  _activeAppraisalModal = new Dialog({
+  _activeAppraisalModal = showModal({
     title: `${game.i18n.localize("MHARVEST.Chat.AppraisalResults")} — ${data.creatureName}`,
     content,
-    buttons: {
-      close: {
-        label: "Close",
-        icon: '<i class="fas fa-times"></i>',
-      },
-    },
-    default: "close",
-    close: () => { _activeAppraisalModal = null; },
-  }, {
     width: 420,
   });
-  _activeAppraisalModal.render(true);
 }
 
 function _closeAppraisalModal() {
@@ -584,25 +575,23 @@ async function _showPostAppraisalDialog(creature, harvester, appraisalResult, op
     fumbleEffect: appraisalResult.fumbleEffect,
   });
 
-  return new Promise((resolve) => {
-    new Dialog({
-      title: `${game.i18n.localize("MHARVEST.Dialog.HarvestTitle")} — ${creature.name}`,
-      content,
-      buttons: {
-        harvest: {
-          label: game.i18n.localize("MHARVEST.Dialog.Harvest"),
-          icon: '<i class="fas fa-drumstick-bite"></i>',
-          callback: () => resolve("harvest"),
-        },
-        cancel: {
-          label: game.i18n.localize("MHARVEST.Dialog.Cancel"),
-          icon: '<i class="fas fa-times"></i>',
-          callback: () => resolve(null),
-        },
+  return showDialog({
+    title: `${game.i18n.localize("MHARVEST.Dialog.HarvestTitle")} — ${creature.name}`,
+    content,
+    buttons: {
+      harvest: {
+        label: game.i18n.localize("MHARVEST.Dialog.Harvest"),
+        icon: "fas fa-drumstick-bite",
+        callback: () => "harvest",
       },
-      default: "harvest",
-      close: () => resolve(null),
-    }, { width: 420 }).render(true);
+      cancel: {
+        label: game.i18n.localize("MHARVEST.Dialog.Cancel"),
+        icon: "fas fa-times",
+        callback: () => null,
+      },
+    },
+    defaultButton: "harvest",
+    width: 420,
   });
 }
 
@@ -629,33 +618,30 @@ async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalE
     appraisalPenalty: timeEstimates.appraisalPenalty ?? 0,
   });
 
-  return new Promise((resolve) => {
-    const buttons = {};
-    if (appraisalEnabled) {
-      buttons.appraise = {
-        label: game.i18n.localize("MHARVEST.Dialog.Appraise"),
-        icon: '<i class="fas fa-search"></i>',
-        callback: () => resolve("appraise"),
-      };
-    }
-    buttons.harvest = {
-      label: game.i18n.localize("MHARVEST.Dialog.Harvest"),
-      icon: '<i class="fas fa-drumstick-bite"></i>',
-      callback: () => resolve("harvest"),
+  const buttons = {};
+  if (appraisalEnabled) {
+    buttons.appraise = {
+      label: game.i18n.localize("MHARVEST.Dialog.Appraise"),
+      icon: "fas fa-search",
+      callback: () => "appraise",
     };
-    buttons.cancel = {
-      label: game.i18n.localize("MHARVEST.Dialog.Cancel"),
-      icon: '<i class="fas fa-times"></i>',
-      callback: () => resolve(null),
-    };
+  }
+  buttons.harvest = {
+    label: game.i18n.localize("MHARVEST.Dialog.Harvest"),
+    icon: "fas fa-drumstick-bite",
+    callback: () => "harvest",
+  };
+  buttons.cancel = {
+    label: game.i18n.localize("MHARVEST.Dialog.Cancel"),
+    icon: "fas fa-times",
+    callback: () => null,
+  };
 
-    new Dialog({
-      title: game.i18n.localize("MHARVEST.Dialog.HarvestTitle"),
-      content,
-      buttons,
-      default: "harvest",
-      close: () => resolve(null),
-    }).render(true);
+  return showDialog({
+    title: game.i18n.localize("MHARVEST.Dialog.HarvestTitle"),
+    content,
+    buttons,
+    defaultButton: "harvest",
   });
 }
 
@@ -677,32 +663,29 @@ async function _showPickupDialog(creature, itemList, rollTotal, skillLabel, time
     timeElapsed,
   });
 
-  return new Promise((resolve) => {
-    new Dialog({
-      title: game.i18n.localize("MHARVEST.Dialog.HarvestTitle"),
-      content,
-      buttons: {
-        take: {
-          label: game.i18n.localize("MHARVEST.Dialog.TakeSelected"),
-          icon: '<i class="fas fa-hand-holding"></i>',
-          callback: (html) => {
-            const selected = [];
-            html.find("input[type=checkbox]:checked").each((_i, el) => {
-              const idx = parseInt(el.dataset.idx);
-              if (!isNaN(idx) && itemList[idx]) selected.push(itemList[idx]);
-            });
-            resolve(selected);
-          },
-        },
-        leave: {
-          label: game.i18n.localize("MHARVEST.Dialog.LeaveAll"),
-          icon: '<i class="fas fa-times"></i>',
-          callback: () => resolve(null),
+  return showDialog({
+    title: game.i18n.localize("MHARVEST.Dialog.HarvestTitle"),
+    content,
+    buttons: {
+      take: {
+        label: game.i18n.localize("MHARVEST.Dialog.TakeSelected"),
+        icon: "fas fa-hand-holding",
+        callback: (el) => {
+          const selected = [];
+          el.querySelectorAll("input[type=checkbox]:checked").forEach((cb) => {
+            const idx = parseInt(cb.dataset.idx);
+            if (!isNaN(idx) && itemList[idx]) selected.push(itemList[idx]);
+          });
+          return selected;
         },
       },
-      default: "take",
-      close: () => resolve(null),
-    }).render(true);
+      leave: {
+        label: game.i18n.localize("MHARVEST.Dialog.LeaveAll"),
+        icon: "fas fa-times",
+        callback: () => null,
+      },
+    },
+    defaultButton: "take",
   });
 }
 

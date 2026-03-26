@@ -9,6 +9,7 @@ import {
   formatTime,
 } from "./config.js";
 import { gmCreateEmbeddedDocuments } from "./socket.js";
+import { showDialog } from "./dialog-helper.js";
 
 /**
  * Main entry point — called from the Forage macro.
@@ -161,32 +162,29 @@ export async function initiateForage() {
       timeElapsed: timeSpent,
     });
 
-    const selected = await new Promise((resolve) => {
-      new Dialog({
-        title: game.i18n.localize("MHARVEST.Dialog.ForageTitle"),
-        content: pickupContent,
-        buttons: {
-          take: {
-            label: game.i18n.localize("MHARVEST.Dialog.TakeSelected"),
-            icon: '<i class="fas fa-hand-holding"></i>',
-            callback: (html) => {
-              const items = [];
-              html.find("input[type=checkbox]:checked").each((_i, el) => {
-                const idx = parseInt(el.dataset.idx);
-                if (!isNaN(idx) && foragedItems[idx]) items.push(foragedItems[idx]);
-              });
-              resolve(items);
-            },
-          },
-          leave: {
-            label: game.i18n.localize("MHARVEST.Dialog.LeaveAll"),
-            icon: '<i class="fas fa-times"></i>',
-            callback: () => resolve(null),
+    const selected = await showDialog({
+      title: game.i18n.localize("MHARVEST.Dialog.ForageTitle"),
+      content: pickupContent,
+      buttons: {
+        take: {
+          label: game.i18n.localize("MHARVEST.Dialog.TakeSelected"),
+          icon: "fas fa-hand-holding",
+          callback: (el) => {
+            const items = [];
+            el.querySelectorAll("input[type=checkbox]:checked").forEach((cb) => {
+              const idx = parseInt(cb.dataset.idx);
+              if (!isNaN(idx) && foragedItems[idx]) items.push(foragedItems[idx]);
+            });
+            return items;
           },
         },
-        default: "take",
-        close: () => resolve(null),
-      }).render(true);
+        leave: {
+          label: game.i18n.localize("MHARVEST.Dialog.LeaveAll"),
+          icon: "fas fa-times",
+          callback: () => null,
+        },
+      },
+      defaultButton: "take",
     });
 
     if (selected && selected.length > 0) {
@@ -274,28 +272,25 @@ async function _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, 
     tier3DC: tierDCs[2],
   });
 
-  return new Promise((resolve) => {
-    new Dialog({
-      title: game.i18n.localize("MHARVEST.Dialog.ForageTitle"),
-      content,
-      buttons: {
-        forage: {
-          label: game.i18n.localize("MHARVEST.Dialog.ForageTitle"),
-          icon: '<i class="fas fa-leaf"></i>',
-          callback: (html) => {
-            const hours = parseInt(html.find("input[name='hours']").val()) || 1;
-            resolve(Math.max(1, Math.min(hours, 8)));
-          },
-        },
-        cancel: {
-          label: game.i18n.localize("MHARVEST.Dialog.Cancel"),
-          icon: '<i class="fas fa-times"></i>',
-          callback: () => resolve(null),
+  return showDialog({
+    title: game.i18n.localize("MHARVEST.Dialog.ForageTitle"),
+    content,
+    buttons: {
+      forage: {
+        label: game.i18n.localize("MHARVEST.Dialog.ForageTitle"),
+        icon: "fas fa-leaf",
+        callback: (el) => {
+          const hours = parseInt(el.querySelector("input[name='hours']")?.value) || 1;
+          return Math.max(1, Math.min(hours, 8));
         },
       },
-      default: "forage",
-      close: () => resolve(null),
-    }).render(true);
+      cancel: {
+        label: game.i18n.localize("MHARVEST.Dialog.Cancel"),
+        icon: "fas fa-times",
+        callback: () => null,
+      },
+    },
+    defaultButton: "forage",
   });
 }
 

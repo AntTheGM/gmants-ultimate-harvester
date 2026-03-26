@@ -13,6 +13,7 @@ import {
 } from "./config.js";
 import { initSocket } from "./socket.js";
 import { initiateHarvest, viewAppraisal } from "./harvesting.js";
+import { showDialog } from "./dialog-helper.js";
 import { initiateForage } from "./foraging.js";
 import { ForagingPanel } from "./foraging-panel.js";
 import { seedTestData } from "./test-data.js";
@@ -339,31 +340,32 @@ async function _assignHarvestTable(actor) {
     <input type="text" name="tableUuid" value="${actor.getFlag(MODULE_ID, "harvestTable") ?? ""}" placeholder="Compendium.ultimate-harvester.harvest-tables.xxxxxx" />
   </div>`;
 
-  new Dialog({
+  const uuid = await showDialog({
     title: `Assign Harvest Table — ${actor.name}`,
     content,
     buttons: {
       save: {
         label: "Save",
-        icon: '<i class="fas fa-save"></i>',
-        callback: async (html) => {
-          const uuid = html.find("input[name='tableUuid']").val()?.trim();
-          if (uuid) {
-            await actor.setFlag(MODULE_ID, "harvestTable", uuid);
-            ui.notifications.info(`Harvest table assigned to ${actor.name}`);
-          } else {
-            await actor.unsetFlag(MODULE_ID, "harvestTable");
-            ui.notifications.info(`Harvest table override cleared for ${actor.name}`);
-          }
-        },
+        icon: "fas fa-save",
+        callback: (el) => el.querySelector("input[name='tableUuid']")?.value?.trim() ?? "",
       },
       cancel: {
         label: "Cancel",
-        icon: '<i class="fas fa-times"></i>',
+        icon: "fas fa-times",
+        callback: () => null,
       },
     },
-    default: "save",
-  }).render(true);
+    defaultButton: "save",
+  });
+
+  if (uuid === null) return;
+  if (uuid) {
+    await actor.setFlag(MODULE_ID, "harvestTable", uuid);
+    ui.notifications.info(`Harvest table assigned to ${actor.name}`);
+  } else {
+    await actor.unsetFlag(MODULE_ID, "harvestTable");
+    ui.notifications.info(`Harvest table override cleared for ${actor.name}`);
+  }
 }
 
 async function _resetHarvest(actor) {

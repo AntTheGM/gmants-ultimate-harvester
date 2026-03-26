@@ -406,7 +406,11 @@ Production-quality UI, styled chat cards, and GM convenience features.
 - [ ] Add VTTools GM Ant branding header to ApplicationV2 windows
 - [ ] Create Harvest Table Editor (ApplicationV2 dialog for GM customization)
 - [ ] Create skill mapping submenu (ApplicationV2 form with 14 dropdowns via `registerMenu()`)
-- [ ] Migrate dialogs from legacy `Dialog` to `DialogV2` for CSS variable scoping
+- [x] Migrate all 7 dialogs from legacy `Dialog` to `DialogV2` for CSS variable scoping:
+  - Created `scripts/dialog-helper.js` with `showDialog()` and `showModal()` wrappers
+  - All dialogs now get `classes: ["ultimate-harvester"]` for CSS variable scoping
+  - Harvest dialog, pickup dialog, post-appraisal dialog, appraisal modal, forage prompt, forage pickup, assign table — all migrated
+  - Button callbacks use native DOM (`el.querySelector`) instead of jQuery (`html.find`)
 - [ ] Add CSS responsive layout tweaks for different Foundry window sizes
 
 ---
