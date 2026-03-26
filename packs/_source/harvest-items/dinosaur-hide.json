@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>Rough</p>"
+      "value": "<p>Rough, scale-textured hide from a dinosaur; excellent for heavy armor.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 5,
       "units": "lb"
     },
     "price": {
-      "value": 5,
-      "denomination": "6"
+      "value": 6,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "uncommon",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "uncommon",
-      "harvestBonus": null
+      "category": "material"
     }
   }
 }

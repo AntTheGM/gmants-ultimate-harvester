@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>A massive</p>"
+      "value": "<p>A massive, mucus-covered tentacle from a froghemoth; still twitching.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 5,
       "units": "lb"
     },
     "price": {
-      "value": 5,
-      "denomination": "10"
+      "value": 10,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "rare",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "rare",
-      "harvestBonus": null
+      "category": "material"
     }
   }
 }

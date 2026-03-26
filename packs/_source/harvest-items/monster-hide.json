@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>Tough</p>"
+      "value": "<p>Tough, scarred hide from a creature of monstrous origin.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 3,
       "units": "lb"
     },
     "price": {
-      "value": 3,
-      "denomination": "5"
+      "value": 5,
+      "denomination": "sp"
     },
-    "rarity": "sp",
+    "rarity": "common",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "common",
-      "harvestBonus": null
+      "category": "material"
     }
   }
 }

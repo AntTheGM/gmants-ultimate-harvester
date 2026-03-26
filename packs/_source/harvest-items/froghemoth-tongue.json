@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>A prehensile</p>"
+      "value": "<p>A prehensile, sticky tongue the size of a rope; potent alchemical reagent.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 2,
       "units": "lb"
     },
     "price": {
-      "value": 2,
-      "denomination": "15"
+      "value": 15,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "rare",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "rare",
-      "harvestBonus": null
+      "category": "component"
     }
   }
 }

@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>Tough</p>"
+      "value": "<p>Tough, woody skin from a vegepygmy; laced with plant toxins.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 1,
       "units": "lb"
     },
     "price": {
-      "value": 1,
-      "denomination": "3"
+      "value": 3,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "uncommon",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "uncommon",
-      "harvestBonus": null
+      "category": "material"
     }
   }
 }

@@ -11,14 +11,14 @@
       "text": "Hydra Head",
       "type": 0,
       "range": [
-        20,
-        22
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 20,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.54339c5f9d99c81d",
           "quantity": "1d4",
           "category": "trophy"
@@ -30,14 +30,14 @@
       "text": "Hydra Blood",
       "type": 0,
       "range": [
-        20,
-        22
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 20,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.6cc3a8928601bc55",
           "quantity": "1d4",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Regenerating Flesh",
       "type": 0,
       "range": [
-        25,
-        27
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 25,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.d495d9138056276c",
           "quantity": "1",
           "category": "component"

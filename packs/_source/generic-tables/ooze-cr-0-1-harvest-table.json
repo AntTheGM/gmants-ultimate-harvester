@@ -11,14 +11,14 @@
       "text": "Acidic Residue",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.208f08bb4f6d01e1",
           "quantity": "1d4",
           "category": "component"
@@ -30,14 +30,14 @@
       "text": "Ooze Membrane",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.f6d9de3574b044fa",
           "quantity": "1",
           "category": "material"
@@ -49,14 +49,14 @@
       "text": "Gelatinous Extract",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.99c76c3f77efed92",
           "quantity": "1",
           "category": "component"
@@ -68,14 +68,14 @@
       "text": "Corrosive Core",
       "type": 0,
       "range": [
-        18,
-        20
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 18,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.53ee426fcc79c2e2",
           "quantity": "1",
           "category": "component"

@@ -11,14 +11,14 @@
       "text": "Manticore Spike",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.237974adbefe1b46",
           "quantity": "2d4",
           "category": "material"
@@ -30,14 +30,14 @@
       "text": "Manticore Mane",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.d9f297c957fb2146",
           "quantity": "1",
           "category": "material"
@@ -49,14 +49,14 @@
       "text": "Manticore Tail",
       "type": 0,
       "range": [
-        18,
-        20
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 18,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.61966955720725bd",
           "quantity": "1",
           "category": "material"

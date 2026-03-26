@@ -11,14 +11,14 @@
       "text": "Apex Meat",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.215903275591fc05",
           "quantity": "1d4",
           "category": "food"
@@ -30,14 +30,14 @@
       "text": "Apex Hide",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.c2b039f477632efe",
           "quantity": "1",
           "category": "material"
@@ -49,14 +49,14 @@
       "text": "Primordial Bone",
       "type": 0,
       "range": [
-        29,
-        31
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 29,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.83055b03dae4d522",
           "quantity": "1",
           "category": "material"
@@ -68,14 +68,14 @@
       "text": "Razor Teeth/Claws",
       "type": 0,
       "range": [
-        29,
-        31
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 29,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.2f1d312bdd3a4cac",
           "quantity": "1d4",
           "category": "material"
@@ -87,14 +87,14 @@
       "text": "Potent Venom Sac",
       "type": 0,
       "range": [
-        32,
-        34
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 32,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.32b6ea2307b414f2",
           "quantity": "1",
           "category": "component"
@@ -106,14 +106,14 @@
       "text": "Intact Organ",
       "type": 0,
       "range": [
-        35,
-        37
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 35,
+          "rarity": "veryRare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.44074e253910afce",
           "quantity": "1",
           "category": "component"

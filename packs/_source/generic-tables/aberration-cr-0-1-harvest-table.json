@@ -11,14 +11,14 @@
       "text": "Aberrant Flesh",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.dd9f9ceb0a7dfa2f",
           "quantity": "1",
           "category": "component"
@@ -30,14 +30,14 @@
       "text": "Psionic Crystal",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.77befdd65f8ba4d7",
           "quantity": "1",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Mind Residue",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.be367e3314b25157",
           "quantity": "1",
           "category": "component"
@@ -68,14 +68,14 @@
       "text": "Eldritch Ichor",
       "type": 0,
       "range": [
-        18,
-        20
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 18,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.e800ece6a64f9336",
           "quantity": "1",
           "category": "component"

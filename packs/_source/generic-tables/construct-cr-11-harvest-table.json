@@ -11,14 +11,14 @@
       "text": "Power Crystal",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.2b64fb42573eff23",
           "quantity": "1d4",
           "category": "component"
@@ -30,14 +30,14 @@
       "text": "Enchanted Plating",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.734a0306e01551ee",
           "quantity": "2",
           "category": "material"
@@ -49,14 +49,14 @@
       "text": "Construct Heart",
       "type": 0,
       "range": [
-        29,
-        31
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 29,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.dcf641b4b1434a13",
           "quantity": "1",
           "category": "component"
@@ -68,14 +68,14 @@
       "text": "Construct Heart",
       "type": 0,
       "range": [
-        32,
-        34
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 32,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.dcf641b4b1434a13",
           "quantity": "2",
           "category": "component"
@@ -87,14 +87,14 @@
       "text": "Construct Heart",
       "type": 0,
       "range": [
-        35,
-        37
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 35,
+          "rarity": "veryRare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.dcf641b4b1434a13",
           "quantity": "3",
           "category": "component"

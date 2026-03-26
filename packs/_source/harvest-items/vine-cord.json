@@ -5,26 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>A length of tough jungle vine; flexible</p>"
+      "value": "<p>A length of tough jungle vine; flexible, water-resistant, and surprisingly strong.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 1,
       "units": "lb"
     },
     "price": {
-      "value": 0,
-      "denomination": "1"
+      "value": 3,
+      "denomination": "sp"
     },
-    "rarity": "3",
+    "rarity": "common",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "sp",
-      "harvestBonus": null,
-      "applicableTypes": [
-        "material"
-      ]
+      "category": "material"
     }
   }
 }

@@ -11,14 +11,14 @@
       "text": "Giant Spider Silk",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.8fb845d861f4ba75",
           "quantity": "1d4",
           "category": "material"
@@ -30,14 +30,14 @@
       "text": "Giant Spider Fang",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.650e81fb9961bf2e",
           "quantity": "1d4",
           "category": "material"
@@ -49,14 +49,14 @@
       "text": "Giant Spider Venom",
       "type": 0,
       "range": [
-        16,
-        18
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 16,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.2f9bde50012de663",
           "quantity": "1",
           "category": "component"

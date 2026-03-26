@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>A heavy</p>"
+      "value": "<p>A heavy, crystalline eye from a basilisk; retains faint petrifying energy.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 1,
       "units": "lb"
     },
     "price": {
-      "value": 1,
-      "denomination": "15"
+      "value": 15,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "rare",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "rare",
-      "harvestBonus": null
+      "category": "component"
     }
   }
 }

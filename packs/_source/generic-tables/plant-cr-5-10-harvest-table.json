@@ -11,14 +11,14 @@
       "text": "Living Bark",
       "type": 0,
       "range": [
-        19,
-        21
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 19,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.dda82925c345e849",
           "quantity": "1d4",
           "category": "material"
@@ -30,14 +30,14 @@
       "text": "Blossom Essence",
       "type": 0,
       "range": [
-        19,
-        21
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 19,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.376f35741921f3b5",
           "quantity": "1d4",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Fungal Spore Sac",
       "type": 0,
       "range": [
-        21,
-        23
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 21,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.ff160a8d924ebbec",
           "quantity": "1",
           "category": "component"
@@ -68,14 +68,14 @@
       "text": "Treant Heartwood",
       "type": 0,
       "range": [
-        24,
-        26
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 24,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.4d11184ae00d4ce0",
           "quantity": "1",
           "category": "material"
@@ -87,14 +87,14 @@
       "text": "Treant Heartwood",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "veryRare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.4d11184ae00d4ce0",
           "quantity": "2",
           "category": "material"

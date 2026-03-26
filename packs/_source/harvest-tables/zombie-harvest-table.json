@@ -11,14 +11,14 @@
       "text": "Rotting Flesh",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.80c4ffb7480c5b18",
           "quantity": "1d4",
           "category": "component"
@@ -30,14 +30,14 @@
       "text": "Zombie Flesh",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.8e04fb71108d5b1e",
           "quantity": "1d4",
           "category": "component"

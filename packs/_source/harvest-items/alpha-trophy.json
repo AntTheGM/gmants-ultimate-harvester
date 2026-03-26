@@ -5,26 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>A distinctive marking</p>"
+      "value": "<p>A distinctive marking, crest, or appendage from a dominant specimen.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 1,
       "units": "lb"
     },
     "price": {
-      "value": 0,
-      "denomination": "1"
+      "value": 8,
+      "denomination": "gp"
     },
-    "rarity": "8",
+    "rarity": "rare",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "gp",
-      "harvestBonus": null,
-      "applicableTypes": [
-        "trophy"
-      ]
+      "category": "trophy"
     }
   }
 }

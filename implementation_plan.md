@@ -1,6 +1,6 @@
 # Ultimate Harvester — Implementation Plan
 
-**Status**: Phases 1-6 Complete, significant post-phase iteration on UX and architecture
+**Status**: Phases 1-6 Complete, Phase 7 In Progress
 **Last Updated**: 2026-03-26
 **Related Docs**: [Technical Architecture](harvester_module.md) | [Game Rules](harvester_rules.md) | [VTTools Style Guide](../module_styles.md)
 
@@ -380,34 +380,34 @@ Create hand-crafted harvest tables for iconic creatures. These override generic 
 
 ---
 
-### Phase 7: UI Polish & GM Tools — NOT STARTED
+### Phase 7: UI Polish & GM Tools — IN PROGRESS
 
 **Depends on:** Phases 2-5
 
 Production-quality UI, styled chat cards, and GM convenience features.
 
-> **Note:** Significant UI work was done during Phase 2-3 iteration: time banners, icon colors, category badges, difficulty labels, collapsible info sections, combined post-appraisal dialog. The remaining items below are what's left.
+> **Note:** Significant UI work was done during Phase 2-3 and Phase 6 iteration: time banners, icon colors, category badges, difficulty labels, collapsible info sections, combined post-appraisal dialog, formatTime helper, item descriptions in pickup dialogs.
 
-- [ ] Style DM Foraging Panel:
-  - 400px settings width
-  - Section headers with uppercase labels
-  - Select rows with icons
-- [ ] Style foraging result chat cards to match harvest card design
-- [ ] Add VTTools GM Ant branding header to ApplicationV2 windows (harvest table editor, foraging panel)
-- [ ] Add visual indicator on harvested tokens (tint or icon overlay, optional setting)
-- [ ] Add visual indicator on partially-looted tokens (different from fully harvested)
-- [ ] Create GM tools:
-  - Right-click actor → "Assign Harvest Table" (opens compendium browser/picker, sets `harvestTable` flag)
-  - Right-click actor → "Reset Harvest" (clears all harvest-related flags)
-- [ ] Create Harvest Table Editor (ApplicationV2 dialog for GM customization):
-  - Create/edit harvest tables with a friendly UI (no manual flag editing)
-  - Fields per row: item picker (compendium browser), DC, quantity formula, category dropdown
-  - Crit fail effect and Nat 20 bonus item fields on the table level
-  - "Save to World" button that creates a properly-flagged RollTable
-  - Accessible from GM tools menu or right-click on an existing harvest table
+- [x] Add visual indicator on harvested tokens (PIXI overlay on token corner):
+  - Green checkmark (✔): fully harvested
+  - Red X (✘): ruined
+  - Gold dot (●): partially looted (items remaining)
+- [x] Create GM tools via `getTokenActionButtons` context menu:
+  - "Assign Harvest Table" — text input for table UUID (compendium picker planned for later)
+  - "Reset Harvest" — clears all harvest-related flags (harvested, availableItems, appraisal state, etc.)
+- [x] "View Appraisal Details" chat link styled as full-width button (unscoped CSS for chat context)
+- [x] Rarity-based DCs — table results store `rarity` tier instead of fixed DC numbers; DCs calculated at runtime from `CR + baseDCOffset + rarityOffset`. Rarity offsets configurable in config.js (+0/+5/+10/+15).
+- [x] Fixed CSV quoting — descriptions with commas now properly quoted, no more truncated text
+- [x] Assign proper Foundry core icons to all 247 items:
+  - Used `game.ultimateHarvester.listIcons()` to dump all 6,310 core icon paths from Foundry
+  - Mapped items by category: meat→shank, hides→fur-pelt, bones→bone-fragments, claws→hand-clawed, eyes→eye-blue, organs→organ-*, blood→bottle-bulb, scales by dragon color, gems→gem-cluster, feathers→feather-*, etc.
+  - All icons verified against `R:\Foundry\Modules\Foundry_Icon_List.txt`
+- [ ] Style DM Foraging Panel (400px, section headers, select rows)
+- [ ] Add VTTools GM Ant branding header to ApplicationV2 windows
+- [ ] Create Harvest Table Editor (ApplicationV2 dialog for GM customization)
 - [ ] Create skill mapping submenu (ApplicationV2 form with 14 dropdowns via `registerMenu()`)
+- [ ] Migrate dialogs from legacy `Dialog` to `DialogV2` for CSS variable scoping
 - [ ] Add CSS responsive layout tweaks for different Foundry window sizes
-- [ ] Deploy and verify all UI elements look polished in both light and dark Foundry themes
 
 ---
 
@@ -440,7 +440,9 @@ As of Phases 1-3 + iteration:
 | `scripts/harvesting.js` | Core workflow — creature-centric harvest + appraisal + retry + sequential looting |
 | `scripts/table-lookup.js` | 4-priority layered fallback table lookup with cached indexes |
 | `scripts/socket.js` | Optional socketlib — `gmSetFlag()`, `gmCreateEmbeddedDocuments()` |
-| `scripts/test-data.js` | Dev-only seeder — Wolf, Winter Wolf, Beast CR 0-1 (auto-clears before re-seed) |
+| `scripts/foraging.js` | Foraging workflow — hours prompt → skill roll → cumulative tier resolution → table draw → pickup → award |
+| `scripts/foraging-panel.js` | ApplicationV2 DM panel — environment/weather/season/skills/DM modifier with live DC preview |
+| `scripts/test-data.js` | Dev seeder — loads all JSON from `packs/_source/` into compendium packs via FilePicker |
 | `styles/ultimate-harvester.css` | VTTools palette, icon colors, time banners, difficulty labels, badges, layout |
 | `templates/harvest-dialog.hbs` | Initial Appraise/Harvest/Cancel dialog with time estimates, info dropdowns, penalty display |
 | `templates/post-appraisal-dialog.hbs` | Combined appraisal results + harvest button (single window for harvester) |
@@ -448,7 +450,16 @@ As of Phases 1-3 + iteration:
 | `templates/appraisal-modal.hbs` | Standalone modal for viewing full appraisal details (opened from chat link) |
 | `templates/harvest-result.hbs` | Harvest result chat card with items, time, remaining count |
 | `templates/harvest-pickup.hbs` | Take/leave checkbox dialog with category badges and time |
+| `templates/forage-panel.hbs` | DM foraging panel template |
+| `templates/forage-prompt.hbs` | Player hours prompt with DC tiers and info dropdown |
 | `templates/skill-mapping-config.hbs` | Settings submenu for 14 creature-type skill dropdowns |
+| `tools/csv-to-json.js` | CSV → Foundry JSON converter with deterministic IDs, rarity-based DC support |
+| `tools/data/items.csv` | 187 harvest item definitions |
+| `tools/data/foraging-items.csv` | 60 foraging item definitions |
+| `tools/data/tables.csv` | 92 harvest table definitions (rarity-based DCs) |
+| `tools/data/foraging-tables.csv` | 40 foraging table definitions (d6 numeric DCs) |
+| `tools/icon-assignment-plan.md` | Plan for assigning proper Foundry core icons to all 247 items |
+| `packs/_source/` | 247 item JSONs + 132 table JSONs (generated by csv-to-json.js) |
 | `lang/en.json` | All i18n keys |
 | `deploy.sh` | Copy to `R:/Foundry/Data/modules/ultimate-harvester/` |
 

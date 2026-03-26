@@ -11,14 +11,14 @@
       "text": "Wolf Meat",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.d29ed447eb6ec71b",
           "quantity": "1d4",
           "category": "food"
@@ -30,14 +30,14 @@
       "text": "Wolf Pelt",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.f571a0e0560a9731",
           "quantity": "1",
           "category": "material"
@@ -49,14 +49,14 @@
       "text": "Wolf Fangs",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.a6184a0b9fa83e2f",
           "quantity": "1d4",
           "category": "material"
@@ -68,14 +68,14 @@
       "text": "Wolf Heart",
       "type": 0,
       "range": [
-        18,
-        20
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 18,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.0656b69fcaec926c",
           "quantity": "1",
           "category": "component"

@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>Ancient</p>"
+      "value": "<p>Ancient, iron-hard bones suffused with primal vitality.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 2,
       "units": "lb"
     },
     "price": {
-      "value": 2,
-      "denomination": "18"
+      "value": 18,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "veryRare",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "veryRare",
-      "harvestBonus": null
+      "category": "material"
     }
   }
 }

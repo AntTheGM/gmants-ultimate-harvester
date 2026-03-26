@@ -229,6 +229,7 @@ Hooks.once("init", () => {
     openForagingPanel: () => ForagingPanel.open(),
     viewAppraisal,
     seedTestData,
+    listIcons: _listIcons,
   };
 
   // Register Handlebars helper for time formatting
@@ -262,6 +263,120 @@ Hooks.on("getSceneControlButtons", (controls) => {
   if (!tokenControls.tools) tokenControls.tools = tools;
 });
 
+// Token visual indicators for harvest state
+Hooks.on("refreshToken", (token) => {
+  if (!token.actor) return;
+  const harvested = token.actor.getFlag(MODULE_ID, "harvested");
+  const availableItems = token.actor.getFlag(MODULE_ID, "availableItems");
+  const iconContainer = token.children?.find((c) => c.name === "ultimate-harvester-indicator");
+
+  // Remove existing indicator
+  if (iconContainer) {
+    token.removeChild(iconContainer);
+  }
+
+  if (!harvested && !availableItems?.length) return;
+  if (token.actor.system.attributes?.hp?.value > 0) return;
+
+  // Create indicator
+  const size = token.w * 0.25;
+  const container = new PIXI.Container();
+  container.name = "ultimate-harvester-indicator";
+  container.position.set(token.w - size - 2, 2);
+
+  const bg = new PIXI.Graphics();
+  bg.beginFill(0x000000, 0.6);
+  bg.drawRoundedRect(0, 0, size, size, 3);
+  bg.endFill();
+  container.addChild(bg);
+
+  const text = new PIXI.Text(
+    harvested === true ? "\u2714" : harvested === "ruined" ? "\u2718" : "\u25CF",
+    {
+      fontSize: size * 0.7,
+      fill: harvested === true ? 0x3a6e3a : harvested === "ruined" ? 0x8b3a3a : 0xc99700,
+      fontWeight: "bold",
+      align: "center",
+    }
+  );
+  text.anchor.set(0.5);
+  text.position.set(size / 2, size / 2);
+  container.addChild(text);
+
+  token.addChild(container);
+});
+
+// GM right-click context menu for tokens
+Hooks.on("getTokenActionButtons", (token, buttons) => {
+  if (!game.user.isGM) return;
+  if (!token.actor || token.actor.type !== "npc") return;
+
+  // Only show for dead creatures
+  if (token.actor.system.attributes?.hp?.value > 0) return;
+
+  buttons.push({
+    label: "Assign Harvest Table",
+    icon: "fa-solid fa-table-list",
+    callback: () => _assignHarvestTable(token.actor),
+  });
+
+  const harvested = token.actor.getFlag(MODULE_ID, "harvested");
+  const availableItems = token.actor.getFlag(MODULE_ID, "availableItems");
+  if (harvested || availableItems) {
+    buttons.push({
+      label: "Reset Harvest",
+      icon: "fa-solid fa-rotate-left",
+      callback: () => _resetHarvest(token.actor),
+    });
+  }
+});
+
+async function _assignHarvestTable(actor) {
+  // Simple prompt for table UUID — Phase 7 will add a proper compendium picker
+  const content = `<div class="ultimate-harvester-form">
+    <p>Enter the UUID of a RollTable to assign to <strong>${actor.name}</strong>:</p>
+    <p class="ultimate-harvester-note">Browse compendiums for a table UUID, or leave blank to clear the override.</p>
+    <input type="text" name="tableUuid" value="${actor.getFlag(MODULE_ID, "harvestTable") ?? ""}" placeholder="Compendium.ultimate-harvester.harvest-tables.xxxxxx" />
+  </div>`;
+
+  new Dialog({
+    title: `Assign Harvest Table — ${actor.name}`,
+    content,
+    buttons: {
+      save: {
+        label: "Save",
+        icon: '<i class="fas fa-save"></i>',
+        callback: async (html) => {
+          const uuid = html.find("input[name='tableUuid']").val()?.trim();
+          if (uuid) {
+            await actor.setFlag(MODULE_ID, "harvestTable", uuid);
+            ui.notifications.info(`Harvest table assigned to ${actor.name}`);
+          } else {
+            await actor.unsetFlag(MODULE_ID, "harvestTable");
+            ui.notifications.info(`Harvest table override cleared for ${actor.name}`);
+          }
+        },
+      },
+      cancel: {
+        label: "Cancel",
+        icon: '<i class="fas fa-times"></i>',
+      },
+    },
+    default: "save",
+  }).render(true);
+}
+
+async function _resetHarvest(actor) {
+  const flags = ["harvested", "availableItems", "harvestingBy", "appraisalSuccess",
+    "appraisalAttempts", "appraisalBonus", "appraisalDisadvantage", "appraisalData",
+    "maxRetryDC", "harvestOffered"];
+
+  for (const flag of flags) {
+    try { await actor.unsetFlag(MODULE_ID, flag); } catch { /* ignore */ }
+  }
+  ui.notifications.info(`Harvest state reset for ${actor.name}`);
+}
+
 // Chat link handler — "View Appraisal" links in chat cards
 Hooks.on("renderChatMessage", (_message, html) => {
   const el = html instanceof HTMLElement ? html : html[0];
@@ -274,6 +389,47 @@ Hooks.on("renderChatMessage", (_message, html) => {
     if (creatureUuid) viewAppraisal(creatureUuid);
   });
 });
+
+/* ---------------------------------------- */
+/*  Macro Seeding                            */
+/* ---------------------------------------- */
+
+/* ---------------------------------------- */
+/*  Icon Lister                              */
+/* ---------------------------------------- */
+
+async function _listIcons() {
+  const dirs = [
+    "icons/commodities", "icons/consumables", "icons/containers",
+    "icons/creatures", "icons/environment", "icons/equipment",
+    "icons/magic", "icons/skills", "icons/sundries",
+    "icons/svg", "icons/tools", "icons/weapons",
+  ];
+
+  const allIcons = [];
+  ui.notifications.info("Scanning icons... this may take a moment.");
+
+  async function crawl(dir) {
+    try {
+      const result = await FilePicker.browse("public", dir);
+      for (const file of result.files) allIcons.push(file);
+      for (const subdir of result.dirs) await crawl(subdir);
+    } catch { /* skip inaccessible dirs */ }
+  }
+
+  for (const d of dirs) await crawl(d);
+
+  console.log(`Found ${allIcons.length} icons:\n${allIcons.join("\n")}`);
+
+  try {
+    await navigator.clipboard.writeText(allIcons.join("\n"));
+    ui.notifications.info(`${allIcons.length} icon paths copied to clipboard!`);
+  } catch {
+    ui.notifications.info(`${allIcons.length} icons found — check the F12 console (clipboard access denied).`);
+  }
+
+  return allIcons;
+}
 
 /* ---------------------------------------- */
 /*  Macro Seeding                            */

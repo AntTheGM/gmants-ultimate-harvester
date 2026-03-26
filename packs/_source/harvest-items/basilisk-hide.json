@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>Stony</p>"
+      "value": "<p>Stony, rough-textured hide from a basilisk; partially petrified.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 4,
       "units": "lb"
     },
     "price": {
-      "value": 4,
-      "denomination": "8"
+      "value": 8,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "uncommon",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "uncommon",
-      "harvestBonus": null
+      "category": "material"
     }
   }
 }

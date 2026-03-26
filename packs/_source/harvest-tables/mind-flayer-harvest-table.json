@@ -11,14 +11,14 @@
       "text": "Illithid Mucus",
       "type": 0,
       "range": [
-        19,
-        21
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 19,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.d38d37e05b3adcb1",
           "quantity": "1d4",
           "category": "component"
@@ -30,14 +30,14 @@
       "text": "Mind Flayer Tentacle",
       "type": 0,
       "range": [
-        19,
-        21
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 19,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.c0ce61c386125642",
           "quantity": "1d4",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Psionic Crystal",
       "type": 0,
       "range": [
-        21,
-        23
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 21,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.77befdd65f8ba4d7",
           "quantity": "1",
           "category": "component"
@@ -68,14 +68,14 @@
       "text": "Mind Flayer Brain",
       "type": 0,
       "range": [
-        24,
-        26
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 24,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.b643406413f03e3b",
           "quantity": "1",
           "category": "component"

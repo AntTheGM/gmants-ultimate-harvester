@@ -11,14 +11,14 @@
       "text": "Elemental Mote",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.1e0dd91134ef82e8",
           "quantity": "2d4",
           "category": "component"
@@ -30,14 +30,14 @@
       "text": "Primal Ash",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.b2db2714aff0d62d",
           "quantity": "1d4",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Elemental Core",
       "type": 0,
       "range": [
-        17,
-        19
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 17,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.01dc5f5a32bc5a08",
           "quantity": "1",
           "category": "component"
@@ -68,14 +68,14 @@
       "text": "Condensed Element",
       "type": 0,
       "range": [
-        20,
-        22
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 20,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.8235e76763ada770",
           "quantity": "1",
           "category": "material"
@@ -87,14 +87,14 @@
       "text": "Pure Elemental Essence",
       "type": 0,
       "range": [
-        23,
-        25
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 23,
+          "rarity": "veryRare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.0afd8b1767851779",
           "quantity": "1",
           "category": "component"

@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>A curved</p>"
+      "value": "<p>A curved, hand-length killing claw from an allosaurus foreleg.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 1,
       "units": "lb"
     },
     "price": {
-      "value": 1,
-      "denomination": "10"
+      "value": 10,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "uncommon",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "uncommon",
-      "harvestBonus": null
+      "category": "material"
     }
   }
 }

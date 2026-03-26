@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>Thick</p>"
+      "value": "<p>Thick, surprisingly flavorful cuts of dinosaur flesh.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 3,
       "units": "lb"
     },
     "price": {
-      "value": 3,
-      "denomination": "8"
+      "value": 8,
+      "denomination": "sp"
     },
-    "rarity": "sp",
+    "rarity": "common",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "common",
-      "harvestBonus": null
+      "category": "food"
     }
   }
 }

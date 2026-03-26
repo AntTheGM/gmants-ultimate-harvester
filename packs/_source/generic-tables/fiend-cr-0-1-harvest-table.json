@@ -11,14 +11,14 @@
       "text": "Infernal Ash",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.d1607b57a65b4fe6",
           "quantity": "1d4",
           "category": "component"
@@ -30,14 +30,14 @@
       "text": "Demon Ichor",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.13304f7dbf262f5a",
           "quantity": "1",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Devil Horn",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.f892e958e343af49",
           "quantity": "1",
           "category": "material"
@@ -68,14 +68,14 @@
       "text": "Fiendish Hide",
       "type": 0,
       "range": [
-        18,
-        20
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 18,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.78ce2cc2921a204b",
           "quantity": "1",
           "category": "material"

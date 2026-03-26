@@ -11,14 +11,14 @@
       "text": "Yuan-ti Scale",
       "type": 0,
       "range": [
-        19,
-        21
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 19,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.397426fa127e793b",
           "quantity": "1d6",
           "category": "material"
@@ -30,14 +30,14 @@
       "text": "Serpent Venom Gland",
       "type": 0,
       "range": [
-        22,
-        24
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 22,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.aabf7bb3c6935b01",
           "quantity": "1",
           "category": "component"

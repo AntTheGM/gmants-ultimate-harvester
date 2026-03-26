@@ -96,9 +96,9 @@ export const DC_DEFAULTS = {
   appraisalDCOffset: -5,
   rarityOffsets: {
     common: 0,
-    uncommon: 2,
-    rare: 5,
-    veryRare: 8,
+    uncommon: 5,
+    rare: 10,
+    veryRare: 15,
   },
 };
 

@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>The long</p>"
+      "value": "<p>The long, rasping tongue of a ghoul; still faintly animated and coated in foul saliva.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 0.5,
       "units": "lb"
     },
     "price": {
-      "value": 0,
-      "denomination": "4"
+      "value": 4,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "uncommon",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "uncommon",
-      "harvestBonus": null
+      "category": "component"
     }
   }
 }

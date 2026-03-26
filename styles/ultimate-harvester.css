@@ -245,25 +245,29 @@ details[open] > .ultimate-harvester-details-toggle::before {
   font-size: 0.85rem;
 }
 
-/* --- Chat View Link --- */
+/* --- Chat View Link (unscoped — lives inside chat messages, not .ultimate-harvester) --- */
 .ultimate-harvester-view-link {
   display: inline-block;
-  margin-top: 0.25rem;
-  padding: 0.2rem 0.5rem;
+  margin-top: 0.35rem;
+  padding: 0.35rem 0.75rem;
   font-size: 0.8rem;
   font-weight: bold;
-  color: var(--mharvest-accent);
-  border: 1px solid var(--mharvest-accent-border);
-  border-radius: 3px;
-  background: var(--mharvest-accent-bg);
+  color: #3a5a2a;
+  border: 1px solid rgba(58, 90, 42, 0.4);
+  border-radius: 4px;
+  background: rgba(58, 90, 42, 0.12);
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .ultimate-harvester-view-link:hover {
-  background: rgba(92, 122, 58, 0.2);
-  color: var(--mharvest-accent);
+  background: rgba(58, 90, 42, 0.25);
+  color: #2a4a1a;
   text-decoration: none;
+  border-color: rgba(58, 90, 42, 0.6);
 }
 
 /* --- Chat Card --- */

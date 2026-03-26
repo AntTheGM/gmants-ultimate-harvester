@@ -11,14 +11,14 @@
       "text": "Skull Trophy",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.c4b14427873490a7",
           "quantity": "1",
           "category": "trophy"
@@ -30,14 +30,14 @@
       "text": "Blood Vial",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.bd9e0ea7fa6bcfbf",
           "quantity": "1d4",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Warrior Heart",
       "type": 0,
       "range": [
-        29,
-        31
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 29,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.3b340e9bfe69c862",
           "quantity": "1",
           "category": "component"
@@ -68,14 +68,14 @@
       "text": "Warrior Heart",
       "type": 0,
       "range": [
-        32,
-        34
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 32,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.3b340e9bfe69c862",
           "quantity": "2",
           "category": "component"
@@ -87,14 +87,14 @@
       "text": "Warrior Heart",
       "type": 0,
       "range": [
-        35,
-        37
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 35,
+          "rarity": "veryRare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.3b340e9bfe69c862",
           "quantity": "3",
           "category": "component"

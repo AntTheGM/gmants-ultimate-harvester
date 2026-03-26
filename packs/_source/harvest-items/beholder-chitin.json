@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>Tough</p>"
+      "value": "<p>Tough, overlapping chitin plates from a beholder's body.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 3,
       "units": "lb"
     },
     "price": {
-      "value": 3,
-      "denomination": "15"
+      "value": 15,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "rare",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "rare",
-      "harvestBonus": null
+      "category": "material"
     }
   }
 }

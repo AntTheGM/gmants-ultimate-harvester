@@ -11,14 +11,14 @@
       "text": "Animal Meat",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.51f39152b6c48036",
           "quantity": "1d4",
           "category": "food"
@@ -30,14 +30,14 @@
       "text": "Animal Hide",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.89f8cd3c712bb160",
           "quantity": "1",
           "category": "material"
@@ -49,14 +49,14 @@
       "text": "Bone Fragment",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.909906e545608782",
           "quantity": "1d4",
           "category": "material"
@@ -68,14 +68,14 @@
       "text": "Teeth/Claws",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.a6cd5d4987708044",
           "quantity": "1",
           "category": "material"
@@ -87,14 +87,14 @@
       "text": "Venom Sac",
       "type": 0,
       "range": [
-        18,
-        20
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 18,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.1fc14b832c3b2b65",
           "quantity": "1",
           "category": "component"

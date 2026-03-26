@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>A thick</p>"
+      "value": "<p>A thick, flexible root stripped from a plant creature; rich in nutrients.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 1,
       "units": "lb"
     },
     "price": {
-      "value": 1,
-      "denomination": "3"
+      "value": 3,
+      "denomination": "sp"
     },
-    "rarity": "sp",
+    "rarity": "common",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "common",
-      "harvestBonus": null
+      "category": "material"
     }
   }
 }

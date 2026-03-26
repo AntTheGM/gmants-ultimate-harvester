@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>A dense</p>"
+      "value": "<p>A dense, fossilized-looking bone from a large dinosaur.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 4,
       "units": "lb"
     },
     "price": {
       "value": 4,
-      "denomination": "4"
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "uncommon",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "uncommon",
-      "harvestBonus": null
+      "category": "material"
     }
   }
 }

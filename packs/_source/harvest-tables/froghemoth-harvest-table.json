@@ -11,14 +11,14 @@
       "text": "Froghemoth Tentacle",
       "type": 0,
       "range": [
-        22,
-        24
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 22,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.1a4b22cf7f975c22",
           "quantity": "1d4",
           "category": "material"
@@ -30,14 +30,14 @@
       "text": "Froghemoth Tongue",
       "type": 0,
       "range": [
-        22,
-        24
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 22,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.f7b7c9291e854400",
           "quantity": "1",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Froghemoth Eye",
       "type": 0,
       "range": [
-        25,
-        27
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 25,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.be2ecf9bda546942",
           "quantity": "1d4",
           "category": "component"

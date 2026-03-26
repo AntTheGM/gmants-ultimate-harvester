@@ -11,14 +11,14 @@
       "text": "Dinosaur Meat",
       "type": 0,
       "range": [
-        20,
-        22
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 20,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.c8866e1f17929e55",
           "quantity": "2d4",
           "category": "food"
@@ -30,14 +30,14 @@
       "text": "Dinosaur Bone",
       "type": 0,
       "range": [
-        20,
-        22
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 20,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.9d223c4c43e88f6f",
           "quantity": "1d4",
           "category": "material"
@@ -49,14 +49,14 @@
       "text": "T-Rex Fang",
       "type": 0,
       "range": [
-        22,
-        24
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 22,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.fbc46e0c6c44eb72",
           "quantity": "1d4",
           "category": "material"
@@ -68,14 +68,14 @@
       "text": "T-Rex Hide",
       "type": 0,
       "range": [
-        25,
-        27
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 25,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.5c87de57f24b709f",
           "quantity": "1",
           "category": "material"

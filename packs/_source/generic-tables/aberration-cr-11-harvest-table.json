@@ -11,14 +11,14 @@
       "text": "Eldritch Ichor",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.e800ece6a64f9336",
           "quantity": "1d4",
           "category": "component"
@@ -30,14 +30,14 @@
       "text": "Mind Residue",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.be367e3314b25157",
           "quantity": "1",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Far Realm Essence",
       "type": 0,
       "range": [
-        29,
-        31
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 29,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.856f098876168730",
           "quantity": "1",
           "category": "component"
@@ -68,14 +68,14 @@
       "text": "Void Fragment",
       "type": 0,
       "range": [
-        32,
-        34
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 32,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.678c2b98a788f6c0",
           "quantity": "1",
           "category": "component"
@@ -87,14 +87,14 @@
       "text": "Void Fragment",
       "type": 0,
       "range": [
-        35,
-        37
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 35,
+          "rarity": "veryRare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.678c2b98a788f6c0",
           "quantity": "2",
           "category": "component"

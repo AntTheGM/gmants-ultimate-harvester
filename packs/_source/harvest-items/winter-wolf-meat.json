@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>Dense</p>"
+      "value": "<p>Dense, frost-flavored meat from a winter wolf; keeps cold naturally.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 3,
       "units": "lb"
     },
     "price": {
-      "value": 3,
-      "denomination": "1"
+      "value": 1,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "uncommon",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "uncommon",
-      "harvestBonus": null
+      "category": "food"
     }
   }
 }

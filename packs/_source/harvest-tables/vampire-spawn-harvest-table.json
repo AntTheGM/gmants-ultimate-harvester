@@ -11,14 +11,14 @@
       "text": "Undead Ichor",
       "type": 0,
       "range": [
-        17,
-        19
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 17,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.8e90b043cce783df",
           "quantity": "1d4",
           "category": "component"
@@ -30,14 +30,14 @@
       "text": "Vampire Blood",
       "type": 0,
       "range": [
-        17,
-        19
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 17,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.0a1937a85a30d9b9",
           "quantity": "1",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Vampire Fang",
       "type": 0,
       "range": [
-        20,
-        22
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 20,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.13fc7f7b9d3222b2",
           "quantity": "1",
           "category": "material"

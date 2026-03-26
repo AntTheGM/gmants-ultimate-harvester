@@ -11,14 +11,14 @@
       "text": "Corrosive Core",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.53ee426fcc79c2e2",
           "quantity": "1d4",
           "category": "component"
@@ -30,14 +30,14 @@
       "text": "Prismatic Slime",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
           "quantity": "1",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Prismatic Slime",
       "type": 0,
       "range": [
-        29,
-        31
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 29,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
           "quantity": "2",
           "category": "component"
@@ -68,14 +68,14 @@
       "text": "Prismatic Slime",
       "type": 0,
       "range": [
-        32,
-        34
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 32,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
           "quantity": "3",
           "category": "component"
@@ -87,14 +87,14 @@
       "text": "Prismatic Slime",
       "type": 0,
       "range": [
-        35,
-        37
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 35,
+          "rarity": "veryRare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
           "quantity": "4",
           "category": "component"

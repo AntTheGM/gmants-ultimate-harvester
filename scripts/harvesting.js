@@ -4,7 +4,7 @@
  * First harvester rolls and locks items; subsequent harvesters pick up remainders.
  */
 
-import { MODULE_ID, getHarvestSkill, SKILL_LABELS, ITEM_CATEGORIES, TOOL_MAPPINGS, SIZE_TIME_MODIFIERS } from "./config.js";
+import { MODULE_ID, getHarvestSkill, SKILL_LABELS, ITEM_CATEGORIES, TOOL_MAPPINGS, SIZE_TIME_MODIFIERS, DC_DEFAULTS, calculateBaseDC } from "./config.js";
 import { findHarvestTable } from "./table-lookup.js";
 import { gmSetFlag, gmCreateEmbeddedDocuments } from "./socket.js";
 
@@ -76,7 +76,8 @@ export async function initiateHarvest() {
   // --- Calculate time estimates ---
   const cr = creature.system.details?.cr ?? 0;
   const effectiveCR = cr < 1 ? 1 : cr;
-  const tierCount = table.results.contents.filter((r) => r.getFlag(MODULE_ID, "dc") !== undefined).length;
+  const resolvedEntries = _resolveTableDCs(table, cr);
+  const tierCount = resolvedEntries.length;
   const sizeKey = creature.system.traits?.size ?? "med";
   const sizeModifier = SIZE_TIME_MODIFIERS[sizeKey] ?? 0;
   const harvestTimeMin = 15;
@@ -188,17 +189,14 @@ export async function initiateHarvest() {
     return;
   }
 
-  // --- DC threshold filter ---
-  const allResults = table.results.contents;
-  const harvested = allResults.filter((result) => {
-    const dc = result.getFlag(MODULE_ID, "dc");
-    if (dc === undefined) return false;
-    if (maxRetryDC && dc > maxRetryDC) return false;
-    return dc <= total;
+  // --- DC threshold filter (using resolved DCs) ---
+  const harvested = resolvedEntries.filter((entry) => {
+    if (maxRetryDC && entry.dc > maxRetryDC) return false;
+    return entry.dc <= total;
   });
 
   // --- Check for harvest failure ---
-  const lowestDC = Math.min(...allResults.map((r) => r.getFlag(MODULE_ID, "dc") ?? Infinity));
+  const lowestDC = Math.min(...resolvedEntries.map((e) => e.dc));
   if (harvested.length === 0 && total >= 5) {
     const failMargin = lowestDC - total;
     totalTimeElapsed += harvestTimeMin + sizeModifier;
@@ -209,7 +207,7 @@ export async function initiateHarvest() {
       });
       await gmSetFlag(creature, MODULE_ID, "harvested", "ruined");
     } else {
-      const allDCs = allResults.map((r) => r.getFlag(MODULE_ID, "dc")).filter((dc) => dc !== undefined).sort((a, b) => a - b);
+      const allDCs = resolvedEntries.map((e) => e.dc).sort((a, b) => a - b);
       const newMaxDC = allDCs.filter((dc) => dc > total).shift();
       const retryMaxDC = newMaxDC ? newMaxDC - 1 : maxRetryDC;
       await gmSetFlag(creature, MODULE_ID, "maxRetryDC", retryMaxDC);
@@ -230,15 +228,15 @@ export async function initiateHarvest() {
 
   // --- Evaluate quantities and lock items on creature ---
   const itemList = await Promise.all(
-    harvested.map(async (result) => {
-      const flags = result.flags?.[MODULE_ID] ?? {};
+    harvested.map(async (entry) => {
+      const flags = entry.result.flags?.[MODULE_ID] ?? {};
       const quantityRoll = await new Roll(flags.quantity || "1").evaluate();
       return {
-        name: result.text,
+        name: entry.result.text,
         uuid: flags.itemUuid,
         quantity: quantityRoll.total,
         category: flags.category ?? "material",
-        dc: flags.dc,
+        dc: entry.dc,
         description: await _getItemDescription(flags.itemUuid),
       };
     })
@@ -353,9 +351,10 @@ async function _pickupRemaining(harvester, creature, availableItems) {
 async function _performAppraisal(harvester, creature, table, skillId, skillLabel, appraisalTime, sizeModifier) {
   const appraisalDCOffset = game.settings.get(MODULE_ID, "appraisalDCOffset");
 
+  const creatureCR = creature.system.details?.cr ?? 0;
   const allResults = table.results.contents;
   const dcResults = allResults
-    .map((r) => ({ text: r.text, dc: r.getFlag(MODULE_ID, "dc"), category: r.flags?.[MODULE_ID]?.category }))
+    .map((r) => ({ text: r.text, dc: _resolveDC(r, creatureCR), category: r.flags?.[MODULE_ID]?.category }))
     .filter((r) => r.dc !== undefined)
     .sort((a, b) => a.dc - b.dc);
 
@@ -739,6 +738,46 @@ async function _rollHarvestCheck(harvester, skillId, totalBonus, advantageMode) 
 /* ============================================
    Private: Tool Check
    ============================================ */
+
+/**
+ * Resolve the effective DC for a table result entry.
+ * Supports two modes:
+ *   1. Fixed DC: result flag has `dc` (number) — used as-is (backward compat / hand-tuned tables)
+ *   2. Rarity-based: result flag has `rarity` (string) — DC calculated from creature CR + baseDCOffset + rarityOffset
+ * @param {TableResult} result - The RollTable result entry
+ * @param {number} creatureCR - The creature's CR (for rarity-based calculation)
+ * @returns {number|undefined} The effective DC, or undefined if no DC info
+ */
+function _resolveDC(result, creatureCR) {
+  const flags = result.flags?.[MODULE_ID] ?? {};
+
+  // Fixed DC takes priority (backward compat, hand-tuned tables)
+  if (flags.dc !== undefined && flags.dc !== null) return flags.dc;
+
+  // Rarity-based calculation
+  if (flags.rarity) {
+    const baseDCOffset = game.settings.get(MODULE_ID, "baseDCOffset");
+    const baseDC = calculateBaseDC(creatureCR, baseDCOffset);
+    const rarityOffsets = DC_DEFAULTS.rarityOffsets;
+    const offset = rarityOffsets[flags.rarity] ?? 0;
+    return baseDC + offset;
+  }
+
+  return undefined;
+}
+
+/**
+ * Resolve DCs for all results in a table, returning enriched entries.
+ * @param {RollTable} table
+ * @param {number} creatureCR
+ * @returns {Array<{result, dc}>}
+ */
+function _resolveTableDCs(table, creatureCR) {
+  return table.results.contents.map((result) => ({
+    result,
+    dc: _resolveDC(result, creatureCR),
+  })).filter((entry) => entry.dc !== undefined);
+}
 
 /**
  * Get the plain-text description from a compendium item UUID.

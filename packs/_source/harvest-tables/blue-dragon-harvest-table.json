@@ -11,14 +11,14 @@
       "text": "Blue Dragon Scale",
       "type": 0,
       "range": [
-        22,
-        24
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 22,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.660387e43fc4eec8",
           "quantity": "1d6",
           "category": "material"
@@ -30,14 +30,14 @@
       "text": "Dragon Fang",
       "type": 0,
       "range": [
-        22,
-        24
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 22,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.5e1f4966ca93ef8b",
           "quantity": "1",
           "category": "material"
@@ -49,14 +49,14 @@
       "text": "Dragon Wing Membrane",
       "type": 0,
       "range": [
-        24,
-        26
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 24,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.129d80dae98ebbbd",
           "quantity": "1",
           "category": "material"
@@ -68,14 +68,14 @@
       "text": "Dragon Blood",
       "type": 0,
       "range": [
-        24,
-        26
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 24,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.a0bf3833cda802b2",
           "quantity": "1d4",
           "category": "component"
@@ -87,14 +87,14 @@
       "text": "Blue Dragon Lightning Gland",
       "type": 0,
       "range": [
-        27,
-        29
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 27,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.a3c0a86ae78c3d4c",
           "quantity": "1",
           "category": "component"
@@ -106,14 +106,14 @@
       "text": "Dragon Heart",
       "type": 0,
       "range": [
-        30,
-        32
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 30,
+          "rarity": "veryRare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.4e7c6d7704227aac",
           "quantity": "1",
           "category": "component"

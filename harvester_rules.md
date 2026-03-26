@@ -353,10 +353,10 @@ Individual items on a table are then offset from the base by rarity tier:
 
 | Rarity Tier | DC Offset | Resulting DC (CR 5 example) |
 |---|---|---|
-| Common | +0 | 15 |
-| Uncommon | +2 | 17 |
-| Rare | +5 | 20 |
-| Very Rare | +8 | 23 |
+| Common | +0 | 17 |
+| Uncommon | +5 | 22 |
+| Rare | +10 | 27 |
+| Very Rare | +15 | 32 |
 
 These are defaults — each table entry stores its own DC, so specific creature tables can override with hand-tuned values (see the Troll example in Section 1.1).
 
@@ -364,13 +364,13 @@ These are defaults — each table entry stores its own DC, so specific creature 
 
 | CR | Base DC | Common | Uncommon | Rare | Very Rare |
 |---|---|---|---|---|---|
-| 1/8–1/2 | 11 | 11 | 13 | 16 | 19 |
-| 1 | 11 | 11 | 13 | 16 | 19 |
-| 2 | 12 | 12 | 14 | 17 | 20 |
-| 5 | 15 | 15 | 17 | 20 | 23 |
-| 10 | 20 | 20 | 22 | 25 | 28 |
-| 15 | 25 | 25 | 27 | 30 | 33 |
-| 20 | 30 | 30 | 32 | 35 | 38 |
+| 1/8–1/2 | 13 | 13 | 18 | 23 | 28 |
+| 1 | 13 | 13 | 18 | 23 | 28 |
+| 2 | 14 | 14 | 19 | 24 | 29 |
+| 5 | 17 | 17 | 22 | 27 | 32 |
+| 10 | 22 | 22 | 27 | 32 | 37 |
+| 15 | 27 | 27 | 32 | 37 | 42 |
+| 20 | 32 | 32 | 37 | 42 | 47 |
 
 ### Resolved Decisions
 

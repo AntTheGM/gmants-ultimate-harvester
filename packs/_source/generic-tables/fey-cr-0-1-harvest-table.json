@@ -11,14 +11,14 @@
       "text": "Fey Dust",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.4946d0663443fea1",
           "quantity": "1d4",
           "category": "component"
@@ -30,14 +30,14 @@
       "text": "Pixie Wing",
       "type": 0,
       "range": [
-        13,
-        15
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 13,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.eacc2e1816011c7e",
           "quantity": "1",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Enchanted Bark",
       "type": 0,
       "range": [
-        15,
-        17
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 15,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.af6ee835295e7a53",
           "quantity": "1",
           "category": "material"
@@ -68,14 +68,14 @@
       "text": "Fey Blossom",
       "type": 0,
       "range": [
-        18,
-        20
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 18,
+          "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.b4c5cc243ade7b2e",
           "quantity": "1",
           "category": "component"

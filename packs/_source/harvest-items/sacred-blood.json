@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>Shimmering</p>"
+      "value": "<p>Shimmering, warm blood from a celestial creature with curative properties.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 0.5,
       "units": "lb"
     },
     "price": {
-      "value": 0,
-      "denomination": "20"
+      "value": 20,
+      "denomination": "gp"
     },
-    "rarity": "gp",
+    "rarity": "rare",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "rare",
-      "harvestBonus": null
+      "category": "component"
     }
   }
 }

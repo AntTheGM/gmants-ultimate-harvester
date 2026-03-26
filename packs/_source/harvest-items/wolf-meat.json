@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>Lean</p>"
+      "value": "<p>Lean, gamey wolf meat that sustains well on long marches.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 2,
       "units": "lb"
     },
     "price": {
-      "value": 2,
-      "denomination": "4"
+      "value": 4,
+      "denomination": "sp"
     },
-    "rarity": "sp",
+    "rarity": "common",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "common",
-      "harvestBonus": null
+      "category": "food"
     }
   }
 }

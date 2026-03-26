@@ -142,9 +142,13 @@ function processTables(rows, itemLookup) {
       };
     }
     if (row.ItemName) {
+      const dcValue = row.DC?.trim();
+      const RARITY_NAMES = ["common", "uncommon", "rare", "veryRare"];
+      const isRarity = RARITY_NAMES.includes(dcValue);
       tableGroups[row.TableName].entries.push({
         itemName: row.ItemName,
-        dc: parseInt(row.DC) || 10,
+        dc: isRarity ? null : (parseInt(dcValue) || 10),
+        rarity: isRarity ? dcValue : null,
         quantity: row.Quantity || "1",
         category: row.ItemCategory || "material",
       });
@@ -162,16 +166,23 @@ function processTables(rows, itemLookup) {
         ? `Compendium.${MODULE_ID}.harvest-items.${item._id}`
         : null;
 
+      const resultFlags = {};
+      if (entry.rarity) {
+        resultFlags.rarity = entry.rarity;
+      } else {
+        resultFlags.dc = entry.dc;
+      }
+
       return {
         _id: generateId(`result:${tableName}:${entry.itemName}`),
         text: entry.itemName,
         type: 0, // TEXT
-        range: [entry.dc, entry.dc + 2],
+        range: [entry.dc ?? 1, (entry.dc ?? 1) + 2],
         weight: 1,
         drawn: false,
         flags: {
           [MODULE_ID]: {
-            dc: entry.dc,
+            ...resultFlags,
             itemUuid: itemUuid,
             quantity: entry.quantity,
             category: entry.category,

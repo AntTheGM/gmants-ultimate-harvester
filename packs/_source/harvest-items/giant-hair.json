@@ -5,23 +5,22 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": {
-      "value": "<p>A bundle of coarse</p>"
+      "value": "<p>A bundle of coarse, rope-thick hair from a giant.</p>"
     },
     "weight": {
-      "value": 0,
+      "value": 2,
       "units": "lb"
     },
     "price": {
       "value": 2,
-      "denomination": "2"
+      "denomination": "sp"
     },
-    "rarity": "sp",
+    "rarity": "common",
     "quantity": 1
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "common",
-      "harvestBonus": null
+      "category": "material"
     }
   }
 }

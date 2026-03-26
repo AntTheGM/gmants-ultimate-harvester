@@ -11,14 +11,14 @@
       "text": "Beholder Chitin",
       "type": 0,
       "range": [
-        25,
-        27
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 25,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.a401aedb06c0f303",
           "quantity": "1d4",
           "category": "material"
@@ -30,14 +30,14 @@
       "text": "Beholder Eye Stalk",
       "type": 0,
       "range": [
-        25,
-        27
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 25,
+          "rarity": "common",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.e4dcfde5bf971205",
           "quantity": "1d4",
           "category": "component"
@@ -49,14 +49,14 @@
       "text": "Central Eye Lens",
       "type": 0,
       "range": [
-        30,
-        32
+        1,
+        3
       ],
       "weight": 1,
       "drawn": false,
       "flags": {
         "ultimate-harvester": {
-          "dc": 30,
+          "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.2b1a6705c7d6d61f",
           "quantity": "1",
           "category": "component"
