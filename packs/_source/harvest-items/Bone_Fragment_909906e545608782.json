@@ -1,0 +1,27 @@
+{
+  "_id": "909906e545608782",
+  "name": "Bone Fragment",
+  "type": "loot",
+  "img": "icons/commodities/bones/bone-fragments-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Splintered bones useful to alchemists and crafters.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!909906e545608782"
+}

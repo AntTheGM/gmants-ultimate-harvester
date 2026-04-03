@@ -1,0 +1,27 @@
+{
+  "_id": "1a4b22cf7f975c22",
+  "name": "Froghemoth Tentacle",
+  "type": "loot",
+  "img": "icons/commodities/biological/tentacle-purple-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>A massive, mucus-covered tentacle from a froghemoth; still twitching.</p>"
+    },
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!1a4b22cf7f975c22"
+}

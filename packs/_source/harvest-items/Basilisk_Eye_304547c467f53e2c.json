@@ -1,0 +1,27 @@
+{
+  "_id": "304547c467f53e2c",
+  "name": "Basilisk Eye",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-lizard-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A heavy, crystalline eye from a basilisk; retains faint petrifying energy.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!304547c467f53e2c"
+}

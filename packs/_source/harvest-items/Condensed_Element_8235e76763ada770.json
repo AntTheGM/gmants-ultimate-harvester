@@ -1,0 +1,27 @@
+{
+  "_id": "8235e76763ada770",
+  "name": "Condensed Element",
+  "type": "loot",
+  "img": "icons/commodities/gems/gem-rough-ball-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>A solid block of almost pure elemental material, stable outside its plane.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!8235e76763ada770"
+}

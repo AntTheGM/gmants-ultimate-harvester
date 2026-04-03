@@ -1,0 +1,27 @@
+{
+  "_id": "af8cfbb0609e2daa",
+  "name": "Rope Fiber",
+  "type": "loot",
+  "img": "icons/commodities/cloth/thread-spindle-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Strong plant fibers stripped from stalks or vines; can be twisted into serviceable rope.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!af8cfbb0609e2daa"
+}

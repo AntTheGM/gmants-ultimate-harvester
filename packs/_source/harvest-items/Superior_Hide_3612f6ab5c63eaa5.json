@@ -1,0 +1,27 @@
+{
+  "_id": "3612f6ab5c63eaa5",
+  "name": "Superior Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-pelt-cured.webp",
+  "system": {
+    "description": {
+      "value": "<p>A flawless pelt with extraordinary texture and durability.</p>"
+    },
+    "weight": {
+      "value": 4,
+      "units": "lb"
+    },
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!3612f6ab5c63eaa5"
+}

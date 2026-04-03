@@ -1,0 +1,27 @@
+{
+  "_id": "a74bed2a1edcace7",
+  "name": "Colossus Tooth",
+  "type": "loot",
+  "img": "icons/commodities/bones/tooth-spiked-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>A molar the size of a cobblestone from a true titan-class giant.</p>"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!a74bed2a1edcace7"
+}

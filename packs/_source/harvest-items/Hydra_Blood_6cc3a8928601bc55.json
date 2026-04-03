@@ -1,0 +1,27 @@
+{
+  "_id": "6cc3a8928601bc55",
+  "name": "Hydra Blood",
+  "type": "loot",
+  "img": "icons/consumables/potions/bottle-round-corked-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Caustic blood from a hydra imbued with its regenerative properties.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!6cc3a8928601bc55"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "c4b14427873490a7",
+  "name": "Skull Trophy",
+  "type": "loot",
+  "img": "icons/commodities/bones/skull-hollow-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>A cleaned and polished skull representing a notable kill.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "trophy"
+    }
+  },
+  "_key": "!items!c4b14427873490a7"
+}

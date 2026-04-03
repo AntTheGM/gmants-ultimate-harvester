@@ -1,0 +1,27 @@
+{
+  "_id": "aa562cde67e93052",
+  "name": "Troll Lymphatic Fluid",
+  "type": "loot",
+  "img": "icons/consumables/potions/bottle-round-corked-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A vial of the opalescent fluid that carries regenerative factors through a troll's body.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 12,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!aa562cde67e93052"
+}

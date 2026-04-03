@@ -1,0 +1,27 @@
+{
+  "_id": "bd9e0ea7fa6bcfbf",
+  "name": "Blood Vial",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>A small vial of humanoid blood; useful for tracking rituals.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!bd9e0ea7fa6bcfbf"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "065f43bbe9bc1c28",
+  "name": "Celestial Feather",
+  "type": "loot",
+  "img": "icons/commodities/materials/feather-white-glowing-beams.webp",
+  "system": {
+    "description": {
+      "value": "<p>A luminous feather shed by a celestial being; radiates faint warmth.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!065f43bbe9bc1c28"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "c2b039f477632efe",
+  "name": "Apex Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>The flawless skin of a true apex predator; near-mythical quality.</p>"
+    },
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!c2b039f477632efe"
+}

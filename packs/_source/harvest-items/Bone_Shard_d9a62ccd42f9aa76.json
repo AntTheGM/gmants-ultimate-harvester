@@ -1,0 +1,27 @@
+{
+  "_id": "d9a62ccd42f9aa76",
+  "name": "Bone Shard",
+  "type": "loot",
+  "img": "icons/commodities/bones/bone-broken-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>A pointed shard of animal bone found near old remains; useful for crude tools or fetishes.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!d9a62ccd42f9aa76"
+}

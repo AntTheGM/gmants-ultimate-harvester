@@ -1,0 +1,27 @@
+{
+  "_id": "dda82925c345e849",
+  "name": "Living Bark",
+  "type": "loot",
+  "img": "icons/commodities/wood/bark-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>A section of bark that still pulses faintly with growth energy.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!dda82925c345e849"
+}

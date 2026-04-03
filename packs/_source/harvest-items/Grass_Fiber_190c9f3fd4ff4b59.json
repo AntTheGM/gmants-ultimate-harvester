@@ -1,0 +1,27 @@
+{
+  "_id": "190c9f3fd4ff4b59",
+  "name": "Grass Fiber",
+  "type": "loot",
+  "img": "icons/consumables/plants/grass-bundle-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Dried long grass braided into cords; fine for light lashing and weaving.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!190c9f3fd4ff4b59"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "772bd6abecef14df",
+  "name": "Giant Blood",
+  "type": "loot",
+  "img": "icons/consumables/potions/potion-tube-corked-glowing-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>A clay jug of giant blood with potent alchemical properties.</p>"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!772bd6abecef14df"
+}

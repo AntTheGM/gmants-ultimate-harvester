@@ -1,0 +1,27 @@
+{
+  "_id": "4e7c6d7704227aac",
+  "name": "Dragon Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Still-warm draconic heart pulsing with elemental magic.</p>"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 80,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!4e7c6d7704227aac"
+}

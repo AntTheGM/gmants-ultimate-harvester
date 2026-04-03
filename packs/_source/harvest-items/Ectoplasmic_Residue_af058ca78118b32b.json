@@ -1,0 +1,27 @@
+{
+  "_id": "af058ca78118b32b",
+  "name": "Ectoplasmic Residue",
+  "type": "loot",
+  "img": "icons/commodities/materials/slime-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>A gelatinous slime exuded by incorporeal undead upon destruction.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!af058ca78118b32b"
+}

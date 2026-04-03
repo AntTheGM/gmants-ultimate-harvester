@@ -1,0 +1,27 @@
+{
+  "_id": "d9f297c957fb2146",
+  "name": "Manticore Mane",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-brown-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>A bundle of coarse reddish mane hair from a manticore; rough as wire.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!d9f297c957fb2146"
+}

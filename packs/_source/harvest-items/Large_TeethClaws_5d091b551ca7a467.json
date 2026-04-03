@@ -1,0 +1,27 @@
+{
+  "_id": "5d091b551ca7a467",
+  "name": "Large Teeth/Claws",
+  "type": "loot",
+  "img": "icons/commodities/claws/claws-plain-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Oversized fangs or talons from a formidable beast.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!5d091b551ca7a467"
+}

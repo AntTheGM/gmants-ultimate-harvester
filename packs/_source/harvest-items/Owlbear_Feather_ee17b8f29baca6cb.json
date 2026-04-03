@@ -1,0 +1,27 @@
+{
+  "_id": "ee17b8f29baca6cb",
+  "name": "Owlbear Feather",
+  "type": "loot",
+  "img": "icons/commodities/materials/feathers-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>A large stiff feather from an owlbear's plumage; barbed and surprisingly sharp along the shaft.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!ee17b8f29baca6cb"
+}

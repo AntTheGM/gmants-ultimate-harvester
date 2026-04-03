@@ -1,0 +1,37 @@
+{
+  "_id": "2f9bde50012de663",
+  "name": "Giant Spider Venom",
+  "type": "consumable",
+  "img": "icons/consumables/potions/potion-jar-corked-labeled-poison-skull-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A carefully extracted vial of giant spider venom; potent enough to paralyze a horse.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1,
+    "type": {
+      "value": "poison",
+      "subtype": "injury"
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!2f9bde50012de663"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "0c32a310f02318f1",
+  "name": "Old Coins",
+  "type": "loot",
+  "img": "icons/commodities/currency/coins-assorted-mix-copper-silver-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>A scatter of corroded coins found in rubble; worth melting down or cleaning for value.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!0c32a310f02318f1"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "129d80dae98ebbbd",
+  "name": "Dragon Wing Membrane",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>A large section of leathery wing membrane stripped from a dragon; surprisingly flexible and durable.</p>"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 18,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!129d80dae98ebbbd"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "80c4ffb7480c5b18",
+  "name": "Rotting Flesh",
+  "type": "loot",
+  "img": "icons/consumables/meat/spoiled-bone-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p>Foul strips of undead tissue faintly animated by necrotic energy.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!80c4ffb7480c5b18"
+}

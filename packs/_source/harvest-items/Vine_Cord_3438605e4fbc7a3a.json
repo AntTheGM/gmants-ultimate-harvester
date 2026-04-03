@@ -1,0 +1,27 @@
+{
+  "_id": "3438605e4fbc7a3a",
+  "name": "Vine Cord",
+  "type": "loot",
+  "img": "icons/consumables/plants/thorned-stem-vine-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A length of tough jungle vine; flexible, water-resistant, and surprisingly strong.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!3438605e4fbc7a3a"
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "e949da453ed4d27e",
+  "name": "Salvaged Foodstuffs",
+  "type": "consumable",
+  "img": "icons/consumables/food/bowl-stew-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Partially-preserved food scavenged from ruins or abandoned structures.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 3
+    }
+  },
+  "_key": "!items!e949da453ed4d27e"
+}

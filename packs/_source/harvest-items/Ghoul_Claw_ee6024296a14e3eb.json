@@ -1,0 +1,27 @@
+{
+  "_id": "ee6024296a14e3eb",
+  "name": "Ghoul Claw",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "<p>A single yellowed talon from a ghoul bearing a film of paralytic residue.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!ee6024296a14e3eb"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "de4988b6d74be3b2",
+  "name": "Sacred Blood",
+  "type": "loot",
+  "img": "icons/consumables/potions/potion-tube-corked-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Shimmering, warm blood from a celestial creature with curative properties.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!de4988b6d74be3b2"
+}

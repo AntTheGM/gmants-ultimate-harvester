@@ -1,0 +1,27 @@
+{
+  "_id": "f7b7c9291e854400",
+  "name": "Froghemoth Tongue",
+  "type": "loot",
+  "img": "icons/commodities/biological/tongue-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>A prehensile, sticky tongue the size of a rope; potent alchemical reagent.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!f7b7c9291e854400"
+}

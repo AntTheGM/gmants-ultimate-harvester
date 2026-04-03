@@ -1,0 +1,27 @@
+{
+  "_id": "95a7fece4b33ae4a",
+  "name": "Green Dragon Poison Gland",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-bladder-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>A swollen gland from a green dragon packed with concentrated chlorine gas.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!95a7fece4b33ae4a"
+}

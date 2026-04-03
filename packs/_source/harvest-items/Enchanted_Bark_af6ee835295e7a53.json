@@ -1,0 +1,27 @@
+{
+  "_id": "af6ee835295e7a53",
+  "name": "Enchanted Bark",
+  "type": "loot",
+  "img": "icons/commodities/wood/bark-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Fibrous bark from a fey creature interwoven with nature magic.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!af6ee835295e7a53"
+}

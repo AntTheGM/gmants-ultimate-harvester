@@ -1,0 +1,27 @@
+{
+  "_id": "ee14d218169b4c04",
+  "name": "Girallon Fur",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Dense white fur from a girallon; surprisingly soft despite the beast's savagery.</p>"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!ee14d218169b4c04"
+}

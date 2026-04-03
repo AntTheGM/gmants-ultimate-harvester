@@ -1,0 +1,27 @@
+{
+  "_id": "32e45e2f0a6883b7",
+  "name": "Monster Sinew",
+  "type": "loot",
+  "img": "icons/commodities/cloth/thread-spindle-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Fibrous, elastic cords of muscle and tendon from a powerful beast.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 6,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!32e45e2f0a6883b7"
+}

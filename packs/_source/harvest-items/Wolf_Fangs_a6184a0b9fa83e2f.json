@@ -1,0 +1,27 @@
+{
+  "_id": "a6184a0b9fa83e2f",
+  "name": "Wolf Fangs",
+  "type": "loot",
+  "img": "icons/commodities/bones/tooth-shark-brown-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Sharp, unbroken wolf fangs useful for jewelry or spell components.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!a6184a0b9fa83e2f"
+}

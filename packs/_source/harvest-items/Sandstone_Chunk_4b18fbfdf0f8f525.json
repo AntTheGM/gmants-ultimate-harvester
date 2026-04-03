@@ -1,0 +1,27 @@
+{
+  "_id": "4b18fbfdf0f8f525",
+  "name": "Sandstone Chunk",
+  "type": "loot",
+  "img": "icons/commodities/stone/stone-chunk-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>A block of fine-grained sandstone; occasionally contains trace minerals useful in alchemy.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!4b18fbfdf0f8f525"
+}

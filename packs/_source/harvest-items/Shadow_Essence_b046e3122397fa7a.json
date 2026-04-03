@@ -1,0 +1,27 @@
+{
+  "_id": "b046e3122397fa7a",
+  "name": "Shadow Essence",
+  "type": "loot",
+  "img": "icons/commodities/materials/powder-black.webp",
+  "system": {
+    "description": {
+      "value": "<p>A wisp of cold shadow that can be crystallized for arcane use.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!b046e3122397fa7a"
+}

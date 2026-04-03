@@ -1,0 +1,39 @@
+{
+  "_id": "ee7c25ca5ed5c182",
+  "name": "Bitter Greens",
+  "type": "consumable",
+  "img": "icons/consumables/plants/leaf-herb-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Leafy greens pulled from the ground's edge; nutritious despite the sharp flavor.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 3
+    }
+  },
+  "_key": "!items!ee7c25ca5ed5c182"
+}

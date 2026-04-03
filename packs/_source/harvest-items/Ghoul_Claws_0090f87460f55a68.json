@@ -1,0 +1,27 @@
+{
+  "_id": "0090f87460f55a68",
+  "name": "Ghoul Claws",
+  "type": "loot",
+  "img": "icons/commodities/claws/claws-plain-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Yellowed talons from a ghoul; laced with paralytic residue.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 6,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!0090f87460f55a68"
+}

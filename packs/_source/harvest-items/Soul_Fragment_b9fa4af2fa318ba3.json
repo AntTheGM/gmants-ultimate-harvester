@@ -1,0 +1,27 @@
+{
+  "_id": "b9fa4af2fa318ba3",
+  "name": "Soul Fragment",
+  "type": "loot",
+  "img": "icons/commodities/gems/gem-shattered-violet.webp",
+  "system": {
+    "description": {
+      "value": "<p>A glittering shard of crystallized soul energy bound in dark magic.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!b9fa4af2fa318ba3"
+}

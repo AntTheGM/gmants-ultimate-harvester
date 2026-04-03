@@ -1,0 +1,31 @@
+{
+  "_id": "4a730ef7b810ef78",
+  "name": "Fiend Extraction Receptacle",
+  "type": "loot",
+  "img": "icons/consumables/potions/bottle-round-empty-glass.webp",
+  "system": {
+    "description": {
+      "value": "<p>An infernal-glass container lined with binding runes to safely collect fiendish materials.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material",
+      "harvestBonus": 3,
+      "applicableTypes": [
+        "fiend"
+      ]
+    }
+  },
+  "_key": "!items!4a730ef7b810ef78"
+}

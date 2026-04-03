@@ -1,0 +1,27 @@
+{
+  "_id": "54339c5f9d99c81d",
+  "name": "Hydra Head",
+  "type": "loot",
+  "img": "icons/commodities/bones/skull-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>A severed hydra head still snapping reflexively; must be kept cool.</p>"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "trophy"
+    }
+  },
+  "_key": "!items!54339c5f9d99c81d"
+}

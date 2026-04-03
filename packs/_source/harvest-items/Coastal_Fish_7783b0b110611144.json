@@ -1,0 +1,39 @@
+{
+  "_id": "7783b0b110611144",
+  "name": "Coastal Fish",
+  "type": "consumable",
+  "img": "icons/consumables/meat/fillet-fish-pink-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>A larger fish speared or trapped near the coast; firm white flesh.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 1
+    }
+  },
+  "_key": "!items!7783b0b110611144"
+}

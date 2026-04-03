@@ -1,0 +1,27 @@
+{
+  "_id": "9a678da4b0585ab9",
+  "name": "Angelic Plume",
+  "type": "loot",
+  "img": "icons/commodities/materials/feather-white-glowing-fire.webp",
+  "system": {
+    "description": {
+      "value": "<p>A large, perfect feather from a powerful angel that glows softly.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!9a678da4b0585ab9"
+}

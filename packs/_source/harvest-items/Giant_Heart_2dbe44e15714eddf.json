@@ -1,0 +1,27 @@
+{
+  "_id": "2dbe44e15714eddf",
+  "name": "Giant Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>A massive heart the size of a barrel; valued by potion-brewers.</p>"
+    },
+    "weight": {
+      "value": 8,
+      "units": "lb"
+    },
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!2dbe44e15714eddf"
+}

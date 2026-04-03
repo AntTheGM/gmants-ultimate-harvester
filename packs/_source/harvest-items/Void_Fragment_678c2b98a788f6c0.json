@@ -1,0 +1,27 @@
+{
+  "_id": "678c2b98a788f6c0",
+  "name": "Void Fragment",
+  "type": "loot",
+  "img": "icons/commodities/gems/gem-faceted-round-black.webp",
+  "system": {
+    "description": {
+      "value": "<p>A sliver of absolute nothingness somehow given physical form.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 35,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!678c2b98a788f6c0"
+}

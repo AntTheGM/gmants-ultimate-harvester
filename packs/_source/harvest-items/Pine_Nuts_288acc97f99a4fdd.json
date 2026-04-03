@@ -1,0 +1,39 @@
+{
+  "_id": "288acc97f99a4fdd",
+  "name": "Pine Nuts",
+  "type": "consumable",
+  "img": "icons/consumables/nuts/pine-cone-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Hard seeds shaken from pine cones; dense and caloric for cold travel.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 4
+    }
+  },
+  "_key": "!items!288acc97f99a4fdd"
+}

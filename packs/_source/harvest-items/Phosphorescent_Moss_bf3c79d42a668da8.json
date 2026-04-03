@@ -1,0 +1,27 @@
+{
+  "_id": "bf3c79d42a668da8",
+  "name": "Phosphorescent Moss",
+  "type": "loot",
+  "img": "icons/consumables/plants/kelp-fern-glowing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Softly glowing moss harvested from cave walls; used in light-based alchemical reagents.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!bf3c79d42a668da8"
+}

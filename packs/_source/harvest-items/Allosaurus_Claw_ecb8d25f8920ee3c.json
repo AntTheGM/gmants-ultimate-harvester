@@ -1,0 +1,27 @@
+{
+  "_id": "ecb8d25f8920ee3c",
+  "name": "Allosaurus Claw",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-lizard-white-black.webp",
+  "system": {
+    "description": {
+      "value": "<p>A curved, hand-length killing claw from an allosaurus foreleg.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!ecb8d25f8920ee3c"
+}

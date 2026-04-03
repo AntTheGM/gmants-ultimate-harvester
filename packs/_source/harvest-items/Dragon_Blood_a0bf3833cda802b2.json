@@ -1,0 +1,27 @@
+{
+  "_id": "a0bf3833cda802b2",
+  "name": "Dragon Blood",
+  "type": "loot",
+  "img": "icons/consumables/potions/potion-tube-corked-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>A vial of luminous draconic blood teeming with elemental energy.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!a0bf3833cda802b2"
+}

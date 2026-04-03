@@ -1,0 +1,27 @@
+{
+  "_id": "be2ecf9bda546942",
+  "name": "Froghemoth Eye",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-green-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>One of the froghemoth's compound eyes; grants disorienting visions when studied.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!be2ecf9bda546942"
+}

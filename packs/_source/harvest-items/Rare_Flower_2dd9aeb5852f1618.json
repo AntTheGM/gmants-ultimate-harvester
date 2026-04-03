@@ -1,0 +1,27 @@
+{
+  "_id": "2dd9aeb5852f1618",
+  "name": "Rare Flower",
+  "type": "loot",
+  "img": "icons/commodities/flowers/lotus-violet.webp",
+  "system": {
+    "description": {
+      "value": "<p>An unusual bloom found in untamed wilderness; gathered for perfume and alchemical use.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!2dd9aeb5852f1618"
+}

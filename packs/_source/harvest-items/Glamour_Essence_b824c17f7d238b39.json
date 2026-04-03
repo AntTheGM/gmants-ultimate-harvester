@@ -1,0 +1,27 @@
+{
+  "_id": "b824c17f7d238b39",
+  "name": "Glamour Essence",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>A vial of captured glamour that shimmers with illusory potential.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!b824c17f7d238b39"
+}

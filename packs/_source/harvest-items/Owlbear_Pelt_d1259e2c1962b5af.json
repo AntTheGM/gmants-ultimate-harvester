@@ -1,0 +1,27 @@
+{
+  "_id": "d1259e2c1962b5af",
+  "name": "Owlbear Pelt",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>A dense mixed pelt of fur and feathers from an owlbear; unique and striking.</p>"
+    },
+    "weight": {
+      "value": 4,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!d1259e2c1962b5af"
+}

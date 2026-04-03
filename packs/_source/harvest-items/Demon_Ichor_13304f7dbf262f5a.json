@@ -1,0 +1,27 @@
+{
+  "_id": "13304f7dbf262f5a",
+  "name": "Demon Ichor",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Caustic black blood that burbles with barely contained chaos.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!13304f7dbf262f5a"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "f6d9de3574b044fa",
+  "name": "Ooze Membrane",
+  "type": "loot",
+  "img": "icons/commodities/materials/slime-thick-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A thin, stretchy film from a gelatinous creature; waterproof and acidic.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 6,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!f6d9de3574b044fa"
+}

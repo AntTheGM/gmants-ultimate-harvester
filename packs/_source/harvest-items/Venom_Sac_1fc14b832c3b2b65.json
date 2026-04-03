@@ -1,0 +1,37 @@
+{
+  "_id": "1fc14b832c3b2b65",
+  "name": "Venom Sac",
+  "type": "consumable",
+  "img": "icons/consumables/potions/potion-jug-corked-skull-poison-brown-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A delicate glandular sac still holding trace amounts of venom.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1,
+    "type": {
+      "value": "poison",
+      "subtype": "injury"
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!1fc14b832c3b2b65"
+}

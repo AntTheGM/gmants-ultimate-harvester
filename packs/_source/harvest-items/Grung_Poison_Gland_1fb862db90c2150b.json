@@ -1,0 +1,37 @@
+{
+  "_id": "1fb862db90c2150b",
+  "name": "Grung Poison Gland",
+  "type": "consumable",
+  "img": "icons/consumables/potions/bottle-conical-corked-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A tiny but potent venom gland from a grung; secretes a rainbow of poisons.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1,
+    "type": {
+      "value": "poison",
+      "subtype": "injury"
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!1fb862db90c2150b"
+}

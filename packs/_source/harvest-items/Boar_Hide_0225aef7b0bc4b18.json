@@ -1,0 +1,27 @@
+{
+  "_id": "0225aef7b0bc4b18",
+  "name": "Boar Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-scrap-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>A bristly hide from a boar; tough and weatherproof though coarse in texture.</p>"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!0225aef7b0bc4b18"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "2a02c138af2dbb74",
+  "name": "Ghoul Tongue",
+  "type": "loot",
+  "img": "icons/commodities/biological/tongue-violet.webp",
+  "system": {
+    "description": {
+      "value": "<p>The long, rasping tongue of a ghoul; still faintly animated and coated in foul saliva.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!2a02c138af2dbb74"
+}

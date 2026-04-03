@@ -1,0 +1,27 @@
+{
+  "_id": "a1465a7b132f8c9f",
+  "name": "Russet Mold Spore",
+  "type": "loot",
+  "img": "icons/consumables/mushrooms/helm-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>A concentrated sample of the dangerous mold that creates vegepygmies.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!a1465a7b132f8c9f"
+}

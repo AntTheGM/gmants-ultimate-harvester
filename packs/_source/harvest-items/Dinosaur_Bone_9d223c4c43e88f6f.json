@@ -1,0 +1,27 @@
+{
+  "_id": "9d223c4c43e88f6f",
+  "name": "Dinosaur Bone",
+  "type": "loot",
+  "img": "icons/commodities/bones/bones-dragon-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>A dense, fossilized-looking bone from a large dinosaur.</p>"
+    },
+    "weight": {
+      "value": 4,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!9d223c4c43e88f6f"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "580a1d2912f308ba",
+  "name": "Sturdy Bones",
+  "type": "loot",
+  "img": "icons/commodities/bones/bones-stack-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Dense, uncracked bones that hold up well under stress.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!580a1d2912f308ba"
+}

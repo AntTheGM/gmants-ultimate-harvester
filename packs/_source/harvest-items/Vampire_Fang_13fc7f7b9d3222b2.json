@@ -1,0 +1,27 @@
+{
+  "_id": "13fc7f7b9d3222b2",
+  "name": "Vampire Fang",
+  "type": "loot",
+  "img": "icons/commodities/bones/tooth-canine-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>A retractable fang from a vampire; serrated and still hollow from centuries of feeding.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 12,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!13fc7f7b9d3222b2"
+}

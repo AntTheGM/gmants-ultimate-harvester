@@ -1,0 +1,27 @@
+{
+  "_id": "cdb57c3fae2acb91",
+  "name": "Lightning-Charged Vine",
+  "type": "loot",
+  "img": "icons/consumables/plants/thorned-curled-vine-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A vine from a shambling mound still crackling with absorbed lightning.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!cdb57c3fae2acb91"
+}

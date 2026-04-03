@@ -1,0 +1,27 @@
+{
+  "_id": "c6a427fcb6e3ac80",
+  "name": "Giant Fingernail",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-worn-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>A thick, overgrown nail from a giant; surprisingly durable.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!c6a427fcb6e3ac80"
+}

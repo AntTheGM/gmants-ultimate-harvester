@@ -1,0 +1,27 @@
+{
+  "_id": "5747cc961efd707c",
+  "name": "Ice Moss",
+  "type": "loot",
+  "img": "icons/consumables/plants/fern-leaf-bundle-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Pale bluish moss that grows near permafrost; prized by cold-climate healers.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!5747cc961efd707c"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "61966955720725bd",
+  "name": "Manticore Tail",
+  "type": "loot",
+  "img": "icons/commodities/biological/tail-spiked-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>The entire spiked tail section of a manticore; multiple spikes still intact and ready to be harvested.</p>"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!61966955720725bd"
+}

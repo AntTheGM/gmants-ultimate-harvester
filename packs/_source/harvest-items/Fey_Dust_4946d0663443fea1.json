@@ -1,0 +1,27 @@
+{
+  "_id": "4946d0663443fea1",
+  "name": "Fey Dust",
+  "type": "loot",
+  "img": "icons/commodities/gems/powder-raw-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Glittering iridescent powder that drifts from fey creatures as they die.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!4946d0663443fea1"
+}

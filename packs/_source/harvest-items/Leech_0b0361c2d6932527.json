@@ -1,0 +1,27 @@
+{
+  "_id": "0b0361c2d6932527",
+  "name": "Leech",
+  "type": "loot",
+  "img": "icons/consumables/plants/sprout-leaf-herb-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A live blood-sucking leech used medicinally to reduce swelling and purge toxins.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!0b0361c2d6932527"
+}

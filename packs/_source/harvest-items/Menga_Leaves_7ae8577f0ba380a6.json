@@ -1,0 +1,27 @@
+{
+  "_id": "7ae8577f0ba380a6",
+  "name": "Menga Leaves",
+  "type": "loot",
+  "img": "icons/consumables/plants/leaf-elm-glowing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Large waxy leaves with soporific compounds; the raw material for sleep-inducing draughts.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!7ae8577f0ba380a6"
+}

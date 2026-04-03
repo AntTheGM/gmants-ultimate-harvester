@@ -1,0 +1,27 @@
+{
+  "_id": "029475d721e1c660",
+  "name": "Prismatic Slime",
+  "type": "loot",
+  "img": "icons/commodities/materials/slime-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>A sample of multi-hued slime capable of multiple damage types.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 12,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!029475d721e1c660"
+}

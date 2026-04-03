@@ -1,0 +1,27 @@
+{
+  "_id": "ff160a8d924ebbec",
+  "name": "Fungal Spore Sac",
+  "type": "loot",
+  "img": "icons/consumables/mushrooms/conical-bell-orange-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>A bulging sac of spores harvested from a fungal creature; handle with care.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!ff160a8d924ebbec"
+}

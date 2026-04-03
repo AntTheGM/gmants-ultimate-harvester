@@ -1,0 +1,27 @@
+{
+  "_id": "c219f6b6a37021e8",
+  "name": "Useful Scraps",
+  "type": "loot",
+  "img": "icons/commodities/cloth/cloth-scraps-plain.webp",
+  "system": {
+    "description": {
+      "value": "<p>Assorted salvaged metal and wood bits gathered from ruins; handy for repairs and improvisation.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!c219f6b6a37021e8"
+}

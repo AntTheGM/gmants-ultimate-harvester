@@ -1,0 +1,27 @@
+{
+  "_id": "d495d9138056276c",
+  "name": "Regenerating Flesh",
+  "type": "loot",
+  "img": "icons/consumables/meat/steak-alien-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>A chunk of hydra flesh that visibly knits itself back together over minutes.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!d495d9138056276c"
+}

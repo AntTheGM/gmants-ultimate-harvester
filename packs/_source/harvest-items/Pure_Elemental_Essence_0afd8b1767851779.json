@@ -1,0 +1,27 @@
+{
+  "_id": "0afd8b1767851779",
+  "name": "Pure Elemental Essence",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>An almost impossibly refined distillation of elemental power.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!0afd8b1767851779"
+}

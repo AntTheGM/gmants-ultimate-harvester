@@ -1,0 +1,27 @@
+{
+  "_id": "b715dbd5faaa97a7",
+  "name": "Triceratops Horn",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>One of the great horns from a triceratops; dense and sharply pointed.</p>"
+    },
+    "weight": {
+      "value": 4,
+      "units": "lb"
+    },
+    "price": {
+      "value": 12,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!b715dbd5faaa97a7"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "11b307a38e1c78c7",
+  "name": "White Dragon Scale",
+  "type": "loot",
+  "img": "icons/commodities/leather/scales-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ice-white scales from a white dragon; cold to the touch and razor-edged.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!11b307a38e1c78c7"
+}

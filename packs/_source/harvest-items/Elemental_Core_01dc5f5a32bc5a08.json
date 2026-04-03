@@ -1,0 +1,27 @@
+{
+  "_id": "01dc5f5a32bc5a08",
+  "name": "Elemental Core",
+  "type": "loot",
+  "img": "icons/commodities/gems/gem-rough-cushion-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>A dense node of concentrated elemental matter pulled from a larger elemental.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!01dc5f5a32bc5a08"
+}

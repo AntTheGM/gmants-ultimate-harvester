@@ -379,6 +379,80 @@ async function _resetHarvest(actor) {
   ui.notifications.info(`Harvest state reset for ${actor.name}`);
 }
 
+// Inject spoilage info into item sheet Details tab
+// ApplicationV2 hook: "renderItemSheet5e", fallback "renderItemSheet" for legacy
+function _injectSpoilageInfo(app, html) {
+  const item = app.document ?? app.item;
+  if (!item) return;
+
+  const shelfLife = item.getFlag(MODULE_ID, "shelfLife");
+  // Nothing to show if no shelf life data
+  if (shelfLife === undefined) return;
+
+  const acquiredOn = item.getFlag(MODULE_ID, "acquiredOn");
+  const spoilsOn = item.getFlag(MODULE_ID, "spoilsOn");
+  const source = item.getFlag(MODULE_ID, "source");
+
+  const el = html instanceof HTMLElement ? html : html[0];
+  if (!el) return;
+
+  // Prevent duplicate injection
+  if (el.querySelector(".ultimate-harvester-spoilage")) return;
+
+  // Find insertion point — try various selectors for dnd5e v13 ApplicationV2 sheets
+  const fieldset = el.querySelector("fieldset.consumable-details")
+    ?? el.querySelector(".tab[data-tab='details'] fieldset")
+    ?? el.querySelector("[data-group='details'] fieldset")
+    ?? el.querySelector("fieldset");
+  if (!fieldset) return;
+
+  // Build spoilage display
+  let spoilText, spoilClass;
+  if (shelfLife === 0) {
+    spoilText = "Does not spoil";
+    spoilClass = "fresh";
+  } else if (spoilsOn && game.time) {
+    const now = game.time.worldTime;
+    const remaining = spoilsOn - now;
+    const secondsPerDay = 86400;
+    const daysLeft = Math.ceil(remaining / secondsPerDay);
+    if (daysLeft <= 0) {
+      spoilText = "Spoiled!";
+      spoilClass = "spoiled";
+    } else if (daysLeft === 1) {
+      spoilText = "Spoils today";
+      spoilClass = "expiring";
+    } else {
+      spoilText = `${daysLeft} days`;
+      spoilClass = daysLeft <= 2 ? "expiring" : "fresh";
+    }
+  } else {
+    // No acquiredOn/spoilsOn yet — show template shelf life
+    spoilText = shelfLife === 1 ? "1 day" : `${shelfLife} days`;
+    spoilClass = "fresh";
+  }
+
+  const sourceLabel = source === "harvested" ? "Harvested" : source === "foraged" ? "Foraged" : "";
+
+  const spoilageHtml = document.createElement("div");
+  spoilageHtml.className = "ultimate-harvester-spoilage";
+  spoilageHtml.innerHTML = `
+    <div class="form-group">
+      <label>Days to Spoilage</label>
+      <span class="spoilage-value spoilage-${spoilClass}">${spoilText}</span>
+    </div>
+    ${sourceLabel ? `<div class="form-group">
+      <label>Source</label>
+      <span class="spoilage-source">${sourceLabel}</span>
+    </div>` : ""}
+  `;
+
+  fieldset.parentNode.insertBefore(spoilageHtml, fieldset.nextSibling);
+}
+
+Hooks.on("renderItemSheet5e", _injectSpoilageInfo);   // dnd5e v13 ApplicationV2
+Hooks.on("renderItemSheet", _injectSpoilageInfo);      // legacy fallback
+
 // Chat link handler — "View Appraisal" links in chat cards
 Hooks.on("renderChatMessage", (_message, html) => {
   const el = html instanceof HTMLElement ? html : html[0];

@@ -1,0 +1,27 @@
+{
+  "_id": "44074e253910afce",
+  "name": "Intact Organ",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-liver-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>A pristine internal organ carefully extracted without rupture.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!44074e253910afce"
+}

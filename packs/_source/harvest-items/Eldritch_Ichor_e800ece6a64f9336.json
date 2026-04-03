@@ -1,0 +1,27 @@
+{
+  "_id": "e800ece6a64f9336",
+  "name": "Eldritch Ichor",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>A luminescent fluid that hums with alien energy.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 12,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!e800ece6a64f9336"
+}

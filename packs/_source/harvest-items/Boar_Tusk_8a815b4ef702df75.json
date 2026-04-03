@@ -1,0 +1,27 @@
+{
+  "_id": "8a815b4ef702df75",
+  "name": "Boar Tusk",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-curved-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>A thick curved tusk ripped from a boar's jaw; dense and excellent for carving.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!8a815b4ef702df75"
+}

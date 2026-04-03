@@ -1,0 +1,27 @@
+{
+  "_id": "d6a18087ee5ef24b",
+  "name": "Monster Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-scrap-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>Tough, scarred hide from a creature of monstrous origin.</p>"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!d6a18087ee5ef24b"
+}

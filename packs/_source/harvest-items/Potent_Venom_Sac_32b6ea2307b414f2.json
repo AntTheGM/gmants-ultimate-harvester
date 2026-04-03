@@ -1,0 +1,37 @@
+{
+  "_id": "32b6ea2307b414f2",
+  "name": "Potent Venom Sac",
+  "type": "consumable",
+  "img": "icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>An intact gland brimming with concentrated toxins.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1,
+    "type": {
+      "value": "poison",
+      "subtype": "injury"
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!32b6ea2307b414f2"
+}

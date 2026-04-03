@@ -1,0 +1,27 @@
+{
+  "_id": "a1b2c3d4e5f60001",
+  "name": "Eblis Plumage",
+  "type": "loot",
+  "img": "icons/commodities/materials/feather-colored-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A large pouch of long, elegant feathers that shimmer with an iridescent sheen shifting between dark blue and green. Highly valued by Chultan nobility as accessories and quill pens. Two feathers can be used as fletching on an arrow or crossbow bolt; on impact, the ammunition releases a burst of sparkling motes that cast <em>hypnotic pattern</em> (DC 11 Wisdom save) on creatures within 30 feet who can see the sparks.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!a1b2c3d4e5f60001"
+}

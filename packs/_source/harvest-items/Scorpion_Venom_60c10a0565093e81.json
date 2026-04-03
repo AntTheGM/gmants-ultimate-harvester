@@ -1,0 +1,37 @@
+{
+  "_id": "60c10a0565093e81",
+  "name": "Scorpion Venom",
+  "type": "consumable",
+  "img": "icons/consumables/potions/flask-ornate-skull-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Carefully extracted venom from a desert scorpion; potent and sought by poisoners.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1,
+    "type": {
+      "value": "poison",
+      "subtype": "injury"
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!60c10a0565093e81"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "eacc2e1816011c7e",
+  "name": "Pixie Wing",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-insect-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A translucent, gossamer wing from a small fey; crumbles in a day.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!eacc2e1816011c7e"
+}

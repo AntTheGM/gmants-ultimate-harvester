@@ -1,0 +1,27 @@
+{
+  "_id": "609248a3b5a32b0a",
+  "name": "Arcane Gear",
+  "type": "loot",
+  "img": "icons/commodities/tech/cog-brass.webp",
+  "system": {
+    "description": {
+      "value": "<p>A precisely machined cog or sprocket still faintly enchanted.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!609248a3b5a32b0a"
+}

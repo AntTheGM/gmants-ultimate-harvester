@@ -1,0 +1,27 @@
+{
+  "_id": "c383acadebda03f8",
+  "name": "Blessed Organ",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>An internal organ suffused with divine grace; warm to the touch.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!c383acadebda03f8"
+}

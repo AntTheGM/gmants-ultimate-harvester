@@ -1,0 +1,27 @@
+{
+  "_id": "7b1d80f600488690",
+  "name": "Bear Claws",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-bear-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Long curved claws harvested from a bear; razor-sharp and dense.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!7b1d80f600488690"
+}

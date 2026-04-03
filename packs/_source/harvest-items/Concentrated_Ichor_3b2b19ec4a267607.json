@@ -1,0 +1,27 @@
+{
+  "_id": "3b2b19ec4a267607",
+  "name": "Concentrated Ichor",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>Thickened undead fluid with potent necrotic properties.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!3b2b19ec4a267607"
+}

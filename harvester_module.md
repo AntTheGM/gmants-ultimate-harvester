@@ -513,8 +513,15 @@ Hooks.once("init", () => {
 
 ## Data Model
 
-### Harvest Item (dnd5e loot item in harvest-items compendium)
+### Harvest Item (dnd5e item in harvest-items compendium)
 
+Items use the appropriate dnd5e item type:
+- **`loot`** — materials, components, trophies (non-consumable crafting/trade goods)
+- **`consumable`** (food) — edible foraged/harvested items
+- **`consumable`** (drink) — water and beverages (custom type registered by Campsite module)
+- **`consumable`** (poison) — venoms and poison glands
+
+**Material/component example:**
 ```javascript
 {
   "name": "Wolf Pelt",
@@ -534,7 +541,63 @@ Hooks.once("init", () => {
 }
 ```
 
+**Food/drink example (consumable with spoilage data):**
+```javascript
+{
+  "name": "Wolf Meat",
+  "type": "consumable",
+  "img": "icons/consumables/meat/shank-bone-red-white.webp",
+  "system": {
+    "description": { "value": "<p>Lean, gamey wolf meat.</p>" },
+    "weight": { "value": 2, "units": "lb" },
+    "price": { "value": 4, "denomination": "sp" },
+    "rarity": "common",
+    "type": { "value": "food", "subtype": "" },
+    "uses": { "spent": 0, "max": "1", "recovery": [], "autoDestroy": true }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 2
+    }
+  }
+}
+```
+
 Item categories: `material` | `food` | `component` | `trophy`
+
+#### Spoilage & Source Flags
+
+Food and drink items in the compendium carry **template spoilage data** in their flags:
+
+| Flag | Type | Purpose |
+|---|---|---|
+| `source` | `string` | Origin of the item: `"foraged"` or `"harvested"`. Set on compendium templates for foraged items. Can also be stamped at award time to distinguish foraged items from store-bought equivalents. |
+| `shelfLife` | `number` | Days before the item spoils. `0` = never spoils (water, dried goods with indefinite shelf life). Only present on food/drink items. |
+
+**Shelf life tiers:**
+| Category | Days | Examples |
+|---|---|---|
+| Fish / shellfish | 1 | Blind Fish, Coastal Fish, River Fish, Shellfish |
+| Raw meat / perishable berries | 2 | Wolf Meat, Animal Meat, Small Game, Wild Berries, Frozen Berries |
+| Fresh produce / herbs / mushrooms | 3 | Bitter Greens, Herb Bundle, Cactus Fruit, Wild Mushroom, Seaweed |
+| Preserved / dried / rations | 4 | Foraged Ration, Dried Mushrooms, Acorns, Pine Nuts, Seeds and Grains, Coconut |
+| Water / drinks | 0 (never) | Fresh Water, Cactus Water |
+
+**Runtime spoilage tracking** (stamped when items are awarded to players):
+When the harvest/forage workflow awards an item to a player, it should stamp instance-level flags:
+```javascript
+{
+  "flags": {
+    "ultimate-harvester": {
+      "acquiredOn": 1712200000,   // game world time (game.time.worldTime) or real timestamp
+      "spoilsOn": 1712372800      // acquiredOn + (shelfLife * secondsPerDay), 0 if shelfLife === 0
+    }
+  }
+}
+```
+This allows the spoilage system to check `game.time.worldTime >= spoilsOn` to determine if food has gone bad, while store-bought items of the same name (lacking the flag) remain unaffected.
 
 Items are generic and reusable across many tables — "Wolf Pelt" can appear in both the specific Wolf table and the generic "Beast CR 0-1" table.
 
@@ -601,6 +664,17 @@ Foraging tables use **standard RollTable mechanics** (`table.roll()` / `table.dr
 | `ultimate-harvester.harvestTable` | UUID pointing to a specific harvest table (GM override) |
 | `ultimate-harvester.harvested` | Boolean — prevents double-harvesting |
 | `ultimate-harvester.harvestOffered` | Boolean — prevents duplicate chat offers on death |
+
+### Item Instance Flags (stamped at award time)
+
+These flags are set on individual item instances when awarded to players via the harvest/forage workflow. They are NOT on compendium templates (except `source` and `shelfLife` which serve as defaults).
+
+| Flag | Type | Purpose |
+|---|---|---|
+| `ultimate-harvester.source` | `string` | `"foraged"` or `"harvested"` — distinguishes player-gathered items from store-bought |
+| `ultimate-harvester.shelfLife` | `number` | Days before spoilage (copied from compendium template). `0` = never spoils |
+| `ultimate-harvester.acquiredOn` | `number` | World time (`game.time.worldTime`) when the item was awarded |
+| `ultimate-harvester.spoilsOn` | `number` | World time when the item expires. `0` = never. Computed as `acquiredOn + (shelfLife * secondsPerDay)` |
 
 ---
 

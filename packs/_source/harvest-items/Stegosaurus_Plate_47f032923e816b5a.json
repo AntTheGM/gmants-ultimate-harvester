@@ -1,0 +1,27 @@
+{
+  "_id": "47f032923e816b5a",
+  "name": "Stegosaurus Plate",
+  "type": "loot",
+  "img": "icons/commodities/leather/scale-chitin-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>A bony dorsal plate from a stegosaurus; light yet surprisingly rigid.</p>"
+    },
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!47f032923e816b5a"
+}

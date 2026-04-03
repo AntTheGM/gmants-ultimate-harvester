@@ -1,0 +1,27 @@
+{
+  "_id": "c59bb1509bc5aa38",
+  "name": "Tree Resin",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Thick amber-colored sap collected from conifers; useful as a sealant and fire starter.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!c59bb1509bc5aa38"
+}

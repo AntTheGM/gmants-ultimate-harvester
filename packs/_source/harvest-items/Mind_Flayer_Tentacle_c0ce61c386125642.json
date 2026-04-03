@@ -1,0 +1,27 @@
+{
+  "_id": "c0ce61c386125642",
+  "name": "Mind Flayer Tentacle",
+  "type": "loot",
+  "img": "icons/commodities/biological/tentacle-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>One of the four facial tentacles of a mind flayer; lined with suckers that still twitch faintly.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!c0ce61c386125642"
+}

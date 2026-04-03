@@ -1,0 +1,27 @@
+{
+  "_id": "53ee426fcc79c2e2",
+  "name": "Corrosive Core",
+  "type": "loot",
+  "img": "icons/commodities/gems/gem-rough-cushion-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>A dense nucleic mass from a large ooze; intensely acidic.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!53ee426fcc79c2e2"
+}

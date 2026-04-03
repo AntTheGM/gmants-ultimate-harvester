@@ -1,0 +1,27 @@
+{
+  "_id": "902cc50eecd2b5aa",
+  "name": "Eagle Feather",
+  "type": "loot",
+  "img": "icons/commodities/materials/feather-colored-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>A large primary feather from a mountain eagle; prized for fletching and ritual use.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!902cc50eecd2b5aa"
+}

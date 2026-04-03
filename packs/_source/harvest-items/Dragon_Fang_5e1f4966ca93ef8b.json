@@ -1,0 +1,27 @@
+{
+  "_id": "5e1f4966ca93ef8b",
+  "name": "Dragon Fang",
+  "type": "loot",
+  "img": "icons/commodities/bones/teeth-sharp-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>A single massive fang from a chromatic dragon; retains a trace of elemental energy.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 14,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!5e1f4966ca93ef8b"
+}

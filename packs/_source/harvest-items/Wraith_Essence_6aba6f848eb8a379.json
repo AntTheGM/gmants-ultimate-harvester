@@ -1,0 +1,27 @@
+{
+  "_id": "6aba6f848eb8a379",
+  "name": "Wraith Essence",
+  "type": "loot",
+  "img": "icons/commodities/materials/powder-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>A sealed vial of swirling dark mist condensed from a wraith's dissolution; radiates cold.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!6aba6f848eb8a379"
+}

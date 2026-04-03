@@ -1,0 +1,27 @@
+{
+  "_id": "83055b03dae4d522",
+  "name": "Primordial Bone",
+  "type": "loot",
+  "img": "icons/commodities/bones/bone-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ancient, iron-hard bones suffused with primal vitality.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 18,
+      "denomination": "gp"
+    },
+    "rarity": "veryRare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!83055b03dae4d522"
+}

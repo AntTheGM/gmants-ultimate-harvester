@@ -1,0 +1,27 @@
+{
+  "_id": "433d812e75092116",
+  "name": "Dinosaur Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Rough, scale-textured hide from a dinosaur; excellent for heavy armor.</p>"
+    },
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!433d812e75092116"
+}

@@ -388,3 +388,49 @@ details[open] > .ultimate-harvester-details-toggle::before {
   opacity: 0.4;
   font-style: italic;
 }
+
+/* --- Spoilage Info (injected into item sheet Details tab) --- */
+
+.ultimate-harvester-spoilage {
+  border: 1px solid rgba(80, 60, 40, 0.25);
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  margin-top: 0.5rem;
+  background: rgba(30, 20, 10, 0.05);
+}
+
+.ultimate-harvester-spoilage .form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.15rem 0;
+}
+
+.ultimate-harvester-spoilage label {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.ultimate-harvester-spoilage .spoilage-value {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.ultimate-harvester-spoilage .spoilage-fresh {
+  color: #3a6e3a;
+}
+
+.ultimate-harvester-spoilage .spoilage-expiring {
+  color: #b8860b;
+}
+
+.ultimate-harvester-spoilage .spoilage-spoiled {
+  color: #8b3a3a;
+  font-weight: bold;
+}
+
+.ultimate-harvester-spoilage .spoilage-source {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-style: italic;
+}

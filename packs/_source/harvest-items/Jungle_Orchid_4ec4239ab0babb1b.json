@@ -1,0 +1,27 @@
+{
+  "_id": "4ec4239ab0babb1b",
+  "name": "Jungle Orchid",
+  "type": "loot",
+  "img": "icons/commodities/flowers/lily-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>An exotic orchid found in tropical undergrowth; highly prized by alchemists and mages.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!4ec4239ab0babb1b"
+}

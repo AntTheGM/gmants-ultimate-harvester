@@ -1,0 +1,27 @@
+{
+  "_id": "3b340e9bfe69c862",
+  "name": "Warrior Heart",
+  "type": "loot",
+  "img": "icons/consumables/meat/heart-organ-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>The heart of a seasoned warrior, still bearing the marks of many battles.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!3b340e9bfe69c862"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "397426fa127e793b",
+  "name": "Yuan-ti Scale",
+  "type": "loot",
+  "img": "icons/commodities/leather/scales-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Iridescent serpentine scales shed by a yuan-ti; subtly enchanted.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!397426fa127e793b"
+}

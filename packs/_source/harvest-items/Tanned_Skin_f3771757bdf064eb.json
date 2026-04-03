@@ -1,0 +1,27 @@
+{
+  "_id": "f3771757bdf064eb",
+  "name": "Tanned Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-patchwork-folded-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p>A cured patch of humanoid skin; disturbing but prized by dark crafters.</p>"
+    },
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material"
+    }
+  },
+  "_key": "!items!f3771757bdf064eb"
+}

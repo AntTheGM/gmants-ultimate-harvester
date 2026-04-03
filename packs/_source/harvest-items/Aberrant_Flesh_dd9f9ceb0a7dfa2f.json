@@ -1,0 +1,27 @@
+{
+  "_id": "dd9f9ceb0a7dfa2f",
+  "name": "Aberrant Flesh",
+  "type": "loot",
+  "img": "icons/consumables/meat/steak-alien-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>Non-euclidean tissue that continues to shift shape even after death.</p>"
+    },
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!dd9f9ceb0a7dfa2f"
+}
