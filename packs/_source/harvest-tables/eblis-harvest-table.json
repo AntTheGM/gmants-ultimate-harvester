@@ -1,0 +1,75 @@
+{
+  "_id": "a1b2c3d4e5f60010",
+  "name": "Eblis Harvest Table",
+  "description": "<p>Harvest table for an eblis (Monstrosity CR 1). Intelligent, evil crane-like creatures found in Chultan swamps. Thought to be reincarnations of wicked humans punished by the gods.</p>",
+  "formula": "1d20",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "a1b2c3d4e5f60011",
+      "text": "Eblis Plumage",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "rarity": "common",
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a1b2c3d4e5f60001",
+          "quantity": "1d4+1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "a1b2c3d4e5f60012",
+      "text": "Eblis Beak",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "rarity": "uncommon",
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a1b2c3d4e5f60002",
+          "quantity": "1",
+          "category": "material"
+        }
+      }
+    },
+    {
+      "_id": "a1b2c3d4e5f60013",
+      "text": "Eblis Oil",
+      "type": 0,
+      "range": [
+        1,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "rarity": "rare",
+          "itemUuid": "Compendium.ultimate-harvester.harvest-items.a1b2c3d4e5f60003",
+          "quantity": "1",
+          "category": "component"
+        }
+      }
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "critFailEffect": "The eblis's innate illusion magic discharges in a flash of light; make a DC 11 Wisdom save or be blinded for 1 round.",
+      "fumbleEffect": "You rupture the preen gland, ruining the oil. It coats your hands and smells of burnt feathers for hours.",
+      "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.a1b2c3d4e5f60003",
+      "critSuccessQuantity": "1"
+    }
+  }
+}

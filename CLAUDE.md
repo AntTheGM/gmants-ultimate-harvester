@@ -16,8 +16,8 @@ This is a **planning repository** (Obsidian vault) for **Ultimate Harvester**, a
 
 ## Key Documents
 
-- `harvester_module.md` — Technical architecture: module structure, Foundry APIs, data models, workflow engines, implementation phases
-- `harvester_rules.md` — Game rules (draft): skill mappings, DCs, harvesting/foraging mechanics, content tables. Many sections marked **DECISION NEEDED**
+- `docs/harvester_module.md` — Technical architecture: module structure, Foundry APIs, data models, workflow engines, implementation phases
+- `docs/harvester_rules.md` — Game rules (draft): skill mappings, DCs, harvesting/foraging mechanics, content tables. Many sections marked **DECISION NEEDED**
 
 ## Architecture Summary
 
@@ -69,7 +69,7 @@ fvtt package unpack "harvest-items"
 
 ## Rules Decisions
 
-All 23 rules decisions are now **resolved** — see the summary table at the bottom of `harvester_rules.md`. Key decisions:
+All 23 rules decisions are now **resolved** — see the summary table at the bottom of `docs/harvester_rules.md`. Key decisions:
 - **Skill mapping**: Distributed 6-skill type-based system (Option A), GM-configurable
 - **Generic tables**: All 14 creature types x 4 CR tiers (~56 tables)
 - **Specific overrides**: High Priority creatures + all Tomb of Annihilation creatures (~150+ unique)
