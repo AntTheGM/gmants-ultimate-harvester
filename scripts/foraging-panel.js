@@ -95,6 +95,7 @@ export class ForagingPanel extends HandlebarsApplicationMixin(ApplicationV2) {
       effectiveDCs,
       totalMod,
       environmentLabel: currentEnv?.label ?? "Not set",
+      failureEventArmed: config.failureEventArmed ?? false,
     };
   }
 
@@ -102,6 +103,21 @@ export class ForagingPanel extends HandlebarsApplicationMixin(ApplicationV2) {
     super._onRender(context, options);
     this.#injectBranding();
     this.#bindRandomize();
+    this.#bindArmCheckbox();
+  }
+
+  /**
+   * Auto-save the "Arm Next Failure" checkbox immediately on change,
+   * so the GM doesn't have to hit Save Configuration for it to take effect.
+   */
+  #bindArmCheckbox() {
+    const cb = this.element.querySelector("input[name='failureEventArmed']");
+    if (!cb) return;
+    cb.addEventListener("change", async () => {
+      const config = foundry.utils.deepClone(game.settings.get(MODULE_ID, "foragingConfig") ?? {});
+      config.failureEventArmed = cb.checked;
+      await game.settings.set(MODULE_ID, "foragingConfig", config);
+    });
   }
 
   #bindRandomize() {
@@ -143,6 +159,7 @@ export class ForagingPanel extends HandlebarsApplicationMixin(ApplicationV2) {
       dmModifier: parseInt(formData.dmModifier) || 0,
       primarySkill: formData.primarySkill || "",
       secondarySkill: formData.secondarySkill || "",
+      failureEventArmed: !!formData.failureEventArmed,
     };
 
     await game.settings.set(MODULE_ID, "foragingConfig", config);

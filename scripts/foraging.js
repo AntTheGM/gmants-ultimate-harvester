@@ -6,9 +6,10 @@
 import {
   MODULE_ID, SKILL_LABELS, ITEM_CATEGORIES,
   FORAGING_ENVIRONMENTS, WEATHER_MODIFIERS, SEASON_MODIFIERS,
+  FORAGING_FAILURE_EVENTS,
   formatTime,
 } from "./config.js";
-import { gmCreateEmbeddedDocuments } from "./socket.js";
+import { gmCreateEmbeddedDocuments, gmSetFlag } from "./socket.js";
 import { showDialog } from "./dialog-helper.js";
 
 /**
@@ -76,10 +77,25 @@ export async function initiateForage() {
   if (isNat20) qualifiedTiers.push(3); // Nat 20 = Rare tier
 
   if (qualifiedTiers.length === 0) {
+    // Check for failure event trigger
+    const failMargin = adjustedDCs[0] - total;
+    const isNat1 = rollResult.d20 === 1;
+    const failureEvent = await _checkFailureEvent(forager, isNat1, failMargin, config);
+
+    let failureHtml = "";
+    if (failureEvent) {
+      failureHtml = `
+        <div class="ultimate-harvester-failure-event">
+          <p class="ultimate-harvester-failure-header"><i class="${failureEvent.icon} ultimate-harvester-icon--danger"></i> <strong>${failureEvent.label}</strong></p>
+          <p>${failureEvent.resolvedDescription}</p>
+        </div>`;
+    }
+
     await ChatMessage.create({
       content: `<div class="ultimate-harvester-card">
         <p class="ultimate-harvester-time-banner"><i class="fas fa-clock ultimate-harvester-icon--time"></i> <strong>Time spent: ${formatTime(timeSpent)}</strong></p>
         <p><strong>${forager.name}</strong> ${game.i18n.localize("MHARVEST.Notification.ForagingNothing")} (rolled ${total}, needed ${adjustedDCs[0]})</p>
+        ${failureHtml}
         <p class="ultimate-harvester-note"><i class="fas fa-eye ultimate-harvester-icon--warning"></i> ${game.i18n.localize("MHARVEST.Chat.ThreatReminder")}</p>
       </div>`,
       speaker: ChatMessage.getSpeaker({ actor: forager }),
@@ -294,6 +310,186 @@ async function _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, 
   });
 }
 
+/* ---- Failure Event Logic ---- */
+
+/**
+ * Check whether a failed forage triggers a failure event.
+ * Nat 1 = always. Otherwise 1% chance per point missed below lowest tier DC.
+ * GM "arm next failure" override forces the event regardless.
+ * @returns {object|null} Resolved failure event or null
+ */
+async function _checkFailureEvent(forager, isNat1, failMargin, foragingConfig) {
+  const armed = foragingConfig.failureEventArmed ?? false;
+
+  let triggered = false;
+  if (isNat1 || armed) {
+    triggered = true;
+  } else if (failMargin > 0) {
+    const chance = failMargin; // 1% per point missed
+    const roll = Math.random() * 100;
+    triggered = roll < chance;
+  }
+
+  if (!triggered) return null;
+
+  // Disarm the GM override if it was set
+  if (armed) {
+    const updatedConfig = foundry.utils.deepClone(foragingConfig);
+    updatedConfig.failureEventArmed = false;
+    await game.settings.set(MODULE_ID, "foragingConfig", updatedConfig);
+    // Re-render the panel so the checkbox unchecks visually
+    const { ForagingPanel } = await import("./foraging-panel.js");
+    if (ForagingPanel._instance?.rendered) {
+      ForagingPanel._instance.render();
+    }
+  }
+
+  // Pick a random event
+  const event = FORAGING_FAILURE_EVENTS[Math.floor(Math.random() * FORAGING_FAILURE_EVENTS.length)];
+
+  // Resolve dynamic values in description
+  let resolvedDescription = event.description;
+  const level = forager.system.details?.level ?? forager.system.details?.cr ?? 1;
+
+  if (event.damageFormula) {
+    let damageTotal;
+    if (event.damageFormula.includes("@level")) {
+      const formula = event.damageFormula.replace("@level", String(level));
+      try {
+        const dmgRoll = await new Roll(formula).evaluate();
+        damageTotal = dmgRoll.total;
+      } catch {
+        damageTotal = level * 2;
+      }
+    } else {
+      try {
+        const dmgRoll = await new Roll(event.damageFormula).evaluate();
+        damageTotal = dmgRoll.total;
+      } catch {
+        damageTotal = 2;
+      }
+    }
+    resolvedDescription = resolvedDescription.replace("{damage}", `${damageTotal} ${event.damageType ?? ""}`);
+
+    // Auto-apply damage if possible
+    if (event.auto === "damage") {
+      await _applyDamage(forager, damageTotal, event.damageType);
+    }
+  }
+
+  if (event.spoilFormula) {
+    try {
+      const spoilRoll = await new Roll(event.spoilFormula).evaluate();
+      resolvedDescription = resolvedDescription.replace("{spoilCount}", String(spoilRoll.total));
+    } catch {
+      resolvedDescription = resolvedDescription.replace("{spoilCount}", "1");
+    }
+  }
+
+  // Auto-apply exhaustion
+  if (event.auto === "exhaustion") {
+    await _applyExhaustion(forager);
+  }
+
+  // Auto-halve ammo
+  if (event.auto === "ammo") {
+    await _halveAmmo(forager);
+  }
+
+  // Auto-apply ActiveEffect debuff
+  if (event.auto === "effect" || event.auto === "damage+effect") {
+    if (event.effect) {
+      await _applyDebuffEffect(forager, event.effect);
+    }
+  }
+
+  return { ...event, resolvedDescription };
+}
+
+/**
+ * Apply HP damage to an actor.
+ */
+async function _applyDamage(actor, amount, type) {
+  try {
+    const hp = actor.system.attributes?.hp;
+    if (!hp) return;
+    const newHp = Math.max(0, hp.value - amount);
+    await actor.update({ "system.attributes.hp.value": newHp });
+    ui.notifications.warn(`${actor.name} takes ${amount} ${type ?? ""} damage from foraging mishap!`);
+  } catch (err) {
+    console.warn(`${MODULE_ID} | Failed to apply damage:`, err);
+  }
+}
+
+/**
+ * Apply 1 level of exhaustion (dnd5e).
+ */
+async function _applyExhaustion(actor) {
+  try {
+    const current = actor.system.attributes?.exhaustion ?? 0;
+    await actor.update({ "system.attributes.exhaustion": current + 1 });
+    ui.notifications.warn(`${actor.name} gains 1 level of exhaustion!`);
+  } catch (err) {
+    console.warn(`${MODULE_ID} | Failed to apply exhaustion:`, err);
+  }
+}
+
+/**
+ * Halve one random ammunition type's quantity on an actor.
+ */
+async function _halveAmmo(actor) {
+  try {
+    const ammoItems = actor.items.filter((i) =>
+      i.type === "consumable" && i.system.type?.value === "ammo" && i.system.quantity > 0
+    );
+    if (ammoItems.length === 0) return;
+    const target = ammoItems[Math.floor(Math.random() * ammoItems.length)];
+    const newQty = Math.floor(target.system.quantity / 2);
+    await actor.updateEmbeddedDocuments("Item", [{ _id: target.id, "system.quantity": newQty }]);
+    ui.notifications.warn(`${actor.name} loses half their ${target.name} (${target.system.quantity} → ${newQty})!`);
+  } catch (err) {
+    console.warn(`${MODULE_ID} | Failed to halve ammo:`, err);
+  }
+}
+
+/* ---- ActiveEffect Debuff ---- */
+
+/**
+ * Create a timed ActiveEffect on a forager for persistent debuffs.
+ * Uses the same pattern as Hunters_Quarry effect-manager.
+ * @param {Actor} actor
+ * @param {object} effectDef - Effect definition from FORAGING_FAILURE_EVENTS
+ */
+async function _applyDebuffEffect(actor, effectDef) {
+  try {
+    const effectData = {
+      name: effectDef.name,
+      icon: effectDef.icon,
+      origin: `module.${MODULE_ID}`,
+      description: effectDef.description,
+      flags: {
+        [MODULE_ID]: {
+          foragingDebuff: true,
+        },
+      },
+      changes: (effectDef.changes ?? []).map((c) => ({
+        key: c.key,
+        mode: c.mode ?? CONST.ACTIVE_EFFECT_MODES.ADD,
+        value: String(c.value),
+        priority: 20,
+      })),
+      duration: {
+        seconds: (effectDef.durationHours ?? 24) * 3600,
+      },
+    };
+
+    await gmCreateEmbeddedDocuments(actor, "ActiveEffect", [effectData]);
+    ui.notifications.warn(`${actor.name} gains the "${effectDef.name}" debuff!`);
+  } catch (err) {
+    console.warn(`${MODULE_ID} | Failed to apply debuff effect:`, err);
+  }
+}
+
 /* ---- Skill Roll ---- */
 
 async function _rollForageCheck(forager, skillId) {
@@ -307,5 +503,5 @@ async function _rollForageCheck(forager, skillId) {
   const roll = Array.isArray(rolls) ? rolls[0] : rolls;
   if (!roll) return null;
   const d20 = roll.dice?.[0]?.total ?? roll.terms?.[0]?.total;
-  return { total: roll.total, isNat20: d20 === 20 };
+  return { total: roll.total, isNat20: d20 === 20, d20 };
 }

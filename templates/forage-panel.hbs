@@ -62,6 +62,20 @@
 
   <div class="ultimate-harvester-section">
     <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-exclamation-triangle"></i> Failure Events</span>
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label title="Forces the next failed forage roll to trigger a failure event, then automatically unchecks.">Arm Next Failure</label>
+      <input type="checkbox" name="failureEventArmed" {{#if failureEventArmed}}checked{{/if}} />
+    </div>
+    <p class="ultimate-harvester-note">
+      Nat 1 = always triggers. Otherwise 1% per point missed.
+      <br>Check the box to force the next failure to trigger an event.
+    </p>
+  </div>
+
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
       <span><i class="fas fa-bullseye"></i> Effective DCs</span>
       {{#if totalMod}}
       <span>(base {{#if (gt totalMod 0)}}+{{/if}}{{totalMod}})</span>

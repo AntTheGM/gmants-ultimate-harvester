@@ -71,5 +71,19 @@
   "MHARVEST.Chat.BonusItem": "Natural 20 — Bonus Item!",
   "MHARVEST.Chat.NothingFound": "Nothing harvestable found.",
   "MHARVEST.Chat.TimeSpent": "Time spent",
-  "MHARVEST.Chat.ThreatReminder": "Characters who forage cannot contribute to passive Perception checks for noticing threats."
+  "MHARVEST.Chat.ThreatReminder": "Characters who forage cannot contribute to passive Perception checks for noticing threats.",
+
+  "MHARVEST.Failure.PoisonPlant": "Poisonous Plant",
+  "MHARVEST.Failure.Exhaustion": "Exhaustion",
+  "MHARVEST.Failure.LostSupplies": "Lost Supplies",
+  "MHARVEST.Failure.ScatteredAmmo": "Scattered Ammunition",
+  "MHARVEST.Failure.TwistedAnkle": "Twisted Ankle",
+  "MHARVEST.Failure.SpoiledRations": "Spoiled Rations",
+  "MHARVEST.Failure.AttractedPredators": "Attracted Predators",
+  "MHARVEST.Failure.NastyRash": "Nasty Rash",
+  "MHARVEST.Failure.InsectSwarm": "Stung by Insects",
+  "MHARVEST.Failure.SprainedAnkle": "Sprained Ankle",
+  "MHARVEST.Panel.FailureEventsTitle": "Failure Events",
+  "MHARVEST.Panel.ArmNextFailure": "Arm Next Failure",
+  "MHARVEST.Panel.FailureEventsHint": "Nat 1 = always triggers. Otherwise 1% per point missed. Check the box to force the next failure to trigger an event."
 }
