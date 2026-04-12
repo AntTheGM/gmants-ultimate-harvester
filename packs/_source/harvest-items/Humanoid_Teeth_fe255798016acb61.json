@@ -23,5 +23,15 @@
       "category": "trophy"
     }
   },
-  "_key": "!items!fe255798016acb61"
+  "_key": "!items!fe255798016acb61",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
 }

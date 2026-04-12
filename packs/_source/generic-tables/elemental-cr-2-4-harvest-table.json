@@ -9,7 +9,7 @@
     {
       "_id": "7a86fb916d33904f",
       "text": "Elemental Mote",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "2d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!8d909c345ddeda5d.7a86fb916d33904f",
+      "description": "Elemental Mote",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "665720f7eb8a3eb2",
       "text": "Primal Ash",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!8d909c345ddeda5d.665720f7eb8a3eb2",
+      "description": "Primal Ash",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "71d1f90f36b82722",
       "text": "Elemental Core",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!8d909c345ddeda5d.71d1f90f36b82722",
+      "description": "Elemental Core",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "cabc435c788b5c16",
       "text": "Condensed Element",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,12 +107,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!8d909c345ddeda5d.cabc435c788b5c16",
+      "description": "Condensed Element",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "7862fbe3efac1731",
       "text": "Pure Elemental Essence",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -99,6 +135,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!8d909c345ddeda5d.7862fbe3efac1731",
+      "description": "Pure Elemental Essence",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -108,5 +153,17 @@
       "fumbleEffect": "The residual elemental force buffets you; you are pushed 10 feet in a direction determined by the element type.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!8d909c345ddeda5d",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

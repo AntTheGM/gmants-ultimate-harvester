@@ -9,7 +9,7 @@
     {
       "_id": "191b5c5c91fdc960",
       "text": "Animal Meat",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!e15276e73f78f5af.191b5c5c91fdc960",
+      "description": "Animal Meat",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "1f703ab2dd776f6a",
       "text": "Owlbear Feather",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "2d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!e15276e73f78f5af.1f703ab2dd776f6a",
+      "description": "Owlbear Feather",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "c2b7153b59ea1ff6",
       "text": "Owlbear Beak",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!e15276e73f78f5af.c2b7153b59ea1ff6",
+      "description": "Owlbear Beak",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "7092a3a7ad34d2cb",
       "text": "Owlbear Pelt",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,6 +107,15 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!e15276e73f78f5af.7092a3a7ad34d2cb",
+      "description": "Owlbear Pelt",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -90,5 +126,17 @@
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.d1259e2c1962b5af",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!e15276e73f78f5af",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

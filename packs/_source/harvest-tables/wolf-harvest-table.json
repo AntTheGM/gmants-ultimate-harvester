@@ -9,7 +9,7 @@
     {
       "_id": "be029ae52b746229",
       "text": "Wolf Meat",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!8bb70d1cae487d49.be029ae52b746229",
+      "description": "Wolf Meat",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "db2d17980cb617fb",
       "text": "Wolf Pelt",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!8bb70d1cae487d49.db2d17980cb617fb",
+      "description": "Wolf Pelt",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "618714e88cad8fc2",
       "text": "Wolf Fangs",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!8bb70d1cae487d49.618714e88cad8fc2",
+      "description": "Wolf Fangs",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "a0fdcbf8c9f145e1",
       "text": "Wolf Heart",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,6 +107,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!8bb70d1cae487d49.a0fdcbf8c9f145e1",
+      "description": "Wolf Heart",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -90,5 +126,17 @@
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.0656b69fcaec926c",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!8bb70d1cae487d49",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

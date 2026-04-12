@@ -9,7 +9,7 @@
     {
       "_id": "3a9524822d2b050d",
       "text": "Demon Ichor",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!961b0903ba0043f6.3a9524822d2b050d",
+      "description": "Demon Ichor",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "323ffe0304bbad9a",
       "text": "Devil Horn",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!961b0903ba0043f6.323ffe0304bbad9a",
+      "description": "Devil Horn",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "7da4704628b818f9",
       "text": "Fiendish Hide",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!961b0903ba0043f6.7da4704628b818f9",
+      "description": "Fiendish Hide",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "cfb377a20a11f595",
       "text": "Abyssal Essence",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,12 +107,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!961b0903ba0043f6.cfb377a20a11f595",
+      "description": "Abyssal Essence",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "71bc851830467e62",
       "text": "Hellfire Gland",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -99,6 +135,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!961b0903ba0043f6.71bc851830467e62",
+      "description": "Hellfire Gland",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -108,5 +153,17 @@
       "fumbleEffect": "Infernal ichor eats through one of your harvesting tools; a blade or probe is destroyed.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!961b0903ba0043f6",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

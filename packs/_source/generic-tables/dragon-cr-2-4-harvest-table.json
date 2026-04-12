@@ -9,7 +9,7 @@
     {
       "_id": "19d854a718f7910c",
       "text": "Dragon Scales",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!6e2813843c0d3f99.19d854a718f7910c",
+      "description": "Dragon Scales",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "f49e010fe9b49ada",
       "text": "Dragon Blood",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!6e2813843c0d3f99.f49e010fe9b49ada",
+      "description": "Dragon Blood",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "b71810722a56725d",
       "text": "Dragon Teeth",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!6e2813843c0d3f99.b71810722a56725d",
+      "description": "Dragon Teeth",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "1c4b52de720b576d",
       "text": "Dragon Hide",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,12 +107,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!6e2813843c0d3f99.1c4b52de720b576d",
+      "description": "Dragon Hide",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "07876b44df1c98c1",
       "text": "Breath Gland",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -99,6 +135,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!6e2813843c0d3f99.07876b44df1c98c1",
+      "description": "Breath Gland",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -108,5 +153,17 @@
       "fumbleEffect": "A jagged scale slices your palm; take 1d6 slashing damage.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!6e2813843c0d3f99",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

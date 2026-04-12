@@ -9,7 +9,7 @@
     {
       "_id": "5e0a9f3f8aa12f96",
       "text": "Dinosaur Meat",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "2d4",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!71f6de6f33b9e6dd.5e0a9f3f8aa12f96",
+      "description": "Dinosaur Meat",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "2641a8ed50712e59",
       "text": "Dinosaur Hide",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!71f6de6f33b9e6dd.2641a8ed50712e59",
+      "description": "Dinosaur Hide",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "7b20638b9f184886",
       "text": "Stegosaurus Plate",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,6 +79,15 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!71f6de6f33b9e6dd.7b20638b9f184886",
+      "description": "Stegosaurus Plate",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -71,5 +98,17 @@
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.47f032923e816b5a",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!71f6de6f33b9e6dd",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

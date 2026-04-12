@@ -9,7 +9,7 @@
     {
       "_id": "3c7d066fb00f4d95",
       "text": "Manticore Spike",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "2d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!bc6d36e21f53f7de.3c7d066fb00f4d95",
+      "description": "Manticore Spike",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "c4faea17d2efa712",
       "text": "Manticore Mane",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!bc6d36e21f53f7de.c4faea17d2efa712",
+      "description": "Manticore Mane",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "3e953bceeece009f",
       "text": "Manticore Tail",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,15 +79,36 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!bc6d36e21f53f7de.3e953bceeece009f",
+      "description": "Manticore Tail",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
   "flags": {
     "ultimate-harvester": {
-      "critFailEffect": "Tail spikes fire erratically in a death spasm; roll 1d4 � each spike hit deals 1d8 piercing damage (DC 14 Dexterity save to avoid each).",
+      "critFailEffect": "Tail spikes fire erratically in a death spasm; roll 1d4 \u00ef\u00bf\u00bd each spike hit deals 1d8 piercing damage (DC 14 Dexterity save to avoid each).",
       "fumbleEffect": "A loose spike stabs through your boot; take 1d4 piercing damage and your movement speed is reduced by 5 feet for 10 minutes.",
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.61966955720725bd",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!bc6d36e21f53f7de",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

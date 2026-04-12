@@ -9,7 +9,7 @@
     {
       "_id": "1c7879627e5beaae",
       "text": "Acidic Residue",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!676cd4d76cb15c5e.1c7879627e5beaae",
+      "description": "Acidic Residue",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "a9ffdc1be2866462",
       "text": "Ooze Membrane",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!676cd4d76cb15c5e.a9ffdc1be2866462",
+      "description": "Ooze Membrane",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "4429714c4caf3a3a",
       "text": "Gelatinous Extract",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!676cd4d76cb15c5e.4429714c4caf3a3a",
+      "description": "Gelatinous Extract",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "1b56a8b44b421363",
       "text": "Corrosive Core",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,6 +107,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!676cd4d76cb15c5e.1b56a8b44b421363",
+      "description": "Corrosive Core",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -89,5 +125,17 @@
       "fumbleEffect": "The acidic residue eats through one non-metal item in your pack (DM picks the least expensive item).",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!676cd4d76cb15c5e",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

@@ -23,5 +23,15 @@
       "category": "material"
     }
   },
-  "_key": "!items!ae3fc3c4996ed31b"
+  "_key": "!items!ae3fc3c4996ed31b",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
 }

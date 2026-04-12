@@ -9,7 +9,7 @@
     {
       "_id": "de0ed2861c9c4077",
       "text": "Fey Dust",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "2d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!e2c1cb5d6dfcac8d.de0ed2861c9c4077",
+      "description": "Fey Dust",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "17fb59f4ecf3c565",
       "text": "Enchanted Bark",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!e2c1cb5d6dfcac8d.17fb59f4ecf3c565",
+      "description": "Enchanted Bark",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "d81e5f04d0b4cf70",
       "text": "Fey Blossom",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!e2c1cb5d6dfcac8d.d81e5f04d0b4cf70",
+      "description": "Fey Blossom",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "54af6849a3a717d7",
       "text": "Glamour Essence",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,12 +107,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!e2c1cb5d6dfcac8d.54af6849a3a717d7",
+      "description": "Glamour Essence",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "ddc72466d203ff36",
       "text": "Archfey Tear",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -99,6 +135,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!e2c1cb5d6dfcac8d.ddc72466d203ff36",
+      "description": "Archfey Tear",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -108,5 +153,17 @@
       "fumbleEffect": "The fey's charm leaks out; you are charmed by the next creature you see for 1 minute.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!e2c1cb5d6dfcac8d",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

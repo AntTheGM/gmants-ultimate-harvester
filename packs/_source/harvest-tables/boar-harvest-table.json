@@ -9,7 +9,7 @@
     {
       "_id": "e36c9296ff7d9af1",
       "text": "Animal Meat",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!91204f8c3be320a0.e36c9296ff7d9af1",
+      "description": "Animal Meat",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "9ab3c80294497a08",
       "text": "Boar Tusk",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!91204f8c3be320a0.9ab3c80294497a08",
+      "description": "Boar Tusk",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "813f534f4e2ebb66",
       "text": "Boar Hide",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,6 +79,15 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!91204f8c3be320a0.813f534f4e2ebb66",
+      "description": "Boar Hide",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -71,5 +98,17 @@
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.0225aef7b0bc4b18",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!91204f8c3be320a0",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

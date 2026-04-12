@@ -9,7 +9,7 @@
     {
       "_id": "c738a5d3bc0161ae",
       "text": "Aberrant Flesh",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!1c2665885ed0ce32.c738a5d3bc0161ae",
+      "description": "Aberrant Flesh",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "d00f6de9de909aad",
       "text": "Psionic Crystal",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!1c2665885ed0ce32.d00f6de9de909aad",
+      "description": "Psionic Crystal",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "2a6f843cd5242958",
       "text": "Mind Residue",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!1c2665885ed0ce32.2a6f843cd5242958",
+      "description": "Mind Residue",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "7b04bf60f778905c",
       "text": "Eldritch Ichor",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,6 +107,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!1c2665885ed0ce32.7b04bf60f778905c",
+      "description": "Eldritch Ichor",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -89,5 +125,17 @@
       "fumbleEffect": "The non-Euclidean anatomy confounds you; you lose 1 minute of harvesting time orienting yourself.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!1c2665885ed0ce32",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

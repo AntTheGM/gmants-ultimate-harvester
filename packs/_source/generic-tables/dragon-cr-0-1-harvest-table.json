@@ -9,7 +9,7 @@
     {
       "_id": "4d17d3fedd652988",
       "text": "Wyrmling Scale",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d6",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!e1432f4be8ecfc7b.4d17d3fedd652988",
+      "description": "Wyrmling Scale",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "5016f2bec1ee49e0",
       "text": "Dragon Blood",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!e1432f4be8ecfc7b.5016f2bec1ee49e0",
+      "description": "Dragon Blood",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "b37d0fb554f8b443",
       "text": "Dragon Teeth",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,6 +79,15 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!e1432f4be8ecfc7b.b37d0fb554f8b443",
+      "description": "Dragon Teeth",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -70,5 +97,17 @@
       "fumbleEffect": "A scale pops free and cuts you; take 1d4 piercing damage.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!e1432f4be8ecfc7b",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

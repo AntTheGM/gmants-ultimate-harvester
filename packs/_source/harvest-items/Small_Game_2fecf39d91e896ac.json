@@ -5,7 +5,7 @@
   "img": "icons/consumables/meat/drumstick-bone-pink.webp",
   "system": {
     "description": {
-      "value": "<p>A small animal — rabbit or squirrel — field-dressed and ready to cook.</p>"
+      "value": "<p>A small animal \u00e2\u20ac\u201d rabbit or squirrel \u00e2\u20ac\u201d field-dressed and ready to cook.</p>"
     },
     "weight": {
       "value": 1,
@@ -35,5 +35,15 @@
       "shelfLife": 2
     }
   },
-  "_key": "!items!2fecf39d91e896ac"
+  "_key": "!items!2fecf39d91e896ac",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
 }

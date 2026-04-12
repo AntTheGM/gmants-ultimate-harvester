@@ -1,12 +1,13 @@
-# Ultimate Harvester
+# GMAnt's Ultimate Harvester
 
 > Monster harvesting and foraging for FoundryVTT — carve up defeated creatures and forage the wild for useful materials, food, and spell components.
 
-![Foundry Core Compatible Version](https://img.shields.io/badge/Foundry-v12--v13-informational)
-![System](https://img.shields.io/badge/System-D%26D%205e-green)
-![Version](https://img.shields.io/badge/Version-0.1.0-blue)
+![License](https://img.shields.io/github/license/AntTheGM/gmants-ultimate-harvester)
+![Foundry](https://img.shields.io/badge/Foundry-v12--v13-informational)
+![Release](https://img.shields.io/github/v/release/AntTheGM/gmants-ultimate-harvester)
+![Downloads](https://img.shields.io/github/downloads/AntTheGM/gmants-ultimate-harvester/total)
 
-A **VTTools by GM Ant** module.
+A **VTTools by GM Ant** module for D&D 5e.
 
 ## Features
 
@@ -27,9 +28,11 @@ Before committing to a harvest, players can appraise the creature to preview wha
 
 A separate foraging system lets players gather food, herbs, and materials from the environment during travel or downtime.
 
-- **10 environments** — General, Jungle, Arctic, Desert, Swamp, Coastal, Mountain, Underground, Urban, and Plains
+- **10 environments** — Light Forest, Dense Forest/Jungle, Plains, Swamp, Coastal, Desert, Arctic, Underground, Mountain, and Urban
 - **Survival check + table roll** — beat the DC, then roll on the environment table with a bonus for every 5 points of margin
 - **Time tracking** — forage in 1-hour increments with a threat reminder (foragers can't contribute to passive Perception)
+- **Failure events** — failed foraging rolls can trigger random consequences (poison damage, exhaustion, lost supplies, debuffs). Nat 1 always triggers; otherwise 1% chance per point missed.
+- **GM Foraging Panel** — configure environment, weather, season, skills, and arm failure events from one panel
 
 ### Harvest Items
 
@@ -42,7 +45,7 @@ All harvested materials are categorized:
 | **Component** | Spell components, alchemical reagents |
 | **Trophy** | Horns, teeth, claws, trophies |
 
-Food items integrate with the [Campsite](https://github.com/GM-Ant/campsite) module for ration management and spoilage tracking.
+Food items integrate with the [Campsite](https://github.com/AntTheGM/campsite) module for ration management and spoilage tracking.
 
 ### Take/Leave Pickup Dialog
 
@@ -53,7 +56,7 @@ After a successful harvest, a pickup dialog lets the player choose which items t
 Extensive settings let the GM tune the experience:
 
 - **Skill mappings** per creature type (fully configurable)
-- **Base DC offset** (default: CR + 10)
+- **Base DC offset** (default: CR + 12)
 - **Appraisal DC offset** (default: -5 from harvest DC)
 - **Item value multiplier** for economy balance
 - **Humanoid harvesting** toggle (disabled by default)
@@ -65,11 +68,11 @@ Ultimate Harvester ships with five compendium packs:
 
 | Pack | Type | Contents |
 |------|------|----------|
-| **Harvestable Items** | Item | Materials, food, components, and trophies for all creature types |
-| **Creature Harvest Tables (Specific)** | RollTable | Named creature override tables (dragons, beholders, iconic monsters) |
-| **Harvest Tables (Generic by Type/CR)** | RollTable | 14 creature types x 4 CR tiers (~56 fallback tables) |
-| **Foraging Tables** | RollTable | 10 environment-based foraging tables |
-| **Ultimate Harvester Macros** | Macro | Harvest and Forage macros — drag to your hotbar |
+| **Harvestable Items** | Item | 250+ materials, food, components, and trophies |
+| **Creature Harvest Tables** | RollTable | 37 named creature tables (dragons, beholders, trolls, etc.) |
+| **Generic Harvest Tables** | RollTable | 56 fallback tables (14 creature types x 4 CR tiers) |
+| **Foraging Tables** | RollTable | 40 environment tables + failure events table |
+| **Macros** | Macro | Harvest and Forage macros — drag to your hotbar |
 
 ### Table Lookup Priority
 
@@ -82,37 +85,33 @@ When harvesting, the module resolves which table to use in this order:
 
 ## Installation
 
-### Method 1: Manifest URL
+### Manifest URL (recommended)
 
-In Foundry, go to **Add-on Modules** > **Install Module** and paste the manifest URL:
+In Foundry, go to **Add-on Modules** > **Install Module** and paste:
 
 ```
-https://github.com/GM-Ant/ultimate-harvester/releases/latest/download/module.json
+https://github.com/AntTheGM/gmants-ultimate-harvester/releases/latest/download/module.json
 ```
 
-### Method 2: Manual
+### Manual Download
 
-Download the latest release and extract it to your `Data/modules/ultimate-harvester/` directory.
+Download the latest release from [GitHub Releases](https://github.com/AntTheGM/gmants-ultimate-harvester/releases) and extract to your `Data/modules/ultimate-harvester/` directory.
 
 ## Dependencies
 
 - **FoundryVTT v12+** (verified on v13)
 - **D&D 5e system** (v4.0.0+)
-- **socketlib** *(optional)* — for cross-client communication
-
-## Compatibility
-
-| System | Status |
-|--------|--------|
-| D&D 5e | Supported |
-| PF2e | Not supported |
-| Other | Not supported |
+- **socketlib** *(optional)* — enables cross-ownership harvesting for player-owned tokens
 
 ## Support
 
-- **Issues:** [GitHub Issues](https://github.com/GM-Ant/ultimate-harvester/issues)
+- **Issues:** [GitHub Issues](https://github.com/AntTheGM/gmants-ultimate-harvester/issues)
 - **More tools:** [roleplayr.com/gmant](https://roleplayr.com/gmant)
 
 ## License
 
 This module is licensed under the [MIT License](LICENSE).
+
+---
+
+*VTTools by GM Ant*

@@ -9,7 +9,7 @@
     {
       "_id": "52f56bf10117d72c",
       "text": "Undead Ichor",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!5eb947f4057e1214.52f56bf10117d72c",
+      "description": "Undead Ichor",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "68e045a63d694a68",
       "text": "Vampire Blood",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!5eb947f4057e1214.68e045a63d694a68",
+      "description": "Vampire Blood",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "c5919ba1d25b3a6a",
       "text": "Vampire Fang",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,15 +79,36 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!5eb947f4057e1214.c5919ba1d25b3a6a",
+      "description": "Vampire Fang",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
   "flags": {
     "ultimate-harvester": {
       "critFailEffect": "The vampire spawn's death curse activates; take 2d8 necrotic damage and make a DC 14 Constitution save or have your hit point maximum reduced by the damage dealt until you finish a long rest.",
-      "fumbleEffect": "The body begins to decay rapidly in the light; you must work quickly � if you fail two consecutive harvest checks the body crumbles to dust.",
+      "fumbleEffect": "The body begins to decay rapidly in the light; you must work quickly \u00ef\u00bf\u00bd if you fail two consecutive harvest checks the body crumbles to dust.",
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.13fc7f7b9d3222b2",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!5eb947f4057e1214",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

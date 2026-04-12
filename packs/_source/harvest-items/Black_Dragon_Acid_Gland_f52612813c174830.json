@@ -23,5 +23,15 @@
       "category": "component"
     }
   },
-  "_key": "!items!f52612813c174830"
+  "_key": "!items!f52612813c174830",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
 }

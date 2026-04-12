@@ -1,7 +1,7 @@
 {
   "_id": "2766b2eb64fb6a03",
   "name": "White Dragon Harvest Table",
-  "description": "<p>Harvest table for a white dragon (any age). Strips age prefix � Young/Adult/Ancient White Dragon all use this table.</p>",
+  "description": "<p>Harvest table for a white dragon (any age). Strips age prefix \u00ef\u00bf\u00bd Young/Adult/Ancient White Dragon all use this table.</p>",
   "formula": "1d20",
   "replacement": true,
   "displayRoll": true,
@@ -9,7 +9,7 @@
     {
       "_id": "07699380f3a3e4c6",
       "text": "White Dragon Scale",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d6",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!2766b2eb64fb6a03.07699380f3a3e4c6",
+      "description": "White Dragon Scale",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "5e45112e325edc60",
       "text": "Dragon Fang",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!2766b2eb64fb6a03.5e45112e325edc60",
+      "description": "Dragon Fang",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "e6c65bb7cc58eb84",
       "text": "Dragon Wing Membrane",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!2766b2eb64fb6a03.e6c65bb7cc58eb84",
+      "description": "Dragon Wing Membrane",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "1c8e8844db79634b",
       "text": "Dragon Blood",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,12 +107,21 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!2766b2eb64fb6a03.1c8e8844db79634b",
+      "description": "Dragon Blood",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "ccb0fa03a5679e0a",
       "text": "White Dragon Frost Gland",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -99,12 +135,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!2766b2eb64fb6a03.ccb0fa03a5679e0a",
+      "description": "White Dragon Frost Gland",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "69e9d313978ca578",
       "text": "Dragon Heart",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -118,6 +163,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!2766b2eb64fb6a03.69e9d313978ca578",
+      "description": "Dragon Heart",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -128,5 +182,17 @@
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.b214c945c749b692",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!2766b2eb64fb6a03",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

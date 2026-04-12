@@ -9,3 +9,16 @@ x_temp.md
 
 # Reference data exports
 reference/
+
+# Dev-only files
+CLAUDE.md
+tools/
+
+# LevelDB runtime files (data files ARE tracked)
+packs/**/LOCK
+packs/**/LOG
+packs/**/LOG.old
+
+# OS junk
+.DS_Store
+Thumbs.db

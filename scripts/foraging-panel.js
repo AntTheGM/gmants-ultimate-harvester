@@ -53,7 +53,7 @@ export class ForagingPanel extends HandlebarsApplicationMixin(ApplicationV2) {
 
     const environments = Object.entries(FORAGING_ENVIRONMENTS).map(([key, env]) => ({
       key,
-      label: env.label,
+      label: `${env.label} (DC ${env.tiers[0]}/${env.tiers[1]}/${env.tiers[2]})`,
       selected: config.environment === key,
     }));
 

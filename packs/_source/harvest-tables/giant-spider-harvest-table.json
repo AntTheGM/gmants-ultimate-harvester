@@ -9,7 +9,7 @@
     {
       "_id": "64c5ac53b596c5bb",
       "text": "Giant Spider Silk",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!09f0dbfe31e54624.64c5ac53b596c5bb",
+      "description": "Giant Spider Silk",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "a0515af1f866a089",
       "text": "Giant Spider Fang",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!09f0dbfe31e54624.a0515af1f866a089",
+      "description": "Giant Spider Fang",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "1f89233951efaa26",
       "text": "Giant Spider Venom",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,6 +79,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!09f0dbfe31e54624.1f89233951efaa26",
+      "description": "Giant Spider Venom",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -71,5 +98,17 @@
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.2f9bde50012de663",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!09f0dbfe31e54624",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

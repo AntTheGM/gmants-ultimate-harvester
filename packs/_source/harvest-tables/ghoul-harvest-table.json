@@ -9,7 +9,7 @@
     {
       "_id": "43c6efd7e3628d17",
       "text": "Ghoul Claw",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!b86e39587c74a146.43c6efd7e3628d17",
+      "description": "Ghoul Claw",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "32848c9ea5b47a64",
       "text": "Undead Ichor",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!b86e39587c74a146.32848c9ea5b47a64",
+      "description": "Undead Ichor",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "df0dee4b117ce497",
       "text": "Ghoul Tongue",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,6 +79,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!b86e39587c74a146.df0dee4b117ce497",
+      "description": "Ghoul Tongue",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -71,5 +98,17 @@
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.2a02c138af2dbb74",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!b86e39587c74a146",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

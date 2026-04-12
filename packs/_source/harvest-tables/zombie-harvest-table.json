@@ -9,7 +9,7 @@
     {
       "_id": "5f12cd92aa4348fc",
       "text": "Rotting Flesh",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!6f99cfacf8f4accc.5f12cd92aa4348fc",
+      "description": "Rotting Flesh",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "4091b4265a263c87",
       "text": "Zombie Flesh",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,6 +51,15 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!6f99cfacf8f4accc.4091b4265a263c87",
+      "description": "Zombie Flesh",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -52,5 +70,17 @@
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.8e04fb71108d5b1e",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!6f99cfacf8f4accc",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

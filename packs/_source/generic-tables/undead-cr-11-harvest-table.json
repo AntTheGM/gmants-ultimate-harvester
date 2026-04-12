@@ -9,7 +9,7 @@
     {
       "_id": "88708af8779cd0a3",
       "text": "Shadow Essence",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!7a7dadf8ce530d31.88708af8779cd0a3",
+      "description": "Shadow Essence",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "332924f55503bd6f",
       "text": "Ectoplasmic Residue",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!7a7dadf8ce530d31.332924f55503bd6f",
+      "description": "Ectoplasmic Residue",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "e8ebb79e89d51e78",
       "text": "Death Shroud",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!7a7dadf8ce530d31.e8ebb79e89d51e78",
+      "description": "Death Shroud",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "a878a76ec40ee691",
       "text": "Soul Fragment",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,6 +107,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!7a7dadf8ce530d31.a878a76ec40ee691",
+      "description": "Soul Fragment",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -89,5 +125,17 @@
       "fumbleEffect": "The overwhelming aura of death leaves you shaken; you cannot willingly approach another undead corpse for 10 minutes.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!7a7dadf8ce530d31",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

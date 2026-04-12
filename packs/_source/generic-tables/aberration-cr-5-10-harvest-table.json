@@ -9,7 +9,7 @@
     {
       "_id": "3789acbbecc2f4e3",
       "text": "Psionic Crystal",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!706dc4bde330ea57.3789acbbecc2f4e3",
+      "description": "Psionic Crystal",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "3862044be19901d6",
       "text": "Eldritch Ichor",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!706dc4bde330ea57.3862044be19901d6",
+      "description": "Eldritch Ichor",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "f2e875267e610969",
       "text": "Mind Residue",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!706dc4bde330ea57.f2e875267e610969",
+      "description": "Mind Residue",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "0ecdf83a20cdd7e6",
       "text": "Far Realm Essence",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,12 +107,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!706dc4bde330ea57.0ecdf83a20cdd7e6",
+      "description": "Far Realm Essence",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "db6febe793f9e06e",
       "text": "Void Fragment",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -99,6 +135,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!706dc4bde330ea57.db6febe793f9e06e",
+      "description": "Void Fragment",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -108,5 +153,17 @@
       "fumbleEffect": "Your mind briefly touches the Far Realm through the corpse; you are confused and make all attacks at disadvantage until the end of your next turn.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!706dc4bde330ea57",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

@@ -6,7 +6,6 @@
 import {
   MODULE_ID, SKILL_LABELS, ITEM_CATEGORIES,
   FORAGING_ENVIRONMENTS, WEATHER_MODIFIERS, SEASON_MODIFIERS,
-  FORAGING_FAILURE_EVENTS,
   formatTime,
 } from "./config.js";
 import { gmCreateEmbeddedDocuments, gmSetFlag } from "./socket.js";
@@ -344,17 +343,41 @@ async function _checkFailureEvent(forager, isNat1, failMargin, foragingConfig) {
     }
   }
 
-  // Pick a random event
-  const event = FORAGING_FAILURE_EVENTS[Math.floor(Math.random() * FORAGING_FAILURE_EVENTS.length)];
+  // Draw from the Foraging Failure Events table in the foraging-tables compendium
+  const pack = game.packs.get(`${MODULE_ID}.foraging-tables`);
+  if (!pack) {
+    console.warn(`${MODULE_ID} | Foraging tables compendium not found for failure events.`);
+    return null;
+  }
+  const index = await pack.getIndex();
+  const tableEntry = index.find((e) => e.name === "Foraging Failure Events");
+  if (!tableEntry) {
+    console.warn(`${MODULE_ID} | Foraging Failure Events table not found in compendium.`);
+    return null;
+  }
+  const table = await pack.getDocument(tableEntry._id);
+  const draw = await table.draw({ displayChat: false });
+  if (!draw.results.length) return null;
+
+  const result = draw.results[0];
+  const flags = result.flags?.[MODULE_ID] ?? {};
+  if (!flags.failureEvent) return null;
+
+  const event = {
+    label: result.text,
+    icon: flags.icon ?? "fas fa-exclamation-triangle",
+    description: flags.description ?? result.text,
+    auto: flags.auto ?? "none",
+  };
 
   // Resolve dynamic values in description
   let resolvedDescription = event.description;
   const level = forager.system.details?.level ?? forager.system.details?.cr ?? 1;
 
-  if (event.damageFormula) {
+  if (flags.damageFormula) {
     let damageTotal;
-    if (event.damageFormula.includes("@level")) {
-      const formula = event.damageFormula.replace("@level", String(level));
+    if (flags.damageFormula.includes("@level")) {
+      const formula = flags.damageFormula.replace("@level", String(level));
       try {
         const dmgRoll = await new Roll(formula).evaluate();
         damageTotal = dmgRoll.total;
@@ -363,23 +386,22 @@ async function _checkFailureEvent(forager, isNat1, failMargin, foragingConfig) {
       }
     } else {
       try {
-        const dmgRoll = await new Roll(event.damageFormula).evaluate();
+        const dmgRoll = await new Roll(flags.damageFormula).evaluate();
         damageTotal = dmgRoll.total;
       } catch {
         damageTotal = 2;
       }
     }
-    resolvedDescription = resolvedDescription.replace("{damage}", `${damageTotal} ${event.damageType ?? ""}`);
+    resolvedDescription = resolvedDescription.replace("{damage}", `${damageTotal} ${flags.damageType ?? ""}`);
 
-    // Auto-apply damage if possible
-    if (event.auto === "damage") {
-      await _applyDamage(forager, damageTotal, event.damageType);
+    if (event.auto === "damage" || event.auto === "damage+effect") {
+      await _applyDamage(forager, damageTotal, flags.damageType);
     }
   }
 
-  if (event.spoilFormula) {
+  if (flags.spoilFormula) {
     try {
-      const spoilRoll = await new Roll(event.spoilFormula).evaluate();
+      const spoilRoll = await new Roll(flags.spoilFormula).evaluate();
       resolvedDescription = resolvedDescription.replace("{spoilCount}", String(spoilRoll.total));
     } catch {
       resolvedDescription = resolvedDescription.replace("{spoilCount}", "1");
@@ -398,8 +420,14 @@ async function _checkFailureEvent(forager, isNat1, failMargin, foragingConfig) {
 
   // Auto-apply ActiveEffect debuff
   if (event.auto === "effect" || event.auto === "damage+effect") {
-    if (event.effect) {
-      await _applyDebuffEffect(forager, event.effect);
+    if (flags.effectName) {
+      await _applyDebuffEffect(forager, {
+        name: flags.effectName,
+        icon: flags.effectIcon ?? "icons/svg/aura.svg",
+        durationHours: flags.effectDurationHours ?? 24,
+        changes: flags.effectChanges ?? [],
+        description: flags.effectDescription ?? "",
+      });
     }
   }
 

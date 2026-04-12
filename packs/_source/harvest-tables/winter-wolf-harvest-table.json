@@ -9,7 +9,7 @@
     {
       "_id": "42ad4b4a15e8deba",
       "text": "Winter Wolf Meat",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!7b203af391a21f7e.42ad4b4a15e8deba",
+      "description": "Winter Wolf Meat",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "039646c524a1b810",
       "text": "Winter Wolf Pelt",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!7b203af391a21f7e.039646c524a1b810",
+      "description": "Winter Wolf Pelt",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "e82741c7d6890003",
       "text": "Winter Wolf Fangs",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!7b203af391a21f7e.e82741c7d6890003",
+      "description": "Winter Wolf Fangs",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "ef0258c88bdc47e5",
       "text": "Frost Breath Gland",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,15 +107,36 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!7b203af391a21f7e.ef0258c88bdc47e5",
+      "description": "Frost Breath Gland",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
   "flags": {
     "ultimate-harvester": {
       "critFailEffect": "Ice crystals explode from the wolf's body; take 2d6 cold damage.",
-      "fumbleEffect": "The frost-bitten hide snaps stiffly; you lose your grip and must restart — lose 5 minutes of harvesting time.",
+      "fumbleEffect": "The frost-bitten hide snaps stiffly; you lose your grip and must restart \u00e2\u20ac\u201d lose 5 minutes of harvesting time.",
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.cf24122152f43c80",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!7b203af391a21f7e",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

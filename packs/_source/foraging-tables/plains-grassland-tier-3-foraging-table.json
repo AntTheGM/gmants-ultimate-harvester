@@ -9,7 +9,7 @@
     {
       "_id": "0c9f7ca271d68171",
       "text": "Small Game",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "2",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!3b286524d75ab443.0c9f7ca271d68171",
+      "description": "Small Game",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "4cd3eb6db8408392",
       "text": "Foraged Ration",
-      "type": 0,
+      "type": "text",
       "range": [
         2,
         4
@@ -42,12 +51,21 @@
           "quantity": "3",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!3b286524d75ab443.4cd3eb6db8408392",
+      "description": "Foraged Ration",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "babd1fde3fdff16d",
       "text": "Wild Roots",
-      "type": 0,
+      "type": "text",
       "range": [
         3,
         5
@@ -61,12 +79,21 @@
           "quantity": "3",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!3b286524d75ab443.babd1fde3fdff16d",
+      "description": "Wild Roots",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "69543772d438382e",
       "text": "Medicinal Root",
-      "type": 0,
+      "type": "text",
       "range": [
         4,
         6
@@ -80,12 +107,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!3b286524d75ab443.69543772d438382e",
+      "description": "Medicinal Root",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "3bc9c276bb659bf1",
       "text": "Rope Fiber",
-      "type": 0,
+      "type": "text",
       "range": [
         5,
         7
@@ -99,12 +135,21 @@
           "quantity": "2",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!3b286524d75ab443.3bc9c276bb659bf1",
+      "description": "Rope Fiber",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "639448d2906ee708",
       "text": "Seeds and Grains",
-      "type": 0,
+      "type": "text",
       "range": [
         6,
         8
@@ -118,6 +163,15 @@
           "quantity": "3",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!3b286524d75ab443.639448d2906ee708",
+      "description": "Seeds and Grains",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -125,5 +179,17 @@
     "ultimate-harvester": {
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!3b286524d75ab443",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

@@ -9,7 +9,7 @@
     {
       "_id": "f27919f9c468e8b6",
       "text": "Giant Fingernail",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!3cd09a8babb52418.f27919f9c468e8b6",
+      "description": "Giant Fingernail",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "d2edeb4bd3a9768e",
       "text": "Giant Hair",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!3cd09a8babb52418.d2edeb4bd3a9768e",
+      "description": "Giant Hair",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "e46358bfc924c63a",
       "text": "Giant Blood",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!3cd09a8babb52418.e46358bfc924c63a",
+      "description": "Giant Blood",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "633b012d20652d31",
       "text": "Giant Heart",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,6 +107,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!3cd09a8babb52418.633b012d20652d31",
+      "description": "Giant Heart",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -89,5 +125,17 @@
       "fumbleEffect": "Your tools bend under the giant's dense materials; harvesting takes twice as long.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!3cd09a8babb52418",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

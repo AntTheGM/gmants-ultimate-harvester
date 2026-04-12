@@ -1,0 +1,361 @@
+{
+  "_id": "f4a1e7b3c0d59e22",
+  "name": "Foraging Failure Events",
+  "description": "<p>Random negative consequences triggered by failed foraging rolls. Nat 1 always triggers; otherwise 1% chance per point missed below the lowest tier DC.</p>",
+  "formula": "1d10",
+  "replacement": true,
+  "displayRoll": true,
+  "results": [
+    {
+      "_id": "fe01a1b1c1d1e1f1",
+      "type": "text",
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "failureEvent": true,
+          "eventId": "poison-plant",
+          "icon": "fas fa-skull-crossbones",
+          "description": "You handle a poisonous plant and suffer for it. Take <strong>{damage}</strong> poison damage.",
+          "auto": "damage",
+          "damageFormula": "2 * @level",
+          "damageType": "poison"
+        }
+      },
+      "description": "Poisonous Plant",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!f4a1e7b3c0d59e22.fe01a1b1c1d1e1f1"
+    },
+    {
+      "_id": "fe02a2b2c2d2e2f2",
+      "type": "text",
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "failureEvent": true,
+          "eventId": "exhaustion",
+          "icon": "fas fa-bed",
+          "description": "Hours of fruitless searching in harsh conditions leave you drained. Gain <strong>1 level of exhaustion</strong>.",
+          "auto": "exhaustion"
+        }
+      },
+      "description": "Exhaustion",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!f4a1e7b3c0d59e22.fe02a2b2c2d2e2f2"
+    },
+    {
+      "_id": "fe03a3b3c3d3e3f3",
+      "type": "text",
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "failureEvent": true,
+          "eventId": "lost-supplies",
+          "icon": "fas fa-box-open",
+          "description": "While rummaging through underbrush, you lose track of your belongings. <strong>Lose one item worth over 1 sp</strong> (player's choice).",
+          "auto": "none"
+        }
+      },
+      "description": "Lost Supplies",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!f4a1e7b3c0d59e22.fe03a3b3c3d3e3f3"
+    },
+    {
+      "_id": "fe04a4b4c4d4e4f4",
+      "type": "text",
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "failureEvent": true,
+          "eventId": "scattered-ammo",
+          "icon": "fas fa-arrows-alt",
+          "description": "Your quiver catches on a branch and scatters its contents. <strong>Lose half your ammunition of one type</strong> (rounded down).",
+          "auto": "ammo"
+        }
+      },
+      "description": "Scattered Ammunition",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!f4a1e7b3c0d59e22.fe04a4b4c4d4e4f4"
+    },
+    {
+      "_id": "fe05a5b5c5d5e5f5",
+      "type": "text",
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "failureEvent": true,
+          "eventId": "twisted-ankle",
+          "icon": "fas fa-shoe-prints",
+          "description": "You step in a hidden animal burrow and twist your ankle. <strong>Speed reduced by 10 ft</strong> until your next long rest.",
+          "auto": "effect",
+          "effectName": "Twisted Ankle",
+          "effectIcon": "icons/skills/movement/feet-winged-sandals-tan.webp",
+          "effectDurationHours": 24,
+          "effectChanges": [
+            {
+              "key": "system.attributes.movement.walk",
+              "mode": 2,
+              "value": "-10"
+            }
+          ],
+          "effectDescription": "Speed reduced by 10 ft from a foraging mishap."
+        }
+      },
+      "description": "Twisted Ankle",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!f4a1e7b3c0d59e22.fe05a5b5c5d5e5f5"
+    },
+    {
+      "_id": "fe06a6b6c6d6e6f6",
+      "type": "text",
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "failureEvent": true,
+          "eventId": "spoiled-rations",
+          "icon": "fas fa-drumstick-bite",
+          "description": "Something foul from the wilds contaminates your pack. <strong>{spoilCount} ration(s)</strong> in your inventory have spoiled.",
+          "auto": "none",
+          "spoilFormula": "1d4"
+        }
+      },
+      "description": "Spoiled Rations",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!f4a1e7b3c0d59e22.fe06a6b6c6d6e6f6"
+    },
+    {
+      "_id": "fe07a7b7c7d7e7f7",
+      "type": "text",
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "failureEvent": true,
+          "eventId": "attracted-predators",
+          "icon": "fas fa-paw",
+          "description": "Your clumsy foraging attracts unwanted attention. The GM should roll on the <strong>random encounter table</strong>.",
+          "auto": "none"
+        }
+      },
+      "description": "Attracted Predators",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!f4a1e7b3c0d59e22.fe07a7b7c7d7e7f7"
+    },
+    {
+      "_id": "fe08a8b8c8d8e8f8",
+      "type": "text",
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "failureEvent": true,
+          "eventId": "rash",
+          "icon": "fas fa-allergies",
+          "description": "You brush against something irritating and break out in an angry, weeping rash. <strong>-4 penalty to Perception</strong> for 24 hours.",
+          "auto": "effect",
+          "effectName": "Nasty Rash",
+          "effectIcon": "icons/skills/wounds/injury-pain-body-orange.webp",
+          "effectDurationHours": 24,
+          "effectChanges": [
+            {
+              "key": "system.skills.prc.bonuses.check",
+              "mode": 2,
+              "value": "-4"
+            }
+          ],
+          "effectDescription": "-4 penalty to Perception from a foraging rash."
+        }
+      },
+      "description": "Nasty Rash",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!f4a1e7b3c0d59e22.fe08a8b8c8d8e8f8"
+    },
+    {
+      "_id": "fe09a9b9c9d9e9f9",
+      "type": "text",
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "failureEvent": true,
+          "eventId": "insect-swarm",
+          "icon": "fas fa-bug",
+          "description": "You disturb a nest of stinging insects. Take <strong>{damage}</strong> poison damage and have <strong>disadvantage on Concentration</strong> checks for 1 hour.",
+          "auto": "damage+effect",
+          "damageFormula": "1d4",
+          "damageType": "poison",
+          "effectName": "Insect Stings",
+          "effectIcon": "icons/creatures/invertebrates/bee-yellow.webp",
+          "effectDurationHours": 1,
+          "effectChanges": [
+            {
+              "key": "flags.midi-qol.disadvantage.ability.check.con",
+              "mode": 0,
+              "value": "1"
+            },
+            {
+              "key": "flags.midi-qol.disadvantage.ability.save.con",
+              "mode": 0,
+              "value": "1"
+            }
+          ],
+          "effectDescription": "Disadvantage on Concentration checks for 1 hour from insect stings."
+        }
+      },
+      "description": "Stung by Insects",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!f4a1e7b3c0d59e22.fe09a9b9c9d9e9f9"
+    },
+    {
+      "_id": "fe10aabbccddeeff",
+      "type": "text",
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "drawn": false,
+      "flags": {
+        "ultimate-harvester": {
+          "failureEvent": true,
+          "eventId": "sprained-ankle",
+          "icon": "fas fa-compass",
+          "description": "You lose your footing on uneven ground and badly sprain your ankle. <strong>-5 ft movement speed</strong> for 24 hours.",
+          "auto": "effect",
+          "effectName": "Sprained Ankle",
+          "effectIcon": "icons/skills/movement/feet-winged-sandals-tan.webp",
+          "effectDurationHours": 24,
+          "effectChanges": [
+            {
+              "key": "system.attributes.movement.walk",
+              "mode": 2,
+              "value": "-5"
+            }
+          ],
+          "effectDescription": "-5 ft movement from a sprained ankle while foraging."
+        }
+      },
+      "description": "Sprained Ankle",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "_key": "!tables.results!f4a1e7b3c0d59e22.fe10aabbccddeeff"
+    }
+  ],
+  "flags": {
+    "ultimate-harvester": {
+      "isFailureTable": true
+    }
+  },
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "_key": "!tables!f4a1e7b3c0d59e22"
+}

@@ -9,7 +9,7 @@
     {
       "_id": "c51298b7dfc2a731",
       "text": "Primal Ash",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "2d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!6a044ce796807815.c51298b7dfc2a731",
+      "description": "Primal Ash",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "c3610810b237e0a0",
       "text": "Elemental Core",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!6a044ce796807815.c3610810b237e0a0",
+      "description": "Elemental Core",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "ce1d92487ccd9c15",
       "text": "Condensed Element",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "2",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!6a044ce796807815.ce1d92487ccd9c15",
+      "description": "Condensed Element",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "cd02f622cd7248d3",
       "text": "Pure Elemental Essence",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,12 +107,21 @@
           "quantity": "2",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!6a044ce796807815.cd02f622cd7248d3",
+      "description": "Pure Elemental Essence",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
-      "_id": "cd02f622cd7248d3",
+      "_id": "37dcf6f06c739bce",
       "text": "Pure Elemental Essence",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -99,6 +135,15 @@
           "quantity": "4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!6a044ce796807815.37dcf6f06c739bce",
+      "description": "Pure Elemental Essence",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -108,5 +153,17 @@
       "fumbleEffect": "The raw primal power is too much to contain; half the Condensed Element or Pure Elemental Essence you harvest disintegrates on contact with air.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!6a044ce796807815",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

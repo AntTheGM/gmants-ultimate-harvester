@@ -35,5 +35,15 @@
       "shelfLife": 2
     }
   },
-  "_key": "!items!215903275591fc05"
+  "_key": "!items!215903275591fc05",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
 }

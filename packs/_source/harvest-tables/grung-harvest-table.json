@@ -9,7 +9,7 @@
     {
       "_id": "e2377d8850bc2e63",
       "text": "Grung Skin",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!2b22b8fc3eac6430.e2377d8850bc2e63",
+      "description": "Grung Skin",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "cda928fe4e5af147",
       "text": "Grung Poison Gland",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,6 +51,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!2b22b8fc3eac6430.cda928fe4e5af147",
+      "description": "Grung Poison Gland",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -52,5 +70,17 @@
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.1fb862db90c2150b",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!2b22b8fc3eac6430",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

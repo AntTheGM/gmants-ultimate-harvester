@@ -9,7 +9,7 @@
     {
       "_id": "f46a315dd367f2d2",
       "text": "Living Bark",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!74268e86d469a6ae.f46a315dd367f2d2",
+      "description": "Living Bark",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "92ab0ae9db14c42c",
       "text": "Blossom Essence",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!74268e86d469a6ae.92ab0ae9db14c42c",
+      "description": "Blossom Essence",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "a3e93003610d4ff8",
       "text": "Fungal Spore Sac",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!74268e86d469a6ae.a3e93003610d4ff8",
+      "description": "Fungal Spore Sac",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "e3dcd75644456fe9",
       "text": "Treant Heartwood",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,12 +107,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!74268e86d469a6ae.e3dcd75644456fe9",
+      "description": "Treant Heartwood",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
-      "_id": "e3dcd75644456fe9",
+      "_id": "b0c2db6351ec726b",
       "text": "Treant Heartwood",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -99,6 +135,15 @@
           "quantity": "2",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!74268e86d469a6ae.b0c2db6351ec726b",
+      "description": "Treant Heartwood",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -108,5 +153,17 @@
       "fumbleEffect": "The plant matter grows aggressively across your tools; you must spend 1 minute cutting it free.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!74268e86d469a6ae",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

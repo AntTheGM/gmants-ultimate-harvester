@@ -9,7 +9,7 @@
     {
       "_id": "fbeeda23c3de282a",
       "text": "Pine Nuts",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "2",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!ee883724c98db9ad.fbeeda23c3de282a",
+      "description": "Pine Nuts",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "2478d2ba54a585f3",
       "text": "Small Game",
-      "type": 0,
+      "type": "text",
       "range": [
         2,
         4
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!ee883724c98db9ad.2478d2ba54a585f3",
+      "description": "Small Game",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "cb734405bde269aa",
       "text": "Mountain Flower",
-      "type": 0,
+      "type": "text",
       "range": [
         3,
         5
@@ -61,12 +79,21 @@
           "quantity": "2",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!ee883724c98db9ad.cb734405bde269aa",
+      "description": "Mountain Flower",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "441753a649126abf",
       "text": "Eagle Feather",
-      "type": 0,
+      "type": "text",
       "range": [
         4,
         6
@@ -80,12 +107,21 @@
           "quantity": "2",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!ee883724c98db9ad.441753a649126abf",
+      "description": "Eagle Feather",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "da8209fffbac6aae",
       "text": "Mineral Deposit",
-      "type": 0,
+      "type": "text",
       "range": [
         5,
         7
@@ -99,12 +135,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!ee883724c98db9ad.da8209fffbac6aae",
+      "description": "Mineral Deposit",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "07a34d670df0f90e",
       "text": "Common Herb",
-      "type": 0,
+      "type": "text",
       "range": [
         6,
         8
@@ -118,6 +163,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!ee883724c98db9ad.07a34d670df0f90e",
+      "description": "Common Herb",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -125,5 +179,17 @@
     "ultimate-harvester": {
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!ee883724c98db9ad",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

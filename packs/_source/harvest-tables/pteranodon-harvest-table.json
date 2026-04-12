@@ -9,7 +9,7 @@
     {
       "_id": "f3188d6db12cb24e",
       "text": "Dinosaur Meat",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "food"
         }
+      },
+      "_key": "!tables.results!e6af15bba682fbec.f3188d6db12cb24e",
+      "description": "Dinosaur Meat",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "07faf58b88915a1d",
       "text": "Dinosaur Bone",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!e6af15bba682fbec.07faf58b88915a1d",
+      "description": "Dinosaur Bone",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "5ad16ff606b6b22b",
       "text": "Pteranodon Wing Membrane",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,6 +79,15 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!e6af15bba682fbec.5ad16ff606b6b22b",
+      "description": "Pteranodon Wing Membrane",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -71,5 +98,17 @@
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.b1217e3d4a71ba79",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!e6af15bba682fbec",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

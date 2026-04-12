@@ -40,5 +40,15 @@
       ]
     }
   },
-  "_key": "!items!256fc0fc1b3c1951"
+  "_key": "!items!256fc0fc1b3c1951",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
 }

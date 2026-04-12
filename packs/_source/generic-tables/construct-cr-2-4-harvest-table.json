@@ -9,7 +9,7 @@
     {
       "_id": "dca28535ed8ad249",
       "text": "Animated Metal",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!a52eb4b6fed1229a.dca28535ed8ad249",
+      "description": "Animated Metal",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "5bcd7c7cc2be1f1e",
       "text": "Golem Core Fragment",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!a52eb4b6fed1229a.5bcd7c7cc2be1f1e",
+      "description": "Golem Core Fragment",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "40b675f98cac5745",
       "text": "Enchanted Plating",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "material"
         }
+      },
+      "_key": "!tables.results!a52eb4b6fed1229a.40b675f98cac5745",
+      "description": "Enchanted Plating",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "3942086f902d3ff8",
       "text": "Power Crystal",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,12 +107,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!a52eb4b6fed1229a.3942086f902d3ff8",
+      "description": "Power Crystal",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "8e5c835e40646445",
       "text": "Construct Heart",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -99,6 +135,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!a52eb4b6fed1229a.8e5c835e40646445",
+      "description": "Construct Heart",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -108,5 +153,17 @@
       "fumbleEffect": "A pressurized component vents; you are pushed 5 feet backward and are deafened until the end of your next turn.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!a52eb4b6fed1229a",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

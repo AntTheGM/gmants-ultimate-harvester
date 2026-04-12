@@ -9,7 +9,7 @@
     {
       "_id": "41c9eee539d16783",
       "text": "Radiant Dust",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -23,12 +23,21 @@
           "quantity": "1d4",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!f6b33f9c66c05ede.41c9eee539d16783",
+      "description": "Radiant Dust",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "9ffc93af1cdc4706",
       "text": "Celestial Feather",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -42,12 +51,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!f6b33f9c66c05ede.9ffc93af1cdc4706",
+      "description": "Celestial Feather",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "c9068ddf129a8254",
       "text": "Divine Essence",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -61,12 +79,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!f6b33f9c66c05ede.c9068ddf129a8254",
+      "description": "Divine Essence",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "1ad0f1508f58ad6e",
       "text": "Sacred Blood",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -80,12 +107,21 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!f6b33f9c66c05ede.1ad0f1508f58ad6e",
+      "description": "Sacred Blood",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
       "_id": "3d46f8cc4179e9aa",
       "text": "Angelic Plume",
-      "type": 0,
+      "type": "text",
       "range": [
         1,
         3
@@ -99,6 +135,15 @@
           "quantity": "1",
           "category": "component"
         }
+      },
+      "_key": "!tables.results!f6b33f9c66c05ede.3d46f8cc4179e9aa",
+      "description": "Angelic Plume",
+      "name": "",
+      "img": null,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -108,5 +153,17 @@
       "fumbleEffect": "The sanctified aura overwhelms you; you are blinded until the end of your next turn.",
       "critSuccessQuantity": "1"
     }
+  },
+  "_key": "!tables!f6b33f9c66c05ede",
+  "img": "icons/svg/d20-grey.svg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
   }
 }

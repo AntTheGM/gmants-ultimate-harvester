@@ -27,5 +27,15 @@
       ]
     }
   },
-  "_key": "!items!4a730ef7b810ef78"
+  "_key": "!items!4a730ef7b810ef78",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
 }
