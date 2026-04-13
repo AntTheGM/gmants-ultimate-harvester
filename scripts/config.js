@@ -163,36 +163,49 @@ export const CREATURE_TYPES = [
  */
 export const FORAGING_ENVIRONMENTS = {
   "light-forest": {
-    label: "Light Forest", tiers: [14, 18, 22], primary: "sur", secondary: "nat",
+    label: "Light Forest", tiers: [14, 20, 26], primary: "sur", secondary: "nat",
   },
   "dense-forest": {
-    label: "Dense Forest / Jungle", tiers: [12, 16, 20], primary: "sur", secondary: "nat",
+    label: "Dense Forest / Jungle", tiers: [12, 18, 24], primary: "sur", secondary: "nat",
   },
   "plains": {
-    label: "Plains / Grassland", tiers: [14, 18, 22], primary: "sur", secondary: "nat",
+    label: "Plains / Grassland", tiers: [14, 20, 26], primary: "sur", secondary: "nat",
   },
   "swamp": {
-    label: "Swamp / Marsh", tiers: [14, 18, 22], primary: "nat", secondary: "sur",
+    label: "Swamp / Marsh", tiers: [14, 20, 26], primary: "nat", secondary: "sur",
   },
   "coastal": {
-    label: "Coastal", tiers: [13, 17, 21], primary: "sur", secondary: "nat",
+    label: "Coastal", tiers: [13, 19, 25], primary: "sur", secondary: "nat",
   },
   "desert": {
-    label: "Desert / Wasteland", tiers: [19, 23, 27], primary: "sur", secondary: "nat",
+    label: "Desert / Wasteland", tiers: [19, 25, 31], primary: "sur", secondary: "nat",
   },
   "arctic": {
-    label: "Arctic / Tundra", tiers: [17, 21, 25], primary: "sur", secondary: "nat",
+    label: "Arctic / Tundra", tiers: [17, 23, 29], primary: "sur", secondary: "nat",
   },
   "underground": {
-    label: "Underground / Cave", tiers: [17, 21, 25], primary: "nat", secondary: "sur",
+    label: "Underground / Cave", tiers: [17, 23, 29], primary: "nat", secondary: "sur",
   },
   "mountain": {
-    label: "Mountain", tiers: [16, 20, 24], primary: "sur", secondary: "nat",
+    label: "Mountain", tiers: [16, 22, 28], primary: "sur", secondary: "nat",
   },
   "urban": {
-    label: "Urban / Ruins", tiers: [18, 22, 26], primary: "inv", secondary: "sur",
+    label: "Urban / Ruins", tiers: [18, 24, 30], primary: "inv", secondary: "sur",
   },
 };
+
+/**
+ * Foraging v2 bundle constants — see docs/foraging_v2_plan.md.
+ */
+
+/** Stacks drawn per qualifying tier. Rolled at forage time. */
+export const FORAGE_BUNDLE = { 1: "1d2", 2: "1d2", 3: "1d2", 4: "1" };
+
+/** Quantity die per stack, indexed by per-tier margin-of-success bonus. */
+export const FORAGE_QUANTITY_DICE = ["1d2", "1d3", "1d4", "1d6"];
+
+/** Natural d20 value required to access the Rare (tier 4) pool. */
+export const FORAGE_RARE_THRESHOLD = 19;
 
 /**
  * Weather DC modifiers for foraging.

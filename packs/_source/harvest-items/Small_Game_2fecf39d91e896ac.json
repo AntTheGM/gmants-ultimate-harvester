@@ -5,7 +5,7 @@
   "img": "icons/consumables/meat/drumstick-bone-pink.webp",
   "system": {
     "description": {
-      "value": "<p>A small animal \u00e2\u20ac\u201d rabbit or squirrel \u00e2\u20ac\u201d field-dressed and ready to cook.</p>"
+      "value": "<p>A small animal â€” rabbit or squirrel â€” field-dressed and ready to cook.</p>"
     },
     "weight": {
       "value": 1,
@@ -32,7 +32,14 @@
     "ultimate-harvester": {
       "category": "food",
       "source": "foraged",
-      "shelfLife": 2
+      "shelfLife": 2,
+      "biomes": [
+        "desert",
+        "light-forest",
+        "mountain",
+        "plains"
+      ],
+      "tier": 2
     }
   },
   "_key": "!items!2fecf39d91e896ac",

@@ -20,7 +20,11 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "component"
+      "category": "component",
+      "biomes": [
+        "coastal"
+      ],
+      "tier": 1
     }
   },
   "_key": "!items!625ea977f56e7877",

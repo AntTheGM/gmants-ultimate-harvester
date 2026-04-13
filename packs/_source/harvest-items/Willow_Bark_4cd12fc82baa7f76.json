@@ -20,7 +20,12 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "component"
+      "category": "component",
+      "biomes": [
+        "dense-forest",
+        "light-forest"
+      ],
+      "tier": 2
     }
   },
   "_key": "!items!4cd12fc82baa7f76",

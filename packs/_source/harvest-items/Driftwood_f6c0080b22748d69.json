@@ -20,7 +20,11 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "material"
+      "category": "material",
+      "biomes": [
+        "coastal"
+      ],
+      "tier": 1
     }
   },
   "_key": "!items!f6c0080b22748d69",

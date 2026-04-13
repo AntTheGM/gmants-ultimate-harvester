@@ -20,7 +20,11 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "material"
+      "category": "material",
+      "biomes": [
+        "light-forest"
+      ],
+      "tier": 3
     }
   },
   "_key": "!items!5f24e3679317fcfa",

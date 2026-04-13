@@ -8,7 +8,7 @@
       "value": "<p><em>Fine powdery clay dug from a riverbank or exposed earth; smooths easily when wet.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Moldable base — shaped into poultice packs, ceramic seals, and crude crucibles.</p><p><strong>Value when used in crafting:</strong> 2 sp</p></section>"
     },
     "weight": {
-      "value": 1.0,
+      "value": 1,
       "units": "lb"
     },
     "price": {
@@ -20,7 +20,20 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "component"
+      "category": "component",
+      "biomes": [
+        "arctic",
+        "coastal",
+        "dense-forest",
+        "desert",
+        "light-forest",
+        "mountain",
+        "plains",
+        "swamp",
+        "underground",
+        "urban"
+      ],
+      "tier": 1
     }
   },
   "_key": "!items!d4e3f5a6b7c89012",

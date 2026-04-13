@@ -20,7 +20,11 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "component"
+      "category": "component",
+      "biomes": [
+        "swamp"
+      ],
+      "tier": 4
     }
   },
   "_key": "!items!7c9fcb7070cc6f1c",

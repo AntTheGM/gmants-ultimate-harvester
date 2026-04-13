@@ -20,7 +20,14 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "material"
+      "category": "material",
+      "biomes": [
+        "arctic",
+        "desert",
+        "mountain",
+        "underground"
+      ],
+      "tier": 2
     }
   },
   "_key": "!items!341a87c52604ad81",

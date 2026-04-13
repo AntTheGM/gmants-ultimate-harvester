@@ -112,6 +112,14 @@ function processItems(rows) {
       }
     }
 
+    // Foraging pool flags (v2 dynamic item pools — see docs/foraging_v2_plan.md)
+    if (row.Biomes) {
+      item.flags[MODULE_ID].biomes = row.Biomes.split(";").map((b) => b.trim()).filter(Boolean);
+    }
+    if (row.Tier) {
+      item.flags[MODULE_ID].tier = parseInt(row.Tier);
+    }
+
     items[row.Name] = item;
   }
 

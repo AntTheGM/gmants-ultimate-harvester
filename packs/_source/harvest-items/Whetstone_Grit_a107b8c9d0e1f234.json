@@ -8,7 +8,7 @@
       "value": "<p><em>Coarse mineral grit scraped from a natural whetstone; sharpens and hardens edges.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Honing compound — sharpening blades and hardening cutting edges.</p><p><strong>Value when used in crafting:</strong> 2 gp</p></section>"
     },
     "weight": {
-      "value": 1.0,
+      "value": 1,
       "units": "lb"
     },
     "price": {
@@ -20,7 +20,20 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "component"
+      "category": "component",
+      "biomes": [
+        "arctic",
+        "coastal",
+        "dense-forest",
+        "desert",
+        "light-forest",
+        "mountain",
+        "plains",
+        "swamp",
+        "underground",
+        "urban"
+      ],
+      "tier": 2
     }
   },
   "_key": "!items!a107b8c9d0e1f234",

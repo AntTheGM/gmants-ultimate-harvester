@@ -32,7 +32,11 @@
     "ultimate-harvester": {
       "category": "food",
       "source": "foraged",
-      "shelfLife": 3
+      "shelfLife": 3,
+      "biomes": [
+        "coastal"
+      ],
+      "tier": 1
     }
   },
   "_key": "!items!8a94f35b3ff5e165",

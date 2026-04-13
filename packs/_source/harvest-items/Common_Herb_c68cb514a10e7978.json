@@ -20,7 +20,18 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "component"
+      "category": "component",
+      "biomes": [
+        "arctic",
+        "coastal",
+        "dense-forest",
+        "desert",
+        "light-forest",
+        "mountain",
+        "plains",
+        "urban"
+      ],
+      "tier": 1
     }
   },
   "_key": "!items!c68cb514a10e7978",

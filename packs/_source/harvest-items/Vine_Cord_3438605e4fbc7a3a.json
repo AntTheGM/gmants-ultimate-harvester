@@ -20,7 +20,11 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "material"
+      "category": "material",
+      "biomes": [
+        "dense-forest"
+      ],
+      "tier": 1
     }
   },
   "_key": "!items!3438605e4fbc7a3a",

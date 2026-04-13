@@ -16,6 +16,7 @@ import { initiateHarvest, viewAppraisal } from "./harvesting.js";
 import { showDialog } from "./dialog-helper.js";
 import { initiateForage } from "./foraging.js";
 import { ForagingPanel } from "./foraging-panel.js";
+import { testPool, clearPoolCache } from "./item-pool.js";
 import { registerTableSheetHook } from "./failure-event-config.js";
 import { seedTestData } from "./test-data.js";
 
@@ -232,6 +233,8 @@ Hooks.once("init", () => {
     viewAppraisal,
     seedTestData,
     listIcons: _listIcons,
+    testPool,
+    clearPoolCache,
   };
 
   // Register Handlebars helper for time formatting

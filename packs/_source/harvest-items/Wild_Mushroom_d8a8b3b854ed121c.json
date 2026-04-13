@@ -32,7 +32,13 @@
     "ultimate-harvester": {
       "category": "food",
       "source": "foraged",
-      "shelfLife": 3
+      "shelfLife": 3,
+      "biomes": [
+        "dense-forest",
+        "light-forest",
+        "swamp"
+      ],
+      "tier": 2
     }
   },
   "_key": "!items!d8a8b3b854ed121c",

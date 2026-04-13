@@ -20,7 +20,12 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "component"
+      "category": "component",
+      "biomes": [
+        "arctic",
+        "mountain"
+      ],
+      "tier": 1
     }
   },
   "_key": "!items!2f259c20aaf0bde0",

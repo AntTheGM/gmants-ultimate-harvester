@@ -30,7 +30,11 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "component"
+      "category": "component",
+      "biomes": [
+        "desert"
+      ],
+      "tier": 4
     }
   },
   "_key": "!items!60c10a0565093e81",

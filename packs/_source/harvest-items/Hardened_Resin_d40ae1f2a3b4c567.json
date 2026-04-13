@@ -8,7 +8,7 @@
       "value": "<p><em>Amber-colored resin that dries rock-hard; used to reinforce joins and seal cracks.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Structural sealant — bonding and reinforcing shield layers.</p><p><strong>Value when used in crafting:</strong> 2 gp</p></section>"
     },
     "weight": {
-      "value": 1.0,
+      "value": 1,
       "units": "lb"
     },
     "price": {
@@ -20,7 +20,20 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "component"
+      "category": "component",
+      "biomes": [
+        "arctic",
+        "coastal",
+        "dense-forest",
+        "desert",
+        "light-forest",
+        "mountain",
+        "plains",
+        "swamp",
+        "underground",
+        "urban"
+      ],
+      "tier": 2
     }
   },
   "_key": "!items!d40ae1f2a3b4c567",
