@@ -567,6 +567,64 @@ Items use the appropriate dnd5e item type:
 
 Item categories: `material` | `food` | `component` | `trophy`
 
+#### Item Description Format
+
+Item descriptions use structured HTML with two distinct sections:
+
+1. **Flavor text** — an italicized one-liner describing the item's appearance, taste, or feel
+2. **Crafting info** (components only) — a bordered callout section showing crafting use and crafted value
+
+**Component description template:**
+```html
+<p><em>{Flavor text describing the item.}</em></p>
+<hr/>
+<section style="border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;">
+  <p><strong>Crafting Use:</strong> {Generic crafting application — keep system-agnostic, GM adjudicates specifics.}</p>
+  <p><strong>Value when used in crafting:</strong> {Calculated crafted value}</p>
+</section>
+```
+
+**Crafted value multipliers by rarity:**
+
+There are two tiers of components: **natural components** (biome-specific herbs, moss, minerals) and **crafting family components** (discipline-specific reagents for scroll scribing, potion brewing, weapon forging, etc.). Crafting families use higher multipliers because their base prices are kept low to account for bulk drops on good rolls (5–8 items).
+
+| Rarity | Natural Multiplier | Crafting Family Multiplier |
+|---|---|---|
+| Common | 2× | 4× |
+| Uncommon | 3× | 6× |
+| Rare | 5× | 10× |
+
+**Crafting family price targets:**
+
+| Rarity | Base Price | Crafted Value | Notes |
+|---|---|---|---|
+| Common | 5 sp | ~2 gp | Bulk-friendly; a good haul of 5–8 sells for 25–40 sp raw |
+| Uncommon | 25 sp – 3.5 gp | 15–21 gp | Mid-tier reward; strong incentive to craft over selling |
+| Rare | 25 sp – 5 gp | 25–50 gp | High-value finds; rare table only |
+
+**Crafting families** (6 disciplines, each with common/uncommon/rare):
+
+| Discipline | Common (T2) | Uncommon (T3) | Rare (Rare) |
+|---|---|---|---|
+| Scribe Scroll | Blank Parchment | Arcane Ink | Mystic Vellum |
+| Create Potion | Distilled Essence | Alchemical Catalyst | Philosopher's Extract |
+| Create Weapon | Whetstone Grit | Tempered Filings | Meteoric Iron |
+| Create Shield | Hardened Resin | Ironbark Sap | Adamantine Dust |
+| Create Armor | Cured Leather Strip | Reinforced Hide | Dragonscale Lacquer |
+| Create Wondrous Item | Enchanting Dust | Resonance Crystal | Essence of Wonder |
+
+**Design notes:**
+- Only **component** category items get the crafting section. Materials, food, and trophies use plain italic flavor text only.
+- Crafting descriptions are intentionally system-agnostic — describe the type of crafting the component is useful for without referencing specific game mechanics.
+- The green accent border (`#5E9B6D`) visually distinguishes the crafting callout from flavor text on the Foundry item card.
+- Crafting family components appear in **all 10 biomes** at their assigned tier. Natural components are biome-specific.
+- Base prices are intentionally low so bulk drops from good rolls feel rewarding to sell but **dramatically** more rewarding to craft — this is the core economic incentive.
+
+**Non-component description template (food, material, trophy):**
+```html
+<p><em>{Flavor text describing the item.}</em></p>
+```
+
 #### Spoilage & Source Flags
 
 Food and drink items in the compendium carry **template spoilage data** in their flags:

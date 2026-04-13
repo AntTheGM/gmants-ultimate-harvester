@@ -831,7 +831,7 @@ All harvestable items exist as dnd5e loot items in the `harvest-items` compendiu
 - Should items have weight? (Carrying capacity matters in survival campaigns)
 - Should some items be consumable (use from inventory for an effect)?
 - Should items have rarity tags (common/uncommon/rare)?
-- Should item descriptions hint at crafting uses, or keep that for a future version?
+- ~~Should item descriptions hint at crafting uses, or keep that for a future version?~~ **RESOLVED:** Yes — component items include a crafting callout section in their HTML description showing generic crafting use and a calculated crafted value. Two multiplier tiers: natural components (2×/3×/5× by rarity) and crafting family components (4×/6×/10× by rarity — higher multipliers offset low base prices for bulk drops). Six crafting families: Scroll, Potion, Weapon, Shield, Armor, Wondrous Item. See "Item Description Format" in harvester_module.md for full details.
 
 ---
 

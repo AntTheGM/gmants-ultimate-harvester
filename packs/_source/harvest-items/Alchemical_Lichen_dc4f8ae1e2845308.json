@@ -5,7 +5,7 @@
   "img": "icons/consumables/plants/herb-tied-bundle-green.webp",
   "system": {
     "description": {
-      "value": "<p>A slow-growing crust lichen with rare chemical properties; used in transmutation work.</p>"
+      "value": "<p><em>A slow-growing crust lichen with rare chemical properties; used in transmutation work.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Transmutation reagent — prized for items with transformative or shape-altering properties.</p><p><strong>Value when used in crafting:</strong> 12 gp</p></section>"
     },
     "weight": {
       "value": 0.5,
