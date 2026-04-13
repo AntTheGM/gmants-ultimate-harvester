@@ -85,5 +85,6 @@
   "MHARVEST.Failure.SprainedAnkle": "Sprained Ankle",
   "MHARVEST.Panel.FailureEventsTitle": "Failure Events",
   "MHARVEST.Panel.ArmNextFailure": "Arm Next Failure",
-  "MHARVEST.Panel.FailureEventsHint": "Nat 1 = always triggers. Otherwise 1% per point missed. Check the box to force the next failure to trigger an event."
+  "MHARVEST.Panel.FailureEventsHint": "Nat 1 = always triggers. Otherwise 1% per point missed. Check the box to force the next failure to trigger an event.",
+  "MHARVEST.FailureConfig.Title": "Configure Failure Event"
 }

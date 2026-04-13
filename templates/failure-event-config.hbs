@@ -1,0 +1,101 @@
+<form class="ultimate-harvester-form">
+  <input type="hidden" name="eventId" value="{{eventId}}" />
+
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-tag"></i> Event Details</span>
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Icon CSS Class</label>
+      <input type="text" name="icon" value="{{icon}}" placeholder="fas fa-skull-crossbones" />
+    </div>
+    <div class="ultimate-harvester-field-group">
+      <label>Description <span class="ultimate-harvester-hint">(HTML allowed, use {damage} and {spoilCount} as placeholders)</span></label>
+      <textarea name="description" rows="3">{{description}}</textarea>
+    </div>
+  </div>
+
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-bolt"></i> Auto-Apply</span>
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Type</label>
+      <select name="auto">
+        {{#each autoOptions}}
+        <option value="{{this.value}}" {{#if this.selected}}selected{{/if}}>{{this.label}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+
+  <div class="ultimate-harvester-section" data-section="damage" {{#unless showDamage}}style="display:none"{{/unless}}>
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-heart-broken"></i> Damage</span>
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Formula</label>
+      <input type="text" name="damageFormula" value="{{damageFormula}}" placeholder="2 * @level or 1d4" />
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Damage Type</label>
+      <input type="text" name="damageType" value="{{damageType}}" placeholder="poison" />
+    </div>
+  </div>
+
+  <div class="ultimate-harvester-section">
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-drumstick-bite"></i> Spoilage (optional)</span>
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Spoil Formula</label>
+      <input type="text" name="spoilFormula" value="{{spoilFormula}}" placeholder="1d4 (leave empty if n/a)" />
+    </div>
+  </div>
+
+  <div class="ultimate-harvester-section" data-section="effect" {{#unless showEffect}}style="display:none"{{/unless}}>
+    <div class="ultimate-harvester-section-header">
+      <span><i class="fas fa-magic"></i> ActiveEffect Debuff</span>
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Effect Name</label>
+      <input type="text" name="effectName" value="{{effectName}}" placeholder="Twisted Ankle" />
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Effect Icon</label>
+      <input type="text" name="effectIcon" value="{{effectIcon}}" placeholder="icons/svg/aura.svg" />
+    </div>
+    <div class="ultimate-harvester-select-row">
+      <label>Duration (hours)</label>
+      <input type="number" name="effectDurationHours" value="{{effectDurationHours}}" min="1" max="168" step="1" />
+    </div>
+    <div class="ultimate-harvester-field-group">
+      <label>Effect Description</label>
+      <input type="text" name="effectDescription" value="{{effectDescription}}" placeholder="Short description of the debuff" />
+    </div>
+
+    <div class="ultimate-harvester-subsection">
+      <div class="ultimate-harvester-section-header">
+        <span><i class="fas fa-sliders-h"></i> Effect Changes</span>
+        <button type="button" data-action="addChange" class="ultimate-harvester-add-btn" title="Add change"><i class="fas fa-plus"></i></button>
+      </div>
+      <p class="ultimate-harvester-hint">Each change modifies an actor attribute. Key = system path, Mode = how it applies, Value = the modifier.</p>
+      <div class="ultimate-harvester-changes-list">
+        {{#each effectChanges}}
+        <div class="ultimate-harvester-change-row">
+          <input type="text" name="changeKey_{{this.idx}}" value="{{this.key}}" placeholder="system.attributes.movement.walk" />
+          <select name="changeMode_{{this.idx}}">
+            {{#each ../modeOptions}}
+            <option value="{{this.value}}" {{#if (eq this.value ../mode)}}selected{{/if}}>{{this.label}}</option>
+            {{/each}}
+          </select>
+          <input type="text" name="changeValue_{{this.idx}}" value="{{this.value}}" placeholder="-10" />
+          <button type="button" data-action="removeChange" data-idx="{{this.idx}}" title="Remove"><i class="fas fa-trash"></i></button>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <button type="button" data-action="save"><i class="fas fa-save"></i> Save Event Configuration</button>
+</form>
