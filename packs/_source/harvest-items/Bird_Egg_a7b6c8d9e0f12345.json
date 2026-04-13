@@ -1,0 +1,37 @@
+{
+  "_id": "a7b6c8d9e0f12345",
+  "name": "Bird Egg",
+  "type": "loot",
+  "img": "icons/consumables/eggs/egg-speckled-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>A small speckled egg taken from a ground nest; fragile and best carried with care.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Binding agent — whisked into adhesive pastes, paint binders, and poultice emulsifiers.</p><p><strong>Value when used in crafting:</strong> 2 sp</p></section>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!a7b6c8d9e0f12345",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

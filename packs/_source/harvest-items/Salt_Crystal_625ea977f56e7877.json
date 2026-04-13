@@ -5,7 +5,7 @@
   "img": "icons/commodities/stone/rock-chunk-pumice-white.webp",
   "system": {
     "description": {
-      "value": "<p>A chunk of raw salt from a coastal evaporation pool or mineral seep; useful for preserving food.</p>"
+      "value": "<p><em>A chunk of raw salt from a coastal evaporation pool or mineral seep; useful for preserving food.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Food preservative — used in curing meats, purifying water, and crafting preservation salts.</p><p><strong>Value when used in crafting:</strong> 6 sp</p></section>"
     },
     "weight": {
       "value": 1,

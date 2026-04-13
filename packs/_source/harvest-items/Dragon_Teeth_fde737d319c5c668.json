@@ -5,7 +5,7 @@
   "img": "icons/commodities/bones/teeth-pointed-white.webp",
   "system": {
     "description": {
-      "value": "<p>Massive serrated fangs torn from a dragon's jaw.</p>"
+      "value": "<p><em>Massive serrated fangs torn from a dragon's jaw.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Enchanted weapon material — set into magical weapons and dragon-tooth necklaces.</p><p><strong>Value when used in crafting:</strong> 36 gp</p></section>"
     },
     "weight": {
       "value": 2,

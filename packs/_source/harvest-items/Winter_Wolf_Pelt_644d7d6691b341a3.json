@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/fur-pelt-white.webp",
   "system": {
     "description": {
-      "value": "<p>A thick, pristine white pelt still cold to the touch from the beast's icy nature.</p>"
+      "value": "<p><em>A thick, pristine white pelt still cold to the touch from the beast's icy nature.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Frost-resistant leather — crafted into cold-immune cloaks and winter armor.</p><p><strong>Value when used in crafting:</strong> 24 gp</p></section>"
     },
     "weight": {
       "value": 5,

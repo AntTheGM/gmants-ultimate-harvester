@@ -5,7 +5,7 @@
   "img": "icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp",
   "system": {
     "description": {
-      "value": "<p>An intact gland brimming with concentrated toxins.</p>"
+      "value": "<p><em>An intact gland brimming with concentrated toxins.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Superior poison — refined into deadly blade coatings and potent antivenom.</p><p><strong>Value when used in crafting:</strong> 50 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

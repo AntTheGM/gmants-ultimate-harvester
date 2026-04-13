@@ -5,7 +5,7 @@
   "img": "icons/consumables/meat/steak-spoiled-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>A fetid chunk of zombie flesh laced with necromantic energy; disturbing but alchemically useful.</p>"
+      "value": "<p><em>A fetid chunk of zombie flesh laced with necromantic energy; disturbing but alchemically useful.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Necromantic filler — cheap reagent for undead-related potions and necrotic salves.</p><p><strong>Value when used in crafting:</strong> 6 sp</p></section>"
     },
     "weight": {
       "value": 2,

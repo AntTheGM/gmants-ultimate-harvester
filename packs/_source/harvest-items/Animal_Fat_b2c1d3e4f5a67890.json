@@ -1,0 +1,37 @@
+{
+  "_id": "b2c1d3e4f5a67890",
+  "name": "Animal Fat",
+  "type": "loot",
+  "img": "icons/consumables/meat/hock-fatty-skin-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>A greasy lump of rendered fat scraped from a carcass; unpleasant but endlessly useful.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Crafting binder — rendered into candles, soap, waterproof coatings, and leather conditioner.</p><p><strong>Value when used in crafting:</strong> 6 sp</p></section>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!b2c1d3e4f5a67890",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

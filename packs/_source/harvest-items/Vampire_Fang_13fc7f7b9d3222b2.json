@@ -5,7 +5,7 @@
   "img": "icons/commodities/bones/tooth-canine-tan.webp",
   "system": {
     "description": {
-      "value": "<p>A retractable fang from a vampire; serrated and still hollow from centuries of feeding.</p>"
+      "value": "<p><em>A retractable fang from a vampire; serrated and still hollow from centuries of feeding.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Life-draining weapon inlay — set into vampiric weapons and blood-drinking blades.</p><p><strong>Value when used in crafting:</strong> 60 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

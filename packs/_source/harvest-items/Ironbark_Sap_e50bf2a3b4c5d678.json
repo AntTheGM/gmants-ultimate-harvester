@@ -1,0 +1,37 @@
+{
+  "_id": "e50bf2a3b4c5d678",
+  "name": "Ironbark Sap",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Thick dark sap from an ancient hardwood; dries harder than most metals and resists splitting.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Superior hardening agent — shields and barriers of exceptional resilience.</p><p><strong>Value when used in crafting:</strong> 18 gp</p></section>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!e50bf2a3b4c5d678",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

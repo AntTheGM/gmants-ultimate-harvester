@@ -5,7 +5,7 @@
   "img": "icons/commodities/gems/powder-raw-white.webp",
   "system": {
     "description": {
-      "value": "<p>Glittering iridescent powder that drifts from fey creatures as they die.</p>"
+      "value": "<p><em>Glittering iridescent powder that drifts from fey creatures as they die.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Enchanting powder — sprinkled into illusion potions, glamour oils, and charm tokens.</p><p><strong>Value when used in crafting:</strong> 4 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

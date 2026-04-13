@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/tentacle-pink.webp",
   "system": {
     "description": {
-      "value": "<p>One of the four facial tentacles of a mind flayer; lined with suckers that still twitch faintly.</p>"
+      "value": "<p><em>One of the four facial tentacles of a mind flayer; lined with suckers that still twitch faintly.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Psionic component — used in mind-affecting staves, wands, and psychic focus items.</p><p><strong>Value when used in crafting:</strong> 24 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/slime-green.webp",
   "system": {
     "description": {
-      "value": "<p>A jar of translucent acidic gel scraped from a gelatinous cube; retains mild digestive properties.</p>"
+      "value": "<p><em>A jar of translucent acidic gel scraped from a gelatinous cube; retains mild digestive properties.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Dissolving agent — used in cleaning solutions, rust removers, and acid flasks.</p><p><strong>Value when used in crafting:</strong> 8 sp</p></section>"
     },
     "weight": {
       "value": 2,

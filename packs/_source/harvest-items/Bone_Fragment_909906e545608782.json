@@ -5,7 +5,7 @@
   "img": "icons/commodities/bones/bone-fragments-grey.webp",
   "system": {
     "description": {
-      "value": "<p>Splintered bones useful to alchemists and crafters.</p>"
+      "value": "<p><em>Splintered bones useful to alchemists and crafters.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Weapon inlay — carved into arrowheads, knife handles, and crude weapon reinforcement.</p><p><strong>Value when used in crafting:</strong> 4 sp</p></section>"
     },
     "weight": {
       "value": 1,

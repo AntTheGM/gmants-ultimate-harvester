@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/organ-bladder-red.webp",
   "system": {
     "description": {
-      "value": "<p>A volatile gland from a black dragon still oozing caustic acid; handle with extreme care.</p>"
+      "value": "<p><em>A volatile gland from a black dragon still oozing caustic acid; handle with extreme care.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Acid source — used in corrosive weapon enchantments and acid-breath potions.</p><p><strong>Value when used in crafting:</strong> 125 gp</p></section>"
     },
     "weight": {
       "value": 1,

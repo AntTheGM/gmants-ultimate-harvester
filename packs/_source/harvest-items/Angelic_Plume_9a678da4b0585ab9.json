@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/feather-white-glowing-fire.webp",
   "system": {
     "description": {
-      "value": "<p>A large, perfect feather from a powerful angel that glows softly.</p>"
+      "value": "<p><em>A large, perfect feather from a powerful angel that glows softly.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Divine focus — woven into holy avenger weapons, blessed armor, and resurrection scrolls.</p><p><strong>Value when used in crafting:</strong> 300 gp</p></section>"
     },
     "weight": {
       "value": 1,

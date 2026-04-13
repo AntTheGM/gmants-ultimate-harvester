@@ -5,7 +5,7 @@
   "img": "icons/commodities/bones/bone-simple-white.webp",
   "system": {
     "description": {
-      "value": "<p>A bleached bone harvested from an animated skeleton; faintly resonates with necrotic energy.</p>"
+      "value": "<p><em>A bleached bone harvested from an animated skeleton; faintly resonates with necrotic energy.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Necromantic focus — carved into undead-commanding wands and death-ward fetishes.</p><p><strong>Value when used in crafting:</strong> 4 sp</p></section>"
     },
     "weight": {
       "value": 1,

@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/organ-liver-red.webp",
   "system": {
     "description": {
-      "value": "<p>A pulsating organ that produces a fiend's signature hellfire.</p>"
+      "value": "<p><em>A pulsating organ that produces a fiend's signature hellfire.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Infernal fire source — crafted into hellfire weapons and fire-resistance bypassing items.</p><p><strong>Value when used in crafting:</strong> 100 gp</p></section>"
     },
     "weight": {
       "value": 1,

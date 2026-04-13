@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/organ-heart-pink.webp",
   "system": {
     "description": {
-      "value": "<p>An internal organ suffused with divine grace; warm to the touch.</p>"
+      "value": "<p><em>An internal organ suffused with divine grace; warm to the touch.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Sacred vessel — the core ingredient for miracle-grade healing and divine artifact crafting.</p><p><strong>Value when used in crafting:</strong> 400 gp</p></section>"
     },
     "weight": {
       "value": 1,

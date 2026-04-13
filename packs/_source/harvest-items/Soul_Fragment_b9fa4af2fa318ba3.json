@@ -5,7 +5,7 @@
   "img": "icons/commodities/gems/gem-shattered-violet.webp",
   "system": {
     "description": {
-      "value": "<p>A glittering shard of crystallized soul energy bound in dark magic.</p>"
+      "value": "<p><em>A glittering shard of crystallized soul energy bound in dark magic.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Spiritual remnant — bound into sentient weapons, soul-cages, and resurrection foci.</p><p><strong>Value when used in crafting:</strong> 200 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

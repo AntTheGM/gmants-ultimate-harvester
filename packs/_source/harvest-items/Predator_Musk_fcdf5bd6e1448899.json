@@ -5,7 +5,7 @@
   "img": "icons/consumables/potions/bottle-conical-corked-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>A potent scent gland secretion that can repel or attract animals.</p>"
+      "value": "<p><em>A potent scent gland secretion that can repel or attract animals.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Beast-lure compound — mixed into animal repellents, tracking aids, and hunting baits.</p><p><strong>Value when used in crafting:</strong> 15 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

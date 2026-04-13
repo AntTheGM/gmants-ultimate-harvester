@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/leather-worn-tan.webp",
   "system": {
     "description": {
-      "value": "<p>A dense pelt with exceptional insulating properties.</p>"
+      "value": "<p><em>A dense pelt with exceptional insulating properties.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Heavy armor leather — layered into medium armor, shields, and reinforced gear.</p><p><strong>Value when used in crafting:</strong> 6 gp</p></section>"
     },
     "weight": {
       "value": 4,

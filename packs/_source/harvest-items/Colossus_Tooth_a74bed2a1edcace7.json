@@ -5,7 +5,7 @@
   "img": "icons/commodities/bones/tooth-spiked-brown.webp",
   "system": {
     "description": {
-      "value": "<p>A molar the size of a cobblestone from a true titan-class giant.</p>"
+      "value": "<p><em>A molar the size of a cobblestone from a true titan-class giant.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Legendary weapon material — carved into titanic blades and siege-breaking tools.</p><p><strong>Value when used in crafting:</strong> 200 gp</p></section>"
     },
     "weight": {
       "value": 3,

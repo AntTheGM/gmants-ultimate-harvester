@@ -5,7 +5,7 @@
   "img": "icons/commodities/wood/bark-brown.webp",
   "system": {
     "description": {
-      "value": "<p>A section of bark that still pulses faintly with growth energy.</p>"
+      "value": "<p><em>A section of bark that still pulses faintly with growth energy.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Shield material — formed into lightweight wooden shields and druidic bucklers.</p><p><strong>Value when used in crafting:</strong> 8 sp</p></section>"
     },
     "weight": {
       "value": 2,

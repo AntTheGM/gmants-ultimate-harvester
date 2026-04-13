@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/scales-white.webp",
   "system": {
     "description": {
-      "value": "<p>Ice-white scales from a white dragon; cold to the touch and razor-edged.</p>"
+      "value": "<p><em>Ice-white scales from a white dragon; cold to the touch and razor-edged.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Cold-resistant scales — crafted into frost-proof armor and chill-ward shields.</p><p><strong>Value when used in crafting:</strong> 24 gp</p></section>"
     },
     "weight": {
       "value": 1,

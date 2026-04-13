@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/organ-stomach.webp",
   "system": {
     "description": {
-      "value": "<p>A crackling gland from a blue dragon that discharges sparks when handled roughly.</p>"
+      "value": "<p><em>A crackling gland from a blue dragon that discharges sparks when handled roughly.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Lightning source — used in shocking weapon enchantments and storm-calling items.</p><p><strong>Value when used in crafting:</strong> 125 gp</p></section>"
     },
     "weight": {
       "value": 1,

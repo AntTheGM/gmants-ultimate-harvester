@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/scale-chitin-grey.webp",
   "system": {
     "description": {
-      "value": "<p>Tough, overlapping chitin plates from a beholder's body.</p>"
+      "value": "<p><em>Tough, overlapping chitin plates from a beholder's body.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Anti-magic armor — crafted into magic-resistant armor and dispelling shield faces.</p><p><strong>Value when used in crafting:</strong> 75 gp</p></section>"
     },
     "weight": {
       "value": 3,

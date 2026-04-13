@@ -5,7 +5,7 @@
   "img": "icons/consumables/plants/dried-bundle-wrapped-stems-sticks-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Rich, supernaturally fertile compost from the body of a shambling mound.</p>"
+      "value": "<p><em>Rich, supernaturally fertile compost from the body of a shambling mound.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Fertile growth medium — used in plant growth potions, druidic salves, and living armor.</p><p><strong>Value when used in crafting:</strong> 4 gp</p></section>"
     },
     "weight": {
       "value": 5,

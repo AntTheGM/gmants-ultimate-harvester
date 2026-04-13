@@ -1,0 +1,37 @@
+{
+  "_id": "c90fd6e7f8a9b012",
+  "name": "Dragonscale Lacquer",
+  "type": "loot",
+  "img": "icons/commodities/materials/bowl-powder-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>A shimmering finish derived from dissolved dragon scales; bonds to any surface and hardens like steel.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Legendary armor coating — near-impervious finish for masterwork protection.</p><p><strong>Value when used in crafting:</strong> 50 gp</p></section>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!c90fd6e7f8a9b012",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

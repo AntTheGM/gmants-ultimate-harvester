@@ -5,7 +5,7 @@
   "img": "icons/consumables/potions/potion-jar-corked-labeled-poison-skull-green.webp",
   "system": {
     "description": {
-      "value": "<p>A carefully extracted vial of giant spider venom; potent enough to paralyze a horse.</p>"
+      "value": "<p><em>A carefully extracted vial of giant spider venom; potent enough to paralyze a horse.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Paralytic poison — applied as blade coatings or refined into paralysis-inducing traps.</p><p><strong>Value when used in crafting:</strong> 25 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

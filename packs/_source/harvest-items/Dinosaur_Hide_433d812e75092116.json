@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/leather-bolt-grey.webp",
   "system": {
     "description": {
-      "value": "<p>Rough, scale-textured hide from a dinosaur; excellent for heavy armor.</p>"
+      "value": "<p><em>Rough, scale-textured hide from a dinosaur; excellent for heavy armor.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Reptile leather — thick scaled hide for durable medium and heavy armor.</p><p><strong>Value when used in crafting:</strong> 18 gp</p></section>"
     },
     "weight": {
       "value": 5,

@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/leather-bolt-tan.webp",
   "system": {
     "description": {
-      "value": "<p>The flawless skin of a true apex predator; near-mythical quality.</p>"
+      "value": "<p><em>The flawless skin of a true apex predator; near-mythical quality.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Legendary armor leather — the finest natural hide for legendary armor crafting.</p><p><strong>Value when used in crafting:</strong> 200 gp</p></section>"
     },
     "weight": {
       "value": 5,

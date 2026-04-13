@@ -5,7 +5,7 @@
   "img": "icons/commodities/bones/tooth-shark-brown.webp",
   "system": {
     "description": {
-      "value": "<p>A massive serrated tooth from a tyrannosaurus; as long as a shortsword.</p>"
+      "value": "<p><em>A massive serrated tooth from a tyrannosaurus; as long as a shortsword.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Apex weapon material — mounted into legendary piercing weapons and trophy blades.</p><p><strong>Value when used in crafting:</strong> 75 gp</p></section>"
     },
     "weight": {
       "value": 3,

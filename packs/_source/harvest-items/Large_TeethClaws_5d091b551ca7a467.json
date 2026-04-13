@@ -5,7 +5,7 @@
   "img": "icons/commodities/claws/claws-plain-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Oversized fangs or talons from a formidable beast.</p>"
+      "value": "<p><em>Oversized fangs or talons from a formidable beast.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Heavy weapon crafting — set into greatclubs, axes, and heavy slashing weapons.</p><p><strong>Value when used in crafting:</strong> 6 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

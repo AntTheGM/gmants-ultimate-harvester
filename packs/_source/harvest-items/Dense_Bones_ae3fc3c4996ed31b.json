@@ -5,7 +5,7 @@
   "img": "icons/commodities/bones/bones-stack-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Unusually compact bones that ring like iron when struck.</p>"
+      "value": "<p><em>Unusually compact bones that ring like iron when struck.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Heavy weapon core — shaped into maces, clubs, and blunt weapon heads.</p><p><strong>Value when used in crafting:</strong> 20 gp</p></section>"
     },
     "weight": {
       "value": 2,

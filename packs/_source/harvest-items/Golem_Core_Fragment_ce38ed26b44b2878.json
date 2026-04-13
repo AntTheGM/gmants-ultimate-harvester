@@ -5,7 +5,7 @@
   "img": "icons/commodities/gems/gem-fragments-rough-grey.webp",
   "system": {
     "description": {
-      "value": "<p>A cracked shard from the animating core of a construct.</p>"
+      "value": "<p><em>A cracked shard from the animating core of a construct.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Animation shard — used to craft animated objects, construct servants, and golems.</p><p><strong>Value when used in crafting:</strong> 15 gp</p></section>"
     },
     "weight": {
       "value": 1,

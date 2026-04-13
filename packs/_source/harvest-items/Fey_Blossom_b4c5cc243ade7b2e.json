@@ -5,7 +5,7 @@
   "img": "icons/commodities/flowers/lily-bloom-purple.webp",
   "system": {
     "description": {
-      "value": "<p>A perpetually blooming flower that only grows in the presence of fey magic.</p>"
+      "value": "<p><em>A perpetually blooming flower that only grows in the presence of fey magic.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Enchanting catalyst — brewed into charm potions, illusion oils, and fey-touched items.</p><p><strong>Value when used in crafting:</strong> 24 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

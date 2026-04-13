@@ -5,7 +5,7 @@
   "img": "icons/commodities/bones/tooth-shark-brown-white.webp",
   "system": {
     "description": {
-      "value": "<p>Sharp, unbroken wolf fangs useful for jewelry or spell components.</p>"
+      "value": "<p><em>Sharp, unbroken wolf fangs useful for jewelry or spell components.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Weapon decoration — mounted into necklaces, dagger hilts, and tribal weapons.</p><p><strong>Value when used in crafting:</strong> 6 sp</p></section>"
     },
     "weight": {
       "value": 0.5,

@@ -1,0 +1,37 @@
+{
+  "_id": "cc03d4e5f6a7b890",
+  "name": "Mystic Vellum",
+  "type": "loot",
+  "img": "icons/sundries/scrolls/scroll-runed-brown-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Supple vellum prepared from a creature of magical origin; the surface faintly hums when touched.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Superior inscription medium — high-level scrolls and permanent magical writings.</p><p><strong>Value when used in crafting:</strong> 25 gp</p></section>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 25,
+      "denomination": "sp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!cc03d4e5f6a7b890",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

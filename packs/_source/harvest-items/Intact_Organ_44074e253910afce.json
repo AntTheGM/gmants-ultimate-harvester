@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/organ-liver-red.webp",
   "system": {
     "description": {
-      "value": "<p>A pristine internal organ carefully extracted without rupture.</p>"
+      "value": "<p><em>A pristine internal organ carefully extracted without rupture.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Alchemical base — a versatile organ usable in a wide range of creature-specific potions.</p><p><strong>Value when used in crafting:</strong> 40 gp</p></section>"
     },
     "weight": {
       "value": 1,

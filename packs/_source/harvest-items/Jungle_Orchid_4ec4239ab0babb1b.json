@@ -5,7 +5,7 @@
   "img": "icons/commodities/flowers/lily-pink.webp",
   "system": {
     "description": {
-      "value": "<p>An exotic orchid found in tropical undergrowth; highly prized by alchemists and mages.</p>"
+      "value": "<p><em>An exotic orchid found in tropical undergrowth; highly prized by alchemists and mages.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Rare potion ingredient — prized for exotic elixirs, perfumes, and enchanting oils.</p><p><strong>Value when used in crafting:</strong> 15 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

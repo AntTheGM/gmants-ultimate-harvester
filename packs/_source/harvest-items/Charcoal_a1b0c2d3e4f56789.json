@@ -1,0 +1,37 @@
+{
+  "_id": "a1b0c2d3e4f56789",
+  "name": "Charcoal",
+  "type": "loot",
+  "img": "icons/commodities/materials/powder-black.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Blackened wood remnants from a dead fire; crumbles easily and stains everything it touches.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Filter and pigment — used in water purification, ink-making, and smelting flux.</p><p><strong>Value when used in crafting:</strong> 4 sp</p></section>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!a1b0c2d3e4f56789",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

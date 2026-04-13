@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/powder-black.webp",
   "system": {
     "description": {
-      "value": "<p>Grey cinders left behind when a fiend is slain; mildly toxic to touch.</p>"
+      "value": "<p><em>Grey cinders left behind when a fiend is slain; mildly toxic to touch.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Hellfire residue — mixed into fire-resistant coatings and infernal binding inks.</p><p><strong>Value when used in crafting:</strong> 6 sp</p></section>"
     },
     "weight": {
       "value": 0.5,

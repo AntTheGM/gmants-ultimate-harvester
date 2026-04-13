@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/organ-stomach.webp",
   "system": {
     "description": {
-      "value": "<p>The gland responsible for a winter wolf's freezing breath; crackles with cold.</p>"
+      "value": "<p><em>The gland responsible for a winter wolf's freezing breath; crackles with cold.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Cold source — used in frost weapon enchantments and cold-breath potions.</p><p><strong>Value when used in crafting:</strong> 60 gp</p></section>"
     },
     "weight": {
       "value": 1,

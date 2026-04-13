@@ -5,7 +5,7 @@
   "img": "icons/consumables/plants/dried-herb-bundle-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Aromatic sage from arid regions; used in purification rituals and antiseptic poultices.</p>"
+      "value": "<p><em>Aromatic sage from arid regions; used in purification rituals and antiseptic poultices.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Purification reagent — burned or brewed for cleansing rituals, antidotes, and antiseptics.</p><p><strong>Value when used in crafting:</strong> 3 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

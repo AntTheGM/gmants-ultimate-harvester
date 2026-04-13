@@ -1,0 +1,37 @@
+{
+  "_id": "f60ca3b4c5d6e789",
+  "name": "Adamantine Dust",
+  "type": "loot",
+  "img": "icons/commodities/materials/bowl-powder-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>A pinch of glittering dark powder ground from adamantine fragments; nearly indestructible once set.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Legendary reinforcement — shields that turn aside even the most devastating blows.</p><p><strong>Value when used in crafting:</strong> 40 gp</p></section>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!f60ca3b4c5d6e789",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

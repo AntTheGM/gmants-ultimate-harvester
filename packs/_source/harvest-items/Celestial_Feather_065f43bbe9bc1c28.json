@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/feather-white-glowing-beams.webp",
   "system": {
     "description": {
-      "value": "<p>A luminous feather shed by a celestial being; radiates faint warmth.</p>"
+      "value": "<p><em>A luminous feather shed by a celestial being; radiates faint warmth.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Divine reagent — woven into blessed scrolls, holy water, and protection wards.</p><p><strong>Value when used in crafting:</strong> 24 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

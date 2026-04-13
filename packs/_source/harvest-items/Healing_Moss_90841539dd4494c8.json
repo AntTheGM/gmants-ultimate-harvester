@@ -5,7 +5,7 @@
   "img": "icons/consumables/plants/succulent-bundle-green.webp",
   "system": {
     "description": {
-      "value": "<p>Soft absorbent moss with mild antiseptic properties; applied as a wound dressing.</p>"
+      "value": "<p><em>Soft absorbent moss with mild antiseptic properties; applied as a wound dressing.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Bandage material — packed into wounds as an antiseptic dressing or brewed into healing salves.</p><p><strong>Value when used in crafting:</strong> 1 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

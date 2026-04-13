@@ -5,7 +5,7 @@
   "img": "icons/consumables/potions/bottle-conical-fumes-green.webp",
   "system": {
     "description": {
-      "value": "<p>A sealed flask of captured swamp gas; unstable and flammable if exposed to flame.</p>"
+      "value": "<p><em>A sealed flask of captured swamp gas; unstable and flammable if exposed to flame.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Explosive ingredient — mixed into alchemical bombs, fire grenades, and flash devices.</p><p><strong>Value when used in crafting:</strong> 6 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

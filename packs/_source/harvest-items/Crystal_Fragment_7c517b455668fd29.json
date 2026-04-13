@@ -5,7 +5,7 @@
   "img": "icons/commodities/gems/gem-fragments-blue.webp",
   "system": {
     "description": {
-      "value": "<p>A piece of natural crystal broken from a cave formation; mildly resonant with magical energy.</p>"
+      "value": "<p><em>A piece of natural crystal broken from a cave formation; mildly resonant with magical energy.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Enchanting focus — used to anchor magical energy when crafting wands, staves, and foci.</p><p><strong>Value when used in crafting:</strong> 12 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

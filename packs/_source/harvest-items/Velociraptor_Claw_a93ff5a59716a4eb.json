@@ -5,7 +5,7 @@
   "img": "icons/commodities/claws/talon-brown.webp",
   "system": {
     "description": {
-      "value": "<p>The signature sickle-shaped killing claw from a velociraptor foot.</p>"
+      "value": "<p><em>The signature sickle-shaped killing claw from a velociraptor foot.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Precision weapon — set into daggers, climbing claws, and finesse weapons.</p><p><strong>Value when used in crafting:</strong> 15 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

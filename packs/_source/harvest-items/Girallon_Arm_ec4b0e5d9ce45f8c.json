@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/hand-clawed-brown.webp",
   "system": {
     "description": {
-      "value": "<p>One of the powerful arms of a girallon; still possessed of fearsome grip strength.</p>"
+      "value": "<p><em>One of the powerful arms of a girallon; still possessed of fearsome grip strength.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Trophy weapon — mounted as a club or crafted into a four-armed totem.</p><p><strong>Value when used in crafting:</strong> 18 gp</p></section>"
     },
     "weight": {
       "value": 6,

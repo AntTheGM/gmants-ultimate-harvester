@@ -5,7 +5,7 @@
   "img": "icons/commodities/gems/gem-faceted-diamond-pink.webp",
   "system": {
     "description": {
-      "value": "<p>A jagged crystal that grew within an aberrant creature's neural cluster.</p>"
+      "value": "<p><em>A jagged crystal that grew within an aberrant creature's neural cluster.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Psychic focus — set into headbands, staves, and items that enhance mental abilities.</p><p><strong>Value when used in crafting:</strong> 15 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

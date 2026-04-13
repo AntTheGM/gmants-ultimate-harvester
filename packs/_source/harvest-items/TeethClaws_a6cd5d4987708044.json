@@ -5,7 +5,7 @@
   "img": "icons/commodities/claws/claws-worn-grey.webp",
   "system": {
     "description": {
-      "value": "<p>A handful of serviceable teeth or claws stripped from a beast carcass.</p>"
+      "value": "<p><em>A handful of serviceable teeth or claws stripped from a beast carcass.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Weapon crafting — set into clubs, spears, and primitive slashing weapons.</p><p><strong>Value when used in crafting:</strong> 6 sp</p></section>"
     },
     "weight": {
       "value": 0.5,

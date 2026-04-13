@@ -1,0 +1,37 @@
+{
+  "_id": "da0ae7f8a9b0c123",
+  "name": "Enchanting Dust",
+  "type": "loot",
+  "img": "icons/commodities/materials/bowl-powder-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>A pouch of faintly glowing powder; tingles against bare skin and disperses with a shimmer.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Arcane binding agent — anchoring minor enchantments to physical objects.</p><p><strong>Value when used in crafting:</strong> 2 gp</p></section>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!da0ae7f8a9b0c123",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

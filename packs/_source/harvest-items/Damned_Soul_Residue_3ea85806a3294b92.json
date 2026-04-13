@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/slime-purple.webp",
   "system": {
     "description": {
-      "value": "<p>A faint impression of a trapped soul released when the fiend was destroyed.</p>"
+      "value": "<p><em>A faint impression of a trapped soul released when the fiend was destroyed.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Fiendish binding agent — used in soul-trapping items and infernal contract scrolls.</p><p><strong>Value when used in crafting:</strong> 300 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

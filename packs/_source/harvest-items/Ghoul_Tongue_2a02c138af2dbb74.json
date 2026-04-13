@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/tongue-violet.webp",
   "system": {
     "description": {
-      "value": "<p>The long, rasping tongue of a ghoul; still faintly animated and coated in foul saliva.</p>"
+      "value": "<p><em>The long, rasping tongue of a ghoul; still faintly animated and coated in foul saliva.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Paralytic ingredient — distilled into paralysis poisons and ghoul-touch oils.</p><p><strong>Value when used in crafting:</strong> 12 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

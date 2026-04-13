@@ -5,7 +5,7 @@
   "img": "icons/consumables/plants/thorned-curled-vine-green.webp",
   "system": {
     "description": {
-      "value": "<p>A vine from a shambling mound still crackling with absorbed lightning.</p>"
+      "value": "<p><em>A vine from a shambling mound still crackling with absorbed lightning.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Electrical conductor — woven into shocking weapons and lightning-resistant gear.</p><p><strong>Value when used in crafting:</strong> 24 gp</p></section>"
     },
     "weight": {
       "value": 1,

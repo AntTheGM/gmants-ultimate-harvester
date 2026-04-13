@@ -1,0 +1,37 @@
+{
+  "_id": "aa01b2c3d4e5f678",
+  "name": "Blank Parchment",
+  "type": "loot",
+  "img": "icons/sundries/documents/parchment-plain-tan.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>A sheet of smooth animal skin scraped thin and dried flat; takes ink without bleeding.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Inscription medium — scrolls, spell transcription, and written wards.</p><p><strong>Value when used in crafting:</strong> 2 gp</p></section>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!aa01b2c3d4e5f678",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

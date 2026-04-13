@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/feather-white-glowing-fire.webp",
   "system": {
     "description": {
-      "value": "<p>A concentrated droplet of divine energy solidified on contact with air.</p>"
+      "value": "<p><em>A concentrated droplet of divine energy solidified on contact with air.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Holy concentrate — distilled into greater healing potions and divine weapon oils.</p><p><strong>Value when used in crafting:</strong> 75 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

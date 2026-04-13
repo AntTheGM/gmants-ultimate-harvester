@@ -5,7 +5,7 @@
   "img": "icons/consumables/plants/sprout-glowing-roots-green.webp",
   "system": {
     "description": {
-      "value": "<p>Thick spongy moss from boggy soil; absorbs toxins and is used in antidote crafting.</p>"
+      "value": "<p><em>Thick spongy moss from boggy soil; absorbs toxins and is used in antidote crafting.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Antidote ingredient — brewed into poison remedies and detoxifying poultices.</p><p><strong>Value when used in crafting:</strong> 1 gp 6 sp</p></section>"
     },
     "weight": {
       "value": 0.5,

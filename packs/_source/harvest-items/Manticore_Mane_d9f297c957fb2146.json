@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/fur-brown-gold.webp",
   "system": {
     "description": {
-      "value": "<p>A bundle of coarse reddish mane hair from a manticore; rough as wire.</p>"
+      "value": "<p><em>A bundle of coarse reddish mane hair from a manticore; rough as wire.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Armor padding — woven into intimidating helms, lion-mane cloaks, and padding.</p><p><strong>Value when used in crafting:</strong> 6 gp</p></section>"
     },
     "weight": {
       "value": 2,

@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/scale-chitin-grey.webp",
   "system": {
     "description": {
-      "value": "<p>A bony dorsal plate from a stegosaurus; light yet surprisingly rigid.</p>"
+      "value": "<p><em>A bony dorsal plate from a stegosaurus; light yet surprisingly rigid.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Natural plate armor — fitted as shield reinforcement or heavy armor plating.</p><p><strong>Value when used in crafting:</strong> 24 gp</p></section>"
     },
     "weight": {
       "value": 3,

@@ -5,7 +5,7 @@
   "img": "icons/commodities/bones/horn-curved-grey-purple.webp",
   "system": {
     "description": {
-      "value": "<p>A hard, curved horn from a devil; resonates faintly with infernal power.</p>"
+      "value": "<p><em>A hard, curved horn from a devil; resonates faintly with infernal power.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Infernal weapon inlay — set into fiend-bane weapons and hellish warding items.</p><p><strong>Value when used in crafting:</strong> 6 gp</p></section>"
     },
     "weight": {
       "value": 1,

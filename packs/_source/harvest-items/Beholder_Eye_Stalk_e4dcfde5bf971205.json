@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/eye-tentacle-green-orange.webp",
   "system": {
     "description": {
-      "value": "<p>A wriggling eyestalk from a beholder; each one channels a different magical ray.</p>"
+      "value": "<p><em>A wriggling eyestalk from a beholder; each one channels a different magical ray.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Anti-magic component — crafted into dispelling wands and spell-absorbing shields.</p><p><strong>Value when used in crafting:</strong> 100 gp</p></section>"
     },
     "weight": {
       "value": 1,

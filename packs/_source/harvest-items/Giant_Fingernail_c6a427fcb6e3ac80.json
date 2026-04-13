@@ -5,7 +5,7 @@
   "img": "icons/commodities/claws/claw-worn-tan.webp",
   "system": {
     "description": {
-      "value": "<p>A thick, overgrown nail from a giant; surprisingly durable.</p>"
+      "value": "<p><em>A thick, overgrown nail from a giant; surprisingly durable.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Crude blade — sharpened into makeshift knives and thrown weapons.</p><p><strong>Value when used in crafting:</strong> 6 sp</p></section>"
     },
     "weight": {
       "value": 1,

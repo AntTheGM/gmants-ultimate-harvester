@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/scales-green.webp",
   "system": {
     "description": {
-      "value": "<p>Dark forest-green scales from a green dragon; faintly reek of chlorine.</p>"
+      "value": "<p><em>Dark forest-green scales from a green dragon; faintly reek of chlorine.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Poison-resistant scales — crafted into toxin-proof armor and venomward shields.</p><p><strong>Value when used in crafting:</strong> 24 gp</p></section>"
     },
     "weight": {
       "value": 1,

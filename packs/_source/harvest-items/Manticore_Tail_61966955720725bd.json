@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/tail-spiked-green.webp",
   "system": {
     "description": {
-      "value": "<p>The entire spiked tail section of a manticore; multiple spikes still intact and ready to be harvested.</p>"
+      "value": "<p><em>The entire spiked tail section of a manticore; multiple spikes still intact and ready to be harvested.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Spike launcher — crafted into spike-throwing traps and tail-whip weapons.</p><p><strong>Value when used in crafting:</strong> 40 gp</p></section>"
     },
     "weight": {
       "value": 3,

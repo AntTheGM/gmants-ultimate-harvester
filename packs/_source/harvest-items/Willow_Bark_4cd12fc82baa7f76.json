@@ -5,7 +5,7 @@
   "img": "icons/commodities/wood/bark-beige.webp",
   "system": {
     "description": {
-      "value": "<p>Strips of bark known to reduce fever and dull pain when brewed into tea.</p>"
+      "value": "<p><em>Strips of bark known to reduce fever and dull pain when brewed into tea.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Pain remedy — steeped into fever-reducing teas and numbing salves.</p><p><strong>Value when used in crafting:</strong> 1 gp 6 sp</p></section>"
     },
     "weight": {
       "value": 0.5,

@@ -5,7 +5,7 @@
   "img": "icons/commodities/cloth/cloth-worn-purple.webp",
   "system": {
     "description": {
-      "value": "<p>A fragment of ethereal cloth that still radiates death's chill.</p>"
+      "value": "<p><em>A fragment of ethereal cloth that still radiates death's chill.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Undead binding cloth — woven into necrotic cloaks, death ward scrolls, and soul traps.</p><p><strong>Value when used in crafting:</strong> 60 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

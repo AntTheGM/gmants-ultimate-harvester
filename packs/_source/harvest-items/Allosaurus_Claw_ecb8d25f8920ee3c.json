@@ -5,7 +5,7 @@
   "img": "icons/commodities/claws/claw-lizard-white-black.webp",
   "system": {
     "description": {
-      "value": "<p>A curved, hand-length killing claw from an allosaurus foreleg.</p>"
+      "value": "<p><em>A curved, hand-length killing claw from an allosaurus foreleg.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Slashing weapon — mounted into raking gauntlets and curved blade weapons.</p><p><strong>Value when used in crafting:</strong> 30 gp</p></section>"
     },
     "weight": {
       "value": 1,

@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/fur-pelt-spotted-tan.webp",
   "system": {
     "description": {
-      "value": "<p>A grey wolf pelt in good condition; sought by trappers and leatherworkers.</p>"
+      "value": "<p><em>A grey wolf pelt in good condition; sought by trappers and leatherworkers.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Fur crafting — tanned into cloaks, boot linings, and light armor padding.</p><p><strong>Value when used in crafting:</strong> 1 gp 2 sp</p></section>"
     },
     "weight": {
       "value": 3,

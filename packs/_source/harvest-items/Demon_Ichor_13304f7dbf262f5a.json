@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/liquid-green.webp",
   "system": {
     "description": {
-      "value": "<p>Caustic black blood that burbles with barely contained chaos.</p>"
+      "value": "<p><em>Caustic black blood that burbles with barely contained chaos.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Fiendish reagent — distilled into cursed oils, bane weapons, and warding incense.</p><p><strong>Value when used in crafting:</strong> 1 gp 6 sp</p></section>"
     },
     "weight": {
       "value": 0.5,

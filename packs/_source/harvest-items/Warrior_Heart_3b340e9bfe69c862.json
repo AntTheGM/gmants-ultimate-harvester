@@ -5,7 +5,7 @@
   "img": "icons/consumables/meat/heart-organ-red.webp",
   "system": {
     "description": {
-      "value": "<p>The heart of a seasoned warrior, still bearing the marks of many battles.</p>"
+      "value": "<p><em>The heart of a seasoned warrior, still bearing the marks of many battles.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Courage elixir ingredient — brewed into bravery potions and berserker draughts.</p><p><strong>Value when used in crafting:</strong> 12 gp</p></section>"
     },
     "weight": {
       "value": 1,

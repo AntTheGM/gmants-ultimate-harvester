@@ -5,7 +5,7 @@
   "img": "icons/commodities/gems/pearl-blue-gold.webp",
   "system": {
     "description": {
-      "value": "<p>A crystallized tear of profound emotion from an archfey-touched creature.</p>"
+      "value": "<p><em>A crystallized tear of profound emotion from an archfey-touched creature.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Fey heartstone — crafted into legendary charm items, true-seeing lenses, and wish components.</p><p><strong>Value when used in crafting:</strong> 350 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

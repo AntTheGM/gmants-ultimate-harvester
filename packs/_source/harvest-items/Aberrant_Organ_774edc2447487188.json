@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/organ-heart-red.webp",
   "system": {
     "description": {
-      "value": "<p>A bizarrely shaped organ with no obvious biological analogue.</p>"
+      "value": "<p><em>A bizarrely shaped organ with no obvious biological analogue.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Aberrant reagent — distilled into mind-affecting potions and aberrant focus items.</p><p><strong>Value when used in crafting:</strong> 9 gp</p></section>"
     },
     "weight": {
       "value": 1,

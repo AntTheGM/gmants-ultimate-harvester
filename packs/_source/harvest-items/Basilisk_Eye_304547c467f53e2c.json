@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/eye-lizard-green.webp",
   "system": {
     "description": {
-      "value": "<p>A heavy, crystalline eye from a basilisk; retains faint petrifying energy.</p>"
+      "value": "<p><em>A heavy, crystalline eye from a basilisk; retains faint petrifying energy.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Petrification reagent — ground into stone-to-flesh potions and gaze-ward amulets.</p><p><strong>Value when used in crafting:</strong> 75 gp</p></section>"
     },
     "weight": {
       "value": 1,

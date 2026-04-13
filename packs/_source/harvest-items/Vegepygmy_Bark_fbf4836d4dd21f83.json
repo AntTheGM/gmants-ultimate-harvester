@@ -5,7 +5,7 @@
   "img": "icons/commodities/wood/bark-tan.webp",
   "system": {
     "description": {
-      "value": "<p>Tough, woody skin from a vegepygmy; laced with plant toxins.</p>"
+      "value": "<p><em>Tough, woody skin from a vegepygmy; laced with plant toxins.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Plant armor — shaped into lightweight natural armor and spore-resistant gear.</p><p><strong>Value when used in crafting:</strong> 9 gp</p></section>"
     },
     "weight": {
       "value": 1,

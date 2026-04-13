@@ -5,7 +5,7 @@
   "img": "icons/commodities/gems/gem-rough-cushion-orange.webp",
   "system": {
     "description": {
-      "value": "<p>A dense node of concentrated elemental matter pulled from a larger elemental.</p>"
+      "value": "<p><em>A dense node of concentrated elemental matter pulled from a larger elemental.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Elemental heart — used to power elemental weapons, wondrous items, and imbued armor.</p><p><strong>Value when used in crafting:</strong> 30 gp</p></section>"
     },
     "weight": {
       "value": 1,

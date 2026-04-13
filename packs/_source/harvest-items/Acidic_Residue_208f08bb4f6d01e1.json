@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/slime-green.webp",
   "system": {
     "description": {
-      "value": "<p>A corrosive slime scraped from the remains of an ooze creature.</p>"
+      "value": "<p><em>A corrosive slime scraped from the remains of an ooze creature.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Corrosive agent — used in etching metals, dissolving locks, and crafting acid vials.</p><p><strong>Value when used in crafting:</strong> 6 sp</p></section>"
     },
     "weight": {
       "value": 1,

@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/leather-patch-red.webp",
   "system": {
     "description": {
-      "value": "<p>Leathery skin from a fiend; naturally resistant to fire and cold.</p>"
+      "value": "<p><em>Leathery skin from a fiend; naturally resistant to fire and cold.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Infernal leather — tanned into fire-resistant armor and demonic-warded gear.</p><p><strong>Value when used in crafting:</strong> 12 gp</p></section>"
     },
     "weight": {
       "value": 3,

@@ -5,7 +5,7 @@
   "img": "icons/consumables/potions/bottle-round-corked-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>A viscous, heat-resistant oil extracted from the preen gland of an eblis. The oil has a faintly iridescent quality and feels warm to the touch even in cool air. Alchemists prize it as a key ingredient in brewing <em>Potions of Fire Resistance</em>. When applied directly to exposed skin, it provides a faint tingling warmth and minor protection against open flame for a few minutes&mdash;not enough to resist a dragon&apos;s breath, but sufficient to handle a hot coal or reach into a campfire unscathed.</p>"
+      "value": "<p><em>A viscous, heat-resistant oil extracted from the preen gland of an eblis. The oil has a faintly iridescent quality and feels warm to the touch even in cool air. Alchemists prize it as a key ingredient in brewing Potions of Fire Resistance. When applied directly to exposed skin, it provides a faint tingling warmth and minor protection against open flame for a few minutes&mdash;not enough to resist a dragon&apos;s breath, but sufficient to handle a hot coal or reach into a campfire unscathed.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Exotic lubricant — refined into precision weapon coatings and waterproof enchantments.</p><p><strong>Value when used in crafting:</strong> 125 gp</p></section>"
     },
     "weight": {
       "value": 1,

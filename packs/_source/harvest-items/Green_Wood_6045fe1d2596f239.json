@@ -5,7 +5,7 @@
   "img": "icons/commodities/wood/kindling-stick-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Freshly cut limbs from living trees; heavier than dry wood and not yet suitable for burning.</p>"
+      "value": "<p><em>Freshly cut limbs from living trees; heavier than dry wood and not yet suitable for burning.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Bow material — carved into flexible bows, staves, and druidic weapon hafts.</p><p><strong>Value when used in crafting:</strong> 2 cp</p></section>"
     },
     "weight": {
       "value": 5,

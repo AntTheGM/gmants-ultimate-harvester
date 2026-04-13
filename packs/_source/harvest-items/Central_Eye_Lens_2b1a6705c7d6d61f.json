@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/eye-blue-gold.webp",
   "system": {
     "description": {
-      "value": "<p>The massive central lens from a beholder; suppresses magic when held aloft.</p>"
+      "value": "<p><em>The massive central lens from a beholder; suppresses magic when held aloft.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Anti-magic focus — crafted into anti-magic shields, dispelling staves, and null-zone items.</p><p><strong>Value when used in crafting:</strong> 500 gp</p></section>"
     },
     "weight": {
       "value": 2,

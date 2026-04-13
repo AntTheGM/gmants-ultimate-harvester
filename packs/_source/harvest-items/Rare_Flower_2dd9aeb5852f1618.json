@@ -5,7 +5,7 @@
   "img": "icons/commodities/flowers/lotus-violet.webp",
   "system": {
     "description": {
-      "value": "<p>An unusual bloom found in untamed wilderness; gathered for perfume and alchemical use.</p>"
+      "value": "<p><em>An unusual bloom found in untamed wilderness; gathered for perfume and alchemical use.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Perfume and potion ingredient — distilled into fragrant essences and exotic preparations.</p><p><strong>Value when used in crafting:</strong> 9 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

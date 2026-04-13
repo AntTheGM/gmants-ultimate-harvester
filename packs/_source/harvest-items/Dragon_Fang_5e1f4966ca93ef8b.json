@@ -5,7 +5,7 @@
   "img": "icons/commodities/bones/teeth-sharp-white.webp",
   "system": {
     "description": {
-      "value": "<p>A single massive fang from a chromatic dragon; retains a trace of elemental energy.</p>"
+      "value": "<p><em>A single massive fang from a chromatic dragon; retains a trace of elemental energy.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Legendary weapon core — crafted into dragon-fang daggers, spears, and arrowheads.</p><p><strong>Value when used in crafting:</strong> 70 gp</p></section>"
     },
     "weight": {
       "value": 2,

@@ -5,7 +5,7 @@
   "img": "icons/consumables/potions/potion-flask-corked-green.webp",
   "system": {
     "description": {
-      "value": "<p>Partially-processed alchemical materials left behind in urban waste; still viable as reagents.</p>"
+      "value": "<p><em>Partially-processed alchemical materials left behind in urban waste; still viable as reagents.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Salvaged alchemical reagent — usable as a cheap substitute in potion and bomb crafting.</p><p><strong>Value when used in crafting:</strong> 3 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

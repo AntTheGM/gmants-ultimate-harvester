@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/slime-white.webp",
   "system": {
     "description": {
-      "value": "<p>A gelatinous slime exuded by incorporeal undead upon destruction.</p>"
+      "value": "<p><em>A gelatinous slime exuded by incorporeal undead upon destruction.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Ethereal substance — crafted into ghost-touch weapons and spirit-binding containers.</p><p><strong>Value when used in crafting:</strong> 40 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

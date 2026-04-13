@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/leather-bolt-brown.webp",
   "system": {
     "description": {
-      "value": "<p>A scraped and salted pelt suitable for basic leatherwork.</p>"
+      "value": "<p><em>A scraped and salted pelt suitable for basic leatherwork.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Armor leather — tanned into basic leather armor, gloves, and boots.</p><p><strong>Value when used in crafting:</strong> 1 gp 2 sp</p></section>"
     },
     "weight": {
       "value": 3,

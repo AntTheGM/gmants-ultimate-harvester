@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/scale-chitin-grey.webp",
   "system": {
     "description": {
-      "value": "<p>Brilliant crimson scales from a red dragon; warm to the touch and tinged with soot.</p>"
+      "value": "<p><em>Brilliant crimson scales from a red dragon; warm to the touch and tinged with soot.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Fire-resistant scales — crafted into flame-proof armor and heat shields.</p><p><strong>Value when used in crafting:</strong> 24 gp</p></section>"
     },
     "weight": {
       "value": 1,

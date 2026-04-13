@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/leather-patch-grey.webp",
   "system": {
     "description": {
-      "value": "<p>Stony, rough-textured hide from a basilisk; partially petrified.</p>"
+      "value": "<p><em>Stony, rough-textured hide from a basilisk; partially petrified.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Stone-tough leather — crafted into petrification-resistant armor and shields.</p><p><strong>Value when used in crafting:</strong> 24 gp</p></section>"
     },
     "weight": {
       "value": 4,

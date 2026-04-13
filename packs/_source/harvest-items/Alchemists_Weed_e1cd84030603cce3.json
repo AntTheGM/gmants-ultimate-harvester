@@ -5,7 +5,7 @@
   "img": "icons/consumables/plants/herb-tied-bundle-yellow-green.webp",
   "system": {
     "description": {
-      "value": "<p>A pungent herb used as a base reagent in minor alchemical preparations.</p>"
+      "value": "<p><em>A pungent herb used as a base reagent in minor alchemical preparations.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Potion ingredient — a common base herb for brewing minor healing and utility potions.</p><p><strong>Value when used in crafting:</strong> 3 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

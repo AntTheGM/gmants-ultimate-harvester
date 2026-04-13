@@ -1,0 +1,37 @@
+{
+  "_id": "ee05f6a7b8c9d012",
+  "name": "Alchemical Catalyst",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>A murky reagent that bubbles faintly in its sealed vial; accelerates alchemical reactions on contact.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Reaction accelerant — speeds and stabilizes potion brewing.</p><p><strong>Value when used in crafting:</strong> 18 gp</p></section>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!ee05f6a7b8c9d012",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

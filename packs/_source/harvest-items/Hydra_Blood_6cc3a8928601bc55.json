@@ -5,7 +5,7 @@
   "img": "icons/consumables/potions/bottle-round-corked-green.webp",
   "system": {
     "description": {
-      "value": "<p>Caustic blood from a hydra imbued with its regenerative properties.</p>"
+      "value": "<p><em>Caustic blood from a hydra imbued with its regenerative properties.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Regeneration catalyst — brewed into potent healing potions and regeneration elixirs.</p><p><strong>Value when used in crafting:</strong> 75 gp</p></section>"
     },
     "weight": {
       "value": 1,

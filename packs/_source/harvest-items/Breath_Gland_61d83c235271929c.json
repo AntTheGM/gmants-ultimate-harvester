@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/organ-bladder-red.webp",
   "system": {
     "description": {
-      "value": "<p>The volatile gland responsible for a dragon's deadly breath weapon.</p>"
+      "value": "<p><em>The volatile gland responsible for a dragon's deadly breath weapon.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Elemental weapon core — crafted into breath-weapon items and elemental burst weapons.</p><p><strong>Value when used in crafting:</strong> 150 gp</p></section>"
     },
     "weight": {
       "value": 1,

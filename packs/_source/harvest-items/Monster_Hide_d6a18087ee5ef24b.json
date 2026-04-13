@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/leather-scrap-tan.webp",
   "system": {
     "description": {
-      "value": "<p>Tough, scarred hide from a creature of monstrous origin.</p>"
+      "value": "<p><em>Tough, scarred hide from a creature of monstrous origin.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Armor leather — thick creature hide for reinforced leather and scale armor.</p><p><strong>Value when used in crafting:</strong> 1 gp</p></section>"
     },
     "weight": {
       "value": 3,

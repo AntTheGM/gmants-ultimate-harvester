@@ -5,7 +5,7 @@
   "img": "icons/consumables/plants/leaf-elm-glowing-green.webp",
   "system": {
     "description": {
-      "value": "<p>Large waxy leaves with soporific compounds; the raw material for sleep-inducing draughts.</p>"
+      "value": "<p><em>Large waxy leaves with soporific compounds; the raw material for sleep-inducing draughts.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Sedative ingredient — distilled into sleep-inducing draughts and calming tinctures.</p><p><strong>Value when used in crafting:</strong> 15 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

@@ -5,7 +5,7 @@
   "img": "icons/consumables/potions/bottle-round-corked-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>A rendered jar of bear fat; excellent for preserving leather and waterproofing.</p>"
+      "value": "<p><em>A rendered jar of bear fat; excellent for preserving leather and waterproofing.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Waterproofing compound — rendered into leather conditioner, lamp fuel, and warming balms.</p><p><strong>Value when used in crafting:</strong> 3 gp</p></section>"
     },
     "weight": {
       "value": 2,

@@ -5,7 +5,7 @@
   "img": "icons/commodities/tech/cog-brass.webp",
   "system": {
     "description": {
-      "value": "<p>A precisely machined cog or sprocket still faintly enchanted.</p>"
+      "value": "<p><em>A precisely machined cog or sprocket still faintly enchanted.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Clockwork component — fitted into mechanical traps, crossbow mechanisms, and gadgets.</p><p><strong>Value when used in crafting:</strong> 8 sp</p></section>"
     },
     "weight": {
       "value": 1,

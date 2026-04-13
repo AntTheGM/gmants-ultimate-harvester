@@ -5,7 +5,7 @@
   "img": "icons/consumables/meat/heart-organ-realistic-red.webp",
   "system": {
     "description": {
-      "value": "<p>A large wolf heart said to confer the beast's tenacity when used in potions.</p>"
+      "value": "<p><em>A large wolf heart said to confer the beast's tenacity when used in potions.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Predator essence — brewed into tracking potions, pack-bond charms, and hunter oils.</p><p><strong>Value when used in crafting:</strong> 6 gp</p></section>"
     },
     "weight": {
       "value": 1,

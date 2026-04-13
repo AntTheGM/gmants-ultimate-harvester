@@ -5,7 +5,7 @@
   "img": "icons/commodities/gems/gem-rough-round-orange.webp",
   "system": {
     "description": {
-      "value": "<p>A swirling marble-sized orb of elemental energy captured in a vial.</p>"
+      "value": "<p><em>A swirling marble-sized orb of elemental energy captured in a vial.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Elemental spark — used to imbue items with fire, frost, lightning, or acid properties.</p><p><strong>Value when used in crafting:</strong> 4 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

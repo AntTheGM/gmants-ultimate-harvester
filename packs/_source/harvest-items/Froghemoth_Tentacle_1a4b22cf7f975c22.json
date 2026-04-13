@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/tentacle-purple-white.webp",
   "system": {
     "description": {
-      "value": "<p>A massive, mucus-covered tentacle from a froghemoth; still twitching.</p>"
+      "value": "<p><em>A massive, mucus-covered tentacle from a froghemoth; still twitching.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Whip weapon — crafted into grasping whips and tentacle-themed reach weapons.</p><p><strong>Value when used in crafting:</strong> 50 gp</p></section>"
     },
     "weight": {
       "value": 5,

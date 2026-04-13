@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/organ-bladder-red.webp",
   "system": {
     "description": {
-      "value": "<p>A frigid gland from a white dragon that crystallizes moisture in the surrounding air.</p>"
+      "value": "<p><em>A frigid gland from a white dragon that crystallizes moisture in the surrounding air.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Cold source — used in freezing weapon enchantments and frost-breath items.</p><p><strong>Value when used in crafting:</strong> 125 gp</p></section>"
     },
     "weight": {
       "value": 1,

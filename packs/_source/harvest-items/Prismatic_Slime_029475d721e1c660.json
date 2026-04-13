@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/slime-blue.webp",
   "system": {
     "description": {
-      "value": "<p>A sample of multi-hued slime capable of multiple damage types.</p>"
+      "value": "<p><em>A sample of multi-hued slime capable of multiple damage types.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Chromatic reagent — refined into prismatic spray scrolls and color-shifting enchantments.</p><p><strong>Value when used in crafting:</strong> 120 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

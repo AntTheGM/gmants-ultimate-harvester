@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/leather-pelt-cured.webp",
   "system": {
     "description": {
-      "value": "<p>A flawless pelt with extraordinary texture and durability.</p>"
+      "value": "<p><em>A flawless pelt with extraordinary texture and durability.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Premium armor leather — crafted into masterwork leather and hide armor.</p><p><strong>Value when used in crafting:</strong> 30 gp</p></section>"
     },
     "weight": {
       "value": 4,

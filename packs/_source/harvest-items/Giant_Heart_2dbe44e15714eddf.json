@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/organ-heart-pink.webp",
   "system": {
     "description": {
-      "value": "<p>A massive heart the size of a barrel; valued by potion-brewers.</p>"
+      "value": "<p><em>A massive heart the size of a barrel; valued by potion-brewers.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Strength reagent — brewed into greater giant-strength potions and titan elixirs.</p><p><strong>Value when used in crafting:</strong> 30 gp</p></section>"
     },
     "weight": {
       "value": 8,

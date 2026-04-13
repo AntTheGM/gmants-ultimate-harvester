@@ -5,7 +5,7 @@
   "img": "icons/commodities/wood/log-cut-cherry-brown.webp",
   "system": {
     "description": {
-      "value": "<p>An ancient burl of magically suffused wood from the core of a treant.</p>"
+      "value": "<p><em>An ancient burl of magically suffused wood from the core of a treant.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Legendary wood — carved into staves of power, living shields, and nature artifacts.</p><p><strong>Value when used in crafting:</strong> 50 gp</p></section>"
     },
     "weight": {
       "value": 5,

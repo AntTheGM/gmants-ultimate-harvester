@@ -5,7 +5,7 @@
   "img": "icons/commodities/gems/gem-faceted-round-black.webp",
   "system": {
     "description": {
-      "value": "<p>A sliver of absolute nothingness somehow given physical form.</p>"
+      "value": "<p><em>A sliver of absolute nothingness somehow given physical form.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Reality shard — crafted into planar-shifting items and dimensional anchor devices.</p><p><strong>Value when used in crafting:</strong> 350 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

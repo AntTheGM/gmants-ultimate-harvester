@@ -1,0 +1,37 @@
+{
+  "_id": "ff06a7b8c9d0e123",
+  "name": "Philosophers Extract",
+  "type": "loot",
+  "img": "icons/consumables/potions/potion-vial-corked-labeled-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>A luminous golden liquid said to be distilled from pure potential; even a drop transforms base ingredients.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Master alchemical reagent — required for the most potent brews and elixirs.</p><p><strong>Value when used in crafting:</strong> 40 gp</p></section>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "component"
+    }
+  },
+  "_key": "!items!ff06a7b8c9d0e123",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

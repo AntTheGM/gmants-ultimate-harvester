@@ -5,7 +5,7 @@
   "img": "icons/commodities/biological/stinger-insect-yellow.webp",
   "system": {
     "description": {
-      "value": "<p>One of the barbed tail spikes from a manticore; naturally aerodynamic and poisonous at the tip.</p>"
+      "value": "<p><em>One of the barbed tail spikes from a manticore; naturally aerodynamic and poisonous at the tip.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Projectile crafting — fletched into armor-piercing bolts and spine-dart ammunition.</p><p><strong>Value when used in crafting:</strong> 9 gp</p></section>"
     },
     "weight": {
       "value": 0.5,

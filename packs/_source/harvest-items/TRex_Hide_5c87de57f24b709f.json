@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/leather-bolt-worn-tan.webp",
   "system": {
     "description": {
-      "value": "<p>Incredibly thick tyrannosaur skin with natural armor-like ridges.</p>"
+      "value": "<p><em>Incredibly thick tyrannosaur skin with natural armor-like ridges.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Apex reptile leather — crafted into the toughest non-magical hide armor.</p><p><strong>Value when used in crafting:</strong> 100 gp</p></section>"
     },
     "weight": {
       "value": 8,

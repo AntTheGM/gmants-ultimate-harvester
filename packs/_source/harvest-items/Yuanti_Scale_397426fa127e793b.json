@@ -5,7 +5,7 @@
   "img": "icons/commodities/leather/scales-brown.webp",
   "system": {
     "description": {
-      "value": "<p>Iridescent serpentine scales shed by a yuan-ti; subtly enchanted.</p>"
+      "value": "<p><em>Iridescent serpentine scales shed by a yuan-ti; subtly enchanted.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Serpent scales — crafted into flexible scale armor and poison-resistant gear.</p><p><strong>Value when used in crafting:</strong> 12 gp</p></section>"
     },
     "weight": {
       "value": 1,

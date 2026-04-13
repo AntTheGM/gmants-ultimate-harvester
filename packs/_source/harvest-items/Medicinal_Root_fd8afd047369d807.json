@@ -5,7 +5,7 @@
   "img": "icons/consumables/vegetable/root-ginger-brown.webp",
   "system": {
     "description": {
-      "value": "<p>A dried root with anti-inflammatory properties; sought by herbalists and healers.</p>"
+      "value": "<p><em>A dried root with anti-inflammatory properties; sought by herbalists and healers.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Anti-inflammatory ingredient — ground into healing poultices and fever-reducing brews.</p><p><strong>Value when used in crafting:</strong> 1 gp 6 sp</p></section>"
     },
     "weight": {
       "value": 0.5,

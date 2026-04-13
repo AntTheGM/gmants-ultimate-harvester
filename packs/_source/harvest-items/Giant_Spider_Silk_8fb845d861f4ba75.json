@@ -5,7 +5,7 @@
   "img": "icons/commodities/materials/material-webbing.webp",
   "system": {
     "description": {
-      "value": "<p>A harvested skein of extraordinarily strong silk from a giant spider; lightweight and nearly transparent.</p>"
+      "value": "<p><em>A harvested skein of extraordinarily strong silk from a giant spider; lightweight and nearly transparent.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Enchanted thread — woven into bowstrings, armor padding, and lightweight cloaks.</p><p><strong>Value when used in crafting:</strong> 9 gp</p></section>"
     },
     "weight": {
       "value": 0.5,
