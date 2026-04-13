@@ -222,8 +222,8 @@ export class FailureEventConfig extends HandlebarsApplicationMixin(ApplicationV2
  * on tables flagged as isFailureTable.
  */
 export function registerTableSheetHook() {
-  // ApplicationV2 sheets (Foundry v13+)
-  Hooks.on("renderRollTableConfig", (app, html) => {
+  // Try all known RollTable sheet hook names across Foundry versions
+  const hookHandler = (app, html) => {
     const table = app.document ?? app.object;
     if (!table) return;
 
@@ -233,8 +233,10 @@ export function registerTableSheetHook() {
     const el = html instanceof HTMLElement ? html : html[0];
     if (!el) return;
 
-    // Find result rows and add configure buttons
-    const resultRows = el.querySelectorAll(".table-result, .result, li.table-result, [data-result-id]");
+    console.log(`${MODULE_ID} | Injecting configure buttons into failure events table`);
+
+    // Find result rows — try multiple selectors for different Foundry versions
+    const resultRows = el.querySelectorAll(".table-result, .result, li.table-result, [data-result-id], .form-group.result, ol.results-list > li, .results-list li");
     for (const row of resultRows) {
       if (row.querySelector(".ultimate-harvester-configure-btn")) continue;
 
@@ -274,7 +276,12 @@ export function registerTableSheetHook() {
       note.style.cssText = "padding: 0.25rem 0.5rem; font-size: 0.8rem; opacity: 0.7; font-style: italic; margin: 0;";
       header.prepend(note);
     }
-  });
+  };
+
+  // Register on all known hook names — Foundry/dnd5e use different names across versions
+  for (const hookName of ["renderRollTableConfig", "renderRollTableSheet", "renderRollTableSheet5e"]) {
+    Hooks.on(hookName, hookHandler);
+  }
 }
 
 /**

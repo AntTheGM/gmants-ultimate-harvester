@@ -396,9 +396,18 @@ details[open] > .ultimate-harvester-details-toggle::before {
 }
 
 .ultimate-harvester-configure-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   color: var(--mharvest-gold-light, #c99700);
-  margin-right: 0.3rem;
+  border: none;
+  background: none;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  font-size: 0.75rem;
+  flex: 0 0 26px;
 }
 
 .ultimate-harvester-configure-btn:hover {
