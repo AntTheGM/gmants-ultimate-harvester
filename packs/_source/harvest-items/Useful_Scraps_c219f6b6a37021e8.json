@@ -5,7 +5,7 @@
   "img": "icons/commodities/cloth/cloth-scraps-plain.webp",
   "system": {
     "description": {
-      "value": "<p>Assorted salvaged metal and wood bits gathered from ruins; handy for repairs and improvisation.</p>"
+      "value": "<p><em>Assorted salvaged metal, wood, and cloth bits gathered from ruins; not pretty but usable in a pinch.</em></p><hr/><section style=\"border-left: 3px solid #5E9B6D; padding-left: 8px; margin-top: 6px;\"><p><strong>Crafting Use:</strong> Wildcard crafting material — a low-quality substitute for any crafting discipline in a pinch.</p><p><strong>Value when used in crafting:</strong> 4 sp</p></section>"
     },
     "weight": {
       "value": 2,
@@ -20,7 +20,7 @@
   },
   "flags": {
     "ultimate-harvester": {
-      "category": "material"
+      "category": "component"
     }
   },
   "_key": "!items!c219f6b6a37021e8",

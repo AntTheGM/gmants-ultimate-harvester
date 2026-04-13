@@ -613,8 +613,29 @@ There are two tiers of components: **natural components** (biome-specific herbs,
 | Create Armor | Cured Leather Strip | Reinforced Hide | Dragonscale Lacquer |
 | Create Wondrous Item | Enchanting Dust | Resonance Crystal | Essence of Wonder |
 
+**Wildcard salvage components** (usable as a substitute in any crafting discipline):
+
+| Rarity | Name | Base Price | Multiplier | Crafted Value | Tables |
+|---|---|---|---|---|---|
+| Common | Useful Scraps | 2 sp | 2× | 4 sp | All biomes T1 |
+| Uncommon | Salvaged Components | 5 sp | 2× | 1 gp | All biomes T2 |
+| Rare | Rare Salvage | 2 gp | 3× | 6 gp | All biomes Rare |
+
+Wildcard components use **lower multipliers** (2×/2×/3×) than discipline-specific families — they're jack-of-all-trades substitutes, useful but less valuable than the right ingredient for the job.
+
+**Harvest item crafting data:**
+
+Components and materials from the harvest system (monster drops) also carry crafting callouts. These use the standard rarity multipliers (common 2×, uncommon 3×, rare 5×, veryRare 10×). Examples:
+- **Hides/Pelts** → armor crafting (Boar Hide, Bear Pelt, Dragon Hide)
+- **Scales** → armor/shield crafting (Dragon Scales, Stegosaurus Plate)
+- **Bones/Fangs/Claws** → weapon crafting (Bear Claws, Dragon Fang, T-Rex Fang)
+- **Organs/Glands** → potion/enchanting (Troll Gland, Basilisk Eye, Dragon Heart)
+- **Essences/Ichor** → magical item crafting (Fey Dust, Wraith Essence, Abyssal Essence)
+
+Finished tools (Harvester's Kit, Field Dissection Kit, Dragon Scale Pry Bar, Fiend Extraction Receptacle) are excluded — they are usable items, not crafting components.
+
 **Design notes:**
-- Only **component** category items get the crafting section. Materials, food, and trophies use plain italic flavor text only.
+- **Component** and craftable **material** items get the crafting callout section. Food and trophies use plain italic flavor text only.
 - Crafting descriptions are intentionally system-agnostic — describe the type of crafting the component is useful for without referencing specific game mechanics.
 - The green accent border (`#5E9B6D`) visually distinguishes the crafting callout from flavor text on the Foundry item card.
 - Crafting family components appear in **all 10 biomes** at their assigned tier. Natural components are biome-specific.
