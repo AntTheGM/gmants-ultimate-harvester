@@ -34,14 +34,29 @@ export async function buildPoolIndex() {
     return poolIndex;
   }
 
-  // Request custom flags in the index to avoid loading full documents
-  const index = await pack.getIndex({ fields: ["flags.ultimate-harvester"] });
+  // Try getIndex with fields first; fall back to loading all documents if flags are missing
+  let index = await pack.getIndex({ fields: ["flags.ultimate-harvester"] });
+
+  // Verify that flags are actually present in the index
+  const sampleEntry = index.contents?.[0] ?? index.values?.().next?.().value;
+  const flagsInIndex = sampleEntry?.flags?.[MODULE_ID] !== undefined;
+
+  let entries;
+  if (flagsInIndex) {
+    entries = index;
+    console.log(`${MODULE_ID} | Building pool index from pack index (fast path)`);
+  } else {
+    // Fallback: load all documents — slower but guaranteed to have flags
+    console.warn(`${MODULE_ID} | getIndex did not return flags — loading all documents (slow path)`);
+    const docs = await pack.getDocuments();
+    entries = docs;
+  }
 
   const newIndex = {};
   let indexed = 0;
   let skipped = 0;
 
-  for (const entry of index) {
+  for (const entry of entries) {
     const flags = entry.flags?.[MODULE_ID];
     if (!flags) { skipped++; continue; }
 

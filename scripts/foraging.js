@@ -318,8 +318,8 @@ function _rollTierDistribution(highestTier, margin) {
   // Each margin point shifts 10% (FORAGE_MARGIN_SHIFT) from T1 → highest
   const shift = Math.min(margin * FORAGE_MARGIN_SHIFT, baseDist[0][0] - 10); // Don't reduce T1 below 10%
 
-  // Build adjusted thresholds
-  const adjusted = baseDist.map(([threshold, tier]) => [threshold, tier]);
+  // Build adjusted thresholds (deep copy to avoid mutating config)
+  const adjusted = baseDist.map(([threshold, tier]) => [Number(threshold), Number(tier)]);
   if (shift > 0 && adjusted.length > 1) {
     adjusted[0][0] -= shift; // Reduce lowest tier %
     // Add shift to highest tier (by reducing the second-to-last threshold)
@@ -388,15 +388,15 @@ async function _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, 
   });
 
   return showDialog({
-    title: game.i18n.localize("MHARVEST.Dialog.ForageTitle"),
+    title: `Foraging — ${envDef.label}`,
     content,
     buttons: {
       forage: {
         label: game.i18n.localize("MHARVEST.Dialog.ForageTitle"),
         icon: "fas fa-leaf",
         callback: (el) => {
-          const hours = parseInt(el.querySelector("input[name='hours']")?.value) || 1;
-          return Math.max(1, Math.min(hours, 8));
+          const hours = parseInt(el.querySelector("input[name='hours']")?.value) || 0;
+          return Math.max(0, Math.min(hours, 6));
         },
       },
       cancel: {
@@ -406,6 +406,16 @@ async function _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, 
       },
     },
     defaultButton: "forage",
+    render: (el) => {
+      const input = el.querySelector("input[name='hours']");
+      el.querySelectorAll(".ultimate-harvester-spinner-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const dir = parseInt(btn.dataset.dir);
+          const val = Math.min(6, Math.max(0, parseInt(input.value || 0) + dir));
+          input.value = val;
+        });
+      });
+    },
   });
 }
 

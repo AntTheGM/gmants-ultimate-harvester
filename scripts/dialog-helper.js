@@ -17,7 +17,7 @@ const DialogV2 = foundry.applications.api.DialogV2;
  * @param {number} [opts.width] - Dialog width
  * @returns {Promise<*>} Result from the clicked button's callback
  */
-export async function showDialog({ title, content, buttons, defaultButton, width }) {
+export async function showDialog({ title, content, buttons, defaultButton, width, render }) {
   const buttonArray = Object.entries(buttons).map(([action, btn]) => ({
     action,
     label: btn.label,
@@ -40,6 +40,14 @@ export async function showDialog({ title, content, buttons, defaultButton, width
     close: () => resolvePromise(null),
     position: { width: width ?? 400 },
   });
+
+  if (render) {
+    const origRender = dlg._onRender.bind(dlg);
+    dlg._onRender = function (...args) {
+      origRender(...args);
+      render(this.element);
+    };
+  }
 
   dlg.render({ force: true });
   return resultPromise;

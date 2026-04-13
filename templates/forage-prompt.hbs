@@ -1,38 +1,29 @@
 <div class="ultimate-harvester-form">
-  <div class="ultimate-harvester-section">
-    <p><strong>{{foragerName}}</strong> prepares to forage in the <strong>{{environment}}</strong></p>
+  <p class="ultimate-harvester-note" style="text-align: center; opacity: 0.85; margin-bottom: 0.4rem;">
+    Basic: DC {{tier1DC}} &nbsp;|&nbsp;
+    Successful: DC {{tier2DC}} &nbsp;|&nbsp;
+    Bountiful: DC {{tier3DC}} &nbsp;|&nbsp;
+    Nat 19+: Rare
+  </p>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 0.3rem 0;">
+    <span style="font-size: 0.85rem;">Time spent foraging:</span>
+    <button type="button" class="ultimate-harvester-spinner-btn" data-dir="-1" tabindex="-1"><i class="fas fa-minus"></i></button>
+    <input type="number" name="hours" value="2" min="0" max="6" step="1" readonly style="width: 2.5rem; text-align: center;" />
+    <button type="button" class="ultimate-harvester-spinner-btn" data-dir="1" tabindex="-1"><i class="fas fa-plus"></i></button>
+    <span style="font-size: 0.85rem;">hours</span>
   </div>
 
-  <div class="ultimate-harvester-section">
-    <div class="ultimate-harvester-section-header">
-      <span>{{localize "MHARVEST.Dialog.HowManyHours"}}</span>
+  <details class="ultimate-harvester-info">
+    <summary><i class="fas fa-info-circle"></i> How does foraging work?</summary>
+    <div class="ultimate-harvester-info-content">
+      <ul>
+        <li>Roll your skill check &mdash; the highest tier you meet determines the quality of your finds</li>
+        <li>Better rolls improve both the variety and quantity of what you discover</li>
+        <li>Higher tiers have a chance to yield crafting components, alchemical reagents, and rare materials</li>
+        <li>Every 2 hours after the first reduces the DC by 1</li>
+      </ul>
+      <p class="ultimate-harvester-note"><i class="fas fa-exclamation-triangle ultimate-harvester-icon--warning"></i> <strong>Extreme failures</strong> may trigger dangerous events &mdash; all characters involved in the foraging attempt will suffer any negative effects.</p>
     </div>
-    <input type="number" name="hours" value="2" min="1" max="8" step="1" />
-    <p class="ultimate-harvester-note"><i class="fas fa-clock ultimate-harvester-icon--time"></i> Every 2 hours after the first reduces the DC by 1</p>
-  </div>
-
-  <div class="ultimate-harvester-section">
-    <div class="ultimate-harvester-section-header">
-      <span>Difficulty Tiers</span>
-    </div>
-    <p class="ultimate-harvester-note">
-      Basic: DC {{tier1DC}} &nbsp;|&nbsp;
-      Successful: DC {{tier2DC}} &nbsp;|&nbsp;
-      Bountiful: DC {{tier3DC}} &nbsp;|&nbsp;
-      Nat 19+: Rare find
-    </p>
-  </div>
-
-  <details>
-    <summary class="ultimate-harvester-details-toggle">How does foraging work?</summary>
-    <ul class="ultimate-harvester-details-list">
-      <li>Roll your skill check &mdash; the highest tier you meet determines what you can find</li>
-      <li>You'll always find food and water first, with a chance at rarer materials</li>
-      <li>Better rolls improve the quality and quantity of your finds</li>
-      <li>Every 2 extra hours reduces the DC by 1 (more time = easier to find something)</li>
-      <li>A natural 19 or 20 grants a bonus rare item</li>
-      <li>One foraging session per long rest</li>
-      <li>Foraging characters cannot contribute to passive Perception</li>
-    </ul>
   </details>
 </div>
