@@ -618,6 +618,30 @@ details[open] > .ultimate-harvester-details-toggle::before {
   font-style: italic;
 }
 
+/* --- Aid Section (forage prompt) --- */
+.ultimate-harvester-aid-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--mharvest-bg-inset);
+  border: 1px solid var(--mharvest-bg-border);
+  border-radius: 4px;
+}
+
+.ultimate-harvester-aid-row i {
+  opacity: 0.6;
+}
+
+.ultimate-harvester-aid-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  padding: 0.15rem 0;
+}
+
 /* --- Spoilage Info (injected into item sheet Details tab) --- */
 
 .ultimate-harvester-spoilage {

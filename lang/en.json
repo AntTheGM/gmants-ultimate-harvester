@@ -87,5 +87,14 @@
   "MHARVEST.Panel.FailureEventsTitle": "Failure Events",
   "MHARVEST.Panel.ArmNextFailure": "Arm Next Failure",
   "MHARVEST.Panel.FailureEventsHint": "Nat 1 = always triggers. Otherwise 1% per point missed. Check the box to force the next failure to trigger an event.",
-  "MHARVEST.FailureConfig.Title": "Configure Failure Event"
+  "MHARVEST.FailureConfig.Title": "Configure Failure Event",
+
+  "MHARVEST.Aid.SectionTitle": "Aiding",
+  "MHARVEST.Aid.SelectHint": "Target up to 2 allies to aid your forage check.",
+  "MHARVEST.Aid.RollHint": "Each aider rolls Survival vs the base DC. Success grants +1 to your forage roll.",
+  "MHARVEST.Aid.TooMany": "Only up to 2 aiders allowed — using the first 2 targeted.",
+  "MHARVEST.Aid.Success": "beats DC {dc} — +1 to forage!",
+  "MHARVEST.Aid.Failure": "fails to beat DC {dc}.",
+  "MHARVEST.Aid.ChatHeader": "Aid Rolls",
+  "MHARVEST.Aid.BonusApplied": "+{bonus} aid bonus applied to forage roll"
 }

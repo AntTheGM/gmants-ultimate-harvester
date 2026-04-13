@@ -46,26 +46,62 @@ export async function initiateForage() {
   const totalMod = weatherMod + seasonMod + dmMod;
   const tierDCs = envDef.tiers.map((dc) => dc + totalMod);
 
-  // Show hours prompt
-  const hours = await _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, tierDCs);
-  if (!hours) return;
+  // Show hours prompt (reads aiders reactively from targeting at submit time)
+  const promptResult = await _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, tierDCs);
+  if (!promptResult) return;
+  const { hours, aiders } = promptResult;
 
   // Adjust DCs for extra hours (-1 per 2 hours after the first, rounded down)
   const hourReduction = Math.floor(Math.max(0, hours - 1) / 2);
   const adjustedDCs = tierDCs.map((dc) => dc - hourReduction);
 
-  // Post chat message
+  // --- Aid Rolls (before forager's roll) ---
+  const aidDC = adjustedDCs[0]; // base (Tier 1) DC
+  let aidBonus = 0;
+  const aidResults = [];
+  for (const aider of aiders) {
+    const aidRoll = await _rollSilentSkillCheck(aider, "sur");
+    if (aidRoll) {
+      const success = aidRoll.total >= aidDC;
+      if (success) aidBonus++;
+      aidResults.push({ name: aider.name, total: aidRoll.total, success, dc: aidDC });
+    }
+  }
+
+  // Post aid results to chat if any aiders participated
+  if (aidResults.length > 0) {
+    const aidListHtml = aidResults.map((r) => {
+      const icon = r.success ? "fa-check-circle ultimate-harvester-icon--success" : "fa-times-circle ultimate-harvester-icon--danger";
+      const text = r.success
+        ? game.i18n.localize("MHARVEST.Aid.Success").replace("{dc}", r.dc)
+        : game.i18n.localize("MHARVEST.Aid.Failure").replace("{dc}", r.dc);
+      return `<li><i class="fas ${icon}"></i> <strong>${r.name}</strong> rolled ${r.total} — ${text}</li>`;
+    }).join("");
+
+    let bonusLine = "";
+    if (aidBonus > 0) {
+      bonusLine = `<p class="ultimate-harvester-note"><i class="fas fa-plus-circle ultimate-harvester-icon--success"></i> <strong>${game.i18n.localize("MHARVEST.Aid.BonusApplied").replace("{bonus}", aidBonus)}</strong></p>`;
+    }
+
+    await ChatMessage.create({
+      content: `<div class="ultimate-harvester-card">
+        <h3><i class="fas fa-hands-helping"></i> ${game.i18n.localize("MHARVEST.Aid.ChatHeader")}</h3>
+        <ul class="ultimate-harvester-item-list">${aidListHtml}</ul>
+        ${bonusLine}
+      </div>`,
+      speaker: ChatMessage.getSpeaker({ actor: forager }),
+    });
+  }
+
   const timeSpent = hours * 60; // minutes
-  await ChatMessage.create({
-    content: `<div class="ultimate-harvester-card"><p><strong>${forager.name}</strong> spends ${hours} hour(s) foraging in the ${envDef.label}.</p></div>`,
-    speaker: ChatMessage.getSpeaker({ actor: forager }),
-  });
 
   // Roll skill check
   const rollResult = await _rollForageCheck(forager, primarySkill);
   if (!rollResult) return;
 
-  const { total, isNat20, d20 } = rollResult;
+  // Apply aid bonus to the roll total
+  const { isNat20, d20 } = rollResult;
+  const total = rollResult.total + aidBonus;
 
   // Margin-of-success bonus: calculated per-tier for quantity scaling (see bundle loop below)
   const globalMargin = Math.floor(Math.max(0, total - adjustedDCs[0]) / 5);
@@ -78,30 +114,62 @@ export async function initiateForage() {
   // Rare tier on nat 18+ (v2: expanded from nat 20 only)
   if (d20 >= FORAGE_RARE_THRESHOLD) qualifiedTiers.push(3);
 
+  // Build the outcome description
+  const tierDescLabels = ["Basic finds", "Successful forage", "Bountiful haul", "Rare discovery!"];
+  const tierIcons = ["fa-seedling", "fa-leaf", "fa-tree", "fa-star"];
+  const highestQualified = qualifiedTiers.length > 0 ? qualifiedTiers[qualifiedTiers.length - 1] : -1;
+
+  // Roll breakdown: "Rolled 15 +2 aid = 17" or just "15"
+  let rollLine = `${rollResult.total}`;
+  if (aidBonus > 0) rollLine += ` +${aidBonus} aid = <strong>${total}</strong>`;
+  else rollLine = `<strong>${total}</strong>`;
+
+  // Adjustment notes
+  const adjustNotes = [];
+  if (hourReduction > 0) adjustNotes.push(`DCs reduced by ${hourReduction} (${hours} hours)`);
+  if (aidBonus > 0) adjustNotes.push(`+${aidBonus} aid bonus from allies`);
+
+  // Outcome line
+  let outcomeHtml;
+  if (highestQualified < 0) {
+    outcomeHtml = `<p class="ultimate-harvester-crit-fail"><i class="fas fa-times-circle"></i> Failed — found nothing useful.</p>`;
+  } else {
+    const outLabel = tierDescLabels[highestQualified];
+    const outIcon = tierIcons[highestQualified];
+    outcomeHtml = `<p style="font-weight:bold; margin-top:0.3rem;"><i class="fas ${outIcon} ultimate-harvester-icon--success"></i> Success — ${outLabel.toLowerCase()}!</p>`;
+  }
+
+  // Combined in-character + breakdown card
+  await ChatMessage.create({
+    content: `<div class="ultimate-harvester-card">
+      <p><strong>${forager.name}</strong> spends ${formatTime(timeSpent)} foraging in the ${envDef.label}${aiders.length > 0 ? ` with ${aiders.map((a) => a.name).join(" and ")}` : ""}.</p>
+      <hr style="border:none; border-top:1px solid var(--mharvest-border-light); margin:0.3rem 0;">
+      <p class="ultimate-harvester-note"><i class="fas fa-leaf ultimate-harvester-icon--success"></i> <strong>${envDef.label}</strong> — Standard DC ${tierDCs[0]}</p>
+      ${adjustNotes.length > 0 ? adjustNotes.map((n) => `<p class="ultimate-harvester-note"><i class="fas fa-angle-right"></i> ${n}</p>`).join("") : ""}
+      <p><i class="fas fa-dice-d20"></i> Rolled ${rollLine} vs DC ${adjustedDCs[0]}</p>
+      ${outcomeHtml}
+    </div>`,
+    speaker: ChatMessage.getSpeaker({ actor: forager }),
+  });
+
   if (qualifiedTiers.length === 0) {
     // Check for failure event trigger
     const failMargin = adjustedDCs[0] - total;
     const isNat1 = rollResult.d20 === 1;
-    const failureEvent = await _checkFailureEvent(forager, isNat1, failMargin, config);
+    const failureEvent = await _checkFailureEvent(forager, isNat1, failMargin, config, aiders);
 
-    let failureHtml = "";
     if (failureEvent) {
-      failureHtml = `
-        <div class="ultimate-harvester-failure-event">
-          <p class="ultimate-harvester-failure-header"><i class="${failureEvent.icon} ultimate-harvester-icon--danger"></i> <strong>${failureEvent.label}</strong></p>
-          <p>${failureEvent.resolvedDescription}</p>
-        </div>`;
+      await ChatMessage.create({
+        content: `<div class="ultimate-harvester-card">
+          <div class="ultimate-harvester-failure-event">
+            <p class="ultimate-harvester-failure-header"><i class="${failureEvent.icon} ultimate-harvester-icon--danger"></i> <strong>${failureEvent.label}</strong></p>
+            <p>${failureEvent.resolvedDescription}</p>
+          </div>
+          <p class="ultimate-harvester-note"><i class="fas fa-eye ultimate-harvester-icon--warning"></i> ${game.i18n.localize("MHARVEST.Chat.ThreatReminder")}</p>
+        </div>`,
+        speaker: ChatMessage.getSpeaker({ actor: forager }),
+      });
     }
-
-    await ChatMessage.create({
-      content: `<div class="ultimate-harvester-card">
-        <p class="ultimate-harvester-time-banner"><i class="fas fa-clock ultimate-harvester-icon--time"></i> <strong>Time spent: ${formatTime(timeSpent)}</strong></p>
-        <p><strong>${forager.name}</strong> ${game.i18n.localize("MHARVEST.Notification.ForagingNothing")} (rolled ${total}, needed ${adjustedDCs[0]})</p>
-        ${failureHtml}
-        <p class="ultimate-harvester-note"><i class="fas fa-eye ultimate-harvester-icon--warning"></i> ${game.i18n.localize("MHARVEST.Chat.ThreatReminder")}</p>
-      </div>`,
-      speaker: ChatMessage.getSpeaker({ actor: forager }),
-    });
     return;
   }
 
@@ -212,8 +280,7 @@ export async function initiateForage() {
   }
 
   // Show pickup dialog if items were found
-  const tierDescriptions = ["Basic finds", "Successful forage", "Bountiful haul", "Rare discovery!"];
-  const tierDesc = tierDescriptions[highestTier];
+  const tierDesc = tierDescLabels[highestTier];
 
   if (foragedItems.length > 0 && game.settings.get(MODULE_ID, "showPickupDialog")) {
     const pickupContent = await renderTemplate(`modules/${MODULE_ID}/templates/harvest-pickup.hbs`, {
@@ -277,7 +344,7 @@ export async function initiateForage() {
   const content = `<div class="ultimate-harvester-card">
     <p class="ultimate-harvester-time-banner"><i class="fas fa-clock ultimate-harvester-icon--time"></i> <strong>Time spent: ${formatTime(timeSpent)}</strong></p>
     <h3>${game.i18n.localize("MHARVEST.Chat.ForagingResults")}</h3>
-    <p><strong>${forager.name}</strong> foraged in the ${envDef.label} (rolled ${total}, ${primaryLabel}${globalMargin > 0 ? `, +${globalMargin} quantity bonus` : ""})</p>
+    <p><strong>${forager.name}</strong> foraged in the ${envDef.label} (rolled ${aidBonus > 0 ? `${rollResult.total} +${aidBonus} aid = ${total}` : `${total}`}, ${primaryLabel}${globalMargin > 0 ? `, +${globalMargin} quantity bonus` : ""})</p>
     <p><strong>${tierDesc}:</strong></p>
     <ul class="ultimate-harvester-item-list">${itemListHtml}</ul>
     ${d20 >= FORAGE_RARE_THRESHOLD ? `<p class="ultimate-harvester-nat20"><i class="fas fa-star ultimate-harvester-icon--gold"></i> Rare find!</p>` : ""}
@@ -376,7 +443,52 @@ async function _awardForagedItems(forager, items) {
 
 /* ---- Foraging Prompt ---- */
 
+/**
+ * Helper: read current aiders from Foundry targeting, excluding the forager.
+ * @param {Actor} forager
+ * @returns {Actor[]} Up to 2 aiding actors
+ */
+function _getAiders(forager) {
+  return Array.from(game.user.targets)
+    .map((t) => t.actor)
+    .filter((a) => a && a.id !== forager.id)
+    .slice(0, 2);
+}
+
+/**
+ * Update the aid section DOM inside the forage prompt dialog.
+ * @param {HTMLElement} el - Dialog element
+ * @param {Actor} forager
+ */
+function _refreshAidDisplay(el, forager) {
+  const container = el.querySelector("[data-aid-content]");
+  if (!container) return;
+  const aiders = _getAiders(forager);
+  const badge = el.querySelector("[data-aid-badge]");
+
+  if (aiders.length > 0) {
+    const names = aiders.map((a) => a.name).join(", ");
+    container.innerHTML = `
+      <div class="ultimate-harvester-aid-row">
+        <i class="fas fa-crosshairs"></i>
+        <span>${names}</span>
+      </div>
+      <div class="ultimate-harvester-aid-hint">
+        <i class="fas fa-dice-d20 ultimate-harvester-icon--success"></i>
+        <small>${game.i18n.localize("MHARVEST.Aid.RollHint")}</small>
+      </div>`;
+    if (badge) {
+      badge.textContent = aiders.length;
+      badge.style.display = "";
+    }
+  } else {
+    container.innerHTML = `<p class="ultimate-harvester-empty" style="padding: 0.4rem 0;">${game.i18n.localize("MHARVEST.Aid.SelectHint")}</p>`;
+    if (badge) badge.style.display = "none";
+  }
+}
+
 async function _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, tierDCs) {
+  const aiders = _getAiders(forager);
   const content = await renderTemplate(`modules/${MODULE_ID}/templates/forage-prompt.hbs`, {
     foragerName: forager.name,
     environment: envDef.label,
@@ -385,6 +497,9 @@ async function _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, 
     tier1DC: tierDCs[0],
     tier2DC: tierDCs[1],
     tier3DC: tierDCs[2],
+    hasAiders: aiders.length > 0,
+    aiderCount: aiders.length,
+    aiderNames: aiders.map((a) => a.name).join(", "),
   });
 
   return showDialog({
@@ -396,7 +511,12 @@ async function _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, 
         icon: "fas fa-leaf",
         callback: (el) => {
           const hours = parseInt(el.querySelector("input[name='hours']")?.value) || 0;
-          return Math.max(0, Math.min(hours, 6));
+          // Read aiders fresh at submit time
+          const finalAiders = _getAiders(forager);
+          if (finalAiders.length > 2) {
+            ui.notifications.warn(game.i18n.localize("MHARVEST.Aid.TooMany"));
+          }
+          return { hours: Math.max(0, Math.min(hours, 6)), aiders: finalAiders };
         },
       },
       cancel: {
@@ -407,6 +527,7 @@ async function _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, 
     },
     defaultButton: "forage",
     render: (el) => {
+      // Spinner buttons
       const input = el.querySelector("input[name='hours']");
       el.querySelectorAll(".ultimate-harvester-spinner-btn").forEach((btn) => {
         btn.addEventListener("click", () => {
@@ -415,6 +536,19 @@ async function _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, 
           input.value = val;
         });
       });
+
+      // Reactive aid display — update when targets change
+      _refreshAidDisplay(el, forager);
+      const hookId = Hooks.on("targetToken", () => _refreshAidDisplay(el, forager));
+
+      // Clean up hook when dialog is removed from DOM
+      const observer = new MutationObserver(() => {
+        if (!document.body.contains(el)) {
+          Hooks.off("targetToken", hookId);
+          observer.disconnect();
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
     },
   });
 }
@@ -425,9 +559,15 @@ async function _showForagePrompt(forager, envDef, primaryLabel, secondaryLabel, 
  * Check whether a failed forage triggers a failure event.
  * Nat 1 = always. Otherwise 1% chance per point missed below lowest tier DC.
  * GM "arm next failure" override forces the event regardless.
+ * When triggered, effects apply to forager AND all aiders.
+ * @param {Actor} forager
+ * @param {boolean} isNat1
+ * @param {number} failMargin
+ * @param {object} foragingConfig
+ * @param {Actor[]} [aiders=[]] - Aiding characters who also suffer failure effects
  * @returns {object|null} Resolved failure event or null
  */
-async function _checkFailureEvent(forager, isNat1, failMargin, foragingConfig) {
+async function _checkFailureEvent(forager, isNat1, failMargin, foragingConfig, aiders = []) {
   const armed = foragingConfig.failureEventArmed ?? false;
 
   let triggered = false;
@@ -442,9 +582,11 @@ async function _checkFailureEvent(forager, isNat1, failMargin, foragingConfig) {
   if (!triggered) return null;
 
   // Disarm the GM override if it was set
+  const chosenEventId = foragingConfig.failureEventChoice ?? "";
   if (armed) {
     const updatedConfig = foundry.utils.deepClone(foragingConfig);
     updatedConfig.failureEventArmed = false;
+    updatedConfig.failureEventChoice = "";
     await game.settings.set(MODULE_ID, "foragingConfig", updatedConfig);
     // Re-render the panel so the checkbox unchecks visually
     const { ForagingPanel } = await import("./foraging-panel.js");
@@ -466,10 +608,22 @@ async function _checkFailureEvent(forager, isNat1, failMargin, foragingConfig) {
     return null;
   }
   const table = await pack.getDocument(tableEntry._id);
-  const draw = await table.draw({ displayChat: false });
-  if (!draw.results.length) return null;
 
-  const result = draw.results[0];
+  // If GM chose a specific event, find it directly; otherwise random draw
+  let result;
+  if (armed && chosenEventId) {
+    result = table.results.contents.find(
+      (r) => (r.flags?.[MODULE_ID]?.eventId ?? r.id) === chosenEventId
+    );
+    if (!result) {
+      console.warn(`${MODULE_ID} | Chosen failure event "${chosenEventId}" not found, falling back to random.`);
+    }
+  }
+  if (!result) {
+    const draw = await table.draw({ displayChat: false });
+    if (!draw.results.length) return null;
+    result = draw.results[0];
+  }
   const flags = result.flags?.[MODULE_ID] ?? {};
   if (!flags.failureEvent) return null;
 
@@ -504,8 +658,12 @@ async function _checkFailureEvent(forager, isNat1, failMargin, foragingConfig) {
     }
     resolvedDescription = resolvedDescription.replace("{damage}", `${damageTotal} ${flags.damageType ?? ""}`);
 
+    // Apply damage to forager + all aiders
     if (event.auto === "damage" || event.auto === "damage+effect") {
       await _applyDamage(forager, damageTotal, flags.damageType);
+      for (const aider of aiders) {
+        await _applyDamage(aider, damageTotal, flags.damageType);
+      }
     }
   }
 
@@ -518,26 +676,36 @@ async function _checkFailureEvent(forager, isNat1, failMargin, foragingConfig) {
     }
   }
 
-  // Auto-apply exhaustion
+  // All affected characters = forager + aiders
+  const allAffected = [forager, ...aiders];
+
+  // Auto-apply exhaustion to all affected
   if (event.auto === "exhaustion") {
-    await _applyExhaustion(forager);
+    for (const actor of allAffected) {
+      await _applyExhaustion(actor);
+    }
   }
 
-  // Auto-halve ammo
+  // Auto-halve ammo for all affected
   if (event.auto === "ammo") {
-    await _halveAmmo(forager);
+    for (const actor of allAffected) {
+      await _halveAmmo(actor);
+    }
   }
 
-  // Auto-apply ActiveEffect debuff
+  // Auto-apply ActiveEffect debuff to all affected
   if (event.auto === "effect" || event.auto === "damage+effect") {
     if (flags.effectName) {
-      await _applyDebuffEffect(forager, {
+      const effectDef = {
         name: flags.effectName,
         icon: flags.effectIcon ?? "icons/svg/aura.svg",
         durationHours: flags.effectDurationHours ?? 24,
         changes: flags.effectChanges ?? [],
         description: flags.effectDescription ?? "",
-      });
+      };
+      for (const actor of allAffected) {
+        await _applyDebuffEffect(actor, effectDef);
+      }
     }
   }
 
@@ -582,9 +750,10 @@ async function _halveAmmo(actor) {
     );
     if (ammoItems.length === 0) return;
     const target = ammoItems[Math.floor(Math.random() * ammoItems.length)];
-    const newQty = Math.floor(target.system.quantity / 2);
+    const originalQty = target.system.quantity;
+    const newQty = Math.floor(originalQty / 2);
     await actor.updateEmbeddedDocuments("Item", [{ _id: target.id, "system.quantity": newQty }]);
-    ui.notifications.warn(`${actor.name} loses half their ${target.name} (${target.system.quantity} → ${newQty})!`);
+    ui.notifications.warn(`${actor.name} loses half their ${target.name} (${originalQty} → ${newQty})!`);
   } catch (err) {
     console.warn(`${MODULE_ID} | Failed to halve ammo:`, err);
   }
@@ -629,6 +798,36 @@ async function _applyDebuffEffect(actor, effectDef) {
 }
 
 /* ---- Skill Roll ---- */
+
+/**
+ * Roll a skill check silently (no dialog, no chat message).
+ * Constructs the roll directly from the actor's skill modifier.
+ * Used for aid rolls where we just need the total.
+ * @param {Actor} actor
+ * @param {string} skillId - dnd5e skill abbreviation (e.g., "sur")
+ * @returns {Promise<{total: number, d20: number}|null>}
+ */
+async function _rollSilentSkillCheck(actor, skillId) {
+  try {
+    const skill = actor.system.skills?.[skillId];
+    if (!skill) return null;
+    const modifier = skill.total ?? 0;
+    const roll = await new Roll(`1d20 + ${modifier}`).evaluate();
+
+    // Post a minimal chat card so players can see the result
+    await ChatMessage.create({
+      flavor: `${actor.name} — Survival (Aid)`,
+      rolls: [roll],
+      speaker: ChatMessage.getSpeaker({ actor }),
+    });
+
+    const d20 = roll.dice?.[0]?.total ?? roll.terms?.[0]?.total;
+    return { total: roll.total, d20 };
+  } catch (err) {
+    console.error(`${MODULE_ID} | Silent skill check failed for ${actor.name}:`, err);
+    return null;
+  }
+}
 
 async function _rollForageCheck(forager, skillId) {
   let rolls;

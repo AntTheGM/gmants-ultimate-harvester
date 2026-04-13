@@ -75,3 +75,4 @@ All 23 rules decisions are now **resolved** — see the summary table at the bot
 - **Specific overrides**: High Priority creatures + all Tomb of Annihilation creatures (~150+ unique)
 - **Foraging environments**: All 10 (General, Jungle, Arctic, Desert, Swamp, Coastal, Mountain, Underground, Urban, Plains)
 - **Foraging mechanic**: Hybrid — Survival DC check, then d20 table roll with +1 per 5 margin-of-success
+- **Foraging aid**: Up to 2 allies can aid via Foundry targeting — each rolls Survival silently vs base DC, granting +1 per success. Failure events affect all participants.

@@ -84,6 +84,9 @@ export class ForagingPanel extends HandlebarsApplicationMixin(ApplicationV2) {
     const totalMod = weatherMod + seasonMod + dmMod;
     const effectiveDCs = baseTiers.map((dc) => dc + totalMod);
 
+    // Load failure events from compendium for the dropdown
+    const failureEvents = await ForagingPanel.#loadFailureEvents();
+
     return {
       environments,
       weatherOptions,
@@ -96,7 +99,34 @@ export class ForagingPanel extends HandlebarsApplicationMixin(ApplicationV2) {
       totalMod,
       environmentLabel: currentEnv?.label ?? "Not set",
       failureEventArmed: config.failureEventArmed ?? false,
+      failureEventChoice: config.failureEventChoice ?? "",
+      failureEvents,
     };
+  }
+
+  /**
+   * Load failure event entries from the Foraging Failure Events RollTable.
+   * Returns an array of { id, label } for the dropdown.
+   */
+  static async #loadFailureEvents() {
+    try {
+      const pack = game.packs.get(`${MODULE_ID}.foraging-tables`);
+      if (!pack) return [];
+      const index = await pack.getIndex();
+      const tableEntry = index.find((e) => e.name === "Foraging Failure Events");
+      if (!tableEntry) return [];
+      const table = await pack.getDocument(tableEntry._id);
+      return table.results.contents
+        .filter((r) => r.flags?.[MODULE_ID]?.failureEvent)
+        .sort((a, b) => a.range[0] - b.range[0])
+        .map((r) => ({
+          id: r.flags[MODULE_ID].eventId ?? r.id,
+          label: r.text,
+        }));
+    } catch (err) {
+      console.warn(`${MODULE_ID} | Failed to load failure events for panel:`, err);
+      return [];
+    }
   }
 
   _onRender(context, options) {
@@ -109,6 +139,7 @@ export class ForagingPanel extends HandlebarsApplicationMixin(ApplicationV2) {
   /**
    * Auto-save the "Arm Next Failure" checkbox immediately on change,
    * so the GM doesn't have to hit Save Configuration for it to take effect.
+   * Re-renders the panel to show/hide the event dropdown.
    */
   #bindArmCheckbox() {
     const cb = this.element.querySelector("input[name='failureEventArmed']");
@@ -116,6 +147,17 @@ export class ForagingPanel extends HandlebarsApplicationMixin(ApplicationV2) {
     cb.addEventListener("change", async () => {
       const config = foundry.utils.deepClone(game.settings.get(MODULE_ID, "foragingConfig") ?? {});
       config.failureEventArmed = cb.checked;
+      if (!cb.checked) config.failureEventChoice = "";
+      await game.settings.set(MODULE_ID, "foragingConfig", config);
+      this.render();
+    });
+
+    // Auto-save the event choice dropdown
+    const select = this.element.querySelector("select[name='failureEventChoice']");
+    if (!select) return;
+    select.addEventListener("change", async () => {
+      const config = foundry.utils.deepClone(game.settings.get(MODULE_ID, "foragingConfig") ?? {});
+      config.failureEventChoice = select.value;
       await game.settings.set(MODULE_ID, "foragingConfig", config);
     });
   }
@@ -160,9 +202,11 @@ export class ForagingPanel extends HandlebarsApplicationMixin(ApplicationV2) {
       primarySkill: formData.primarySkill || "",
       secondarySkill: formData.secondarySkill || "",
       failureEventArmed: !!formData.failureEventArmed,
+      failureEventChoice: formData.failureEventChoice || "",
     };
 
     await game.settings.set(MODULE_ID, "foragingConfig", config);
     ui.notifications.info(`Foraging environment set to: ${FORAGING_ENVIRONMENTS[config.environment]?.label ?? config.environment}`);
+    this.close();
   }
 }

@@ -62,15 +62,27 @@
 
   <div class="ultimate-harvester-section">
     <div class="ultimate-harvester-section-header">
-      <span><i class="fas fa-exclamation-triangle"></i> Failure Events</span>
+      <span><i class="fas fa-exclamation-triangle"></i> {{localize "MHARVEST.Panel.FailureEventsTitle"}}</span>
     </div>
     <div class="ultimate-harvester-select-row">
-      <label title="Forces the next failed forage roll to trigger a failure event, then automatically unchecks.">Arm Next Failure</label>
+      <label title="Forces the next failed forage roll to trigger a specific failure event, then automatically resets.">{{localize "MHARVEST.Panel.ArmNextFailure"}}</label>
       <input type="checkbox" name="failureEventArmed" {{#if failureEventArmed}}checked{{/if}} />
     </div>
+    {{#if failureEventArmed}}
+      <div class="ultimate-harvester-select-row">
+        <label>Event</label>
+        <select name="failureEventChoice">
+          <option value="" {{#unless failureEventChoice}}selected{{/unless}}>Random (d10)</option>
+          {{#each failureEvents}}
+            <option value="{{this.id}}" {{#if (eq this.id ../failureEventChoice)}}selected{{/if}}>
+              {{this.label}}
+            </option>
+          {{/each}}
+        </select>
+      </div>
+    {{/if}}
     <p class="ultimate-harvester-note">
-      Nat 1 = always triggers. Otherwise 1% per point missed.
-      <br>Check the box to force the next failure to trigger an event.
+      {{localize "MHARVEST.Panel.FailureEventsHint"}}
     </p>
   </div>
 

@@ -1,7 +1,7 @@
 # Ultimate Harvester — Implementation Plan
 
-**Status**: Phases 1-7 Mostly Complete, Phase 8 Not Started
-**Last Updated**: 2026-03-26
+**Status**: Phases 1-7 Mostly Complete, v2.1.0 Aid System Complete, Phase 8 Not Started
+**Last Updated**: 2026-04-13
 **Related Docs**: [Technical Architecture](harvester_module.md) | [Game Rules](harvester_rules.md) | [VTTools Style Guide](../module_styles.md)
 
 ---
@@ -415,6 +415,33 @@ Production-quality UI, styled chat cards, and GM convenience features.
 
 ---
 
+### v2.1.0: Foraging Aid System & GM Failure Event Picker
+
+**Added in:** v2.1.0
+
+New foraging aid mechanic and GM quality-of-life improvements.
+
+- [x] **Foraging Aid** — Forager can target up to 2 allies via Foundry's native targeting system
+  - Aid section in forage prompt (collapsible dropdown) with reactive display via `targetToken` hook
+  - Each aider auto-rolls Survival (silent roll, no dialog) vs the base adjusted DC
+  - Each aider who beats the DC grants +1 to the forager's roll total
+  - Targets read at submit time (not dialog open time) for reliability
+  - MutationObserver auto-cleans up hooks when dialog closes
+- [x] **Combined chat card** — Merged "spends X hours foraging" + roll breakdown + outcome into one card
+  - Shows environment name, standard DC, DC adjustments (hours, aid), roll vs DC, and outcome tier
+  - In-character flavor: "foraging in the [biome] with [aider names]"
+- [x] **Failure events apply to all participants** — On critical failure, damage/exhaustion/debuffs/ammo loss applies to forager AND all aiders
+- [x] **GM Failure Event Picker** — Arm Next Failure checkbox now reveals a dropdown of all 10 failure events
+  - "Random (d10)" default option plus all specific events loaded from compendium
+  - Both checkbox and dropdown auto-save immediately (no Save button needed)
+  - Selection resets automatically after the armed event fires
+- [x] **Foraging Panel closes on save** — Save Configuration button now closes the panel
+- [x] **Ammo halving bug fix** — Fixed notification showing same quantity for old→new due to Foundry reactive data proxy; now captures original quantity before update
+- [x] CSS: aid row, aid hint, badge styles for the forage prompt
+- [x] i18n: 8 new localization keys (`MHARVEST.Aid.*`)
+
+---
+
 ### Phase 8: Final Content & Documentation — NOT STARTED
 
 **Depends on:** Phases 4-6
@@ -444,8 +471,8 @@ As of Phases 1-3 + iteration:
 | `scripts/harvesting.js` | Core workflow — creature-centric harvest + appraisal + retry + sequential looting |
 | `scripts/table-lookup.js` | 4-priority layered fallback table lookup with cached indexes |
 | `scripts/socket.js` | Optional socketlib — `gmSetFlag()`, `gmCreateEmbeddedDocuments()` |
-| `scripts/foraging.js` | Foraging workflow — hours prompt → skill roll → cumulative tier resolution → table draw → pickup → award |
-| `scripts/foraging-panel.js` | ApplicationV2 DM panel — environment/weather/season/skills/DM modifier with live DC preview |
+| `scripts/foraging.js` | Foraging workflow — hours prompt → aid rolls → skill roll → cumulative tier resolution → table draw → pickup → award. Includes silent aid rolls, combined chat card, failure event propagation to aiders |
+| `scripts/foraging-panel.js` | ApplicationV2 DM panel — environment/weather/season/skills/DM modifier with live DC preview. Failure event picker dropdown, auto-save arm checkbox |
 | `scripts/test-data.js` | Dev seeder — loads all JSON from `packs/_source/` into compendium packs via FilePicker |
 | `styles/ultimate-harvester.css` | VTTools palette, icon colors, time banners, difficulty labels, badges, layout |
 | `templates/harvest-dialog.hbs` | Initial Appraise/Harvest/Cancel dialog with time estimates, info dropdowns, penalty display |

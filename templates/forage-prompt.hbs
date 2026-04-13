@@ -14,6 +14,25 @@
     <span style="font-size: 0.85rem;">hours</span>
   </div>
 
+  {{!-- Aiding Characters (collapsible, reactively updated) --}}
+  <details class="ultimate-harvester-info">
+    <summary><i class="fas fa-hands-helping"></i> {{localize "MHARVEST.Aid.SectionTitle"}} <span class="ultimate-harvester-badge" data-aid-badge {{#unless hasAiders}}style="display:none"{{/unless}}>{{aiderCount}}</span></summary>
+    <div class="ultimate-harvester-info-content" data-aid-content>
+      {{#if hasAiders}}
+        <div class="ultimate-harvester-aid-row">
+          <i class="fas fa-crosshairs"></i>
+          <span>{{aiderNames}}</span>
+        </div>
+        <div class="ultimate-harvester-aid-hint">
+          <i class="fas fa-dice-d20 ultimate-harvester-icon--success"></i>
+          <small>{{localize "MHARVEST.Aid.RollHint"}}</small>
+        </div>
+      {{else}}
+        <p class="ultimate-harvester-empty" style="padding: 0.4rem 0;">{{localize "MHARVEST.Aid.SelectHint"}}</p>
+      {{/if}}
+    </div>
+  </details>
+
   <details class="ultimate-harvester-info">
     <summary><i class="fas fa-info-circle"></i> How does foraging work?</summary>
     <div class="ultimate-harvester-info-content">
@@ -22,6 +41,7 @@
         <li>Better rolls improve both the variety and quantity of what you discover</li>
         <li>Higher tiers have a chance to yield crafting components, alchemical reagents, and rare materials</li>
         <li>Every 2 hours after the first reduces the DC by 1</li>
+        <li><strong>Aid:</strong> Target up to 2 allies &mdash; each rolls Survival vs the base DC, granting +1 on success</li>
       </ul>
       <p class="ultimate-harvester-note"><i class="fas fa-exclamation-triangle ultimate-harvester-icon--warning"></i> <strong>Extreme failures</strong> may trigger dangerous events &mdash; all characters involved in the foraging attempt will suffer any negative effects.</p>
     </div>
