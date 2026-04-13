@@ -6,7 +6,8 @@
 import {
   MODULE_ID, SKILL_LABELS, ITEM_CATEGORIES,
   FORAGING_ENVIRONMENTS, WEATHER_MODIFIERS, SEASON_MODIFIERS,
-  FORAGE_BUNDLE, FORAGE_QUANTITY_DICE, FORAGE_RARE_THRESHOLD,
+  FORAGE_TIER_DISTRIBUTION, FORAGE_MARGIN_SHIFT, FORAGE_QUANTITY_DICE,
+  FORAGE_RARE_THRESHOLD,
   formatTime,
 } from "./config.js";
 import { drawFromPool } from "./item-pool.js";
@@ -104,10 +105,14 @@ export async function initiateForage() {
     return;
   }
 
-  // --- v2 Bundle System: draw from dynamic item pools ---
-  const tierNames = ["Tier 1", "Tier 2", "Tier 3", "Rare"];
+  // --- v2 Bundle System: percentage-based tier distribution ---
+  const tierNames = { 1: "Tier 1", 2: "Tier 2", 3: "Tier 3", 4: "Rare" };
   let foragedItems = [];
+  // Highest normal tier (0-2 index → 1-3 tier number), excluding Rare (index 3)
+  const highestNormalIdx = [...qualifiedTiers].filter((t) => t < 3).pop() ?? 0;
+  const highestNormalTier = highestNormalIdx + 1;
   const highestTier = qualifiedTiers[qualifiedTiers.length - 1];
+  const hasRare = qualifiedTiers.includes(3);
 
   // Resolve the biome config key from the environment definition
   const biomeKey = Object.entries(FORAGING_ENVIRONMENTS).find(([, v]) => v === envDef)?.[0];
@@ -115,45 +120,79 @@ export async function initiateForage() {
     return ui.notifications.warn(`Unknown environment config for ${envDef.label}`);
   }
 
-  // Running draw position across all tiers (for survival-first rules)
+  // Stack count: 1d2+1 base, +1 per tier beyond Tier 1, +1 for Rare
+  const baseStacks = await new Roll("1d2+1").evaluate();
+  const tierBonus = Math.max(0, highestNormalTier - 1); // +0 for T1, +1 for T2, +2 for T3
+  const totalStacks = baseStacks.total + tierBonus;
+
+  // Margin from highest normal tier's DC (for distribution shift)
+  const highestDC = highestNormalIdx < adjustedDCs.length
+    ? adjustedDCs[highestNormalIdx]
+    : adjustedDCs[adjustedDCs.length - 1];
+  const marginBonus = Math.floor(Math.max(0, total - highestDC) / 5);
+
+  // Track drawn items per tier to prevent duplicates within same tier
+  const excludeByTier = {};
+
   let drawPosition = 0;
 
-  for (const tierIdx of qualifiedTiers) {
-    const tierNum = tierIdx + 1; // tierIdx 0-3 → tier 1-4
-    const tierLabel = tierNames[tierIdx] ?? "Tier 1";
-    const stackFormula = FORAGE_BUNDLE[tierNum] || "1";
+  // Draw regular stacks using tier distribution
+  for (let s = 0; s < totalStacks; s++) {
+    // Determine which tier this stack draws from using percentage distribution
+    const drawTier = _rollTierDistribution(highestNormalTier, marginBonus);
+    const tierLabel = tierNames[drawTier] ?? "Tier 1";
 
-    // Per-tier margin: how far above THIS tier's DC, not the lowest
-    const tierDC = tierIdx < adjustedDCs.length ? adjustedDCs[tierIdx] : adjustedDCs[adjustedDCs.length - 1];
+    // Per-tier margin for quantity die
+    const tierDCIdx = drawTier - 1;
+    const tierDC = tierDCIdx < adjustedDCs.length ? adjustedDCs[tierDCIdx] : adjustedDCs[adjustedDCs.length - 1];
     const tierMargin = Math.floor(Math.max(0, total - tierDC) / 5);
     const qtyDie = FORAGE_QUANTITY_DICE[Math.min(tierMargin, FORAGE_QUANTITY_DICE.length - 1)];
 
-    // Roll how many unique stacks for this tier
-    const stackRoll = await new Roll(stackFormula).evaluate();
-    const stackCount = stackRoll.total;
+    // Survival-first category constraint
+    const categoryConstraint = _getCategoryConstraint(drawPosition);
 
-    // Track drawn items within this tier to prevent duplicates
-    const tierExclude = new Set();
+    if (!excludeByTier[drawTier]) excludeByTier[drawTier] = new Set();
+    const poolEntry = await drawFromPool(biomeKey, drawTier, categoryConstraint, excludeByTier[drawTier]);
+    if (!poolEntry) {
+      console.warn(`${MODULE_ID} | No pool entry for ${biomeKey}/tier${drawTier}/${categoryConstraint ?? "any"}`);
+      continue;
+    }
 
-    for (let s = 0; s < stackCount; s++) {
-      // Survival-first category constraint by draw position
-      const categoryConstraint = _getCategoryConstraint(drawPosition);
+    excludeByTier[drawTier].add(poolEntry.uuid);
 
-      const poolEntry = await drawFromPool(biomeKey, tierNum, categoryConstraint, tierExclude);
-      if (!poolEntry) {
-        console.warn(`${MODULE_ID} | No pool entry for ${biomeKey}/tier${tierNum}/${categoryConstraint ?? "any"}`);
-        continue;
+    const quantityRoll = await new Roll(qtyDie).evaluate();
+
+    let description = "";
+    try {
+      const sourceItem = await fromUuid(poolEntry.uuid);
+      if (sourceItem) {
+        const div = document.createElement("div");
+        div.innerHTML = sourceItem.system.description?.value ?? "";
+        description = div.textContent?.trim() ?? "";
       }
+    } catch { /* ignore */ }
 
-      tierExclude.add(poolEntry.uuid);
+    foragedItems.push({
+      name: poolEntry.name,
+      uuid: poolEntry.uuid,
+      quantity: quantityRoll.total,
+      category: poolEntry.category,
+      description,
+      tierLabel,
+    });
 
-      // Roll quantity for this stack using per-tier quantity die
-      const quantityRoll = await new Roll(qtyDie).evaluate();
+    drawPosition++;
+  }
 
-      // Fetch item description for pickup dialog
+  // Rare stack: always exactly 1 if qualified, drawn from Rare pool
+  if (hasRare) {
+    const rareCat = _getCategoryConstraint(drawPosition);
+    const rareEntry = await drawFromPool(biomeKey, 4, rareCat, null);
+    if (rareEntry) {
+      const rareQty = await new Roll("1d2").evaluate();
       let description = "";
       try {
-        const sourceItem = await fromUuid(poolEntry.uuid);
+        const sourceItem = await fromUuid(rareEntry.uuid);
         if (sourceItem) {
           const div = document.createElement("div");
           div.innerHTML = sourceItem.system.description?.value ?? "";
@@ -162,15 +201,13 @@ export async function initiateForage() {
       } catch { /* ignore */ }
 
       foragedItems.push({
-        name: poolEntry.name,
-        uuid: poolEntry.uuid,
-        quantity: quantityRoll.total,
-        category: poolEntry.category,
+        name: rareEntry.name,
+        uuid: rareEntry.uuid,
+        quantity: rareQty.total,
+        category: rareEntry.category,
         description,
-        tierLabel,
+        tierLabel: "Rare",
       });
-
-      drawPosition++;
     }
   }
 
@@ -263,7 +300,38 @@ export async function initiateForage() {
   }
 }
 
-/* ---- Survival-First Draw Order ---- */
+/* ---- Tier Distribution & Draw Order ---- */
+
+/**
+ * Roll which tier pool a stack draws from, using the percentage-based
+ * distribution table. Margin bonus shifts probability toward higher tiers.
+ *
+ * @param {number} highestTier - Highest normal qualifying tier (1-3)
+ * @param {number} margin - Margin-of-success bonus (shifts +10% per point)
+ * @returns {number} Tier number to draw from (1-3)
+ */
+function _rollTierDistribution(highestTier, margin) {
+  const baseDist = FORAGE_TIER_DISTRIBUTION[highestTier];
+  if (!baseDist || baseDist.length === 1) return 1; // Tier 1 only
+
+  // Apply margin shift: move probability from lowest tier to highest
+  // Each margin point shifts 10% (FORAGE_MARGIN_SHIFT) from T1 → highest
+  const shift = Math.min(margin * FORAGE_MARGIN_SHIFT, baseDist[0][0] - 10); // Don't reduce T1 below 10%
+
+  // Build adjusted thresholds
+  const adjusted = baseDist.map(([threshold, tier]) => [threshold, tier]);
+  if (shift > 0 && adjusted.length > 1) {
+    adjusted[0][0] -= shift; // Reduce lowest tier %
+    // Add shift to highest tier (by reducing the second-to-last threshold)
+    adjusted[adjusted.length - 2][0] -= shift;
+  }
+
+  const roll = Math.floor(Math.random() * 100) + 1; // 1-100
+  for (const [threshold, tier] of adjusted) {
+    if (roll <= threshold) return tier;
+  }
+  return 1; // fallback
+}
 
 /**
  * Return the category constraint for a given draw position (across all tiers).

@@ -1,0 +1,53 @@
+{
+  "_id": "e50ea7b8c3df91a6",
+  "name": "River Trout",
+  "type": "consumable",
+  "img": "icons/consumables/meat/fillet-fish-pink-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p>A speckled trout pulled from a forest stream; flaky flesh with a clean taste.</p>"
+    },
+    "weight": {
+      "value": 1.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 1,
+      "biomes": [
+        "light-forest"
+      ],
+      "tier": 2
+    }
+  },
+  "_key": "!items!e50ea7b8c3df91a6",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

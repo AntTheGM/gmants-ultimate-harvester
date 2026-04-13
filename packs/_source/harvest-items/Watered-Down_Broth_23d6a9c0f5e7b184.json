@@ -1,0 +1,61 @@
+{
+  "_id": "23d6a9c0f5e7b184",
+  "name": "Watered-Down Broth",
+  "type": "consumable",
+  "img": "icons/consumables/drinks/flask-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Thin broth stretched from scraps and wild greens; barely a meal but it warms the belly.</p>"
+    },
+    "weight": {
+      "value": 1.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "drink",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "drink",
+      "source": "foraged",
+      "shelfLife": 0,
+      "biomes": [
+        "arctic",
+        "coastal",
+        "dense-forest",
+        "light-forest",
+        "mountain",
+        "plains",
+        "swamp",
+        "underground",
+        "urban"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!23d6a9c0f5e7b184",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -90,8 +90,9 @@ async function _ensureIndex() {
  *
  * @param {string} biome - Environment key (e.g., "coastal")
  * @param {number} tier - Tier number (1-4)
- * @param {string|null} [category=null] - Category filter ("food", "component", "material", "trophy").
- *   Pass `null` for all categories. Pass `"non-food"` for everything except food.
+ * @param {string|null} [category=null] - Category filter ("food", "component", "material", "trophy", "drink").
+ *   Pass `null` for all categories. Pass `"food"` for food AND drink (survival essentials).
+ *   Pass `"non-food"` for everything except food and drink.
  * @returns {Promise<Array>} Array of pool entries [{name, uuid, category}]
  */
 export async function getPool(biome, tier, category = null) {
@@ -104,10 +105,15 @@ export async function getPool(biome, tier, category = null) {
     return Object.values(tierPool).flat();
   }
 
+  if (category === "food") {
+    // Food AND drink — both are survival essentials
+    return [...(tierPool["food"] || []), ...(tierPool["drink"] || [])];
+  }
+
   if (category === "non-food") {
-    // Everything except food
+    // Everything except food and drink
     return Object.entries(tierPool)
-      .filter(([cat]) => cat !== "food")
+      .filter(([cat]) => cat !== "food" && cat !== "drink")
       .flatMap(([, items]) => items);
   }
 
@@ -125,26 +131,40 @@ export async function getPool(biome, tier, category = null) {
  * @returns {Promise<Object|null>} A pool entry {name, uuid, category} or null if empty
  */
 export async function drawFromPool(biome, tier, category = null, exclude = null) {
-  let pool = await getPool(biome, tier, category);
+  const _filterExcluded = (items) =>
+    exclude && exclude.size > 0 ? items.filter((item) => !exclude.has(item.uuid)) : items;
 
-  // Filter out excluded items
-  if (exclude && exclude.size > 0) {
-    pool = pool.filter((item) => !exclude.has(item.uuid));
+  let pool = _filterExcluded(await getPool(biome, tier, category));
+
+  if (pool.length > 0) {
+    return pool[Math.floor(Math.random() * pool.length)];
   }
 
-  if (pool.length === 0) {
-    // Fallback: if category constraint produced empty pool, try unconstrained
-    if (category !== null) {
-      console.warn(`${MODULE_ID} | Empty pool for ${biome}/tier${tier}/${category} — falling back to unconstrained`);
-      pool = await getPool(biome, tier, null);
-      if (exclude && exclude.size > 0) {
-        pool = pool.filter((item) => !exclude.has(item.uuid));
+  // --- Fallback chain when category-constrained pool is empty ---
+  if (category !== null) {
+    // 1) Try progressively lower tiers, keeping the category constraint
+    for (let fallbackTier = tier - 1; fallbackTier >= 1; fallbackTier--) {
+      pool = _filterExcluded(await getPool(biome, fallbackTier, category));
+      if (pool.length > 0) {
+        console.warn(
+          `${MODULE_ID} | Empty ${category} pool for ${biome}/tier${tier} — fell back to tier${fallbackTier} (same category)`
+        );
+        return pool[Math.floor(Math.random() * pool.length)];
       }
     }
-    if (pool.length === 0) return null;
+
+    // 2) All tiers exhausted for this category — drop constraint, use original tier
+    console.warn(
+      `${MODULE_ID} | No ${category} items in ANY tier for ${biome} — falling back to unconstrained tier${tier}`
+    );
+    pool = _filterExcluded(await getPool(biome, tier, null));
+    if (pool.length > 0) {
+      return pool[Math.floor(Math.random() * pool.length)];
+    }
   }
 
-  return pool[Math.floor(Math.random() * pool.length)];
+  // Nothing at all
+  return null;
 }
 
 /**

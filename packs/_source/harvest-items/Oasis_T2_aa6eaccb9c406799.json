@@ -1,0 +1,53 @@
+{
+  "_id": "aa6eaccb9c406799",
+  "name": "Oasis",
+  "type": "consumable",
+  "img": "icons/consumables/drinks/water-cup-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>A hidden desert oasis \u2014 a pool of fresh water shaded by scraggly palms. A rare and precious find in the wastes. <em>The party may refill all empty water containers.</em></p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1,
+    "type": {
+      "value": "drink",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "drink",
+      "source": "foraged",
+      "shelfLife": 0,
+      "biomes": [
+        "desert"
+      ],
+      "tier": 2
+    }
+  },
+  "_key": "!items!aa6eaccb9c406799",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

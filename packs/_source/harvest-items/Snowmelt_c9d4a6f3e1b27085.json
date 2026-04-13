@@ -1,0 +1,54 @@
+{
+  "_id": "c9d4a6f3e1b27085",
+  "name": "Snowmelt",
+  "type": "consumable",
+  "img": "icons/consumables/drinks/flask-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Melted snow gathered in a pot over a small fire; clean but flat and tasteless.</p>"
+    },
+    "weight": {
+      "value": 1.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "drink",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "drink",
+      "source": "foraged",
+      "shelfLife": 0,
+      "biomes": [
+        "arctic",
+        "mountain"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!c9d4a6f3e1b27085",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

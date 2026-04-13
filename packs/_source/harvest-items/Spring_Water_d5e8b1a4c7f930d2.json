@@ -1,0 +1,55 @@
+{
+  "_id": "d5e8b1a4c7f930d2",
+  "name": "Spring Water",
+  "type": "consumable",
+  "img": "icons/consumables/drinks/water-jug-clay-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Water bubbling up from a natural spring; crisp and mineral-rich.</p>"
+    },
+    "weight": {
+      "value": 1.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "drink",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "drink",
+      "source": "foraged",
+      "shelfLife": 0,
+      "biomes": [
+        "light-forest",
+        "mountain",
+        "underground"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!d5e8b1a4c7f930d2",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

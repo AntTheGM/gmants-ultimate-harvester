@@ -1,0 +1,57 @@
+{
+  "_id": "cd8b4e70acbdfd71",
+  "name": "Waterfall",
+  "type": "consumable",
+  "img": "icons/consumables/drinks/water-cup-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>A cascading waterfall fed by mountain runoff \u2014 pristine and ice-cold. <em>The party may refill all empty water containers.</em></p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "drink",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "drink",
+      "source": "foraged",
+      "shelfLife": 0,
+      "biomes": [
+        "arctic",
+        "dense-forest",
+        "light-forest",
+        "mountain",
+        "underground"
+      ],
+      "tier": 2
+    }
+  },
+  "_key": "!items!cd8b4e70acbdfd71",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "a3f1c72e8b4d09a6",
+  "name": "Fresh River Water",
+  "type": "consumable",
+  "img": "icons/consumables/drinks/pitcher-dripping-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>Cool water scooped from a clear-running river; tastes faintly of stone and earth.</p>"
+    },
+    "weight": {
+      "value": 1.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "drink",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "drink",
+      "source": "foraged",
+      "shelfLife": 0,
+      "biomes": [
+        "light-forest",
+        "mountain",
+        "plains"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!a3f1c72e8b4d09a6",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

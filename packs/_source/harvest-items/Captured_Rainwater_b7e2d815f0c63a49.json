@@ -1,0 +1,56 @@
+{
+  "_id": "b7e2d815f0c63a49",
+  "name": "Captured Rainwater",
+  "type": "consumable",
+  "img": "icons/consumables/drinks/glass-water-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Rainwater funneled into a flask using broad leaves; pure and slightly sweet.</p>"
+    },
+    "weight": {
+      "value": 1.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "drink",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "drink",
+      "source": "foraged",
+      "shelfLife": 0,
+      "biomes": [
+        "coastal",
+        "dense-forest",
+        "plains",
+        "swamp"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!b7e2d815f0c63a49",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

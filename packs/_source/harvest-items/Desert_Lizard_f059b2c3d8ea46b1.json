@@ -1,0 +1,53 @@
+{
+  "_id": "f059b2c3d8ea46b1",
+  "name": "Desert Lizard",
+  "type": "consumable",
+  "img": "icons/consumables/meat/drumstick-bone-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>A small sun-baked lizard caught among the rocks; not much meat but easy to prepare.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 1,
+      "biomes": [
+        "desert"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!f059b2c3d8ea46b1",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "_id": "b91120bd36eae528",
+  "name": "Clean River Water",
+  "type": "consumable",
+  "img": "icons/consumables/drinks/water-cup-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>A stretch of clear, flowing river water. Safe to drink directly. <em>The party may refill all empty water containers.</em></p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "drink",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "drink",
+      "source": "foraged",
+      "shelfLife": 0,
+      "biomes": [
+        "arctic",
+        "coastal",
+        "dense-forest",
+        "light-forest",
+        "mountain",
+        "plains",
+        "swamp",
+        "underground",
+        "urban"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!b91120bd36eae528",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

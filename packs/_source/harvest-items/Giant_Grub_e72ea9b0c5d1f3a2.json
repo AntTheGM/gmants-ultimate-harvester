@@ -1,0 +1,53 @@
+{
+  "_id": "e72ea9b0c5d1f3a2",
+  "name": "Giant Grub",
+  "type": "consumable",
+  "img": "icons/consumables/meat/drumstick-bone-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>A fat pale larva dug from rotting wood; pops when bitten and tastes vaguely nutty.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 1,
+      "biomes": [
+        "underground"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!e72ea9b0c5d1f3a2",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "_id": "f7a0d3c6e9b152f4",
+  "name": "Brackish Water",
+  "type": "consumable",
+  "img": "icons/consumables/drinks/glass-water-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Murky water with a faint salty tang; drinkable but unpleasant and best boiled first.</p>"
+    },
+    "weight": {
+      "value": 1.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "cp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "drink",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "drink",
+      "source": "foraged",
+      "shelfLife": 0,
+      "biomes": [
+        "coastal",
+        "swamp"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!f7a0d3c6e9b152f4",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

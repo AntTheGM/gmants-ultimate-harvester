@@ -1,0 +1,53 @@
+{
+  "_id": "89d2a5b6c1e37f4a",
+  "name": "Crab",
+  "type": "consumable",
+  "img": "icons/consumables/meat/claw-crab-lobster-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>A shore crab cracked open for its sweet white meat; small but satisfying.</p>"
+    },
+    "weight": {
+      "value": 1.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 1,
+      "biomes": [
+        "coastal"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!89d2a5b6c1e37f4a",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

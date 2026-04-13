@@ -1,0 +1,53 @@
+{
+  "_id": "ef48a1b2c7d935a0",
+  "name": "Monitor Lizard",
+  "type": "consumable",
+  "img": "icons/consumables/meat/shank-bone-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>A large jungle lizard; tough hide but generous portions of lean white meat underneath.</p>"
+    },
+    "weight": {
+      "value": 2.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 2,
+      "biomes": [
+        "dense-forest"
+      ],
+      "tier": 3
+    }
+  },
+  "_key": "!items!ef48a1b2c7d935a0",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

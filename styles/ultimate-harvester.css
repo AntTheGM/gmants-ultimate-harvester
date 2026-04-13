@@ -225,6 +225,7 @@ details[open] > .ultimate-harvester-details-toggle::before {
 /* --- Icon Colors (category + functional) --- */
 .ultimate-harvester-icon--material { color: #6b5340; }
 .ultimate-harvester-icon--food { color: var(--mharvest-success); }
+.ultimate-harvester-icon--drink { color: #4a9bd9; }
 .ultimate-harvester-icon--component { color: var(--mharvest-component); }
 .ultimate-harvester-icon--trophy { color: var(--mharvest-gold); }
 .ultimate-harvester-icon--danger { color: var(--mharvest-brand); }

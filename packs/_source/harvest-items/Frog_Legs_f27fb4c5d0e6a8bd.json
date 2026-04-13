@@ -1,0 +1,53 @@
+{
+  "_id": "f27fb4c5d0e6a8bd",
+  "name": "Frog Legs",
+  "type": "consumable",
+  "img": "icons/consumables/meat/hock-leg-pink-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p>Meaty hind legs cut from a swamp bullfrog; surprisingly delicate when fried.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 1,
+      "biomes": [
+        "swamp"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!f27fb4c5d0e6a8bd",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

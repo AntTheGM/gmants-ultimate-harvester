@@ -144,6 +144,7 @@ export const TOOL_MAPPINGS = {
 export const ITEM_CATEGORIES = {
   material: { label: "MHARVEST.Category.Material", icon: "fa-solid fa-cube" },
   food: { label: "MHARVEST.Category.Food", icon: "fa-solid fa-drumstick-bite" },
+  drink: { label: "MHARVEST.Category.Drink", icon: "fa-solid fa-droplet" },
   component: { label: "MHARVEST.Category.Component", icon: "fa-solid fa-flask" },
   trophy: { label: "MHARVEST.Category.Trophy", icon: "fa-solid fa-trophy" },
 };
@@ -198,8 +199,20 @@ export const FORAGING_ENVIRONMENTS = {
  * Foraging v2 bundle constants — see docs/foraging_v2_plan.md.
  */
 
-/** Stacks drawn per qualifying tier. Rolled at forage time. */
-export const FORAGE_BUNDLE = { 1: "1d2", 2: "1d2", 3: "1d2", 4: "1" };
+/**
+ * Tier distribution tables — each stack rolls a d100 to determine which tier
+ * pool it draws from. Indexed by highest qualifying tier (1-3).
+ * Each entry is an array of [threshold, tierNum] pairs checked in order.
+ * Margin bonus shifts +10% toward higher tiers per point.
+ */
+export const FORAGE_TIER_DISTRIBUTION = {
+  1: [[100, 1]],                          // 100% T1
+  2: [[60, 1], [100, 2]],                 // 60% T1, 40% T2
+  3: [[30, 1], [70, 2], [100, 3]],        // 30% T1, 40% T2, 30% T3
+};
+
+/** Margin shift per point: moves 10% from lowest tier to highest per margin. */
+export const FORAGE_MARGIN_SHIFT = 10;
 
 /** Quantity die per stack, indexed by per-tier margin-of-success bonus. */
 export const FORAGE_QUANTITY_DICE = ["1d2", "1d3", "1d4", "1d6"];

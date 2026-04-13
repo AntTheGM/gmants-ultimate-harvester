@@ -1,0 +1,53 @@
+{
+  "_id": "67b0e3f4a9c15d28",
+  "name": "Arctic Char",
+  "type": "consumable",
+  "img": "icons/consumables/meat/fish-whole-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>A cold-water fish pulled from an icy stream; firm pink flesh with a mild flavor.</p>"
+    },
+    "weight": {
+      "value": 2.0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 1,
+      "biomes": [
+        "arctic"
+      ],
+      "tier": 2
+    }
+  },
+  "_key": "!items!67b0e3f4a9c15d28",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

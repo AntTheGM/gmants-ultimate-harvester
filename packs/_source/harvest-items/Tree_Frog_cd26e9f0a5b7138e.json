@@ -1,0 +1,53 @@
+{
+  "_id": "cd26e9f0a5b7138e",
+  "name": "Tree Frog",
+  "type": "consumable",
+  "img": "icons/consumables/meat/drumstick-bone-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>A palm-sized frog plucked from a broad leaf; chewy and faintly bitter when skewered and roasted.</p>"
+    },
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "sp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "food",
+      "subtype": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "food",
+      "source": "foraged",
+      "shelfLife": 1,
+      "biomes": [
+        "dense-forest"
+      ],
+      "tier": 1
+    }
+  },
+  "_key": "!items!cd26e9f0a5b7138e",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
