@@ -104,9 +104,15 @@ export async function initiateHarvest() {
   const appraisalAttempts = creature.getFlag(MODULE_ID, "appraisalAttempts") ?? 0;
   const appraisalPenalty = appraisalAttempts * -5;
 
+  // --- Gather tool info for dialog display ---
+  const dialogToolInfo = _getToolInfo(harvester, creatureType);
+
   const action = await _showHarvestDialog(creature, creatureType, skillLabel, appraisalEnabled, {
     appraisalTime, harvestTimeMin, harvestTimeMax, sizeModifier,
     appraisalPenalty,
+    tools: dialogToolInfo.tools,
+    hasTools: dialogToolInfo.hasTools,
+    toolBonus: dialogToolInfo.bonus,
   }, harvester.name);
 
   if (!action) {
@@ -150,7 +156,7 @@ export async function initiateHarvest() {
   }
 
   // --- Check for tools ---
-  const toolBonus = _getToolBonus(harvester, creatureType);
+  const toolInfo = _getToolInfo(harvester, creatureType);
 
   // --- Build roll modifiers from creature flags ---
   const hasAdvantage = creature.getFlag(MODULE_ID, "appraisalSuccess") && !creature.getFlag(MODULE_ID, "appraisalDisadvantage");
@@ -159,7 +165,7 @@ export async function initiateHarvest() {
   const maxRetryDC = creature.getFlag(MODULE_ID, "maxRetryDC");
 
   // --- Roll skill check ---
-  const rollResult = await _rollHarvestCheck(harvester, skillId, toolBonus + appraisalBonus, hasAdvantage ? 1 : hasDisadvantage ? -1 : 0);
+  const rollResult = await _rollHarvestCheck(harvester, skillId, toolInfo.bonus + appraisalBonus, hasAdvantage ? 1 : hasDisadvantage ? -1 : 0);
   if (!rollResult) {
     await gmSetFlag(creature, MODULE_ID, "harvestingBy", null);
     return;
@@ -616,6 +622,9 @@ async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalE
     appraisalCritFail: timeEstimates.appraisalCritFail ?? false,
     appraisalTimeSpent: timeEstimates.appraisalTimeSpent ?? 0,
     appraisalPenalty: timeEstimates.appraisalPenalty ?? 0,
+    tools: timeEstimates.tools ?? [],
+    hasTools: timeEstimates.hasTools ?? false,
+    toolBonus: timeEstimates.toolBonus ?? 0,
   });
 
   const buttons = {};
@@ -780,19 +789,51 @@ async function _getItemDescription(uuid) {
   }
 }
 
-function _getToolBonus(harvester, creatureType) {
-  let bonus = 0;
+/** No-tools penalty applied when the harvester has no applicable harvesting tools. */
+const NO_TOOLS_PENALTY = -5;
+
+/**
+ * Gather full tool information from the harvester's inventory.
+ * Returns the effective bonus (best tool bonus, or -5 if no tools),
+ * whether tools were found, and a list of tool details for UI display.
+ * @param {Actor} harvester
+ * @param {string} creatureType
+ * @returns {{ bonus: number, hasTools: boolean, tools: Array<{name: string, bonus: number, active: boolean, status: string|null}> }}
+ */
+function _getToolInfo(harvester, creatureType) {
+  let bestBonus = 0;
+  let hasApplicableTool = false;
+  const tools = [];
+
   for (const item of harvester.items) {
     if (item.type !== "tool" && item.type !== "loot") continue;
-    const toolBonus = item.getFlag(MODULE_ID, "harvestBonus");
-    if (toolBonus) {
-      const applicableTypes = item.getFlag(MODULE_ID, "applicableTypes");
-      if (!applicableTypes || applicableTypes.includes(creatureType)) {
-        bonus = Math.max(bonus, toolBonus);
-      }
+    const flags = item.flags?.[MODULE_ID] ?? {};
+    const toolBonus = flags.harvestBonus;
+
+    if (!toolBonus) continue;
+
+    const applicableTypes = flags.applicableTypes;
+    const isApplicable = !applicableTypes || applicableTypes.includes(creatureType);
+
+    tools.push({
+      name: item.name,
+      bonus: toolBonus,
+      active: isApplicable,
+      status: isApplicable ? null : "wrong type",
+    });
+
+    if (isApplicable) {
+      bestBonus = Math.max(bestBonus, toolBonus);
+      hasApplicableTool = true;
     }
   }
-  return bonus;
+
+  const effectiveBonus = hasApplicableTool ? bestBonus : NO_TOOLS_PENALTY;
+  return { bonus: effectiveBonus, hasTools: hasApplicableTool, tools };
+}
+
+function _getToolBonus(harvester, creatureType) {
+  return _getToolInfo(harvester, creatureType).bonus;
 }
 
 /* ============================================

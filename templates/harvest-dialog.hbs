@@ -44,6 +44,28 @@
   </div>
   {{/if}}
 
+  <div class="ultimate-harvester-section ultimate-harvester-tools">
+    <h4><i class="fas fa-toolbox"></i> Harvesting Tools</h4>
+    {{#if tools.length}}
+    <ul class="ultimate-harvester-tool-list">
+      {{#each tools}}
+        <li class="ultimate-harvester-tool-item {{#unless this.active}}ultimate-harvester-tool-inactive{{/unless}}">
+          <span class="ultimate-harvester-tool-name-group">
+            <span class="ultimate-harvester-tool-name">{{this.name}}</span>
+            {{#if this.status}}<span class="ultimate-harvester-tool-status">{{this.status}}</span>{{/if}}
+          </span>
+          <span class="ultimate-harvester-tool-value">+{{this.bonus}}</span>
+        </li>
+      {{/each}}
+    </ul>
+    {{#if hasTools}}
+    <p class="ultimate-harvester-tool-active-note"><i class="fas fa-check-circle ultimate-harvester-icon--success"></i> Harvesting with <strong>+{{toolBonus}} bonus</strong></p>
+    {{/if}}
+    {{else}}
+    <p class="ultimate-harvester-tool-penalty"><i class="fas fa-exclamation-triangle ultimate-harvester-icon--warning"></i> No harvesting tools &mdash; <strong>&minus;5 penalty</strong> to harvest roll</p>
+    {{/if}}
+  </div>
+
   <div class="ultimate-harvester-section">
     <div class="ultimate-harvester-section-header">
       <span><i class="fas fa-drumstick-bite"></i> Harvest</span>

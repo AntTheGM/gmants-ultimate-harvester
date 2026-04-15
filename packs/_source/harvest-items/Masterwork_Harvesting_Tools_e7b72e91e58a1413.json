@@ -1,0 +1,44 @@
+{
+  "_id": "e7b72e91e58a1413",
+  "name": "Masterwork Harvesting Tools",
+  "type": "tool",
+  "img": "icons/tools/smithing/tongs-steel-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>An exquisite set of mithral-edged blades, enchanted preserving jars, and articulated extractors crafted by a master artisan. Grants a <strong>+5 bonus</strong> to harvesting checks.</p><p><em>Without proper tools, harvesting checks take a &minus;5 penalty.</em></p>"
+    },
+    "weight": {
+      "value": 4,
+      "units": "lb"
+    },
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "quantity": 1,
+    "type": {
+      "value": "art",
+      "baseItem": ""
+    },
+    "ability": "none",
+    "proficient": 0
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material",
+      "harvestBonus": 5
+    }
+  },
+  "_key": "!items!e7b72e91e58a1413",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

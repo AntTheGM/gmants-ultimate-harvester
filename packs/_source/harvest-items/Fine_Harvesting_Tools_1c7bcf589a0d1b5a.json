@@ -1,0 +1,44 @@
+{
+  "_id": "1c7bcf589a0d1b5a",
+  "name": "Fine Harvesting Tools",
+  "type": "tool",
+  "img": "icons/tools/hand/saw-surgical-steel-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>A well-crafted collection of precision blades, forceps, and alchemically-treated vials. Grants a <strong>+3 bonus</strong> to harvesting checks.</p><p><em>Without proper tools, harvesting checks take a &minus;5 penalty.</em></p>"
+    },
+    "weight": {
+      "value": 5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 75,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "quantity": 1,
+    "type": {
+      "value": "art",
+      "baseItem": ""
+    },
+    "ability": "none",
+    "proficient": 0
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material",
+      "harvestBonus": 3
+    }
+  },
+  "_key": "!items!1c7bcf589a0d1b5a",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}

@@ -96,5 +96,10 @@
   "MHARVEST.Aid.Success": "beats DC {dc} — +1 to forage!",
   "MHARVEST.Aid.Failure": "fails to beat DC {dc}.",
   "MHARVEST.Aid.ChatHeader": "Aid Rolls",
-  "MHARVEST.Aid.BonusApplied": "+{bonus} aid bonus applied to forage roll"
+  "MHARVEST.Aid.BonusApplied": "+{bonus} aid bonus applied to forage roll",
+
+  "MHARVEST.Tools.SectionTitle": "Harvesting Tools",
+  "MHARVEST.Tools.WrongType": "wrong type",
+  "MHARVEST.Tools.AdvantageActive": "Harvesting with advantage",
+  "MHARVEST.Tools.BonusActive": "Harvesting with +{bonus} bonus"
 }

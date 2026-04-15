@@ -642,6 +642,87 @@ details[open] > .ultimate-harvester-details-toggle::before {
   padding: 0.15rem 0;
 }
 
+/* --- Harvesting Tools (Showtime-style equipped indicator) --- */
+.ultimate-harvester-tools {
+  background: var(--mharvest-bg-inset);
+  border: 1px solid var(--mharvest-bg-border);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.ultimate-harvester-tools h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+  border-bottom: 1px solid var(--mharvest-border);
+  padding-bottom: 0.25rem;
+}
+
+.ultimate-harvester-tool-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ultimate-harvester-tool-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.15rem 0;
+  gap: 0.5rem;
+}
+
+.ultimate-harvester-tool-name-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.ultimate-harvester-tool-name {
+  color: inherit;
+}
+
+.ultimate-harvester-tool-status {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--mharvest-warning);
+}
+
+.ultimate-harvester-tool-value {
+  font-weight: bold;
+  color: var(--mharvest-success);
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.ultimate-harvester-tool-inactive {
+  opacity: 0.5;
+}
+
+.ultimate-harvester-tool-inactive .ultimate-harvester-tool-value {
+  color: inherit;
+  opacity: 0.7;
+}
+
+.ultimate-harvester-tool-active-note {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--mharvest-success);
+}
+
+.ultimate-harvester-tool-penalty {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--mharvest-warning);
+}
+
 /* --- Spoilage Info (injected into item sheet Details tab) --- */
 
 .ultimate-harvester-spoilage {

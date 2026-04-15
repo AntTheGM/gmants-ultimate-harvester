@@ -1,0 +1,44 @@
+{
+  "_id": "d7dd0fdaabfe087b",
+  "name": "Basic Harvesting Tools",
+  "type": "tool",
+  "img": "icons/tools/hand/sickle-worn-steel-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>A sturdy set of skinning knives, bone saws, and extraction tools designed for field harvesting. Grants a <strong>+1 bonus</strong> to harvesting checks.</p><p><em>Without proper tools, harvesting checks take a &minus;5 penalty.</em></p>"
+    },
+    "weight": {
+      "value": 6,
+      "units": "lb"
+    },
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "rarity": "common",
+    "quantity": 1,
+    "type": {
+      "value": "art",
+      "baseItem": ""
+    },
+    "ability": "none",
+    "proficient": 0
+  },
+  "flags": {
+    "ultimate-harvester": {
+      "category": "material",
+      "harvestBonus": 1
+    }
+  },
+  "_key": "!items!d7dd0fdaabfe087b",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  }
+}
