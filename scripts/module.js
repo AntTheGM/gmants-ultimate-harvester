@@ -65,10 +65,10 @@ function registerSettings() {
     scope: "world",
     config: true,
     type: Number,
-    default: 12,
+    default: 14,
     range: {
       min: 5,
-      max: 15,
+      max: 18,
       step: 1,
     },
   });

@@ -104,7 +104,7 @@
         "ultimate-harvester": {
           "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.3ea85806a3294b92",
-          "quantity": "2",
+          "quantity": "1",
           "category": "component"
         }
       },
@@ -132,7 +132,7 @@
         "ultimate-harvester": {
           "rarity": "veryRare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.3ea85806a3294b92",
-          "quantity": "3",
+          "quantity": "1",
           "category": "component"
         }
       },
@@ -149,7 +149,7 @@
   ],
   "flags": {
     "ultimate-harvester": {
-      "critFailEffect": "The fiend's death curse activates; you take 4d8 fire damage and are cursed \u00e2\u20ac\u201d you have disadvantage on death saving throws until the curse is removed.",
+      "critFailEffect": "The fiend's death curse activates; you take 4d8 fire damage and are cursed â€” you have disadvantage on death saving throws until the curse is removed.",
       "fumbleEffect": "The fiend's true name brands itself on your mind; you suffer from nightmares and lose the benefit of a long rest.",
       "critSuccessQuantity": "1"
     }

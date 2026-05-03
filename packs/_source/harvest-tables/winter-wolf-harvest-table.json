@@ -76,7 +76,7 @@
         "ultimate-harvester": {
           "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.bc230ccf8d53ab27",
-          "quantity": "1d4",
+          "quantity": "1",
           "category": "material"
         }
       },
@@ -122,7 +122,7 @@
   "flags": {
     "ultimate-harvester": {
       "critFailEffect": "Ice crystals explode from the wolf's body; take 2d6 cold damage.",
-      "fumbleEffect": "The frost-bitten hide snaps stiffly; you lose your grip and must restart \u00e2\u20ac\u201d lose 5 minutes of harvesting time.",
+      "fumbleEffect": "The frost-bitten hide snaps stiffly; you lose your grip and must restart â€” lose 5 minutes of harvesting time.",
       "critSuccessItem": "Compendium.ultimate-harvester.harvest-items.cf24122152f43c80",
       "critSuccessQuantity": "1"
     }

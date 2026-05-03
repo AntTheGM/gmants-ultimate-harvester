@@ -104,7 +104,7 @@
         "ultimate-harvester": {
           "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.2f1d312bdd3a4cac",
-          "quantity": "1d4",
+          "quantity": "1",
           "category": "material"
         }
       },

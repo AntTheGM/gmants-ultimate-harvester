@@ -92,7 +92,7 @@ export function getCRTier(cr) {
  * Per-rarity offsets are added to base DC for individual table entries.
  */
 export const DC_DEFAULTS = {
-  baseDCOffset: 12,
+  baseDCOffset: 14,
   appraisalDCOffset: -5,
   rarityOffsets: {
     common: 0,
@@ -104,13 +104,15 @@ export const DC_DEFAULTS = {
 
 /**
  * Calculate the base harvest DC for a given CR.
- * @param {number} cr - Creature CR (may be fractional: 0.125, 0.25, 0.5)
+ * Fractional CRs (1/8, 1/4, 1/2) lower the DC proportionally; CR 0 uses the offset alone.
+ * Floored at DC 10 so trivial monsters still need a real check.
+ * @param {number} cr - Creature CR (may be fractional: 0, 0.125, 0.25, 0.5)
  * @param {number} [offset] - DC offset (default from settings or DC_DEFAULTS)
- * @returns {number} Base DC (minimum 11)
+ * @returns {number} Base DC (minimum 10)
  */
 export function calculateBaseDC(cr, offset = DC_DEFAULTS.baseDCOffset) {
-  const effectiveCR = cr < 1 ? 1 : cr;
-  return effectiveCR + offset;
+  const effectiveCR = Math.max(0, cr ?? 0);
+  return Math.max(10, Math.round(effectiveCR + offset));
 }
 
 /**

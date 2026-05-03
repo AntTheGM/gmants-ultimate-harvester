@@ -76,7 +76,7 @@
         "ultimate-harvester": {
           "rarity": "uncommon",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
-          "quantity": "2",
+          "quantity": "1",
           "category": "component"
         }
       },
@@ -104,7 +104,7 @@
         "ultimate-harvester": {
           "rarity": "rare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
-          "quantity": "3",
+          "quantity": "1",
           "category": "component"
         }
       },
@@ -132,7 +132,7 @@
         "ultimate-harvester": {
           "rarity": "veryRare",
           "itemUuid": "Compendium.ultimate-harvester.harvest-items.029475d721e1c660",
-          "quantity": "4",
+          "quantity": "1",
           "category": "component"
         }
       },

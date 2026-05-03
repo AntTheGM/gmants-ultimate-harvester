@@ -12,8 +12,8 @@
       "units": "lb"
     },
     "price": {
-      "value": 1,
-      "denomination": "gp"
+      "value": 5,
+      "denomination": "sp"
     },
     "rarity": "uncommon",
     "quantity": 1

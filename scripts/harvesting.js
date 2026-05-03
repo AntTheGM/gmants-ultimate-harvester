@@ -227,10 +227,17 @@ export async function initiateHarvest() {
   }
 
   // --- Nat 20 bonus item ---
+  // Skip if the bonus UUID is already among the rolled rewards (prevents double-dip
+  // where critSuccessItem == a regular tier drop, e.g. Owlbear Pelt).
   let bonusItem = null;
   if (isNat20) {
     const critItemUuid = table.getFlag(MODULE_ID, "critSuccessItem");
-    if (critItemUuid) bonusItem = await fromUuid(critItemUuid);
+    if (critItemUuid) {
+      const alreadyRolled = harvested.some((entry) =>
+        entry.result.flags?.[MODULE_ID]?.itemUuid === critItemUuid
+      );
+      if (!alreadyRolled) bonusItem = await fromUuid(critItemUuid);
+    }
   }
 
   // --- Evaluate quantities and lock items on creature ---
@@ -793,9 +800,30 @@ async function _getItemDescription(uuid) {
 const NO_TOOLS_PENALTY = -5;
 
 /**
+ * Check whether the harvester has any artisan tool proficiency. Used to gate
+ * high-bonus tools (Fine/Masterwork) so an untrained PC can't leverage their
+ * full bonus without investing in a tool proficiency.
+ * @param {Actor} harvester
+ * @returns {boolean}
+ */
+function _hasAnyToolProficiency(harvester) {
+  const tools = harvester.system?.tools;
+  if (!tools) return false;
+  for (const entry of Object.values(tools)) {
+    const prof = entry?.value ?? entry?.prof?.multiplier ?? entry?.proficient ?? 0;
+    if (prof && Number(prof) > 0) return true;
+  }
+  return false;
+}
+
+/**
  * Gather full tool information from the harvester's inventory.
  * Returns the effective bonus (best tool bonus, or -5 if no tools),
  * whether tools were found, and a list of tool details for UI display.
+ *
+ * Untrained PCs (no artisan tool proficiency) get bonuses capped at +1; the
+ * Fine (+3) and Masterwork (+5) tools require investment to fully leverage.
+ *
  * @param {Actor} harvester
  * @param {string} creatureType
  * @returns {{ bonus: number, hasTools: boolean, tools: Array<{name: string, bonus: number, active: boolean, status: string|null}> }}
@@ -804,6 +832,8 @@ function _getToolInfo(harvester, creatureType) {
   let bestBonus = 0;
   let hasApplicableTool = false;
   const tools = [];
+  const isProficient = _hasAnyToolProficiency(harvester);
+  const UNTRAINED_CAP = 1;
 
   for (const item of harvester.items) {
     if (item.type !== "tool" && item.type !== "loot") continue;
@@ -814,16 +844,20 @@ function _getToolInfo(harvester, creatureType) {
 
     const applicableTypes = flags.applicableTypes;
     const isApplicable = !applicableTypes || applicableTypes.includes(creatureType);
+    const effectiveToolBonus = isProficient ? toolBonus : Math.min(toolBonus, UNTRAINED_CAP);
+    const status = !isApplicable
+      ? "wrong type"
+      : (effectiveToolBonus < toolBonus ? "untrained (capped)" : null);
 
     tools.push({
       name: item.name,
-      bonus: toolBonus,
+      bonus: effectiveToolBonus,
       active: isApplicable,
-      status: isApplicable ? null : "wrong type",
+      status,
     });
 
     if (isApplicable) {
-      bestBonus = Math.max(bestBonus, toolBonus);
+      bestBonus = Math.max(bestBonus, effectiveToolBonus);
       hasApplicableTool = true;
     }
   }
