@@ -244,15 +244,20 @@ export async function initiateHarvest() {
     const failMargin = lowestDC - total;
     totalTimeElapsed += harvestTimeMin + sizeModifier;
 
-    if (failMargin >= 5) {
+    const allDCs = resolvedEntries.map((e) => e.dc).sort((a, b) => a - b);
+    const newMaxDC = allDCs.filter((dc) => dc > total).shift();
+    const retryMaxDC = newMaxDC ? newMaxDC - 1 : maxRetryDC;
+    // Retry is only meaningful if at least one item is reachable below the
+    // capped retry DC. When the harvester rolled below every tier, the cap
+    // collapses to (lowestDC - 1) and no items would ever be accessible.
+    const retryHasYield = resolvedEntries.some((e) => e.dc <= (retryMaxDC ?? Infinity));
+
+    if (failMargin >= 5 || !retryHasYield) {
       await _postHarvestResult(creature, harvester, [], {
         rollTotal: total, rawRollTotal: rollResult.total, aidBonus, skillLabel, nothingFound: true, ruined: true, timeElapsed: totalTimeElapsed,
       });
       await gmSetFlag(creature, MODULE_ID, "harvested", "ruined");
     } else {
-      const allDCs = resolvedEntries.map((e) => e.dc).sort((a, b) => a - b);
-      const newMaxDC = allDCs.filter((dc) => dc > total).shift();
-      const retryMaxDC = newMaxDC ? newMaxDC - 1 : maxRetryDC;
       await gmSetFlag(creature, MODULE_ID, "maxRetryDC", retryMaxDC);
       await _postHarvestResult(creature, harvester, [], {
         rollTotal: total, rawRollTotal: rollResult.total, aidBonus, skillLabel, nothingFound: true, canRetry: true, timeElapsed: totalTimeElapsed,
@@ -602,7 +607,7 @@ export async function viewAppraisal(creatureUuid) {
 async function _showPostAppraisalDialog(creature, harvester, appraisalResult, opts) {
   const cr = creature.system.details?.cr ?? "?";
   const typeName = opts.creatureType ? opts.creatureType.charAt(0).toUpperCase() + opts.creatureType.slice(1) : "Unknown";
-  const initialAider = _getAider(harvester);
+  const initialAider = _getAider(harvester, creature);
   const skillModifier = _formatSkillModifier(harvester, opts.skillId);
 
   const content = await renderTemplate(`modules/${MODULE_ID}/templates/post-appraisal-dialog.hbs`, {
@@ -637,7 +642,7 @@ async function _showPostAppraisalDialog(creature, harvester, appraisalResult, op
       harvest: {
         label: game.i18n.localize("MHARVEST.Dialog.Harvest"),
         icon: "fas fa-drumstick-bite",
-        callback: () => ({ aider: _getAider(harvester) }),
+        callback: () => ({ aider: _getAider(harvester, creature) }),
       },
       cancel: {
         label: game.i18n.localize("MHARVEST.Dialog.Cancel"),
@@ -647,14 +652,14 @@ async function _showPostAppraisalDialog(creature, harvester, appraisalResult, op
     },
     defaultButton: "harvest",
     width: 420,
-    render: (el) => _setupHarvestAidHook(el, harvester),
+    render: (el) => _setupHarvestAidHook(el, harvester, creature),
   });
 }
 
 async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalEnabled, timeEstimates = {}, harvester = null) {
   const cr = creature.system.details?.cr ?? "?";
   const typeName = creatureType ? creatureType.charAt(0).toUpperCase() + creatureType.slice(1) : "Unknown";
-  const initialAider = harvester ? _getAider(harvester) : null;
+  const initialAider = harvester ? _getAider(harvester, creature) : null;
   const skillModifier = harvester ? _formatSkillModifier(harvester, timeEstimates.skillId) : "";
 
   const content = await renderTemplate(`modules/${MODULE_ID}/templates/harvest-dialog.hbs`, {
@@ -693,7 +698,7 @@ async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalE
   buttons.harvest = {
     label: game.i18n.localize("MHARVEST.Dialog.Harvest"),
     icon: "fas fa-drumstick-bite",
-    callback: () => ({ action: "harvest", aider: harvester ? _getAider(harvester) : null }),
+    callback: () => ({ action: "harvest", aider: harvester ? _getAider(harvester, creature) : null }),
   };
   buttons.cancel = {
     label: game.i18n.localize("MHARVEST.Dialog.Cancel"),
@@ -706,7 +711,7 @@ async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalE
     content,
     buttons,
     defaultButton: "harvest",
-    render: harvester ? (el) => _setupHarvestAidHook(el, harvester) : undefined,
+    render: harvester ? (el) => _setupHarvestAidHook(el, harvester, creature) : undefined,
   });
 }
 
@@ -772,23 +777,30 @@ function _formatSkillModifier(harvester, skillId) {
 }
 
 /**
- * Read the current aider from Foundry targeting (single, excluding harvester).
+ * Read the current aider from Foundry targeting. Excludes the harvester and
+ * the creature being harvested, restricts to player-owned actors, and prefers
+ * the most recently added target (insertion order on the Set).
  * @param {Actor} harvester
+ * @param {Actor} [creature] - The creature being harvested (excluded from candidates)
  * @returns {Actor|null}
  */
-function _getAider(harvester) {
-  return Array.from(game.user.targets)
+function _getAider(harvester, creature = null) {
+  const candidates = Array.from(game.user.targets)
     .map((t) => t.actor)
-    .filter((a) => a && a.id !== harvester.id)[0] ?? null;
+    .filter((a) => a
+      && a.id !== harvester.id
+      && (!creature || a.id !== creature.id)
+      && a.hasPlayerOwner);
+  return candidates[candidates.length - 1] ?? null;
 }
 
 /**
  * Update the aid section DOM inside a harvest dialog when targets change.
  */
-function _refreshHarvestAidDisplay(el, harvester) {
+function _refreshHarvestAidDisplay(el, harvester, creature) {
   const container = el.querySelector("[data-aid-content]");
   if (!container) return;
-  const aider = _getAider(harvester);
+  const aider = _getAider(harvester, creature);
   const badge = el.querySelector("[data-aid-badge]");
 
   if (aider) {
@@ -814,9 +826,9 @@ function _refreshHarvestAidDisplay(el, harvester) {
 /**
  * Wire reactive aid display + cleanup observer onto a harvest dialog element.
  */
-function _setupHarvestAidHook(el, harvester) {
-  _refreshHarvestAidDisplay(el, harvester);
-  const hookId = Hooks.on("targetToken", () => _refreshHarvestAidDisplay(el, harvester));
+function _setupHarvestAidHook(el, harvester, creature) {
+  _refreshHarvestAidDisplay(el, harvester, creature);
+  const hookId = Hooks.on("targetToken", () => _refreshHarvestAidDisplay(el, harvester, creature));
   const observer = new MutationObserver(() => {
     if (!document.body.contains(el)) {
       Hooks.off("targetToken", hookId);
