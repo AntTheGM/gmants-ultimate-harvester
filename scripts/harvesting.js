@@ -110,6 +110,7 @@ export async function initiateHarvest() {
   const dialogResult = await _showHarvestDialog(creature, creatureType, skillLabel, appraisalEnabled, {
     appraisalTime, harvestTimeMin, harvestTimeMax, sizeModifier,
     appraisalPenalty,
+    skillId,
     tools: dialogToolInfo.tools,
     hasTools: dialogToolInfo.hasTools,
     toolBonus: dialogToolInfo.bonus,
@@ -149,7 +150,7 @@ export async function initiateHarvest() {
 
     // Show combined appraisal results + harvest dialog (single window for harvester)
     const followUp = await _showPostAppraisalDialog(creature, harvester, appraisalResult, {
-      creatureType, skillLabel, appraisalTime,
+      creatureType, skillLabel, skillId, appraisalTime,
       harvestTimeMin, harvestTimeMax, sizeModifier,
     });
     if (!followUp) {
@@ -602,6 +603,7 @@ async function _showPostAppraisalDialog(creature, harvester, appraisalResult, op
   const cr = creature.system.details?.cr ?? "?";
   const typeName = opts.creatureType ? opts.creatureType.charAt(0).toUpperCase() + opts.creatureType.slice(1) : "Unknown";
   const initialAider = _getAider(harvester);
+  const skillModifier = _formatSkillModifier(harvester, opts.skillId);
 
   const content = await renderTemplate(`modules/${MODULE_ID}/templates/post-appraisal-dialog.hbs`, {
     creatureName: creature.name,
@@ -609,6 +611,7 @@ async function _showPostAppraisalDialog(creature, harvester, appraisalResult, op
     creatureType: typeName,
     cr,
     skillLabel: opts.skillLabel,
+    skillModifier,
     appraisalSuccess: appraisalResult.success,
     appraisalCritSuccess: appraisalResult.isNat20,
     appraisalCritFail: appraisalResult.isNat1,
@@ -652,6 +655,7 @@ async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalE
   const cr = creature.system.details?.cr ?? "?";
   const typeName = creatureType ? creatureType.charAt(0).toUpperCase() + creatureType.slice(1) : "Unknown";
   const initialAider = harvester ? _getAider(harvester) : null;
+  const skillModifier = harvester ? _formatSkillModifier(harvester, timeEstimates.skillId) : "";
 
   const content = await renderTemplate(`modules/${MODULE_ID}/templates/harvest-dialog.hbs`, {
     creatureName: creature.name,
@@ -675,6 +679,7 @@ async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalE
     toolBonus: timeEstimates.toolBonus ?? 0,
     hasAider: !!initialAider,
     aiderName: initialAider?.name ?? "",
+    skillModifier,
   });
 
   const buttons = {};
@@ -752,6 +757,19 @@ async function _showPickupDialog(creature, itemList, rollTotal, skillLabel, time
 /* ============================================
    Private: Aid
    ============================================ */
+
+/**
+ * Format the harvester's current skill total as a signed string (+5, -1, +0).
+ * Returns "" if the skill can't be resolved.
+ * @param {Actor} harvester
+ * @param {string} skillId - dnd5e skill abbreviation
+ * @returns {string}
+ */
+function _formatSkillModifier(harvester, skillId) {
+  const total = harvester?.system?.skills?.[skillId]?.total;
+  if (typeof total !== "number") return "";
+  return (total >= 0 ? "+" : "") + total;
+}
 
 /**
  * Read the current aider from Foundry targeting (single, excluding harvester).

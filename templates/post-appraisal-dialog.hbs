@@ -1,7 +1,6 @@
 <div class="ultimate-harvester-form">
   <div class="ultimate-harvester-section">
-    <p><strong>{{harvesterName}}</strong> examines <strong>{{creatureName}}</strong></p>
-    <p>{{creatureType}}, CR {{cr}} &mdash; Skill: <strong>{{skillLabel}}</strong></p>
+    <p><strong>{{harvesterName}}</strong> examines <strong>{{creatureName}}</strong> &mdash; <strong>{{skillLabel}}</strong> skill needed.{{#if skillModifier}} (Current skill: {{skillModifier}}){{/if}}</p>
   </div>
 
   {{#if appraisalTimeSpent}}
