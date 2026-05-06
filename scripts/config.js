@@ -92,13 +92,13 @@ export function getCRTier(cr) {
  * Per-rarity offsets are added to base DC for individual table entries.
  */
 export const DC_DEFAULTS = {
-  baseDCOffset: 14,
+  baseDCOffset: 16,
   appraisalDCOffset: -5,
   rarityOffsets: {
     common: 0,
-    uncommon: 5,
-    rare: 10,
-    veryRare: 15,
+    uncommon: 6,
+    rare: 13,
+    veryRare: 20,
   },
 };
 
