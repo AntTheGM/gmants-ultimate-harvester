@@ -56,5 +56,24 @@
     {{#if sizeModifier}}
     <p class="ultimate-harvester-note"><i class="fas fa-expand-arrows-alt"></i> Large creature: +{{sizeModifier}} min due to size</p>
     {{/if}}
+
+    {{!-- Aiding ally (collapsible, reactively updated) --}}
+    <details class="ultimate-harvester-info">
+      <summary><i class="fas fa-hands-helping"></i> {{localize "MHARVEST.Aid.SectionTitle"}} <span class="ultimate-harvester-badge" data-aid-badge {{#unless hasAider}}style="display:none"{{/unless}}>{{#if hasAider}}1{{/if}}</span></summary>
+      <div class="ultimate-harvester-info-content" data-aid-content>
+        {{#if hasAider}}
+          <div class="ultimate-harvester-aid-row">
+            <i class="fas fa-crosshairs"></i>
+            <span>{{aiderName}}</span>
+          </div>
+          <div class="ultimate-harvester-aid-hint">
+            <i class="fas fa-dice-d20 ultimate-harvester-icon--success"></i>
+            <small>{{localize "MHARVEST.Aid.HarvestRollHint"}}</small>
+          </div>
+        {{else}}
+          <p class="ultimate-harvester-empty" style="padding: 0.4rem 0;">{{localize "MHARVEST.Aid.HarvestSelectHint"}}</p>
+        {{/if}}
+      </div>
+    </details>
   </div>
 </div>

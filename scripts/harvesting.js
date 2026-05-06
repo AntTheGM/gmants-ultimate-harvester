@@ -107,18 +107,21 @@ export async function initiateHarvest() {
   // --- Gather tool info for dialog display ---
   const dialogToolInfo = _getToolInfo(harvester, creatureType);
 
-  const action = await _showHarvestDialog(creature, creatureType, skillLabel, appraisalEnabled, {
+  const dialogResult = await _showHarvestDialog(creature, creatureType, skillLabel, appraisalEnabled, {
     appraisalTime, harvestTimeMin, harvestTimeMax, sizeModifier,
     appraisalPenalty,
     tools: dialogToolInfo.tools,
     hasTools: dialogToolInfo.hasTools,
     toolBonus: dialogToolInfo.bonus,
-  }, harvester.name);
+  }, harvester);
 
-  if (!action) {
+  if (!dialogResult) {
     await gmSetFlag(creature, MODULE_ID, "harvestingBy", null);
     return;
   }
+
+  const action = dialogResult.action;
+  let aider = action === "harvest" ? dialogResult.aider : null;
 
   // --- Appraisal flow ---
   if (action === "appraise") {
@@ -153,6 +156,7 @@ export async function initiateHarvest() {
       await gmSetFlag(creature, MODULE_ID, "harvestingBy", null);
       return;
     }
+    aider = followUp.aider ?? null;
   }
 
   // --- Check for tools ---
@@ -164,6 +168,36 @@ export async function initiateHarvest() {
   const appraisalBonus = creature.getFlag(MODULE_ID, "appraisalBonus") ?? 0;
   const maxRetryDC = creature.getFlag(MODULE_ID, "maxRetryDC");
 
+  // --- Aid roll (before the harvester rolls; bonus applied to total) ---
+  let aidBonus = 0;
+  if (aider) {
+    const aidDC = Math.min(...resolvedEntries.map((e) => e.dc));
+    const aidRoll = await _rollSilentSkillCheck(aider, skillId, `${skillLabel} (Aid)`);
+    if (aidRoll) {
+      const success = aidRoll.total >= aidDC;
+      if (success) aidBonus = 1;
+
+      const icon = success ? "fa-check-circle ultimate-harvester-icon--success" : "fa-times-circle ultimate-harvester-icon--danger";
+      const text = success
+        ? game.i18n.localize("MHARVEST.Aid.HarvestSuccess").replace("{dc}", aidDC)
+        : game.i18n.localize("MHARVEST.Aid.HarvestFailure").replace("{dc}", aidDC);
+      const bonusLine = aidBonus > 0
+        ? `<p class="ultimate-harvester-note"><i class="fas fa-plus-circle ultimate-harvester-icon--success"></i> <strong>${game.i18n.localize("MHARVEST.Aid.HarvestBonusApplied").replace("{bonus}", aidBonus)}</strong></p>`
+        : "";
+
+      await ChatMessage.create({
+        content: `<div class="ultimate-harvester-card">
+          <h3><i class="fas fa-hands-helping"></i> ${game.i18n.localize("MHARVEST.Aid.ChatHeader")}</h3>
+          <ul class="ultimate-harvester-item-list">
+            <li><i class="fas ${icon}"></i> <strong>${aider.name}</strong> rolled ${aidRoll.total} — ${text}</li>
+          </ul>
+          ${bonusLine}
+        </div>`,
+        speaker: ChatMessage.getSpeaker({ actor: harvester }),
+      });
+    }
+  }
+
   // --- Roll skill check ---
   const rollResult = await _rollHarvestCheck(harvester, skillId, toolInfo.bonus + appraisalBonus, hasAdvantage ? 1 : hasDisadvantage ? -1 : 0);
   if (!rollResult) {
@@ -171,14 +205,15 @@ export async function initiateHarvest() {
     return;
   }
 
-  const { total, isNat1, isNat20 } = rollResult;
+  const { isNat1, isNat20 } = rollResult;
+  const total = rollResult.total + aidBonus;
 
   // --- Handle critical failure ---
   if (isNat1 && game.settings.get(MODULE_ID, "critFailEnabled")) {
     const critFailEffect = table.getFlag(MODULE_ID, "critFailEffect");
     totalTimeElapsed += harvestTimeMin + sizeModifier;
     await _postHarvestResult(creature, harvester, [], {
-      critFail: true, critFailEffect, rollTotal: total, skillLabel, timeElapsed: totalTimeElapsed,
+      critFail: true, critFailEffect, rollTotal: total, rawRollTotal: rollResult.total, aidBonus, skillLabel, timeElapsed: totalTimeElapsed,
     });
     await gmSetFlag(creature, MODULE_ID, "harvested", true);
     await gmSetFlag(creature, MODULE_ID, "harvestingBy", null);
@@ -190,7 +225,7 @@ export async function initiateHarvest() {
     const fumbleEffect = table.getFlag(MODULE_ID, "fumbleEffect");
     totalTimeElapsed += harvestTimeMin + sizeModifier;
     await _postHarvestResult(creature, harvester, [], {
-      fumble: true, fumbleEffect, rollTotal: total, skillLabel, timeElapsed: totalTimeElapsed,
+      fumble: true, fumbleEffect, rollTotal: total, rawRollTotal: rollResult.total, aidBonus, skillLabel, timeElapsed: totalTimeElapsed,
     });
     await gmSetFlag(creature, MODULE_ID, "harvestingBy", null);
     return;
@@ -210,7 +245,7 @@ export async function initiateHarvest() {
 
     if (failMargin >= 5) {
       await _postHarvestResult(creature, harvester, [], {
-        rollTotal: total, skillLabel, nothingFound: true, ruined: true, timeElapsed: totalTimeElapsed,
+        rollTotal: total, rawRollTotal: rollResult.total, aidBonus, skillLabel, nothingFound: true, ruined: true, timeElapsed: totalTimeElapsed,
       });
       await gmSetFlag(creature, MODULE_ID, "harvested", "ruined");
     } else {
@@ -219,7 +254,7 @@ export async function initiateHarvest() {
       const retryMaxDC = newMaxDC ? newMaxDC - 1 : maxRetryDC;
       await gmSetFlag(creature, MODULE_ID, "maxRetryDC", retryMaxDC);
       await _postHarvestResult(creature, harvester, [], {
-        rollTotal: total, skillLabel, nothingFound: true, canRetry: true, timeElapsed: totalTimeElapsed,
+        rollTotal: total, rawRollTotal: rollResult.total, aidBonus, skillLabel, nothingFound: true, canRetry: true, timeElapsed: totalTimeElapsed,
       });
     }
     await gmSetFlag(creature, MODULE_ID, "harvestingBy", null);
@@ -298,7 +333,7 @@ export async function initiateHarvest() {
 
   // --- Post results to chat ---
   await _postHarvestResult(creature, harvester, selectedItems, {
-    rollTotal: total, skillLabel, isNat20, bonusItem: bonusItem?.name,
+    rollTotal: total, rawRollTotal: rollResult.total, aidBonus, skillLabel, isNat20, bonusItem: bonusItem?.name,
     timeElapsed: totalTimeElapsed,
     remainingCount: remaining.length,
   });
@@ -556,15 +591,17 @@ export async function viewAppraisal(creatureUuid) {
 
 /**
  * Show the Appraise / Harvest / Cancel dialog.
- * @returns {Promise<string|null>} "appraise", "harvest", or null (cancelled)
+ * @returns {Promise<{action: string, aider: Actor|null}|null>}
+ *   { action: "appraise" } or { action: "harvest", aider } or null (cancelled)
  */
 /**
  * Show combined appraisal results + harvest dialog (single window for the harvester).
- * @returns {Promise<string|null>} "harvest" or null (cancelled)
+ * @returns {Promise<{aider: Actor|null}|null>} { aider } or null (cancelled)
  */
 async function _showPostAppraisalDialog(creature, harvester, appraisalResult, opts) {
   const cr = creature.system.details?.cr ?? "?";
   const typeName = opts.creatureType ? opts.creatureType.charAt(0).toUpperCase() + opts.creatureType.slice(1) : "Unknown";
+  const initialAider = _getAider(harvester);
 
   const content = await renderTemplate(`modules/${MODULE_ID}/templates/post-appraisal-dialog.hbs`, {
     creatureName: creature.name,
@@ -579,6 +616,8 @@ async function _showPostAppraisalDialog(creature, harvester, appraisalResult, op
     harvestTimeMin: opts.harvestTimeMin,
     harvestTimeMax: opts.harvestTimeMax,
     sizeModifier: opts.sizeModifier,
+    hasAider: !!initialAider,
+    aiderName: initialAider?.name ?? "",
     visibleItems: (appraisalResult.visibleItems || []).map((item) => ({
       ...item,
       categoryIcon: ITEM_CATEGORIES[item.category]?.icon ?? "fa-solid fa-cube",
@@ -595,7 +634,7 @@ async function _showPostAppraisalDialog(creature, harvester, appraisalResult, op
       harvest: {
         label: game.i18n.localize("MHARVEST.Dialog.Harvest"),
         icon: "fas fa-drumstick-bite",
-        callback: () => "harvest",
+        callback: () => ({ aider: _getAider(harvester) }),
       },
       cancel: {
         label: game.i18n.localize("MHARVEST.Dialog.Cancel"),
@@ -605,16 +644,18 @@ async function _showPostAppraisalDialog(creature, harvester, appraisalResult, op
     },
     defaultButton: "harvest",
     width: 420,
+    render: (el) => _setupHarvestAidHook(el, harvester),
   });
 }
 
-async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalEnabled, timeEstimates = {}, harvesterName = "") {
+async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalEnabled, timeEstimates = {}, harvester = null) {
   const cr = creature.system.details?.cr ?? "?";
   const typeName = creatureType ? creatureType.charAt(0).toUpperCase() + creatureType.slice(1) : "Unknown";
+  const initialAider = harvester ? _getAider(harvester) : null;
 
   const content = await renderTemplate(`modules/${MODULE_ID}/templates/harvest-dialog.hbs`, {
     creatureName: creature.name,
-    harvesterName,
+    harvesterName: harvester?.name ?? "",
     creatureType: typeName,
     cr,
     skillLabel,
@@ -632,6 +673,8 @@ async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalE
     tools: timeEstimates.tools ?? [],
     hasTools: timeEstimates.hasTools ?? false,
     toolBonus: timeEstimates.toolBonus ?? 0,
+    hasAider: !!initialAider,
+    aiderName: initialAider?.name ?? "",
   });
 
   const buttons = {};
@@ -639,13 +682,13 @@ async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalE
     buttons.appraise = {
       label: game.i18n.localize("MHARVEST.Dialog.Appraise"),
       icon: "fas fa-search",
-      callback: () => "appraise",
+      callback: () => ({ action: "appraise" }),
     };
   }
   buttons.harvest = {
     label: game.i18n.localize("MHARVEST.Dialog.Harvest"),
     icon: "fas fa-drumstick-bite",
-    callback: () => "harvest",
+    callback: () => ({ action: "harvest", aider: harvester ? _getAider(harvester) : null }),
   };
   buttons.cancel = {
     label: game.i18n.localize("MHARVEST.Dialog.Cancel"),
@@ -658,6 +701,7 @@ async function _showHarvestDialog(creature, creatureType, skillLabel, appraisalE
     content,
     buttons,
     defaultButton: "harvest",
+    render: harvester ? (el) => _setupHarvestAidHook(el, harvester) : undefined,
   });
 }
 
@@ -703,6 +747,92 @@ async function _showPickupDialog(creature, itemList, rollTotal, skillLabel, time
     },
     defaultButton: "take",
   });
+}
+
+/* ============================================
+   Private: Aid
+   ============================================ */
+
+/**
+ * Read the current aider from Foundry targeting (single, excluding harvester).
+ * @param {Actor} harvester
+ * @returns {Actor|null}
+ */
+function _getAider(harvester) {
+  return Array.from(game.user.targets)
+    .map((t) => t.actor)
+    .filter((a) => a && a.id !== harvester.id)[0] ?? null;
+}
+
+/**
+ * Update the aid section DOM inside a harvest dialog when targets change.
+ */
+function _refreshHarvestAidDisplay(el, harvester) {
+  const container = el.querySelector("[data-aid-content]");
+  if (!container) return;
+  const aider = _getAider(harvester);
+  const badge = el.querySelector("[data-aid-badge]");
+
+  if (aider) {
+    container.innerHTML = `
+      <div class="ultimate-harvester-aid-row">
+        <i class="fas fa-crosshairs"></i>
+        <span>${aider.name}</span>
+      </div>
+      <div class="ultimate-harvester-aid-hint">
+        <i class="fas fa-dice-d20 ultimate-harvester-icon--success"></i>
+        <small>${game.i18n.localize("MHARVEST.Aid.HarvestRollHint")}</small>
+      </div>`;
+    if (badge) {
+      badge.textContent = "1";
+      badge.style.display = "";
+    }
+  } else {
+    container.innerHTML = `<p class="ultimate-harvester-empty" style="padding: 0.4rem 0;">${game.i18n.localize("MHARVEST.Aid.HarvestSelectHint")}</p>`;
+    if (badge) badge.style.display = "none";
+  }
+}
+
+/**
+ * Wire reactive aid display + cleanup observer onto a harvest dialog element.
+ */
+function _setupHarvestAidHook(el, harvester) {
+  _refreshHarvestAidDisplay(el, harvester);
+  const hookId = Hooks.on("targetToken", () => _refreshHarvestAidDisplay(el, harvester));
+  const observer = new MutationObserver(() => {
+    if (!document.body.contains(el)) {
+      Hooks.off("targetToken", hookId);
+      observer.disconnect();
+    }
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+}
+
+/**
+ * Roll a skill check silently (no roll dialog), posting a minimal chat card.
+ * Used for aid rolls.
+ * @param {Actor} actor
+ * @param {string} skillId - dnd5e skill abbreviation
+ * @param {string} flavor - Chat flavor text
+ * @returns {Promise<{total: number, d20: number}|null>}
+ */
+async function _rollSilentSkillCheck(actor, skillId, flavor) {
+  try {
+    const skill = actor.system.skills?.[skillId];
+    if (!skill) return null;
+    const modifier = skill.total ?? 0;
+    const roll = await new Roll(`1d20 + ${modifier}`).evaluate();
+    await ChatMessage.create({
+      flavor: `${actor.name} — ${flavor}`,
+      rolls: [roll],
+      speaker: ChatMessage.getSpeaker({ actor }),
+    });
+    const d20 = roll.dice?.[0]?.total ?? roll.terms?.[0]?.total;
+    return { total: roll.total, d20 };
+  } catch (err) {
+    console.error(`${MODULE_ID} | Silent skill check failed for ${actor.name}:`, err);
+    return null;
+  }
 }
 
 /* ============================================
@@ -912,6 +1042,8 @@ async function _postHarvestResult(creature, harvester, items, opts = {}) {
       categoryIcon: ITEM_CATEGORIES[item.category]?.icon ?? "fa-solid fa-cube",
     })),
     rollTotal: opts.rollTotal,
+    rawRollTotal: opts.rawRollTotal,
+    aidBonus: opts.aidBonus,
     skillLabel: opts.skillLabel,
     critFail: opts.critFail,
     critFailEffect: opts.critFailEffect,

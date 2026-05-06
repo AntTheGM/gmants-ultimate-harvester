@@ -97,6 +97,11 @@
   "MHARVEST.Aid.Failure": "fails to beat DC {dc}.",
   "MHARVEST.Aid.ChatHeader": "Aid Rolls",
   "MHARVEST.Aid.BonusApplied": "+{bonus} aid bonus applied to forage roll",
+  "MHARVEST.Aid.HarvestSelectHint": "Target one ally to aid your harvest check.",
+  "MHARVEST.Aid.HarvestRollHint": "Aider rolls the harvest skill vs the base DC. Success grants +1 to your harvest roll.",
+  "MHARVEST.Aid.HarvestSuccess": "beats DC {dc} — +1 to harvest!",
+  "MHARVEST.Aid.HarvestFailure": "fails to beat DC {dc}.",
+  "MHARVEST.Aid.HarvestBonusApplied": "+{bonus} aid bonus applied to harvest roll",
 
   "MHARVEST.Tools.SectionTitle": "Harvesting Tools",
   "MHARVEST.Tools.WrongType": "wrong type",

@@ -5,7 +5,7 @@
   <p class="ultimate-harvester-time-banner"><i class="fas fa-clock ultimate-harvester-icon--time"></i> <strong>{{localize "MHARVEST.Chat.TimeSpent"}}: {{formatTime timeElapsed}}</strong></p>
   {{/if}}
 
-  <p><strong>{{harvesterName}}</strong> harvested <strong>{{creatureName}}</strong> (rolled {{rollTotal}}, {{skillLabel}})</p>
+  <p><strong>{{harvesterName}}</strong> harvested <strong>{{creatureName}}</strong> (rolled {{#if aidBonus}}{{rawRollTotal}} +{{aidBonus}} aid = {{rollTotal}}{{else}}{{rollTotal}}{{/if}}, {{skillLabel}})</p>
 
   {{#if critFail}}
   <p class="ultimate-harvester-crit-fail"><i class="fas fa-skull-crossbones ultimate-harvester-icon--danger"></i> {{localize "MHARVEST.Chat.CritFail"}}</p>
