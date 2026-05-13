@@ -87,7 +87,7 @@
         "compatibility": { "minimum": "4.0.0", "verified": "5.0.0" }
       }
     ],
-    "optional": [
+    "requires": [
       {
         "id": "socketlib",
         "type": "module",
@@ -95,7 +95,7 @@
       }
     ]
   },
-  "socket": false,
+  "socket": true,
   "flags": {
     "hotReload": true
   }

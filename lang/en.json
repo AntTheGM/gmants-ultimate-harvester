@@ -50,6 +50,8 @@
   "MHARVEST.Notification.NoTool": "You need appropriate tools to harvest this creature.",
   "MHARVEST.Notification.ForagingNothing": "found nothing useful while foraging.",
 
+  "MHARVEST.Error.SocketRequired": "Ultimate Harvester requires socketlib to be enabled in this world to harvest creatures you don't own. Ask the GM to enable socketlib in Manage Modules.",
+
   "MHARVEST.Dialog.HarvestTitle": "Harvest Creature",
   "MHARVEST.Dialog.Appraise": "Appraise",
   "MHARVEST.Dialog.Harvest": "Harvest",
